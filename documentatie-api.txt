@@ -1,0 +1,176 @@
+RUTA https://api.inspiredconsulting.ro/newsletter:
+
+    * Salveaza email-urile in db
+    * Are nevoie de parametrul email
+    * Returneaza success sau eroare
+bifat
+
+
+
+RUTA https://api.inspiredconsulting.ro/contact:
+
+    * Pentru formularul de contact
+    * Are nevoie de urmatorii parametrii: nume, prenume, telefon, email, mesaj
+    * Returneaza success sau eroare
+bifat
+
+
+
+RUTA https://api.inspiredconsulting.ro/comanda:
+
+    * Pentru plasarea comenzii
+    * Are nevoie de urmatorii parametrii: token, nume, tara, adresa, cui, companie, email, parola, confirma_parola, cos, cupon  
+    * Parametrul "token" o sa trebuiasca sa fie creat prin libraria stripe pt react 
+    * O sa ai nevoie de de token 
+    * Returneza "Comanda a fost plasata cu success" sau eroare
+
+RUTA https://api.inspiredconsulting.ro/products/adauga_produs:
+
+    * Pentru adaugare produs din dashboard
+    * Are nevoie de urmatorii parametrii: nume, descriere_1, descriere_2, pret, reducere, categorie, motive, intrebari, titlu_adreseaza, desc_adreseaza
+    * Faci exact ca la marize partea de upload img. Pui 2 imputuri la fel unu o sa fie form_data.append("poza", file) si celalalt form_data.append("fisier", file2)
+    * Neaparat RUTA https://api.inspiredconsulting.rosa fie accesata cu post. Valabil pentru toate rutele unde dai upload de poza/fisier
+    * Returneaza success sau eroare
+bifat
+
+RUTA https://api.inspiredconsulting.ro/products/sterge_produs:
+
+    * Pentru stergere produs 
+    * Are nevoie de parametrul "id" pe care o sa il primesti din db
+    * Returneaza success sau eroare
+bifat
+
+RUTA https://api.inspiredconsulting.ro/products/detalii_produs:
+
+    * Pentru afisare produs
+    * Are nevoie de parametrul "id" pe care o sa il primesti din db
+    * Returneaza Array sau eroare
+bifat
+
+//ciprian
+RUTA https://api.inspiredconsulting.ro/products/filtreaza_produse:
+
+    * Afiseaza produsele dupa filtrare
+    * Are nevoie de parametrii: reducere si categorie
+    * Parametrul reducere poate sa fie "da" sau gol ""
+    * Returneaza Array sau eroare
+
+bifat
+RUTA https://api.inspiredconsulting.ro/products/aduga_cupon:
+
+    * Pentru crearea unui cupon
+    * Are nevoie de parametrii: text, tip, reducere, durata
+    * Parametrul text este numele cuponului (marius20), tip poate fi "procent" sau "suma", recuere e numar ( 20% sau 20 lei , durata este cate zile va fi valabil 
+    * Returneaza success sau eroare
+bifat
+
+RUTA https://api.inspiredconsulting.ro/products/adauga_categorie:
+
+    * Pentru crearea unei categorii
+    * Are nevoie de parametrii: nume
+    * Aici poza trebuie trimisa exact ca la marize
+    * Iei ce e la marize dar unde vezi ca scrie "form_data.append("logo", file)" inlocuiesti "logo" cu "categorie" => form_data.append("categorie", file)
+    * Returneaza success sau eroare
+bifat
+
+RUTA https://api.inspiredconsulting.ro/products/adauga:
+
+    * Pentru a adauga un produs la favorite sau in cos
+    * Are nevoie de urmatorii parametrii: id (din db) si action ( poate fi "cos" sau "favorite" )
+    * Returneaza "Produsul a fost adaugat in cos / favorite" sau eroare
+
+RUTA https://api.inspiredconsulting.ro/products/sterge:
+
+    * Pentru stergerea produsului din cos/favorite
+    * Are nevoie de urmatorii parametrii: id (din db) si action ( poate fi "cos" sau "favorite" ) 
+    * Returneaza "Produsul a fost sters din cos/favorite"
+
+
+RUTA https://api.inspiredconsulting.ro/products/lista-produse:
+
+
+    * Pentru a afisa produsele de la favorite/cos
+    * Are nevoie de parametrul action care poate fi "favorite" sau "cos"
+    * Returneaza Array sau erroare
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ciprian
+RUTA https://api.inspiredconsulting.ro/products/comenzile-mele:
+
+    * Pentru afisarea comenzilor plasate 
+    * Are nevoie de parametrul user care v-a fi salvat in cookie la login 
+    * Returneaza Array sau eroare
+
+
+RUTA https://api.inspiredconsulting.ro/users/create:
+
+    * Pentru creare cont
+    * Are nevoie de parametii urmatori: nume, email, parola, confirma_parola
+    * Returneaza success sau eroare
+bifat
+
+
+
+RUTA https://api.inspiredconsulting.ro/users/login :
+
+    * Pentru logare 
+    * Are nevoie de parametrii: email si parola 
+    * Returneaza success+codul_unic ca la marize la login sau eroare
+bifat
+
+
+
+RUTA https://api.inspiredconsulting.ro/users/set_recuperare: !!! ATENTIE
+
+    * Asta nu este o RUTA https://api.inspiredconsulting.ro o gandisem inainte sa fie RUTA https://api.inspiredconsulting.ro dar am modificat.
+    * Asta trebuie sa faci tu o pagina in react numita "set_recuperare"
+    * Pe pagina asta nu o sa se afiseze nimic doar trb sa setezi un cookie " Cookies.set('recupereaza_parola', vkey, { expires: 30 }) "
+    * Dupa ce setezi cookiul trb sa ii dai redirect pe pagina pe care ai facut sa isi reseteze parola 
+    * Abia cand ajunge in pagina de resetare parola vei pune cookiul salvat mai sus in parametrul vkey de la RUTA https://api.inspiredconsulting.ro urmatoare 
+
+RUTA https://api.inspiredconsulting.ro/users/recupereaza_parola: 
+
+    * Pentru resetare parola
+    * Are nevoie de parametrii: parola, confirma_parola, vkey ( Foloseste cookie salvat de mai sus ) Cookies.get('recupereaza_parola')
+    * Returneaza success sau eroare
+bifat
+
+
+//ciprian
+RUTA https://api.inspiredconsulting.ro/users/setari_cont:
+
+    * Pentru schimbarea datelor contului
+    * Are nevoie de parametrii: email, parola, confirma_parola, vkey (  Va fi salvat in cookie )
+    * Email poate fi gol si sa fie completate doar parola si confirma parola si invers.
+    * Returneaza Modificarea pe care a facut-o sau eroare
+//bifat
