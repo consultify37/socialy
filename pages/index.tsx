@@ -14,7 +14,7 @@ export default function Home() {
     <>
       {/* pageSettings */}
       <Head>
-        <title>Inspirely | Acasă</title>
+        <title>Consultify | Acasă</title>
       </Head>
       {/* Header */}
       <HomeHeader />

@@ -22,7 +22,7 @@ const HomeHeader = () => {
     <section
       ref={sectionRef}
       id="HeroContainer"
-      className={`flex flex-col min-h-[55vh] md:min-h-[45vh] xl:min-h-[65vh] w-full items-center justify-center bg-[#00103C] relative`}
+      className={`flex flex-col min-h-[55vh] md:min-h-[45vh] xl:min-h-[65vh] w-full items-center justify-center bg-[#260056] relative`}
       style={{
         marginBottom: `${margin - 50}px`,
         paddingBottom: `${
@@ -51,7 +51,7 @@ const HomeHeader = () => {
         height={200}
         className="absolute w-[200px] xl:w-[250px] left-0 -top-44 xl:top-[50%] xl:translate-y-[-50%] z-[5]"
       />
-      <span className="bg-[#00103C] w-[130vw] xl:w-[113vw] 2xl:w-[112vw] h-[110%] z-[4] -left-[133] -rotate-[5deg] rounded-[0_0_199px_64px] md:rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] 2xl:rounded-[0_0_170px_250px] xl:-left-32 2xl:-left-40 -top-2 xl:top-20 absolute overflow-hidden" />
+      <span className="bg-[#260056] w-[130vw] xl:w-[113vw] 2xl:w-[112vw] h-[110%] z-[4] -left-[133] -rotate-[5deg] rounded-[0_0_199px_64px] md:rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] 2xl:rounded-[0_0_170px_250px] xl:-left-32 2xl:-left-40 -top-2 xl:top-20 absolute overflow-hidden" />
       <div className="z-10 w-full flex justify-center flex-col items-center gap-5 relative">
         <div className="absolute top-[100%] w-full">
           <div className="relative w-[90%] xl:w-[75%] flex items-center justify-center mx-auto">
@@ -78,7 +78,7 @@ const HomeHeader = () => {
         </h1>
         <button
           type="button"
-          className="px-10 py-2 bg-[#01EA88] text-[#00103C] rounded-[28.5px] text-base"
+          className="px-10 py-2 bg-[#01EA88] text-[#260056] rounded-[28.5px] text-base"
         >
           cum funcționează?
         </button>

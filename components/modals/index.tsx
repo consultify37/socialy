@@ -142,7 +142,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
         <>
           {" "}
           <div className="flex flex-row justify-between border-b-[3px] py-5 border-[#F2F4FF]">
-            <h2 className="text-lg font-semibold text-[#00103C]">
+            <h2 className="text-lg font-semibold text-[#260056]">
               Loghează-te
             </h2>
             <AiOutlineClose
@@ -196,7 +196,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
         <>
           {" "}
           <div className="flex flex-row justify-between border-b-[3px] py-5 border-[#F2F4FF]">
-            <h2 className="text-lg font-semibold text-[#00103C]">
+            <h2 className="text-lg font-semibold text-[#260056]">
               Înregistrează-te
             </h2>
             <AiOutlineClose
@@ -261,7 +261,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
         <>
           {" "}
           <div className="flex flex-row justify-between border-b-[3px] py-5 border-[#F2F4FF]">
-            <h2 className="text-lg font-semibold text-[#00103C]">
+            <h2 className="text-lg font-semibold text-[#260056]">
               Ai uitat parola?
             </h2>
             <AiOutlineClose
@@ -313,7 +313,7 @@ export function CartModal({ handleModalClosingClick }: ModalProps) {
   return (
     <div className="fixed top-[5%] left-[50%] ml-[-155px] md:ml-[10px] px-4 md:px-8 md:min-w-[500px] min-w-[270px] rounded-[35px] z-[999999] bg-white">
       <div className="flex flex-row justify-between border-b-[3px] py-5 border-[#F2F4FF]">
-        <h2 className="text-lg font-semibold text-[#00103C]">Coșul tău</h2>
+        <h2 className="text-lg font-semibold text-[#260056]">Coșul tău</h2>
         <AiOutlineClose
           onClick={handleModalClosingClick}
           className="cursor-pointer text-lg"
@@ -331,7 +331,7 @@ export function CartModal({ handleModalClosingClick }: ModalProps) {
                 alt={item.name}
               />
               <div className="flex pl-10 flex-col">
-                <h2 className="lg:text-lg text-sm text-[#00103C] font-bold">
+                <h2 className="lg:text-lg text-sm text-[#260056] font-bold">
                   {item.name}
                 </h2>
                 <div className="flex flex-row items-center">
@@ -365,8 +365,8 @@ export function CartModal({ handleModalClosingClick }: ModalProps) {
       </div>
       <div className="flex flex-col border-t-[3px] py-5 border-[#F2F4FF]">
         <div className="flex flex-row justify-between">
-          <p className="text-[#00103C]">Subtotal:</p>
-          <p className="text-[#00103C]">
+          <p className="text-[#260056]">Subtotal:</p>
+          <p className="text-[#260056]">
             {products.reduce((acc, item) => {
               return acc + Number(item.price);
             }, 0)}{" "}

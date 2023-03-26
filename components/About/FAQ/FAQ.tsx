@@ -23,7 +23,7 @@ const FAQAbout = ({
                 intrebari.map((faq: { id: number; question: any; answer: any; }) =>
                     <article key={faq.id} className='w-full rounded-[8px] bg-[#F2F4FF]'>
                         <div className='flex justify-between p-4 px-6 cursor-pointer' onClick={() => handleSelectQuestion(faq.id)}>
-                            <h3 className='text-[12px] md:text-lg text-[#00103C] font-bold'>{faq.question}</h3>
+                            <h3 className='text-[12px] md:text-lg text-[#260056] font-bold'>{faq.question}</h3>
                             <Image
                                 className={`w-[20px] right-[10px] top-[23px]
                                 ${

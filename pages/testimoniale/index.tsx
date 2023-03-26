@@ -12,43 +12,43 @@ import Head from "next/head";
 const Testimonials: OurClientsTestimonial[] = [
   {
     id: 1,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely",
+    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
     by: "Marian Savu - afacere în agricultură",
     image: "/images/ourclients.png",
   },
   {
     id: 2,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely",
+    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
     by: "Marian Savu - afacere în agricultură",
     image: "/images/ourclients.png",
   },
   {
     id: 3,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely",
+    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
     by: "Marian Savu - afacere în agricultură",
     image: "/images/ourclients.png",
   },
   {
     id: 4,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely",
+    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
     by: "Marian Savu - afacere în agricultură",
     image: "/images/ourclients.png",
   },
   {
     id: 5,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely",
+    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
     by: "Marian Savu - afacere în agricultură",
     image: "/images/ourclients.png",
   },
   {
     id: 6,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely",
+    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
     by: "Marian Savu - afacere în agricultură",
     image: "/images/ourclients.png",
   },
   {
     id: 7,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely",
+    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
     by: "Marian Savu - afacere în agricultură",
     image: "/images/ourclients.png",
   },
@@ -77,12 +77,12 @@ export default function Testimoniale() {
       </Head>
       <section
         id="about-header"
-        className="relative bg-[#00103C] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
+        className="relative bg-[#260056] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
       >
         <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">
           Cunoaște succesele clienților noștri
         </h1>
-        <span className="bg-[#00103C] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
+        <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
         <Image
           src="/images/Star 1.svg"
           alt="Hero blue circle"
@@ -147,8 +147,8 @@ export default function Testimoniale() {
           />
         </div>
       </section>
-      <section className="relative bg-[#00103C] w-full pt-32 mt-60 pb-14 flex flex-col items-center justify-center overflow-visible">
-        <span className="bg-[#00103C] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
+      <section className="relative bg-[#260056] w-full pt-32 mt-60 pb-14 flex flex-col items-center justify-center overflow-visible">
+        <span className="bg-[#260056] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
         <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-6 md:pt-20 lg:pt-0">
           Am ajutat clienți din toată România în diferite domenii
         </h2>
@@ -221,7 +221,7 @@ export default function Testimoniale() {
         <div className="w-full mt-20 px-10">
           <div className="flex justify-center items-center">
             <h3 className="text-lg text-white mx-5 font-bold">
-              Inspirely vine în ajutorul tău cu produse digitale pentru scalarea
+              Consultify vine în ajutorul tău cu produse digitale pentru scalarea
               afacerii tale
             </h3>
             <div className="hidden md:flex gap-4 mr-10">
@@ -231,7 +231,7 @@ export default function Testimoniale() {
                   backCarousel(setScrollAmount, carouselRef, cardRef)
                 }
               >
-                <AiOutlineArrowLeft className="text-[#00103C]" size={18} />
+                <AiOutlineArrowLeft className="text-[#260056]" size={18} />
               </span>
               <span
                 className="bg-[#01EA88] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
@@ -239,7 +239,7 @@ export default function Testimoniale() {
                   nextCarousel(setScrollAmount, carouselRef, cardRef)
                 }
               >
-                <AiOutlineArrowRight className="text-[#00103C]" size={18} />
+                <AiOutlineArrowRight className="text-[#260056]" size={18} />
               </span>
             </div>
           </div>

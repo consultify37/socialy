@@ -142,10 +142,10 @@ const ItemViewContent = ({
           />
         </div>
         <div className="w-full md:w-[49%]">
-          <h1 className="text-[#00103C] font-bold text-xl md:text-2xl">
+          <h1 className="text-[#260056] font-bold text-xl md:text-2xl">
             {name}
           </h1>
-          <p className="font-normal text-base text-[#00103C] mb-5 md:max-w-[80%]">
+          <p className="font-normal text-base text-[#260056] mb-5 md:max-w-[80%]">
             {description}
           </p>
           {initial && (
@@ -168,7 +168,7 @@ const ItemViewContent = ({
               <span className="p-2 bg-[#EAEDFF] rounded-lg">
                 <AiOutlineHeart size={16} className="text-[#FF6666]" />
               </span>
-              <p className="text-base text-[#00103C] font-bold">
+              <p className="text-base text-[#260056] font-bold">
                 adaugă la favorite
               </p>
             </button>
@@ -180,17 +180,17 @@ const ItemViewContent = ({
               <span className="p-2 bg-[#EAEDFF] rounded-lg">
                 <AiFillHeart size={16} className="text-[#FF6666]" />
               </span>
-              <p className="text-base text-[#00103C] font-bold">
+              <p className="text-base text-[#260056] font-bold">
                 elimina de la favorite
               </p>
             </button>
           )}
         </div>
         <div className="flex flex-col gap-2 mt-[6.25rem]">
-          <h2 className="font-bold text-[#00103C] md:text-xl lg:text-2xl xl:text-4xl">
+          <h2 className="font-bold text-[#260056] md:text-xl lg:text-2xl xl:text-4xl">
             Descrierea produsului
           </h2>
-          <p className="font-normal text-base text-[#00103C]">{descriere_2}</p>
+          <p className="font-normal text-base text-[#260056]">{descriere_2}</p>
         </div>
       </div>
     </section>

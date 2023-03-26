@@ -4,14 +4,14 @@ const ShopHeader = () => {
     return (
         <section
             id="about-header"
-            className="relative bg-[#00103C] w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
+            className="relative bg-[#260056] w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
             style={{ marginBottom: `128px` }}
         >
             <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">
                 Aici ai toate produsele ready made pe care le avem. Le pui în coș,
                 achiți și magia se întâmplă.
             </h1>
-            <span className="bg-[#00103C] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
+            <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
             <Image
                 src="/images/circle-hero-blue.png"
                 alt="Hero blue circle"

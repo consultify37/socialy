@@ -126,7 +126,7 @@ const CategoryItems = () => {
                                         </s>
                                     )}
                                 </p>
-                                <h4 className="text-[#00103C] font-bold text-base">
+                                <h4 className="text-[#260056] font-bold text-base">
                                     {product.nume}
                                 </h4>
                             </div>
@@ -141,7 +141,7 @@ const CategoryItems = () => {
                 <RiArrowLeftSLine
                     size={24}
                     onClick={() => setPage(0)}
-                    className={`${page === 0 ? "text-[#CDCDCD]" : "text-[#00103C]"
+                    className={`${page === 0 ? "text-[#CDCDCD]" : "text-[#260056]"
                         } cursor-pointer`}
                 />
                 {maxPages > 0 &&
@@ -149,7 +149,7 @@ const CategoryItems = () => {
                         <p
                             key={i}
                             onClick={() => setPage(i)}
-                            className={`${i === page ? "bg-[#00103C] text-white" : "text-[#00103C]"
+                            className={`${i === page ? "bg-[#260056] text-white" : "text-[#260056]"
                                 } cursor-pointer h-8 w-8 rounded-full flex items-center justify-center`}
                         >
                             {i + 1}
@@ -158,7 +158,7 @@ const CategoryItems = () => {
                 <RiArrowRightSLine
                     size={24}
                     onClick={() => setPage(maxPages - 1)}
-                    className={`${page === maxPages - 1 ? "text-[#CDCDCD]" : "text-[#00103C]"
+                    className={`${page === maxPages - 1 ? "text-[#CDCDCD]" : "text-[#260056]"
                         } cursor-pointer`}
                 />
             </div>

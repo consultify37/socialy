@@ -10,10 +10,10 @@ const WhyUs = () => {
     return(
         <section id='why-us' className='mt-[10.25rem] w-full relative pb-10'>
             {/* Frames */}
-            <span className='bg-[#00103C] rounded-[200px_250px_0_0] w-[115vw] md:w-[102vw] -rotate-2 absolute -left-5 -top-20 h-32' />
+            <span className='bg-[#260056] rounded-[200px_250px_0_0] w-[115vw] md:w-[102vw] -rotate-2 absolute -left-5 -top-20 h-32' />
                         {/* Content */}
-            <div className='w-full bg-[#00103C] z-[2] flex items-center justify-center flex-col gap-2 mt-10 pt-14 pb-10 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
-                <h2 className='text-white md:mb-8 font-bold md:text-xl lg:text-2xl xl:text-4xl'>De ce să alegi Inspirely?</h2>
+            <div className='w-full bg-[#260056] z-[2] flex items-center justify-center flex-col gap-2 mt-10 pt-14 pb-10 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+                <h2 className='text-white md:mb-8 font-bold md:text-xl lg:text-2xl xl:text-4xl'>De ce să alegi Consultify?</h2>
                 <div className='flex flex-wrap mt-10 gap-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
                     <div className='mx-auto lg:mx-0 w-full z-[2] flex-1 grid grid-cols-1 md:grid-cols-2 gap-4'>
@@ -29,7 +29,7 @@ const WhyUs = () => {
                         <img src='/images/circle.png' className='absolute bottom-2 md:-bottom-2 left-60 md:left-72 z-[0] w-[350px] md:w-[400px]' width={400} height={300} alt='circle-svg' />
                     </div>
                 </div>
-                <Link href='/' className='py-3 bg-[#01EA88] text-[#00103C] text-[16px] rounded-[28.5px] font-medium px-16 mt-5'>despre noi</Link>
+                <Link href='/' className='py-3 bg-[#01EA88] text-[#260056] text-[16px] rounded-[28.5px] font-medium px-16 mt-5'>despre noi</Link>
                 <OurHelp />
             </div>
         </section>

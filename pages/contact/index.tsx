@@ -64,12 +64,12 @@ export default function Contact() {
             </Head>
             <section
                 id="about-header"
-                className="relative bg-[#00103C] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
+                className="relative bg-[#260056] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
             >
                 <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">
                     Suntem aici pentru tine
                 </h1>
-                <span className="bg-[#00103C] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
+                <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
                 <Image
                     src="/images/Star 1.svg"
                     alt="Hero blue circle"
@@ -155,8 +155,8 @@ export default function Contact() {
                         <div className="flex items-center md:mb-0 mb-6 mr-6">
                             <input 
                                 checked={isChecked} onChange={handleChange}
-                                required id="link-checkbox" type="checkbox" value="" className="w-4 cursor-pointer h-4 text-[#00103C] rounded border-[2px] bg-[#F2F4FF] border-[#0F52FF] focus:ring-blue-500" />
-                            <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-[#00103C]">Accept <a href="#" className="text-[#00103C] underline">Termenii și Condițiile</a></label>
+                                required id="link-checkbox" type="checkbox" value="" className="w-4 cursor-pointer h-4 text-[#260056] rounded border-[2px] bg-[#F2F4FF] border-[#0F52FF] focus:ring-blue-500" />
+                            <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-[#260056]">Accept <a href="#" className="text-[#260056] underline">Termenii și Condițiile</a></label>
                         </div>
                         <button                      
                             className='py-4 bg-[#0F52FF] h-auto text-white rounded-[28px] font-medium px-14 text-center text-sm md:text-[16px]'>
@@ -166,7 +166,7 @@ export default function Contact() {
                 </form>
             </section>
             <section className="w-full flex flex-col items-center my-32 justify-center px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-                <div className="rounded-3xl bg-[#00103C] w-full md:max-w-[1000px] md:p-16 md:px-20 p-6 py-12 max-w-[350px] flex flex-col">
+                <div className="rounded-3xl bg-[#260056] w-full md:max-w-[1000px] md:p-16 md:px-20 p-6 py-12 max-w-[350px] flex flex-col">
                     <h2 className="text-xl text-center mb-10 text-white">Sau ne poți găsi și aici</h2>
                     <div className="flex md:flex-row flex-col w-full">
                         <div className="flex flex-row w-full mb-5 md:mb-0 justify-center">

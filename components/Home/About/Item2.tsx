@@ -9,13 +9,13 @@ const Item2About = () => {
                     <Image src='/images/polygon.png' className='absolute -left-5 -top-8 rotate-2 w-[65px] md:w-[150px]' width={150} height={150} alt='Polygon img' />
                 </div>
                 <div className='w-full md:w-[48%]'>
-                    <h2 className='md:text-xl lg:text-2xl xl:text-4xl font-bold text-white'>Cum funcționează inspirely?</h2>
+                    <h2 className='md:text-xl lg:text-2xl xl:text-4xl font-bold text-white'>Cum funcționează Consultify?</h2>
                     <p className='text-white font-thin text-[16px] mt-5'>
                         Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.
                     </p>
                     <ul className='list-none mt-4'>
                         <li className='flex gap-5 items-center'>
-                            <span className='text-[#00103C] w-8 h-8 rounded-[50%] bg-[#01EA88] flex items-center justify-center font-medium'>1</span>
+                            <span className='text-[#260056] w-8 h-8 rounded-[50%] bg-[#01EA88] flex items-center justify-center font-medium'>1</span>
                             <p className='text-white text-[16px] font-normal'>Lorem lispum dolor sit amet</p>
                         </li>
                         <li className='flex gap-5 items-center mt-4'>
@@ -23,7 +23,7 @@ const Item2About = () => {
                             <p className='text-white text-[16px] font-normal'>Lorem lispum dolor sit amet</p>
                         </li>
                         <li className='flex gap-5 items-center mt-4'>
-                            <span className='text-[#00103C] w-8 h-8 rounded-[50%] bg-[#FFCE00] flex items-center justify-center font-medium'>3</span>
+                            <span className='text-[#260056] w-8 h-8 rounded-[50%] bg-[#FFCE00] flex items-center justify-center font-medium'>3</span>
                             <p className='text-white text-[16px] font-normal'>Lorem lispum dolor sit amet</p>
                         </li>
                     </ul>

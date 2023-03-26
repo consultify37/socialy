@@ -9,7 +9,7 @@ const NavAdmin = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleDropdown = () => setIsOpen(!isOpen);
     return (
-        <div className="flex flex-col rounded-3xl h-[80vh] relative p-5 pt-10 shadow w-60 bg-[#00103C] ">
+        <div className="flex flex-col rounded-3xl h-[80vh] relative p-5 pt-10 shadow w-60 bg-[#260056] ">
             <div className="space-y-3">
                 <div className="flex items-center mb-20">
                     <Image

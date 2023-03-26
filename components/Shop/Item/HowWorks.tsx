@@ -3,7 +3,7 @@ import Image from "next/image"
 const HowWorks = () => {
     return(
         <section id='how-works' className='mt-[6.25rem] px-3 md:px-[80px] xl:px-[200px] 2xl:px-[276px]'>
-            <div className='bg-[#00103C] w-full gap-4 rounded-[35px] flex flex-col items-center justify-center py-14 relative mx-auto overflow-hidden'>
+            <div className='bg-[#260056] w-full gap-4 rounded-[35px] flex flex-col items-center justify-center py-14 relative mx-auto overflow-hidden'>
                 <h2 className='font-bold text-white tmd:text-xl lg:text-2xl xl:text-4xl mb-14 md:mb-0'>Cum funcționează</h2>
                 <Image src='/images/circle-hero-bluedark.png' alt='Hero blue circle' width={200} height={200} className='absolute bottom-0 -right-10 md:-top-12 z-[5] w-[120px] md:w-[200px]' />
             

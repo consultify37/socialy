@@ -14,25 +14,25 @@ const OurClients = () => {
     const [step, setStep] = useState<number>(0)
     const Testimonials: OurClientsTestimonial[] = [
         {
-            id: 1, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
+            id: 1, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
         },
         {
-            id: 2, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
+            id: 2, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
         },
         {
-            id: 3, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
+            id: 3, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
         },
         {
-            id: 4, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
+            id: 4, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
         },
         {
-            id: 5, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
+            id: 5, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
         },
         {
-            id: 6, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
+            id: 6, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
         },
         {
-            id: 7, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Inspirely', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
+            id: 7, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
         },
     ]
     return(

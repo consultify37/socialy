@@ -169,10 +169,10 @@ export default function ContPage() {
     <>
       <section className="mt-48 px-3 md:px-[80px] xl:px-[140px] 2xl:px-[276px] flex lg:flex-row flex-col items-center justify-around">
         <Head>
-          <title>Inspirely | Cont</title>
+          <title>Consultify | Cont</title>
         </Head>
         <div className="flex flex-col justify-between lg:items-start items-center">
-          <h2 className="text-xl text-[#00103C] font-bold max-w-[12rem]">
+          <h2 className="text-xl text-[#260056] font-bold max-w-[12rem]">
             Bine ai venit,{" "}
             {!didSomethingWentWrong && userInfo && userInfo!.nume}!
           </h2>
@@ -211,7 +211,7 @@ export default function ContPage() {
         <div className="bg-transparent-white xl:w-[450px] 2xl:min-w-[500px] min-h-[400px] md:max-w-[420px] lg:min-w-[400px] my-5 lg:my-0 rounded-3xl flex flex-col lg:items-start items-center lg:py-2 py-10 px-8">
           {whichSectionToShow === "comenzi" ? (
             <>
-              <h2 className="text-xl text-[#00103C] font-bold py-2">
+              <h2 className="text-xl text-[#260056] font-bold py-2">
                 Istoric produse
               </h2>
               {!didSomethingWentWrong && myOrders && myOrders!.length
@@ -222,7 +222,7 @@ export default function ContPage() {
             </>
           ) : whichSectionToShow === "favorite" ? (
             <>
-              <h2 className="text-xl text-[#00103C] font-bold py-2">
+              <h2 className="text-xl text-[#260056] font-bold py-2">
                 Produse favorite
               </h2>
               <div
@@ -243,7 +243,7 @@ export default function ContPage() {
             </>
           ) : whichSectionToShow === "setari" ? (
             <>
-              <h2 className="text-xl text-[#00103C] font-bold py-2">
+              <h2 className="text-xl text-[#260056] font-bold py-2">
                 Setările contului
               </h2>
               <form className="flex flex-col justify-between w-full">

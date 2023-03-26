@@ -13,7 +13,7 @@ const Category = () => {
     <>
       {/* PageSettings */}
       <Head>
-        <title>Inspirely | {itemName ? itemName : name}</title>
+        <title>Consultify | {itemName ? itemName : name}</title>
       </Head>
       <CategoryHeader name={itemName} description={description} />
       <CategoryItems />

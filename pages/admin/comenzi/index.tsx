@@ -188,7 +188,7 @@ export default function Orders() {
                                                             alt="book-img"
                                                         />
                                                         <div className="flex justify-center flex-col">
-                                                            <h2 className="lg:text-lg text-sm text-[#00103C] font-bold">
+                                                            <h2 className="lg:text-lg text-sm text-[#260056] font-bold">
                                                             {products.nume}
                                                             </h2>
                                                             <div className="flex flex-row items-center">

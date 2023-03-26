@@ -13,7 +13,7 @@ export const OrderedProductsButton = ({
       className={`px-10 py-4 rounded-[12px] w-60 my-3 ${
         whichSectionToShow === "comenzi"
           ? "bg-[#0F52FF] text-white"
-          : "bg-slate-50 text-[#00103C]"
+          : "bg-slate-50 text-[#260056]"
       } transition-all hover:scale-[1.05] flex flex-row justify-start align-center`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -39,7 +39,7 @@ export const FavoriteProductsButton = ({
       className={`px-10 py-4 rounded-[12px] w-60 my-3 ${
         whichSectionToShow === "favorite"
           ? "bg-[#0F52FF] text-white"
-          : "bg-slate-50 text-[#00103C]"
+          : "bg-slate-50 text-[#260056]"
       } transition-all hover:scale-[1.05] flex flex-row justify-start align-center`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -65,7 +65,7 @@ export const AccountSettingButton = ({
       className={`px-10 py-4 rounded-[12px] w-60 my-3 ${
         whichSectionToShow === "setari"
           ? "bg-[#0F52FF] text-white"
-          : "bg-slate-50 text-[#00103C]"
+          : "bg-slate-50 text-[#260056]"
       } transition-all hover:scale-[1.05] flex flex-row justify-start align-center`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}

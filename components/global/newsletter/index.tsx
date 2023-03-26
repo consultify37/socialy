@@ -32,7 +32,7 @@ export default function NewsLetter() {
   
   return (
     <section className="my-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-      <div className="relative px-12 md:py-0 py-2 flex items-center mt-32 flex-col-reverse lg:flex-row-reverse bg-[#00103C] rounded-[16px] w-auto h-[500px] lg:h-[350px]">
+      <div className="relative px-12 md:py-0 py-2 flex items-center mt-32 flex-col-reverse lg:flex-row-reverse bg-[#260056] rounded-[16px] w-auto h-[500px] lg:h-[350px]">
         <Image
           src="/images/pexels-fauxels-3184433 1.png"
           alt="people-cheering"
@@ -60,13 +60,13 @@ export default function NewsLetter() {
           </h2>
           <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
             <input
-              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#00103C] placeholder:text-white border-2 border-[#01EA88] rounded-[22px]"
+              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#01EA88] rounded-[22px]"
               type="email"
               placeholder={newsletter}
               required
               onChange={(e) => setNewsletter(e.target.value)}
             />
-            <button type="submit" className="text-[#00103C] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-[#00103C] bg-[#01EA88] py-5 px-10 text-sm rounded-[22px]">
+            <button type="submit" className="text-[#260056] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-[#260056] bg-[#01EA88] py-5 px-10 text-sm rounded-[22px]">
               Mă abonez
             </button>
           </form>

@@ -19,10 +19,10 @@ const News = () => {
                 <h2 className='md:text-xl lg:text-2xl xl:text-4xl text-[#006CFF] font-medium max-w-[80%] md:max-w-[60%]'>Descoperă ultimile noutăți din business si mediul online</h2>
                 <div className='hidden md:flex gap-4 mr-10'>
                     <span className='bg-[#01EA88] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer' onClick={() => backCarousel(setScrollAmount, carouselRef, cardRef)}>
-                        <AiOutlineArrowLeft className='text-[#00103C]' size={18} />
+                        <AiOutlineArrowLeft className='text-[#260056]' size={18} />
                     </span>
                     <span className='bg-[#01EA88] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer' onClick={() => nextCarousel(setScrollAmount, carouselRef, cardRef)}>
-                        <AiOutlineArrowRight className='text-[#00103C]'  size={18} />
+                        <AiOutlineArrowRight className='text-[#260056]'  size={18} />
                     </span>
                 </div>
             </div>

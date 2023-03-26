@@ -8,7 +8,7 @@ const DiscoverItem2 = () => {
                 <div className='w-full md:w-[48.5%] px-[19px] py-[25px] flex flex-col justify-center items-center md:justify-start md:items-start'>
                     <img loading='lazy' src='/images/socialy-logo-text.png' className='self-start' width={183} height={48} alt='Socialy Logo' />
                     <p className='text-white font-bold text-[20px] lg:text-xl mt-2'>Alături de Socialy, afacerea ta poate fi prezentă în online</p>
-                    <Link href='/' className='py-3 bg-[#01EA88] text-[#00103C] rounded-[28.5px] font-medium mr-auto mt-5 px-10 min-w-[250px] text-center text-sm md:text-[16px]'>
+                    <Link href='/' className='py-3 bg-[#01EA88] text-[#260056] rounded-[28.5px] font-medium mr-auto mt-5 px-10 min-w-[250px] text-center text-sm md:text-[16px]'>
                         vreau prezența online
                     </Link>
                 </div>

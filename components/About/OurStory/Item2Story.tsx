@@ -12,16 +12,16 @@ const Item2Story = () => {
         height={300}
       />
       <div className="flex-1">
-        <h2 className="text-[#00103C] font-bold text-xl mb-3 md:text-xl lg:text-2xl xl:text-4xl">
-          Misiunea Inspirely
+        <h2 className="text-[#260056] font-bold text-xl mb-3 md:text-xl lg:text-2xl xl:text-4xl">
+          Misiunea Consultify
         </h2>
-        <p className="text-[#00103C] font-normal text-base">
+        <p className="text-[#260056] font-normal text-base">
           Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce
           sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla
           libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.
         </p>
         <br />
-        <p className="text-[#00103C] font-normal text-base">
+        <p className="text-[#260056] font-normal text-base">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies
           nibh vel massa iaculis porttitor. Lorem ipsum dolor sit amet,
           consectetur adipiscing elit. In pretium ac orci at convallis. Vivamus
@@ -33,7 +33,7 @@ const Item2Story = () => {
         <div className="flex gap-4 mt-4">
           <Link
             href="/testimoniale"
-            className="p-2 bg-transparent text-[#00103C] rounded-[28.5px] border-2 border-[#01EA88] font-medium px-10 text-xs md:text-base"
+            className="p-2 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#01EA88] font-medium px-10 text-xs md:text-base"
           >
             testimoniale
           </Link>

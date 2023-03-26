@@ -9,7 +9,7 @@ export default function AdminLogin() {
   return (
     <>
         <Head>
-            <title>Inspirely | Admin Login</title>
+            <title>Consultify | Admin Login</title>
         </Head>
         <div className='w-[100%] h-[80vh] flex'>
             <div id="login_container" className='max-w-[523px] m-auto flex flex-col rounded-[35px] bg-[#F2F4FF] p-10'>

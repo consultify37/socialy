@@ -47,7 +47,7 @@ const WhyUsCartItem = ({
               <s className="text-[#7C9EF8] font-thin">{initial} lei</s>
             )}
           </p>
-          <h4 className="text-[#00103C] font-bold text-base">{title}</h4>
+          <h4 className="text-[#260056] font-bold text-base">{title}</h4>
         </div>
         <span className="w-10 h-10 bg-[#0F52FF] flex items-center justify-center rounded-full text-white flex-shrink-0">
           <AiOutlineShoppingCart />

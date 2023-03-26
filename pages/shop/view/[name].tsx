@@ -69,7 +69,7 @@ const ItemView = () => {
     <>
       {/* PageSettings */}
       <Head>
-        <title>Inspirely | {nume}</title>
+        <title>Consultify | {nume}</title>
       </Head>
       {/* Item Content */}
       <ItemViewContent

@@ -8,7 +8,7 @@ const About: NextPage = () => {
         <>
             {/* PageSettings */}
             <Head>
-                <title>Inspirely | Shop</title>
+                <title>Consultify | Shop</title>
             </Head>
             {/* Shop header */}
             <ShopHeader />

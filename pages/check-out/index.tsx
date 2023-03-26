@@ -142,7 +142,7 @@ export default function CheckOut() {
         <div>
           {createAcc ? (
             <>
-              <h2 className="text-xl text-[#00103C] font-bold py-2">
+              <h2 className="text-xl text-[#260056] font-bold py-2">
                 Creeză-ți contul
               </h2>
               <p className="text-[#0F52FF]">
@@ -178,7 +178,7 @@ export default function CheckOut() {
           ) : null}
         </div>
         <div>
-          <h2 className="text-xl text-[#00103C] font-bold py-2">
+          <h2 className="text-xl text-[#260056] font-bold py-2">
             Date de facturare
           </h2>
           <div className="flex flex-col justify-between">
@@ -237,8 +237,8 @@ export default function CheckOut() {
           <>
             <div className="sm:max-w-md max-w-xs">
               <div className="flex flex-row justify-between">
-                <p className="text-[#00103C] font-bold text-lg">Subtotal</p>
-                <p className="text-[#00103C] font-bold text-lg">
+                <p className="text-[#260056] font-bold text-lg">Subtotal</p>
+                <p className="text-[#260056] font-bold text-lg">
                   {cupon.length > 0 ? price - discount : price} lei
                 </p>
               </div>

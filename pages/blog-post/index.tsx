@@ -12,7 +12,7 @@ const BlogPost: NextPage = () => {
     return(
         <>
             <Head>
-                <title>Inspirely | BlogPost</title>
+                <title>Consultify | BlogPost</title>
             </Head>
             <section className="flex flex-col gap-5 pt-[6.25rem] bg-[#F5F5F5] pb-20 items-stretch justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 <Image

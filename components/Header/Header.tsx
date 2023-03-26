@@ -45,14 +45,14 @@ const Header = () => {
           role="main"
           className="z-[999] fixed left-[50%] w-full translate-x-[-50%] top-3 md:top-1"
         >
-          <div className="bg-[#00103C] mx-3 md:mx-[80px] xl:mx-[140px] 2xl:mx-[276px] px-10 rounded-[38.5px] flex justify-between items-center  py-3">
+          <div className="bg-[#260056] mx-3 md:mx-[80px] xl:mx-[140px] 2xl:mx-[276px] px-10 rounded-[38.5px] flex justify-between items-center  py-3">
             <Link href="/" className="flex items-center justify-center z-[99]">
               <Image
                 src="/images/logo.png"
                 width={120}
                 height={38}
                 className="align-middle"
-                alt="Inspirely logo"
+                alt="Consultify logo"
               />
             </Link>
             <div className="flex items-center gap-5 lg:hidden z-[99]">
@@ -79,7 +79,7 @@ const Header = () => {
             <ul
               className={`list-none absolute lg:relative gap-2 duration-300 z-[10] items-center ${
                 toggle
-                  ? "-left-1 w-[102vw] rounded-[38.5px_38.5px_0_0] translate-y-0 -top-4 pt-[70px] bg-[#00103C] lg:top-0 lg:w-auto lg:pt-0"
+                  ? "-left-1 w-[102vw] rounded-[38.5px_38.5px_0_0] translate-y-0 -top-4 pt-[70px] bg-[#260056] lg:top-0 lg:w-auto lg:pt-0"
                   : "translate-y-[-200%] lg:translate-y-0"
               } lg:flex`}
             >
