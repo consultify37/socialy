@@ -30,7 +30,7 @@ const OurHelp = () => {
                 </div>
             </div>
             {/* Cart */}
-            <WhyUsCart cardRef={cardRef} carouselRef={carouselRef} />
+            <WhyUsCart />
         </div>
     )
 }

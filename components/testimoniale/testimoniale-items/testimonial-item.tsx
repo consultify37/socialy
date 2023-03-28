@@ -7,7 +7,7 @@ const TestimonialItem = ({
   image,
 }: Omit<OurClientsTestimonial, "id">) => {
   return (
-    <article className="bg-[#011857] rounded-[16px] justify-center md:justify-between items-center flex-col md:flex-row gap-y-5 flex flex-1 pt-10 md:pt-5">
+    <article className="bg-[#36007B] rounded-[16px] justify-center md:justify-between items-center flex-col md:flex-row gap-y-5 flex flex-1 pt-10 md:pt-5">
       <div className="w-full md:w-200px px-7 md:px-5 py-2">
         <h3 className="text-white font-bold text-base md:max-w-[90%] md:text-[24px]">
           {text}

@@ -38,7 +38,7 @@ const WhyUsAbout = () => {
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
-                        <Image src='/images/about-home-1.png' alt='Why-Us' className='relative rounded-[35px] md:mr-10 z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/about-home-1.png' />
+                        <Image src='/images/home-about-1.png' alt='Why-Us' className='relative rounded-[35px] md:mr-10 z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
                         <img src='/images/triangle.png' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>

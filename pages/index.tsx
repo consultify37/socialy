@@ -8,7 +8,8 @@ import WhyUs from "../components/Home/Why-Us/Why-Us";
 import OurClients from "../components/Home/OurClients/OurClients";
 import Parteners from "../components/Home/Parteners/Parteners";
 import News from "../components/Home/News/News";
-
+import WhyUsCart from "../components/Home/Why-Us/Cart";
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -28,6 +29,20 @@ export default function Home() {
       {/* <WhyUs /> */}
       {/* What our clients say about us */}
       <OurClients />
+      
+      <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+          <div className="flex justify-start items-start">
+            <h3 className="text-lg text-[#8717F8] font-bold">
+              Consultify vine în ajutorul tău cu produse digitale pentru scalarea
+              afacerii tale
+            </h3>
+          </div>
+          {/* Cart */}
+          <WhyUsCart />
+          <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
+            vezi toate produsele
+          </Link>
+      </div>
       {/* Parteners */}
       {/* <Parteners /> */}
       {/* News */}

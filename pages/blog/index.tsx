@@ -48,7 +48,7 @@ export default function Testimoniale() {
             id: 1, categorie: 'fonduri-europene', image: '/images/blog-post-test-2.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
         },
         {
-            id: 1, categorie: 'fonduri-europene', image: '/images/about-home-2.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+            id: 1, categorie: 'fonduri-europene', image: '/images/home-about-2.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
         },
         {
             id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'

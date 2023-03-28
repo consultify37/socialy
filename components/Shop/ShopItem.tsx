@@ -51,7 +51,7 @@ const ShopItem = ({
               backCarousel(setScrollAmount, carouselRef, cardRef[0])
             }
           >
-            <AiOutlineArrowLeft className="text-[#260056]" size={18} />
+            <AiOutlineArrowLeft className="text-[#fff]" size={18} />
           </span>
           <span
             className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
@@ -59,7 +59,7 @@ const ShopItem = ({
               nextCarousel(setScrollAmount, carouselRef, cardRef[0])
             }
           >
-            <AiOutlineArrowRight className="text-[#260056]" size={18} />
+            <AiOutlineArrowRight className="text-[#fff]" size={18} />
           </span>
         </div>
       </div>

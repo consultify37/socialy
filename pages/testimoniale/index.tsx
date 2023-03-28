@@ -8,6 +8,8 @@ import { OurClientsTestimonial } from "../../components/Home/OurClients/OurClien
 import TestimonialItem from "../../components/testimoniale/testimoniale-items/testimonial-item";
 import NewsLetter from "../../components/global/newsletter";
 import Head from "next/head";
+import WhyUsCart from "../../components/Home/Why-Us/Cart";
+import Carousel from 'react-elastic-carousel'
 
 const Testimonials: OurClientsTestimonial[] = [
   {
@@ -163,92 +165,32 @@ export default function Testimoniale() {
             ghiduri digitale
           </div>
         </div>
-        <section
-          id="our-clients"
-          className="mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
-        >
-          <div className="flex w-full justify-between items-center gap-5">
-            <span
-              className="bg-[#8717F8] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer"
-              onClick={() =>
-                setStep((old) => (old <= 0 ? Testimonials.length - 1 : old - 1))
+        <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+          <div className='flex w-full justify-between items-center gap-5'>
+              <Carousel
+                  isRTL={false}
+              >
+              {
+                  Testimonials.map(testimonial =>
+                          <TestimonialItem key={testimonial.id} text={testimonial.text} by={testimonial.by} image={testimonial.image} />    
+                  )
               }
-            >
-              <MdOutlineNavigateBefore className="text-white" size={24} />
-            </span>
-            {Testimonials.filter((_, i) => i === step).map((testimonial) => (
-              <TestimonialItem
-                key={testimonial.id}
-                text={testimonial.text}
-                by={testimonial.by}
-                image={testimonial.image}
-              />
-            ))}
-            <span
-              className="bg-[#8717F8] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer"
-              onClick={() =>
-                setStep((old) => (old >= Testimonials.length - 1 ? 0 : old + 1))
-              }
-            >
-              <MdOutlineNavigateNext className="text-white" size={24} />
-            </span>
+              </Carousel>
           </div>
-          <div className="flex gap-3 mt-5 items-center justify-center mb-5">
-            {Testimonials.map((testimonial, i) =>
-              step === i ? (
-                <Image
-                  key={testimonial.id}
-                  src="/images/step-checked.png"
-                  className="cursor-pointer"
-                  width={10}
-                  height={20}
-                  alt="Step checked"
-                />
-              ) : (
-                <Image
-                  key={testimonial.id}
-                  src="/images/step-unchecked.png"
-                  className="cursor-pointer"
-                  width={10}
-                  height={20}
-                  alt="Step checked"
-                  onClick={() => setStep(i)}
-                />
-              )
-            )}
-          </div>
-        </section>
-        <div className="w-full mt-20 px-10">
-          <div className="flex justify-center items-center">
-            <h3 className="text-lg text-white mx-5 font-bold">
+      </section>
+        <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+          <div className="flex justify-start items-start">
+            <h3 className="text-lg text-white font-bold">
               Consultify vine în ajutorul tău cu produse digitale pentru scalarea
               afacerii tale
             </h3>
-            <div className="hidden md:flex gap-4 mr-10">
-              <span
-                className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
-                onClick={() =>
-                  backCarousel(setScrollAmount, carouselRef, cardRef)
-                }
-              >
-                <AiOutlineArrowLeft className="text-[#260056]" size={18} />
-              </span>
-              <span
-                className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
-                onClick={() =>
-                  nextCarousel(setScrollAmount, carouselRef, cardRef)
-                }
-              >
-                <AiOutlineArrowRight className="text-[#260056]" size={18} />
-              </span>
-            </div>
           </div>
           {/* Cart */}
-          {/* <WhyUsCart cardRef={cardRef} carouselRef={carouselRef} /> */}
+          <WhyUsCart />
         </div>
-        <button className="bg-[#8717F8] mt-5 px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
+        <Link href='/shop' className="bg-[#8717F8] mt-5 px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
           vezi toate produsele
-        </button>
+        </Link>
       </section>
       <NewsLetter />
     </>

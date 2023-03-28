@@ -26,20 +26,20 @@ const Item1About = () => {
         <div className="flex gap-4 mt-4 z-[2]">
           <Link
             href="/news"
-            className="p-2 bg-[#7000FF] text-[#260056] rounded-[28.5px] font-medium px-10 text-xs md:text-[16px]"
+            className="py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-medium px-14 text-xs md:text-[16px]"
           >
             noutăți
           </Link>
           <Link
             href="/despre"
-            className="p-2 bg-transparent text-white rounded-[28.5px] border-2 border-[#8717F8] font-medium px-10 text-xs md:text-[16px]"
+            className="py-4 bg-transparent text-white rounded-[28.5px] border-2 border-[#8717F8] font-medium px-14 text-xs md:text-[16px]"
           >
             despre noi
           </Link>
         </div>
       </div>
       <Image
-        src="/images/about-home-1.png"
+        src="/images/home-about-1.png"
         alt="About home 1"
         className="relative rounded-[28.5px] w-full md:w-[400px] mx-auto z-[4]"
         width={400}
