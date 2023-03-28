@@ -13,7 +13,7 @@ const ShopHeader = () => {
             </h1>
             <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
             <Image
-                src="/images/circle-hero-blue.png"
+                src="/images/circle-hero-right.svg"
                 alt="Hero blue circle"
                 width={200}
                 height={200}

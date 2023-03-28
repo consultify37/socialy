@@ -9,7 +9,7 @@ const NewsItem = ({cardRef, image, title, date} : Omit<NewsInterface, 'id'> & {c
             <h3 className='text-[#260056] font-bold text-base p-2'>Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice</h3>
             <div className='flex justify-between p-2 items-center'>
                 <p className='text-[#828282] text-sm font-bold'>{date}</p>
-                <Link href='/' className='text-[#0F52FF] font-bold text-sm underline'>citește mai mult</Link>
+                <Link href='/' className='text-[#8717F8] font-bold text-sm underline'>citește mai mult</Link>
             </div>
         </article>
     )

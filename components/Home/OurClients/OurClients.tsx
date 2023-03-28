@@ -38,7 +38,7 @@ const OurClients = () => {
     return(
         <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
             <div className='flex w-full justify-between items-center gap-5'>
-                <span className='bg-[#0F52FF] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer' onClick={() => setStep(old => old <= 0 ? Testimonials.length -1 : old - 1)}>
+                <span className='bg-[#8717F8] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer' onClick={() => setStep(old => old <= 0 ? Testimonials.length -1 : old - 1)}>
                     <MdOutlineNavigateBefore className='text-white' size={24} />
                 </span>
                 {
@@ -46,7 +46,7 @@ const OurClients = () => {
                         <TestimonialItem key={testimonial.id} text={testimonial.text} by={testimonial.by} image={testimonial.image} />    
                     )
                 }
-                <span className='bg-[#0F52FF] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer' onClick={() => setStep(old => old >= Testimonials.length - 1 ? 0 : old + 1)}>
+                <span className='bg-[#8717F8] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer' onClick={() => setStep(old => old >= Testimonials.length - 1 ? 0 : old + 1)}>
                     <MdOutlineNavigateNext className='text-white' size={24} />
                 </span>
             </div>

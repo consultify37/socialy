@@ -102,11 +102,11 @@ export default function Testimoniale() {
         id="feedback-firme"
         className="w-full flex flex-col items-center my-32 justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
       >
-        <h2 className="text-[#006CFF] font-medium text-base md:text-xl lg:text-2xl xl:text-4xl text-center">
-          Peste 100 de firme au avut incredere in noi
+        <h2 className="text-[#8717F8] font-medium text-base md:text-xl lg:text-2xl xl:text-4xl text-center">
+          Peste 5000 de firme au accesat fonduri europene cu ajutorul nostru
         </h2>
-        <h3 className="text-[#006CFF] font-medium text-base md:text-lg lg:text-xl xl:text-3xl">
-          Iata câteva din ele
+        <h3 className="text-[#8717F8] font-medium text-base md:text-lg lg:text-xl xl:text-3xl">
+          Iată câteva dintre ele
         </h3>
         <div className="flex mt-4 gap-5 flex-wrap justify-center">
           <Image
@@ -153,13 +153,13 @@ export default function Testimoniale() {
           Am ajutat clienți din toată România în diferite domenii
         </h2>
         <div className="flex gap-10 flex-col mt-10 md:flex-row justify-evenly items-center">
-          <div className="md:px-10 md:w-fit w-full text-center py-3 cursor-pointer transition-all hover:scale-[1.05] bg-white rounded-[28.5px] text-[#0F52FF]">
+          <div className="md:px-10 md:w-fit w-full text-center py-3 cursor-pointer transition-all hover:scale-[1.05] bg-white rounded-[28.5px] text-[#8717F8]">
             fonduri europene
           </div>
-          <div className="md:px-8 md:w-fit px-20 w-full text-center py-3 cursor-pointer transition-all hover:scale-[1.05] bg-[#0F52FF] rounded-[28.5px] text-white">
+          <div className="md:px-8 md:w-fit px-20 w-full text-center py-3 cursor-pointer transition-all hover:scale-[1.05] bg-[#8717F8] rounded-[28.5px] text-white">
             credite
           </div>
-          <div className="md:px-10 md:w-fit px-20 w-full text-center py-3 cursor-pointer transition-all hover:scale-[1.05] bg-[#0F52FF] rounded-[28.5px] text-white">
+          <div className="md:px-10 md:w-fit px-20 w-full text-center py-3 cursor-pointer transition-all hover:scale-[1.05] bg-[#8717F8] rounded-[28.5px] text-white">
             ghiduri digitale
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function Testimoniale() {
         >
           <div className="flex w-full justify-between items-center gap-5">
             <span
-              className="bg-[#0F52FF] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer"
+              className="bg-[#8717F8] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer"
               onClick={() =>
                 setStep((old) => (old <= 0 ? Testimonials.length - 1 : old - 1))
               }
@@ -185,7 +185,7 @@ export default function Testimoniale() {
               />
             ))}
             <span
-              className="bg-[#0F52FF] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer"
+              className="bg-[#8717F8] hidden w-[43px] h-[43px] md:flex items-center justify-center rounded-full cursor-pointer"
               onClick={() =>
                 setStep((old) => (old >= Testimonials.length - 1 ? 0 : old + 1))
               }
@@ -226,7 +226,7 @@ export default function Testimoniale() {
             </h3>
             <div className="hidden md:flex gap-4 mr-10">
               <span
-                className="bg-[#01EA88] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
+                className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
                 onClick={() =>
                   backCarousel(setScrollAmount, carouselRef, cardRef)
                 }
@@ -234,7 +234,7 @@ export default function Testimoniale() {
                 <AiOutlineArrowLeft className="text-[#260056]" size={18} />
               </span>
               <span
-                className="bg-[#01EA88] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
+                className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
                 onClick={() =>
                   nextCarousel(setScrollAmount, carouselRef, cardRef)
                 }
@@ -246,7 +246,7 @@ export default function Testimoniale() {
           {/* Cart */}
           {/* <WhyUsCart cardRef={cardRef} carouselRef={carouselRef} /> */}
         </div>
-        <button className="bg-[#0F52FF] mt-5 px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
+        <button className="bg-[#8717F8] mt-5 px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
           vezi toate produsele
         </button>
       </section>

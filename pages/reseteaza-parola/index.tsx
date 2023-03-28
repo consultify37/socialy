@@ -45,7 +45,7 @@ export default function Multumire() {
       </h1>
       <input
         type="password"
-        className="border-2 w-full my-4 border-[#0F52FF] p-3 max-w-[370px] rounded-[28.5px]"
+        className="border-2 w-full my-4 border-[#8717F8] p-3 max-w-[370px] rounded-[28.5px]"
         placeholder="parola"
         required
         name="password"
@@ -53,12 +53,12 @@ export default function Multumire() {
       />
       <input
         type="password"
-        className="border-2 w-full my-4 border-[#0F52FF] p-3 max-w-[370px] rounded-[28.5px]"
+        className="border-2 w-full my-4 border-[#8717F8] p-3 max-w-[370px] rounded-[28.5px]"
         placeholder="confirma parola"
         name="confirma-parola"
         onChange={(e) => setRepass(e.target.value)}
       />
-      <button className="py-4 w-full bg-[#0F52FF] mt-4 mb-24 h-auto text-white rounded-[28px] max-w-[370px] font-medium px-14 text-center text-sm md:text-[16px]">
+      <button className="py-4 w-full bg-[#8717F8] mt-4 mb-24 h-auto text-white rounded-[28px] max-w-[370px] font-medium px-14 text-center text-sm md:text-[16px]">
         resetează parola
       </button>
     </form>

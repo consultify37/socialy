@@ -27,17 +27,17 @@ const BlogPost: NextPage = () => {
                         <span className="text-base font-bold mr-8">
                             12 Decembrie 2022
                         </span>
-                        <span className="text-base font-bold text-[#0F52FF]">Marketing</span>
+                        <span className="text-base font-bold text-[#8717F8]">Marketing</span>
                     </div>
                     <div className="w-full flex md:justify-end items-center flex-row">
                         <span className="text-sm font-bold mr-8">
                             Distribuie pe social media
                         </span>
                         <div className="flex flex-row items-center">
-                            <div className="flex items-center bg-[#0F52FF] rounded-full mr-2 p-2">
+                            <div className="flex items-center bg-[#8717F8] rounded-full mr-2 p-2">
                                 <Image src="/images/instagram.svg" width={12} height={12} alt="instagram" />
                             </div>
-                            <div className="flex items-center bg-[#0F52FF] rounded-full mr-2 p-2">
+                            <div className="flex items-center bg-[#8717F8] rounded-full mr-2 p-2">
                                 <Image src="/images/facebook.svg" width={12} height={12} alt="facebook" />
                             </div>
                             <div
@@ -46,7 +46,7 @@ const BlogPost: NextPage = () => {
                                 setShareButtonText('Copied');
                                 navigator.clipboard.writeText(window.location.href);
                             }}
-                                className="flex items-center bg-[#0F52FF] rounded-full mr-2 p-2"
+                                className="flex items-center bg-[#8717F8] rounded-full mr-2 p-2"
                             >
                                 <Image src={shareButton} width={12} height={12} alt="link" />
                             </div>

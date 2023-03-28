@@ -16,7 +16,7 @@ const WhyUsAbout = () => {
                 <div className='flex justify-center flex-col md:flex-row items-center gap-10 w-full -mt-10 mb-20 z-[4]'>
                     <div className='flex flex-col gap-1 items-center justify-center'>
                         <span className='font-bold text-4xl text-white'>5</span>
-                        <span className='text-[#01EA88] font-semibold text-xl'>branduri partenere</span>
+                        <span className='text-[#fff] font-semibold text-xl'>branduri partenere</span>
                     </div>
                     <div className='flex flex-col gap-1 items-center justify-center'>
                         <span className='font-bold text-4xl text-white'>7+</span>
@@ -42,7 +42,7 @@ const WhyUsAbout = () => {
                         <img src='/images/triangle.png' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>
-                <Link href='/' className='p-2 bg-[#01EA88] text-[#260056] rounded-[28.5px] font-medium px-10 mt-5'>ce spun clienții noștri?</Link>
+                <Link href='/' className='p-2 bg-[#7000FF] text-[#260056] rounded-[28.5px] font-medium px-10 mt-5'>ce spun clienții noștri?</Link>
             </div>
         </section>
     )

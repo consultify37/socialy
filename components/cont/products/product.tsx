@@ -23,7 +23,7 @@ export default function ProductItem({
       <div className="flex flex-col">
         <h2 className="lg:text-lg text-sm text-[#260056] font-bold">{nume}</h2>
         <div className="flex flex-row">
-          <p className="text-[#0F52FF] py-1 lg:text-base text-sm">{pret} lei</p>
+          <p className="text-[#8717F8] py-1 lg:text-base text-sm">{pret} lei</p>
           {reducere && (
             <p className="text-[#7C9EF8] py-1 px-1 lg:text-sm text-xs line-through opacity-60">
               {reducere} lei
@@ -32,11 +32,11 @@ export default function ProductItem({
         </div>
         <div className="flex lg:flex-row flex-col">
           <Link passHref href={fisier}>
-            <p className="text-[#0F52FF] sm:text-base text-sm p-1 cursor-pointer underline">
+            <p className="text-[#8717F8] sm:text-base text-sm p-1 cursor-pointer underline">
               descarcă produsul
             </p>
           </Link>
-          <p className="text-[#0F52FF] sm:text-base text-sm p-1 cursor-pointer underline">
+          <p className="text-[#8717F8] sm:text-base text-sm p-1 cursor-pointer underline">
             descarcă factura
           </p>
         </div>

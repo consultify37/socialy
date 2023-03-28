@@ -48,7 +48,7 @@ const Header = () => {
           <div className="bg-[#260056] mx-3 md:mx-[80px] xl:mx-[140px] 2xl:mx-[276px] px-10 rounded-[38.5px] flex justify-between items-center  py-3">
             <Link href="/" className="flex items-center justify-center z-[99]">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.svg"
                 width={120}
                 height={38}
                 className="align-middle"
@@ -58,7 +58,7 @@ const Header = () => {
             <div className="flex items-center gap-5 lg:hidden z-[99]">
               <Link
                 href="/"
-                className="text-[#00103B] p-[8px] bg-[#01EA88] rounded-full"
+                className="text-[#fff] p-[8px] bg-[#7000FF] rounded-full"
               >
                 <AiOutlineShoppingCart onClick={handleCartOpening} size={20} />
               </Link>
@@ -153,21 +153,21 @@ const Header = () => {
                 {loggedIn ? (
                   <Link
                     href="/cont"
-                    className="font-medium bg-[#01EA88] p-2 px-6 pr-8 rounded-[23.5px] text-[#00103B] relative"
+                    className="font-medium bg-[#7000FF] p-2 px-6 pr-8 rounded-[23.5px] text-[#fff] relative"
                   >
                     Cont
                   </Link>
                 ) : (
                   <div
                     onClick={handleLoginModalOpening}
-                    className="font-medium bg-[#01EA88] p-2 px-6 pr-8 rounded-[23.5px] text-[#00103B] relative"
+                    className="font-medium bg-[#7000FF] p-2 px-6 pr-8 rounded-[23.5px] text-[#fff] relative"
                   >
                     login
                   </div>
                 )}
                 <span
                   onClick={handleCartOpening}
-                  className="text-[#00103B] p-[6px] bg-[#01EA88] absolute -right-5 rounded-full border-[4px] top-[-3px] border-[#00103B]"
+                  className="text-[#fff] p-[6px] bg-[#7000FF] absolute -right-5 rounded-full border-[4px] top-[-3px] border-[#260056]"
                 >
                   <AiOutlineShoppingCart size={24} />
                 </span>

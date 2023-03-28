@@ -41,12 +41,12 @@ const ShopItem = ({
   return (
     <div className="flex flex-col gap-4">
       <div key={categorie.id} className="flex justify-between w-full">
-        <h2 className="md:text-xl lg:text-2xl text-[#006CFF] font-bold max-w-[80%] md:max-w-[30%]">
+        <h2 className="md:text-xl lg:text-2xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[30%]">
           {categorie.nume}
         </h2>
         <div className="hidden md:flex gap-4 mr-10">
           <span
-            className="bg-[#01EA88] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
+            className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
             onClick={() =>
               backCarousel(setScrollAmount, carouselRef, cardRef[0])
             }
@@ -54,7 +54,7 @@ const ShopItem = ({
             <AiOutlineArrowLeft className="text-[#260056]" size={18} />
           </span>
           <span
-            className="bg-[#01EA88] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
+            className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
             onClick={() =>
               nextCarousel(setScrollAmount, carouselRef, cardRef[0])
             }
@@ -99,7 +99,7 @@ const ShopItem = ({
             </div>
             <div className="flex items-center justify-between px-2">
               <div className="flex flex-col gap-2 max-w-[85%]">
-                <p className="text-[#0F52FF] text-sm font-bold">
+                <p className="text-[#8717F8] text-sm font-bold">
                   {" "}
                   {item.pret} lei{" "}
                   {item.reducere && (

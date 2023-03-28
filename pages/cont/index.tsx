@@ -250,7 +250,7 @@ export default function ContPage() {
                 <input
                   onChange={handleEmailInput}
                   type="email"
-                  className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] w-full"
+                  className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] w-full"
                   placeholder="email"
                   required
                   name="email"
@@ -258,7 +258,7 @@ export default function ContPage() {
                 <input
                   onChange={handlePasswordInput}
                   type="password"
-                  className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] w-full"
+                  className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] w-full"
                   placeholder="parola"
                   required
                   name="password"
@@ -267,13 +267,13 @@ export default function ContPage() {
                   onChange={handleConfirmPasswordInput}
                   type="password"
                   required
-                  className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] w-full"
+                  className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] w-full"
                   placeholder="confirmă parola nouă"
                   name="confirm-password"
                 />
                 <button
                   onClick={sendUserSettingsInfo}
-                  className="px-10 py-4 rounded-[28.5px] w-full sm:w-32 my-3 bg-[#0F52FF] transition-all hover:scale-[1.05] text-white"
+                  className="px-10 py-4 rounded-[28.5px] w-full sm:w-32 my-3 bg-[#8717F8] transition-all hover:scale-[1.05] text-white"
                 >
                   aplică
                 </button>

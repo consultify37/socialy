@@ -232,7 +232,7 @@ console.log(questions)
             <span className="text-lg mb-2">Numele produsului</span>
             <input
               type="text"
-              className="rounded-xl border-[#0F52FF] text-ms border-2 p-2"
+              className="rounded-xl border-[#8717F8] text-ms border-2 p-2"
               value={nume}
               onChange={(e) => setNume(e.target.value)}
               required
@@ -243,7 +243,7 @@ console.log(questions)
               <span className="text-lg mb-2">Preț normal</span>
               <input
                 type="text"
-                className="rounded-xl w-full border-[#0F52FF] text-ms border-2 p-2"
+                className="rounded-xl w-full border-[#8717F8] text-ms border-2 p-2"
                 placeholder="ex: 129.99"
                 onChange={(e) => setPret(e.target.value)}
                 required
@@ -254,7 +254,7 @@ console.log(questions)
               <span className="text-lg mb-2">Preț la reducere</span>
               <input
                 type="text"
-                className="rounded-xl w-full border-[#0F52FF] text-ms border-2 p-2"
+                className="rounded-xl w-full border-[#8717F8] text-ms border-2 p-2"
                 placeholder="ex: 159.99"
                 onChange={(e) => setReducere(e.target.value)}
                 required
@@ -267,7 +267,7 @@ console.log(questions)
           <div className="flex flex-col w-2/5 w-full">
             <span className="text-lg mb-2">Descriere 1</span>
             <textarea
-              className="rounded-xl border-[#0F52FF] text-ms border-2 p-2"
+              className="rounded-xl border-[#8717F8] text-ms border-2 p-2"
               placeholder="ex: Ghid fonduri 2022"
               onChange={(e) => setDescriere_1(e.target.value)}
               value={descriere_1}
@@ -277,7 +277,7 @@ console.log(questions)
             <span className="text-lg mb-2">Categoria</span>
             <select
               name="ghiduri"
-              className="rounded-xl w-full border-[#0F52FF] text-ms border-2 p-2"
+              className="rounded-xl w-full border-[#8717F8] text-ms border-2 p-2"
               value={selectedValue}
               onChange={handleChange}
               required
@@ -294,7 +294,7 @@ console.log(questions)
           <div className="flex flex-col w-2/5 w-full">
             <span className="text-lg mb-2">Descriere 2</span>
             <textarea
-              className="rounded-xl border-[#0F52FF] text-ms border-2 p-2"
+              className="rounded-xl border-[#8717F8] text-ms border-2 p-2"
               placeholder="ex: Ghid fonduri 2022"
               onChange={(e) => setDescriere_2(e.target.value)}
               required
@@ -304,7 +304,7 @@ console.log(questions)
           <div className="flex flex-col w-2/5 w-full">
             <span className="text-lg mb-2">Poza de prezentare</span>
             <input
-              className="w-full rounded-xl border-[#0F52FF] text-ms border-2 cursor-pointer border-[#0F52FF] dark:text-gray-400 focus:outline-none"
+              className="w-full rounded-xl border-[#8717F8] text-ms border-2 cursor-pointer border-[#8717F8] dark:text-gray-400 focus:outline-none"
               type="file"
               accept=".png, .jpg, .jpeg, .svg, .webp"
               onChange={pozaPrezentare}
@@ -330,13 +330,13 @@ console.log(questions)
                 <input
                   type="text"
                   name="task"
-                  className="rounded-xl border-[#0F52FF] w-full rounded-r-none text-ms border-2 p-2"
+                  className="rounded-xl border-[#8717F8] w-full rounded-r-none text-ms border-2 p-2"
                   placeholder="Adauga motivul"
                   required
                 />
                 <button
                   type="submit"
-                  className="bg-[#0F52FF] w-[50px] flex justify-center items-center rounded-xl rounded-l-none"
+                  className="bg-[#8717F8] w-[50px] flex justify-center items-center rounded-xl rounded-l-none"
                 >
                   <img
                     className="w-[20px]"
@@ -388,17 +388,17 @@ console.log(questions)
                 <input
                   type="text"
                   name="question"
-                  className="rounded-xl w-full border-[#0F52FF] text-ms border-2 mb-4 p-2"
+                  className="rounded-xl w-full border-[#8717F8] text-ms border-2 mb-4 p-2"
                   placeholder="adaugă întrebarea"
                 />
                 <textarea
                   name="answer"
-                  className="rounded-xl w-full border-[#0F52FF] text-ms border-2 mb-4 p-2"
+                  className="rounded-xl w-full border-[#8717F8] text-ms border-2 mb-4 p-2"
                   placeholder="adaugă răspunsul"
                 ></textarea>
                 <button
                   type="submit"
-                  className="py-3 bg-[#0F52FF] mb-5 h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]"
+                  className="py-3 bg-[#8717F8] mb-5 h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]"
                 >
                   Add Q&A
                 </button>
@@ -459,14 +459,14 @@ console.log(questions)
           <input
             type="text"
             name="task"
-            className="rounded-xl border-[#0F52FF] w-full text-ms border-2 p-2 mb-4"
+            className="rounded-xl border-[#8717F8] w-full text-ms border-2 p-2 mb-4"
             placeholder="adaugă titlul"
             required
             value={titlu_adreseaza}
             onChange={(e) => setTitlu_adreseaza(e.target.value)}
           />
           <textarea
-            className="rounded-xl border-[#0F52FF] text-ms border-2 p-2"
+            className="rounded-xl border-[#8717F8] text-ms border-2 p-2"
             placeholder="adaugă descrierea"
             required
             value={desc_adreseaza}
@@ -477,7 +477,7 @@ console.log(questions)
           <div className="flex flex-col w-2/5 w-full">
             <span className="text-lg mb-2">Fișier</span>
             <input
-              className="w-full rounded-xl border-[#0F52FF] text-ms border-2 cursor-pointer border-[#0F52FF] dark:text-gray-400 focus:outline-none"
+              className="w-full rounded-xl border-[#8717F8] text-ms border-2 cursor-pointer border-[#8717F8] dark:text-gray-400 focus:outline-none"
               type="file"
               accept="pdf mp4"
               onChange={fisier}
@@ -486,7 +486,7 @@ console.log(questions)
           <button
             onClick={upload}
             type="submit"
-            className="py-3 bg-[#0F52FF] h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]"
+            className="py-3 bg-[#8717F8] h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]"
           >
             Adaugă produsul
           </button>

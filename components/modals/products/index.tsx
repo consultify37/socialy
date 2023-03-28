@@ -22,7 +22,7 @@ export default function Product({img, nume, pret, reducere}: ProductProps) {
           {nume}
         </h2>
         <div className="flex flex-row items-center">
-          <p className="text-[#0F52FF] py-1 lg:text-base text-sm">{pret} lei</p>
+          <p className="text-[#8717F8] py-1 lg:text-base text-sm">{pret} lei</p>
           <p className="text-[#7C9EF8] py-1 px-1 lg:text-sm text-xs line-through opacity-60">
             {reducere} lei
           </p>

@@ -12,7 +12,7 @@ export const OrderedProductsButton = ({
       onClick={handleClick}
       className={`px-10 py-4 rounded-[12px] w-60 my-3 ${
         whichSectionToShow === "comenzi"
-          ? "bg-[#0F52FF] text-white"
+          ? "bg-[#8717F8] text-white"
           : "bg-slate-50 text-[#260056]"
       } transition-all hover:scale-[1.05] flex flex-row justify-start align-center`}
     >
@@ -38,7 +38,7 @@ export const FavoriteProductsButton = ({
       onClick={handleClick}
       className={`px-10 py-4 rounded-[12px] w-60 my-3 ${
         whichSectionToShow === "favorite"
-          ? "bg-[#0F52FF] text-white"
+          ? "bg-[#8717F8] text-white"
           : "bg-slate-50 text-[#260056]"
       } transition-all hover:scale-[1.05] flex flex-row justify-start align-center`}
     >
@@ -64,7 +64,7 @@ export const AccountSettingButton = ({
       onClick={handleClick}
       className={`px-10 py-4 rounded-[12px] w-60 my-3 ${
         whichSectionToShow === "setari"
-          ? "bg-[#0F52FF] text-white"
+          ? "bg-[#8717F8] text-white"
           : "bg-slate-50 text-[#260056]"
       } transition-all hover:scale-[1.05] flex flex-row justify-start align-center`}
     >

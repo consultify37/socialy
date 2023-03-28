@@ -43,10 +43,10 @@ const ToDoApp: React.FC = () => {
         <input
             type="text"
             name="task"
-            className='rounded-xl border-[#0F52FF] w-full rounded-r-none text-ms border-2 p-2'
+            className='rounded-xl border-[#8717F8] w-full rounded-r-none text-ms border-2 p-2'
             placeholder='Adauga motivul'
         />
-        <button type="submit" className='bg-[#0F52FF] w-[50px] flex justify-center items-center rounded-xl rounded-l-none'>
+        <button type="submit" className='bg-[#8717F8] w-[50px] flex justify-center items-center rounded-xl rounded-l-none'>
             <img className='w-[20px]' src="/images/plus.svg" alt="plus-button" />
         </button>
       </form>

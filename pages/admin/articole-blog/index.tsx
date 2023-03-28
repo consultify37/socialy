@@ -80,7 +80,7 @@ export default function ProductsPanel() {
             <h2 className="text-4xl font-bold">Toate articolele</h2>
             <Link
                 href='/admin/adauga-produs'
-                className='py-3 bg-[#0F52FF] text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]'
+                className='py-3 bg-[#8717F8] text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]'
             >
                 Articol nou
             </Link>

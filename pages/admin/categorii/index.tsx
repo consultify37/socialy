@@ -139,18 +139,18 @@ export default function Categories() {
                                 type="text"
                                 value={todoText}
                                 onChange={event => setTodoText(event.target.value)} 
-                                className="rounded-xl border-[#0F52FF] w-full text-ms border-2 mb-5 p-3 px-4" 
+                                className="rounded-xl border-[#8717F8] w-full text-ms border-2 mb-5 p-3 px-4" 
                                 placeholder="ex: Template-uri"
                             />
                             <input
                                 type="file"
-                                className="w-full rounded-xl mb-5 border-[#0F52FF] text-ms border-2 cursor-pointer border-[#0F52FF] dark:text-gray-400 focus:outline-none" 
+                                className="w-full rounded-xl mb-5 border-[#8717F8] text-ms border-2 cursor-pointer border-[#8717F8] dark:text-gray-400 focus:outline-none" 
                                 onChange={handleImageChange} 
                                 accept=".png, .jpg, .jpeg, .svg, .webp"
                             />
                             <button 
                                 type="submit"
-                                className='py-3 bg-[#0F52FF] w-[fit-content] h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]'
+                                className='py-3 bg-[#8717F8] w-[fit-content] h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]'
                             >
                                 Adaugă categorie
                             </button>
@@ -185,7 +185,7 @@ export default function Categories() {
                 <button
                     type="submit"
                     onClick={upload}
-                    className='py-3 bg-[#0F52FF] w-[fit-content] h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]'
+                    className='py-3 bg-[#8717F8] w-[fit-content] h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]'
                 >
                     save
                 </button>

@@ -145,14 +145,14 @@ export default function CheckOut() {
               <h2 className="text-xl text-[#260056] font-bold py-2">
                 Creeză-ți contul
               </h2>
-              <p className="text-[#0F52FF]">
+              <p className="text-[#8717F8]">
                 Ai deja un cont?{" "}
                 <span className="underline cursor-pointer">Loghează-te</span>
               </p>
               <div className="flex flex-col justify-between">
                 <input
                   type="email"
-                  className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                  className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                   placeholder="email"
                   required
                   name="email"
@@ -160,7 +160,7 @@ export default function CheckOut() {
                 />
                 <input
                   type="password"
-                  className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                  className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                   placeholder="parola"
                   required
                   name="password"
@@ -168,7 +168,7 @@ export default function CheckOut() {
                 />
                 <input
                   type="password"
-                  className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                  className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                   placeholder="confirma parola"
                   name="confirm-password"
                   onChange={(e) => setConfirmPassword(e.target.value)}
@@ -184,7 +184,7 @@ export default function CheckOut() {
           <div className="flex flex-col justify-between">
             <input
               type="text"
-              className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+              className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
               placeholder="numele complet"
               required
               name="numele complet"
@@ -192,7 +192,7 @@ export default function CheckOut() {
             />
             <input
               type="text"
-              className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+              className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
               placeholder="țară"
               required
               name="țară"
@@ -200,7 +200,7 @@ export default function CheckOut() {
             />
             <input
               type="text"
-              className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+              className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
               placeholder="adresa completă"
               name="adresa completă"
               required
@@ -208,14 +208,14 @@ export default function CheckOut() {
             />
             <input
               type="text"
-              className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+              className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
               placeholder="CUI (opțional)"
               name="CUI"
               onChange={(e) => setCui(e.target.value)}
             />
             <input
               type="text"
-              className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+              className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
               placeholder="Nume companiei ( opțional )"
               name="Nume companiei"
               onChange={(e) => setCompanie(e.target.value)}
@@ -245,7 +245,7 @@ export default function CheckOut() {
               <div className="flex flex-col sm:flex-row justify-between">
                 <input
                   type="text"
-                  className="border-2 my-4 sm:mr-6 border-[#0F52FF] p-3 rounded-[28.5px]"
+                  className="border-2 my-4 sm:mr-6 border-[#8717F8] p-3 rounded-[28.5px]"
                   placeholder="cod promotional"
                   name="cod promotional"
                   onChange={(e) => setCupon(e.target.value)}
@@ -253,7 +253,7 @@ export default function CheckOut() {
                 />
                 <button
                   onClick={handleDiscountClick}
-                  className="px-10 py-4 rounded-[28.5px] w-full sm:w-32 my-3 bg-[#0F52FF] transition-all hover:scale-[1.05] text-white"
+                  className="px-10 py-4 rounded-[28.5px] w-full sm:w-32 my-3 bg-[#8717F8] transition-all hover:scale-[1.05] text-white"
                 >
                   aplică
                 </button>
@@ -261,7 +261,7 @@ export default function CheckOut() {
             </div>
             <button
               type="submit"
-              className="px-10 py-4 rounded-[28.5px] w-full my-3 bg-[#0F52FF] transition-all hover:scale-[1.05] text-white"
+              className="px-10 py-4 rounded-[28.5px] w-full my-3 bg-[#8717F8] transition-all hover:scale-[1.05] text-white"
             >
               Continuă către plată
             </button>

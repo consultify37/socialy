@@ -155,7 +155,7 @@ export default function ProductsPanel() {
           </div>
           <Link
             href="/admin/adauga-produs"
-            className="py-3 bg-[#0F52FF] text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]"
+            className="py-3 bg-[#8717F8] text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]"
           >
             Produs nou
           </Link>

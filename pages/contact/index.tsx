@@ -96,7 +96,7 @@ export default function Contact() {
                             <input
                                 required 
                                 type="text"
-                                className="rounded-xl w-full bg-[#F2F4FF] border-[#0F52FF] text-ms border-2 p-2" 
+                                className="rounded-xl w-full bg-[#F2F4FF] border-[#8717F8] text-ms border-2 p-2" 
                                 placeholder="ex: Popescu"
                                 onChange={(e) => setNume(e.target.value)}
                             />
@@ -108,7 +108,7 @@ export default function Contact() {
                             <input
                                 required 
                                 type="text"
-                                className="rounded-xl w-full bg-[#F2F4FF] border-[#0F52FF] text-ms border-2 p-2" 
+                                className="rounded-xl w-full bg-[#F2F4FF] border-[#8717F8] text-ms border-2 p-2" 
                                 placeholder="ex: Andrei"
                                 onChange={(e) => setPrenume(e.target.value)}
                             />
@@ -122,7 +122,7 @@ export default function Contact() {
                             <input
                                 required 
                                 type="number"
-                                className="rounded-xl w-full bg-[#F2F4FF] border-[#0F52FF] text-ms border-2 p-2" 
+                                className="rounded-xl w-full bg-[#F2F4FF] border-[#8717F8] text-ms border-2 p-2" 
                                 placeholder="ex: 07XX XXX XXX"
                                 onChange={(e) => setTelefon(e.target.value)}
                             />
@@ -134,7 +134,7 @@ export default function Contact() {
                             <input
                                 required 
                                 type="text"
-                                className="rounded-xl w-full bg-[#F2F4FF] border-[#0F52FF] text-ms border-2 p-2" 
+                                className="rounded-xl w-full bg-[#F2F4FF] border-[#8717F8] text-ms border-2 p-2" 
                                 placeholder="ex: exemplu@email.com"
                                 onChange={(e) => setEmail(e.target.value)}
                             />
@@ -145,7 +145,7 @@ export default function Contact() {
                             Cu ce te putem ajuta?
                         </span>
                         <textarea
-                            className="rounded-xl w-full bg-[#F2F4FF] h-48 border-[#0F52FF] text-ms border-2 p-2" 
+                            className="rounded-xl w-full bg-[#F2F4FF] h-48 border-[#8717F8] text-ms border-2 p-2" 
                             placeholder="scrie aici mesajul tău"
                             required
                             onChange={(e) => setMesaj(e.target.value)}
@@ -155,11 +155,11 @@ export default function Contact() {
                         <div className="flex items-center md:mb-0 mb-6 mr-6">
                             <input 
                                 checked={isChecked} onChange={handleChange}
-                                required id="link-checkbox" type="checkbox" value="" className="w-4 cursor-pointer h-4 text-[#260056] rounded border-[2px] bg-[#F2F4FF] border-[#0F52FF] focus:ring-blue-500" />
+                                required id="link-checkbox" type="checkbox" value="" className="w-4 cursor-pointer h-4 text-[#260056] rounded border-[2px] bg-[#F2F4FF] border-[#8717F8] focus:ring-blue-500" />
                             <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-[#260056]">Accept <a href="#" className="text-[#260056] underline">Termenii și Condițiile</a></label>
                         </div>
                         <button                      
-                            className='py-4 bg-[#0F52FF] h-auto text-white rounded-[28px] font-medium px-14 text-center text-sm md:text-[16px]'>
+                            className='py-4 bg-[#8717F8] h-auto text-white rounded-[28px] font-medium px-14 text-center text-sm md:text-[16px]'>
                             trimite
                         </button>
                     </div>
@@ -170,7 +170,7 @@ export default function Contact() {
                     <h2 className="text-xl text-center mb-10 text-white">Sau ne poți găsi și aici</h2>
                     <div className="flex md:flex-row flex-col w-full">
                         <div className="flex flex-row w-full mb-5 md:mb-0 justify-center">
-                            <div className="flex items-center w-[58px] bg-[#01EA88] mr-4 p-3 rounded-xl justify-center">
+                            <div className="flex items-center w-[58px] bg-[#7000FF] mr-4 p-3 rounded-xl justify-center">
                                 <Image width={30} height={30} src="/images/mail.svg" alt="mail" />
                             </div>
                             <div className="flex flex-col">
@@ -181,7 +181,7 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="flex flex-row w-full justify-center">
-                            <div className="flex items-center w-[58px] bg-[#0F52FF] mr-4 p-3 rounded-xl justify-center">
+                            <div className="flex items-center w-[58px] bg-[#8717F8] mr-4 p-3 rounded-xl justify-center">
                                 <Image width={30} height={30} src="/images/phone.svg" alt="mail" />
                             </div>
                             <div className="flex flex-col">

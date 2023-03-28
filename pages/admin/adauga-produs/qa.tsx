@@ -51,16 +51,16 @@ const QAApp: React.FC = () => {
         <input
             type="text"
             name="question" 
-            className="rounded-xl w-full border-[#0F52FF] text-ms border-2 mb-4 p-2" 
+            className="rounded-xl w-full border-[#8717F8] text-ms border-2 mb-4 p-2" 
             placeholder="adaugă întrebarea"
         />
         <textarea  name="answer"
-        className="rounded-xl w-full border-[#0F52FF] text-ms border-2 mb-4 p-2" 
+        className="rounded-xl w-full border-[#8717F8] text-ms border-2 mb-4 p-2" 
         placeholder="adaugă răspunsul"
         ></textarea>
         <button 
             type="submit"
-            className='py-3 bg-[#0F52FF] mb-5 h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]'
+            className='py-3 bg-[#8717F8] mb-5 h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]'
         >
             Add Q&A
         </button>

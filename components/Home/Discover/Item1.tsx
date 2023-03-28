@@ -8,7 +8,7 @@ const DiscoverItem1 = () => {
                 <div className='w-full md:w-[48.5%] px-[19px] py-[25px] flex flex-col justify-center items-center md:justify-start md:items-start'>
                     <h3 className='text-white text-[24px] xl:text-4xl font-bold self-start'>LOGO CONSULTIFY</h3>
                     <p className='text-white font-bold text-[20px] md:text-lg lg:text-xl xl:text-2xl mt-2'>Aplică pentru fonduri europene și finanțează-ți afacerea</p>
-                    <Link href='/' className='py-3 bg-[#0F52FF] text-white rounded-[28.5px] font-medium mr-auto mt-5 px-10 min-w-[250px] text-center text-sm md:text-[16px]'>
+                    <Link href='/' className='py-3 bg-[#8717F8] text-white rounded-[28.5px] font-medium mr-auto mt-5 px-10 min-w-[250px] text-center text-sm md:text-[16px]'>
                         vreau fonduri europene
                     </Link>
                 </div>

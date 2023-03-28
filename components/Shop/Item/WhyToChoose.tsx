@@ -9,7 +9,7 @@ const WhyToChoose = ({data} : {data: WhyToChooseItems[]}) => {
                     {
                         data.slice(0, data.length/2).map(item =>
                             <div className='flex gap-3 items-center' key={item.id}>
-                                <p className='w-8 h-8 rounded-full flex items-center justify-center text-base text-[#260056] flex-shrink-0' style={{background: '#01EA88'}}>{item.id}</p>
+                                <p className='w-8 h-8 rounded-full flex items-center justify-center text-base text-[#260056] flex-shrink-0' style={{background: '#7000FF'}}>{item.id}</p>
                                 <p className='font-semibold text-base text-[#260056]'>{item.task}</p>
                             </div>    
                         )
@@ -19,7 +19,7 @@ const WhyToChoose = ({data} : {data: WhyToChooseItems[]}) => {
                     {
                         data.slice(data.length/2, data.length).map(item =>
                             <div className='flex gap-3 items-center' key={item.id}>
-                                <p className='w-8 h-8 rounded-full flex items-center justify-center text-base text-[#260056] flex-shrink-0'  style={{background: '#01EA88'}}>{item.id}</p>
+                                <p className='w-8 h-8 rounded-full flex items-center justify-center text-base text-[#260056] flex-shrink-0'  style={{background: '#7000FF'}}>{item.id}</p>
                                 <p className='font-semibold text-base text-[#260056]'>{item.task}</p>
                             </div>    
                         )

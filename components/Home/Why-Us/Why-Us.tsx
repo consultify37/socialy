@@ -29,7 +29,7 @@ const WhyUs = () => {
                         <img src='/images/circle.png' className='absolute bottom-2 md:-bottom-2 left-60 md:left-72 z-[0] w-[350px] md:w-[400px]' width={400} height={300} alt='circle-svg' />
                     </div>
                 </div>
-                <Link href='/' className='py-3 bg-[#01EA88] text-[#260056] text-[16px] rounded-[28.5px] font-medium px-16 mt-5'>despre noi</Link>
+                <Link href='/' className='py-3 bg-[#7000FF] text-[#260056] text-[16px] rounded-[28.5px] font-medium px-16 mt-5'>despre noi</Link>
                 <OurHelp />
             </div>
         </section>

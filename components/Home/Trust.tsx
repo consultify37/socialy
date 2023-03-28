@@ -6,11 +6,11 @@ const TrustSRL = () => {
       id="feedback-firme"
       className="w-full flex flex-col items-center mt-[6.25rem] justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
     >
-      <h2 className="text-[#006CFF] font-medium text-base md:text-xl lg:text-2xl xl:text-4xl text-center">
-        Peste 100 de firme au avut incredere in noi
+      <h2 className="text-[#8717F8] font-medium text-base md:text-xl lg:text-2xl xl:text-4xl text-center">
+        Peste 5000 de firme au accesat fonduri europene cu ajutorul nostru
       </h2>
-      <h3 className="text-[#006CFF] font-medium text-base md:text-lg lg:text-xl xl:text-3xl">
-        Iata câteva din ele
+      <h3 className="text-[#8717F8] font-medium text-base md:text-lg lg:text-xl xl:text-3xl">
+        Iată câteva dintre ele
       </h3>
       <div className="flex mt-4 gap-5 flex-wrap justify-center">
         <Image

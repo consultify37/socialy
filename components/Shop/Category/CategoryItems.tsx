@@ -118,7 +118,7 @@ const CategoryItems = () => {
                         </div>
                         <div className="flex items-center justify-between px-2">
                             <div className="flex flex-col gap-2 max-w-[85%]">
-                                <p className="text-[#0F52FF] text-sm font-bold">
+                                <p className="text-[#8717F8] text-sm font-bold">
                                     {product.pret} lei{" "}
                                     {product.reducere && (
                                         <s className="text-[#7C9EF8] font-thin">
@@ -130,7 +130,7 @@ const CategoryItems = () => {
                                     {product.nume}
                                 </h4>
                             </div>
-                            <span className="w-10 h-10 bg-[#0F52FF] flex items-center justify-center rounded-full text-white flex-shrink-0">
+                            <span className="w-10 h-10 bg-[#8717F8] flex items-center justify-center rounded-full text-white flex-shrink-0">
                                 <AiOutlineShoppingCart />
                             </span>
                         </div>

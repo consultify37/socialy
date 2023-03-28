@@ -11,21 +11,21 @@ const HowWorks = () => {
                 <div className="p-6">
                     <div className='w-[100%] mx-auto bg-[#001F77] rounded-[17px] grid grid-cols-1 md:grid-cols-3 gap-3 px-5 py-4 z-[6] relative'>
                         <article className='flex items-center gap-3'>
-                            <p className='h-10 w-10 bg-[#01EA88] text-white font-bold rounded-full flex items-center justify-center flex-shrink-0'>1</p>
+                            <p className='h-10 w-10 bg-[#7000FF] text-white font-bold rounded-full flex items-center justify-center flex-shrink-0'>1</p>
                             <div>
                                 <h3 className='font-bold text-base text-white'>Cum plătești</h3>
                                 <p className='text-sm text-white font-normal max-w-[80%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </article>
                         <article className='flex items-center gap-3'>
-                            <p className='w-10 h-10 bg-[#01EA88] text-white font-bold rounded-full flex items-center justify-center flex-shrink-0'>2</p>
+                            <p className='w-10 h-10 bg-[#7000FF] text-white font-bold rounded-full flex items-center justify-center flex-shrink-0'>2</p>
                             <div>
                                 <h3 className='font-bold text-base text-white'>Cum plătești</h3>
                                 <p className='text-sm text-white font-normal max-w-[80%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </article>
                         <article className='flex items-center gap-3'>
-                            <p className='w-10 h-10 bg-[#01EA88] text-white font-bold rounded-full flex items-center justify-center flex-shrink-0'>3</p>
+                            <p className='w-10 h-10 bg-[#7000FF] text-white font-bold rounded-full flex items-center justify-center flex-shrink-0'>3</p>
                             <div>
                                 <h3 className='font-bold text-base text-white'>Cum plătești</h3>
                                 <p className='text-sm text-white font-normal max-w-[80%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

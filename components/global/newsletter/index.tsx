@@ -60,13 +60,13 @@ export default function NewsLetter() {
           </h2>
           <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
             <input
-              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#01EA88] rounded-[22px]"
+              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-[22px]"
               type="email"
               placeholder={newsletter}
               required
               onChange={(e) => setNewsletter(e.target.value)}
             />
-            <button type="submit" className="text-[#260056] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-[#260056] bg-[#01EA88] py-5 px-10 text-sm rounded-[22px]">
+            <button type="submit" className="text-[#260056] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-[22px]">
               Mă abonez
             </button>
           </form>

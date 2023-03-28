@@ -151,7 +151,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
             />
           </div>
           <div className="py-10">
-            <p className="text-[#0F52FF] text-center">
+            <p className="text-[#8717F8] text-center">
               Nu ai un cont?{" "}
               <span
                 onClick={handleSetRegisterModal}
@@ -166,7 +166,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
             >
               <input
                 type="email"
-                className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                 placeholder="email"
                 required
                 name="email"
@@ -174,7 +174,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
               />
               <input
                 type="password"
-                className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                 placeholder="parola"
                 required
                 name="password"
@@ -182,11 +182,11 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
               />
               <p
                 onClick={handleSetForgotPasswordModal}
-                className="text-[#0F52FF] text-center cursor-pointer"
+                className="text-[#8717F8] text-center cursor-pointer"
               >
                 Am uitat parola
               </p>
-              <button className="py-4 rounded-[28.5px] w-full my-3 bg-[#0F52FF] transition-all hover:scale-[1.05] text-white">
+              <button className="py-4 rounded-[28.5px] w-full my-3 bg-[#8717F8] transition-all hover:scale-[1.05] text-white">
                 login
               </button>
             </form>
@@ -205,7 +205,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
             />
           </div>
           <div className="py-10">
-            <p className="text-[#0F52FF] text-center">
+            <p className="text-[#8717F8] text-center">
               Ai deja un cont?{" "}
               <span
                 onClick={handleSetLoginModal}
@@ -220,7 +220,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
             >
               <input
                 type="text"
-                className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                 placeholder="name"
                 required
                 name="name"
@@ -228,7 +228,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
               />
               <input
                 type="email"
-                className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                 placeholder="email"
                 required
                 name="email"
@@ -236,7 +236,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
               />
               <input
                 type="password"
-                className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                 placeholder="parola"
                 required
                 name="password"
@@ -244,14 +244,14 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
               />
               <input
                 type="password"
-                className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                 placeholder="confirm password"
                 required
                 name="confirm-password"
                 onChange={(e) => setRegisterRePassword(e.target.value)}
               />
 
-              <button className="py-4 rounded-[28.5px] w-full my-3 bg-[#0F52FF] transition-all hover:scale-[1.05] text-white">
+              <button className="py-4 rounded-[28.5px] w-full my-3 bg-[#8717F8] transition-all hover:scale-[1.05] text-white">
                 register
               </button>
             </form>
@@ -275,7 +275,7 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
               className="flex flex-col items-center justify-between"
             >
               <label
-                className="md:max-w-[47ch] max-w-[30ch] text-[#0F52FF]"
+                className="md:max-w-[47ch] max-w-[30ch] text-[#8717F8]"
                 htmlFor=""
               >
                 Completează câmpul de mai jos cu adresa ta de email și accesează
@@ -283,13 +283,13 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
               </label>
               <input
                 type="email"
-                className="border-2 my-4 border-[#0F52FF] p-3 rounded-[28.5px] sm:min-w-[450px]"
+                className="border-2 my-4 border-[#8717F8] p-3 rounded-[28.5px] sm:min-w-[450px]"
                 placeholder="email"
                 required
                 name="email"
                 onChange={(e) => setRecmail(e.target.value)}
               />
-              <button className="py-4 rounded-[28.5px] w-full my-3 bg-[#0F52FF] transition-all hover:scale-[1.05] text-white">
+              <button className="py-4 rounded-[28.5px] w-full my-3 bg-[#8717F8] transition-all hover:scale-[1.05] text-white">
                 trimite link-ul
               </button>
             </form>
@@ -335,7 +335,7 @@ export function CartModal({ handleModalClosingClick }: ModalProps) {
                   {item.name}
                 </h2>
                 <div className="flex flex-row items-center">
-                  <p className="text-[#0F52FF] py-1 lg:text-base text-sm mr-2">
+                  <p className="text-[#8717F8] py-1 lg:text-base text-sm mr-2">
                     {item.price} lei
                   </p>
                   {item.initial && (
@@ -374,7 +374,7 @@ export function CartModal({ handleModalClosingClick }: ModalProps) {
           </p>
         </div>
         <Link href={"/check-out"} passHref onClick={handleModalClosingClick}>
-          <button className="py-4 rounded-[28.5px] w-full my-3 bg-[#0F52FF] transition-all hover:scale-[1.05] text-white">
+          <button className="py-4 rounded-[28.5px] w-full my-3 bg-[#8717F8] transition-all hover:scale-[1.05] text-white">
             continuă cu plata
           </button>
         </Link>

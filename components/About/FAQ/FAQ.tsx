@@ -18,7 +18,7 @@ const FAQAbout = ({
     };
     return(
         <section id='faq' className='px-7 md:px-[80px] xl:px-[200px] 2xl:px-[276px] w-full flex flex-col items-center gap-2 mt-[6.25rem]'>
-            <h2 className='md:text-xl lg:text-2xl xl:text-4xl text-[#006CFF] font-medium max-w-[80%] md:max-w-[60%] mb-5'>Întrebări frecvente</h2>
+            <h2 className='md:text-xl lg:text-2xl xl:text-4xl text-[#8717F8] font-medium max-w-[80%] md:max-w-[60%] mb-5'>Întrebări frecvente</h2>
             {
                 intrebari.map((faq: { id: number; question: any; answer: any; }) =>
                     <article key={faq.id} className='w-full rounded-[8px] bg-[#F2F4FF]'>

@@ -61,14 +61,14 @@ export default function Categories() {
             <form onSubmit={handleSubmit}>
               <span className="text-lg mb-2">Text cupon</span>
               <input
-                className="rounded-xl border-[#0F52FF] w-full text-ms border-2 mb-5 p-3 px-4"
+                className="rounded-xl border-[#8717F8] w-full text-ms border-2 mb-5 p-3 px-4"
                 type="text"
                 value={text}
                 onChange={(event) => setText(event.target.value)}
               />
               <span className="text-lg mb-2">Tipul cupon</span>
               <select
-                className="rounded-xl border-[#0F52FF] w-full text-ms border-2 mb-5 p-3 px-4"
+                className="rounded-xl border-[#8717F8] w-full text-ms border-2 mb-5 p-3 px-4"
                 onChange={(event) =>
                   setTip(event.target.value as "suma" | "procent")
                 }
@@ -80,7 +80,7 @@ export default function Categories() {
               </select>
               <span className="text-lg mb-2">Reducerea</span>
               <input
-                className="rounded-xl border-[#0F52FF] w-full text-ms border-2 mb-5 p-3 px-4"
+                className="rounded-xl border-[#8717F8] w-full text-ms border-2 mb-5 p-3 px-4"
                 type="text"
                 placeholder="Introdu doar numarul"
                 value={reducere}
@@ -88,7 +88,7 @@ export default function Categories() {
               />
               <span className="text-lg mb-2">Durata ( în zile )</span>
               <input
-                className="rounded-xl border-[#0F52FF] w-full text-ms border-2 mb-5 p-3 px-4"
+                className="rounded-xl border-[#8717F8] w-full text-ms border-2 mb-5 p-3 px-4"
                 placeholder="Introdu nr de zile"
                 type="text"
                 onChange={(event) => {
@@ -97,7 +97,7 @@ export default function Categories() {
               />
               <button
                 type="submit"
-                className="py-3 bg-[#0F52FF] w-[fit-content] h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]"
+                className="py-3 bg-[#8717F8] w-[fit-content] h-auto text-white rounded-[10px] font-medium px-10 text-center text-sm md:text-[16px]"
               >
                 Adaugă cupon
               </button>

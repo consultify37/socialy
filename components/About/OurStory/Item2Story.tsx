@@ -33,7 +33,7 @@ const Item2Story = () => {
         <div className="flex gap-4 mt-4">
           <Link
             href="/testimoniale"
-            className="p-2 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#01EA88] font-medium px-10 text-xs md:text-base"
+            className="p-2 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#7000FF] font-medium px-10 text-xs md:text-base"
           >
             testimoniale
           </Link>

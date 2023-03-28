@@ -151,11 +151,11 @@ const ItemViewContent = ({
           {initial && (
             <s className="font-thin text-sm text-[#7C9EF8]">{initial} lei</s>
           )}
-          <p className="font-bold text-base md:text-xl text-[#0F52FF] mb-5">
+          <p className="font-bold text-base md:text-xl text-[#8717F8] mb-5">
             {price} lei
           </p>
           <button
-            className="outline-none border-none text-white bg-[#0F52FF] font-semibold px-20 py-3 mr-auto rounded-[28.5px] mb-10"
+            className="outline-none border-none text-white bg-[#8717F8] font-semibold px-20 py-3 mr-auto rounded-[28.5px] mb-10"
             onClick={addToCart}
           >
             adaugă în coș

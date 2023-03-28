@@ -27,7 +27,7 @@ export default function ProductItem({
       <div className="flex flex-col">
         <h2 className="lg:text-lg text-sm text-[#260056] font-bold">{name}</h2>
         <div className="flex flex-row">
-          <p className="text-[#0F52FF] py-1 lg:text-base text-sm">
+          <p className="text-[#8717F8] py-1 lg:text-base text-sm">
             {price} lei
           </p>
           {initial && (

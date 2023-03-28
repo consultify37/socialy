@@ -15,11 +15,11 @@ const Item2About = () => {
                     </p>
                     <ul className='list-none mt-4'>
                         <li className='flex gap-5 items-center'>
-                            <span className='text-[#260056] w-8 h-8 rounded-[50%] bg-[#01EA88] flex items-center justify-center font-medium'>1</span>
+                            <span className='text-[#260056] w-8 h-8 rounded-[50%] bg-[#7000FF] flex items-center justify-center font-medium'>1</span>
                             <p className='text-white text-[16px] font-normal'>Lorem lispum dolor sit amet</p>
                         </li>
                         <li className='flex gap-5 items-center mt-4'>
-                            <span className='text-white w-8 h-8 rounded-[50%] bg-[#006CFF] flex items-center justify-center font-medium'>2</span>
+                            <span className='text-white w-8 h-8 rounded-[50%] bg-[#8717F8] flex items-center justify-center font-medium'>2</span>
                             <p className='text-white text-[16px] font-normal'>Lorem lispum dolor sit amet</p>
                         </li>
                         <li className='flex gap-5 items-center mt-4'>
@@ -28,8 +28,8 @@ const Item2About = () => {
                         </li>
                     </ul>
                     <div className='flex gap-4 mt-6'>
-                        <Link href='' className='p-2 bg-[#006CFF] text-white rounded-[28.5px] font-medium px-10 text-xs md:text-[16px]'>shop</Link>
-                        <Link href='' className='p-2 bg-transparent text-white rounded-[28.5px] border-2 border-[#01EA88] font-medium text-xs md:text-[16px] px-10'>testimoniale</Link>
+                        <Link href='' className='p-2 bg-[#8717F8] text-white rounded-[28.5px] font-medium px-10 text-xs md:text-[16px]'>shop</Link>
+                        <Link href='' className='p-2 bg-transparent text-white rounded-[28.5px] border-2 border-[#7000FF] font-medium text-xs md:text-[16px] px-10'>testimoniale</Link>
                     </div>
                 </div>
             </div>
