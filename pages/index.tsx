@@ -11,6 +11,7 @@ import News from "../components/Home/News/News";
 import WhyUsCart from "../components/Home/Why-Us/Cart.js";
 import Link from "next/link";
 import CarouselPrograme from "../components/fonduri/index";
+import Rezultate from "../components/Rezultate";
 export default function Home() {
   return (
     <>
@@ -25,6 +26,7 @@ export default function Home() {
       {/* About Us */}
       <AboutHome />
       <CarouselPrograme />
+      <Rezultate />
       {/* Discover */}
       {/* <Discover /> */}
       {/* Why-Us */}

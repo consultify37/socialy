@@ -9,7 +9,7 @@ export default function CarouselPrograme(){
             <h2 className="text-[#8717F8] text-4xl font-semibold mb-8">Ce programe de fonduri poți accesa?</h2>
             <span className="flex items-center text-[#5600AB] font-semibold h-auto mb-10">
                 Vezi toate programele
-                <Image src='/images/arrow-right.svg' className="ml-2 mt-1" width={10} height={10}/>
+                <Image src='/images/arrow-right.svg' className="ml-2 mt-1" width={10} alt='arrow-right' height={10}/>
             </span>
             <div className="w-full relative">
                 <Carousel
