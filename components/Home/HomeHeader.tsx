@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { AiFillStar } from "react-icons/ai";
+import HomeCarousel from './carousel-home'
 const HomeHeader = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const [loaded, setLoaded] = useState(false);
@@ -54,15 +55,8 @@ const HomeHeader = () => {
       <span className="bg-[#260056] w-[130vw] xl:w-[113vw] 2xl:w-[112vw] h-[110%] z-[4] -left-[133] -rotate-[5deg] rounded-[0_0_199px_64px] md:rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] 2xl:rounded-[0_0_170px_250px] xl:-left-32 2xl:-left-40 -top-2 xl:top-20 absolute overflow-hidden" />
       <div className="z-10 w-full flex justify-center flex-col items-center gap-7 relative">
         <div className="absolute top-[100%] w-full">
-          <div className="relative w-[90%] xl:w-[75%] flex items-center justify-center mx-auto">
-            <Image
-              id="hero-video"
-              src="/images/video.png"
-              alt="Hero video"
-              width={300}
-              height={300}
-              className="w-full lg:w-[90%] lg:max-h-[350px] xl:max-h-[550px] aspect-video z-[5]"
-            />
+          <div className="relative w-[90%] home-carousel xl:w-[75%] flex items-center justify-center mx-auto">
+            <HomeCarousel />
             <Image
               id="hero-video"
               src="/images/polygon.svg"

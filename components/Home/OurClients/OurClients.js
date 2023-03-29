@@ -33,6 +33,9 @@ const OurClients = () => {
     ]
     return(
         <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+            <p className="text-[#8717F8] text-xl md:text-3xl font-semibold mb-5">
+                Clienții noștri au avut doar de câștigat
+            </p>
             <div className='flex w-full justify-between items-center gap-5'>
                 <Carousel
                     breakPoints={breakPoints}
@@ -47,7 +50,7 @@ const OurClients = () => {
                                 <h3 className='text-white font-bold text-base md:max-w-[90%] md:text-[24px]'>{testimonial.text}</h3>
                                 <p className='text-[16px] text-[#B8CCFF] font-medium mt-2'>{testimonial.by}</p>
                             </div>
-                            <Image src={testimonial.image} blurDataURL='/images/ourclients.png' alt='Our clients' width={200} height={200} className='mt-auto w-[250px] md:mr-5 rounded-[18px]'/>
+                            <Image src={testimonial.image} blurDataURL='/images/ourclients.png' alt='Our clients' width={200} height={200} className='mt-auto w-[250px] md:mr-5 rounded-t-[18px]'/>
                         </article>
                     )
                 }

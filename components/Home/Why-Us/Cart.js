@@ -36,7 +36,7 @@ const WhyUsCart = () => {
     }, []);
     const ProductsData = products;
     return(
-      <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+      <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5'>
           <div className='w-full flex gap-4 my-12 overflow-x-auto scrollbar-none snap-mandatory snap-x' >
             <Carousel
               breakPoints={breakPoints}

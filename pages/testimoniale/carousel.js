@@ -59,7 +59,7 @@ const Testimonials = () => {
         },
       ];
     return(
-        <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+        <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5'>
             <div className='flex w-full justify-between items-center gap-5'>
                 <Carousel
                     isRTL={false}
@@ -84,7 +84,7 @@ const Testimonials = () => {
                                 alt="Our clients"
                                 width={200}
                                 height={200}
-                                className="mt-auto w-[250px] md:mr-5 rounded-[18px]"
+                                className="mt-auto w-[250px] md:mr-5 rounded-t-[18px]"
                             />
                         </article>
                     )
