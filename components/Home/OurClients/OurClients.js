@@ -1,22 +1,14 @@
 import Image from "next/image";
 import { useState } from "react";
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
-import TestimonialItem from "./TestimonialItem";
 import Carousel from 'react-elastic-carousel';
 
-export interface OurClientsTestimonial {
-  id: number;
-  text: string;
-  by: string;
-  image: string;
-}
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
 ];
 
 const OurClients = () => {
-    const [step, setStep] = useState<number>(0)
-    const Testimonials: OurClientsTestimonial[] = [
+    const Testimonials = [
         {
             id: 1, text: 'Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify', by: 'Marian Savu - afacere în agricultură', image: '/images/ourclients.png'
         },
@@ -50,7 +42,13 @@ const OurClients = () => {
                 >
                 {
                     Testimonials.map(testimonial =>
-                            <TestimonialItem key={testimonial.id} text={testimonial.text} by={testimonial.by} image={testimonial.image} />    
+                        <article key={testimonial.id} className='bg-[#260056] mx-[15px] rounded-[16px] justify-center md:justify-between items-center flex-col md:flex-row gap-y-5 flex flex-1 pt-10 md:pt-5'>
+                            <div className='w-full md:w-[49%] px-7 md:px-10'>
+                                <h3 className='text-white font-bold text-base md:max-w-[90%] md:text-[24px]'>{testimonial.text}</h3>
+                                <p className='text-[16px] text-[#B8CCFF] font-medium mt-2'>{testimonial.by}</p>
+                            </div>
+                            <Image src={testimonial.image} blurDataURL='/images/ourclients.png' alt='Our clients' width={200} height={200} className='mt-auto w-[250px] md:mr-5 rounded-[18px]'/>
+                        </article>
                     )
                 }
                 </Carousel>

@@ -4,57 +4,10 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
 import { backCarousel, nextCarousel } from "../../utils/functions";
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
-import { OurClientsTestimonial } from "../../components/Home/OurClients/OurClients";
-import TestimonialItem from "../../components/testimoniale/testimoniale-items/testimonial-item";
 import NewsLetter from "../../components/global/newsletter";
 import Head from "next/head";
-import WhyUsCart from "../../components/Home/Why-Us/Cart";
-import Carousel from 'react-elastic-carousel'
-
-const Testimonials: OurClientsTestimonial[] = [
-  {
-    id: 1,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
-    by: "Marian Savu - afacere în agricultură",
-    image: "/images/ourclients.png",
-  },
-  {
-    id: 2,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
-    by: "Marian Savu - afacere în agricultură",
-    image: "/images/ourclients.png",
-  },
-  {
-    id: 3,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
-    by: "Marian Savu - afacere în agricultură",
-    image: "/images/ourclients.png",
-  },
-  {
-    id: 4,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
-    by: "Marian Savu - afacere în agricultură",
-    image: "/images/ourclients.png",
-  },
-  {
-    id: 5,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
-    by: "Marian Savu - afacere în agricultură",
-    image: "/images/ourclients.png",
-  },
-  {
-    id: 6,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
-    by: "Marian Savu - afacere în agricultură",
-    image: "/images/ourclients.png",
-  },
-  {
-    id: 7,
-    text: "Am reușit să ridic fonduri în valoare de 200.000 euro cu ajutorul Consultify",
-    by: "Marian Savu - afacere în agricultură",
-    image: "/images/ourclients.png",
-  },
-];
+import WhyUsCart from "../../components/Home/Why-Us/Cart.js";
+import Testimonials from './carousel'
 
 export default function Testimoniale() {
   const [scrollAmount, setScrollAmount] = useState<number>(0);
@@ -165,19 +118,7 @@ export default function Testimoniale() {
             ghiduri digitale
           </div>
         </div>
-        <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
-          <div className='flex w-full justify-between items-center gap-5'>
-              <Carousel
-                  isRTL={false}
-              >
-              {
-                  Testimonials.map(testimonial =>
-                          <TestimonialItem key={testimonial.id} text={testimonial.text} by={testimonial.by} image={testimonial.image} />    
-                  )
-              }
-              </Carousel>
-          </div>
-      </section>
+        <Testimonials />
         <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
           <div className="flex justify-start items-start">
             <h3 className="text-lg text-white font-bold">

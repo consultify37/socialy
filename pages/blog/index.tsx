@@ -5,8 +5,6 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
 import { backCarousel, nextCarousel } from "../../utils/functions";
 import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
-import { OurClientsTestimonial } from "../../components/Home/OurClients/OurClients";
-import TestimonialItem from "../../components/testimoniale/testimoniale-items/testimonial-item";
 import NewsLetter from "../../components/global/newsletter";
 import Head from "next/head";
 import { PaginationBlog } from "../../utils/functions"

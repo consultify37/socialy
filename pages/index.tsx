@@ -8,7 +8,7 @@ import WhyUs from "../components/Home/Why-Us/Why-Us";
 import OurClients from "../components/Home/OurClients/OurClients";
 import Parteners from "../components/Home/Parteners/Parteners";
 import News from "../components/Home/News/News";
-import WhyUsCart from "../components/Home/Why-Us/Cart";
+import WhyUsCart from "../components/Home/Why-Us/Cart.js";
 import Link from "next/link";
 export default function Home() {
   return (
