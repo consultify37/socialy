@@ -32,41 +32,44 @@ export default function NewsLetter() {
   
   return (
     <section className="my-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-      <div className="relative px-12 md:py-0 py-2 flex items-center mt-32 flex-col-reverse lg:flex-row-reverse bg-[#260056] rounded-[16px] w-auto h-[500px] lg:h-[350px]">
-        <Image
-          src="/images/pexels-fauxels-3184433 1.png"
-          alt="people-cheering"
-          className="absolute xl:-top-5 lg:-top-3 z-20 lg:left-10 -top-16 w-[250px] lg:w-[320px] xl:w-[360px] h-auto"
-          width={200}
-          height={500}
-        />
-        <Image
-          src="/images/Ellipse 23.svg"
-          alt="people-cheering"
-          className="absolute xl:left-[300px] lg:left-[260px] lg:translate-x-0 lg:top-auto -top-12 translate-x-24 z-10 w-[130px] lg:w-[145px] h-auto"
-          width={200}
-          height={500}
-        />
-        <Image
-          src="/images/Ellipse 24.svg"
-          alt="people-cheering"
-          className="absolute xl:bottom-0 lg:-left-5 top-[60px] lg:translate-x-0 -translate-x-24 z-10 w-[130px] lg:w-[145px] h-auto"
-          width={200}
-          height={500}
-        />
-        <div className="self-center lg:mt-0 max-w-[470px]">
-          <h2 className="text-white text-xl font-bold">
+      <div className="relative px-6 pb-20 md:px-20 md:py-0 py-2 flex items-center mt-32 justify-between flex-col lg:flex-row bg-[#260056] rounded-[16px] w-auto lg:h-[350px]">
+        <Image src='/images/triangle-news.svg' className="absolute right-[-2rem] bottom-[-2rem] md:bottom-[ihnerit] md:top-[-2rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
+        <div className="relative flex">
+          <Image
+            src="/images/pexels-fauxels-3184433 1.png"
+            alt="people-cheering"
+            className="relative top-[-90px] lg:top-[auto] w-[280px] lg:w-[380px] h-auto z-[2] rounded-3xl"
+            width={200}
+            height={500}
+          />
+          <Image
+            src="/images/Ellipse 23.svg"
+            alt="people-cheering"
+            className="absolute right-[-30px] -top-12 xl:left-[280px] md:left-[220px] md:top-7 w-[130px] lg:w-[145px] h-auto z-2"
+            width={200}
+            height={500}
+          />
+          <Image
+            src="/images/Ellipse 24.svg"
+            alt="people-cheering"
+            className="absolute left-[-30p] top-[70px] xl:bottom-[80px] md:-left-10 md:bottom-[60px] z-2 w-[130px] lg:w-[145px] h-auto"
+            width={200}
+            height={500}
+          />
+        </div>
+        <div className="lg:mt-0 max-w-[470px]">
+          <h2 className="text-white text-[16px] md:text-[26px] font-bold">
             Abonează-te la newsletter pentru informații actualizate despre afaceri
           </h2>
           <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
             <input
-              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-[22px]"
+              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
               type="email"
               placeholder={newsletter}
               required
               onChange={(e) => setNewsletter(e.target.value)}
             />
-            <button type="submit" className="text-[#260056] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-[22px]">
+            <button type="submit" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
               Mă abonez
             </button>
           </form>

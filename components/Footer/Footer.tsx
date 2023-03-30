@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
             <div className='w-full mt-5 text-center md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
                 <p className='text-[#8717F8] text-[16px] font-medium  border-t-[3px] border-[#260056] py-4 px-16 md:px-0'>
-                    Copyright 2022 Consultify | Made with love by &nbsp;
+                    Copyright 2022 Consultify | <br /> Made with love by &nbsp;
                     <Link href='https://marize.io' className="hover:underline" target='_blank'>Marize</Link>
                 </p>
             </div>

@@ -43,7 +43,7 @@ const Header = () => {
         <FixedLeft />
         <nav
           role="main"
-          className="z-[999] fixed left-[50%] w-full translate-x-[-50%] top-3 md:top-1"
+          className="z-[999] fixed left-[50%] w-full translate-x-[-50%] top-4"
         >
           <div className="bg-[#260056] mx-3 md:mx-[80px] xl:mx-[140px] 2xl:mx-[276px] px-10 rounded-[38.5px] flex justify-between items-center  py-3">
             <Link href="/" className="flex items-center justify-center z-[99]">

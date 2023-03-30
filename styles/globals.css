@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: 'AvertaStd-All';
-  src: url('/public/fonts/AvertaStd-Regular.ttf') format('truetype'),
-       url('/public/fonts/AvertaStd-Bold.ttf') format('truetype'),
-       url('/public/fonts/AvertaStd-Light.ttf') format('truetype'),
-       url('/public/fonts/AvertaStd-Medium.ttf') format('truetype'),
-       url('/public/fonts/AvertaStd-Semibold.ttf') format('truetype'),
-       url('/public/fonts/AvertaStd-Thin.ttf') format('truetype');
+  src: url('/fonts/AvertaStd-Regular.ttf') format('truetype'),
+       url('/fonts/AvertaStd-Bold.ttf') format('truetype'),
+       url('/fonts/AvertaStd-Light.ttf') format('truetype'),
+       url('/fonts/AvertaStd-Medium.ttf') format('truetype'),
+       url('/fonts/AvertaStd-Semibold.ttf') format('truetype'),
+       url('/fonts/AvertaStd-Thin.ttf') format('truetype');
   font-weight: normal 300 500 600 bold;
   font-style: normal;
   font-display: swap;

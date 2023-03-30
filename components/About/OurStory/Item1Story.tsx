@@ -5,8 +5,8 @@ const Item1Story = () => {
   return (
     <article className="flex flex-wrap gap-x-20 gap-y-10 mt-10 md:mt-20 justify-between items-center">
       <div className="flex-1">
-        <h2 className="text-[#260056] font-bold text-xl mb-3 md:text-xl lg:text-2xl xl:text-4xl">
-          Care este povestea noastră?
+        <h2 className="text-[#260056] font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-4xl">
+          Despre Consultify
         </h2>
         <p className="text-[#260056] font-normal text-base">
           Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce
@@ -26,7 +26,7 @@ const Item1Story = () => {
         <div className="flex gap-4 mt-4">
           <Link
             href="/news"
-            className="p-2 bg-[#7000FF] text-[#260056] rounded-[28.5px] font-medium px-10 text-xs md:text-base"
+            className="p-2 bg-[#BA63FF] text-[#FFFFFF] rounded-[28.5px] font-medium px-10 text-xs md:text-base"
           >
             noutăți
           </Link>
