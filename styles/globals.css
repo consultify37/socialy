@@ -45,3 +45,5 @@ html, body, #__next {
 .filter-backdrop {
   backdrop-filter: brightness(0.5);
 }
+
+.shadow-box {box-shadow: 0px 4px 46px rgba(38, 0, 86, 0.22)}

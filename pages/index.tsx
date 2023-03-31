@@ -51,9 +51,6 @@ export default function Home() {
             vezi toate produsele
           </Link>
       </div>
-      {/* Parteners */}
-      {/* <Parteners /> */}
-      {/* News */}
       <News />
       <NewsLetter />
     </>
