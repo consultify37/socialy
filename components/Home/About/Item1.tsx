@@ -5,7 +5,7 @@ const Item1About = () => {
   return (
     <div className="w-full mx-auto px-7 md:px-[40px] xl:px-[140px] 2xl:px-[276px] gap-5 flex gap-y-20 justify-between flex-wrap z-[2]">
       <div className="w-full flex-1 z-[2]">
-        <h2 className="text-[32px] font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl">
+        <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl">
           Despre platforma noastră
         </h2>
         <p className="text-white font-thin text-[16px] mt-5 z-[2]">
@@ -26,13 +26,13 @@ const Item1About = () => {
         <div className="flex gap-4 mt-4 z-[2]">
           <Link
             href="/news"
-            className="py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-medium px-14 text-xs md:text-[16px]"
+            className="py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12"
           >
-            noutăți
+            programe
           </Link>
           <Link
             href="/despre"
-            className="py-4 bg-transparent text-white rounded-[28.5px] border-2 border-[#8717F8] font-medium px-14 text-xs md:text-[16px]"
+            className="py-3 bg-transparent text-white rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12"
           >
             despre noi
           </Link>

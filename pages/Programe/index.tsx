@@ -83,7 +83,7 @@ export default function Programe() {
                                     <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
                                     <li className="text-[#EDD7FF] text-md mb-8">Lorem lispum dolor sit amet</li>
                                 </ul>
-                                <Link className="py-4 bg-[#8717F8] text-white rounded-[28.5px] font-medium px-14 text-xs md:text-[16px]" href="/">Aplica acum!</Link>
+                                <Link className="py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
                             </div>
                             <div className='flex flex-col items-start justify-center z-[10]'>
                                 <h5 className='text-white text-[20px] mb-2'>
@@ -112,7 +112,7 @@ export default function Programe() {
                                         <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
                                         <li className="text-[#EDD7FF] text-md mb-8">Lorem lispum dolor sit amet</li>
                                     </ul>
-                                    <Link className="py-4 bg-[#8717F8] text-white rounded-[28.5px] font-medium px-14 text-xs md:text-[16px]" href="/">Aplica acum!</Link>
+                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
                                 </div>
                                 <div className='flex flex-col items-end justify-center z-[10]'>
                                     <h5 className='text-white text-[20px] mb-2'>
@@ -133,7 +133,7 @@ export default function Programe() {
             <CTA />
             <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 <div className="flex justify-start items-start">
-                    <h3 className="text-3xl text-[#8717F8] font-bold">
+                    <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">
                     Consultify vine în ajutorul tău cu produse digitale pentru scalarea
                     afacerii tale
                     </h3>

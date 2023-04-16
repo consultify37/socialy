@@ -88,7 +88,7 @@ export default function Servicii() {
         <CTA />
         <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <div className="flex justify-start items-start">
-                <h3 className="text-3xl text-[#8717F8] font-bold">
+                <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">
                     Consultify vine în ajutorul tău cu produse digitale pentru scalarea
                     afacerii tale
                 </h3>

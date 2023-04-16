@@ -38,14 +38,14 @@ export default function Proces(){
     }
     return(
         <section className="relative w-full mt-20 py-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-            <Image src='/images/proces/triangle-proces.svg' className="absolute right-[2rem] bottom-[4rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
+            <Image src='/images/proces/triangle-proces.svg' className="absolute right-[1rem] bottom-[3rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
             <div className="w-[120%] bg-[#260056] h-full absolute rotate-[-2.69deg] rounded-3xl left-[-10%] z-[-1] top-0"></div>
 
-            <Image src='/images/proces/circle-proces.svg' className="absolute right-[-80px] top-0 w-[300px] h-[300px]" alt='triangle' width={250} height={250}/>
-            <Image src='/images/proces/hexagon.svg' className="absolute bottom-[5%] -left-12 w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
-            <h2 className="text-[#fff] text-4xl text-center font-bold mb-28">Care este procesul de accesare alături de Consultify?</h2>
-            <div className="w-full flex relative flex-row justify-between items-start">
-                <div className="flex items-start w-full flex-col mr-12">
+            <Image src='/images/proces/circle-proces.svg' className="hidden md:block absolute right-[-80px] top-0 w-[300px] h-[300px]" alt='triangle' width={250} height={250}/>
+            <Image src='/images/proces/hexagon.svg' className="hidden md:block absolute bottom-[5%] -left-12 w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
+            <h2 className="text-[#fff] text-3xl md:text-4xl text-center font-bold mb-28">Care este procesul de accesare alături de Consultify?</h2>
+            <div className="w-full flex relative flex-col md:flex-row justify-between items-start">
+                <div className="flex items-start w-full flex-col md:mr-12">
                     {Proces.map(proces => (
                         <button
                             key={proces.id}
@@ -75,8 +75,8 @@ export default function Proces(){
                         </button>
                     ))}
                 </div>
-                <div className="flex w-full ml-12 flex-col items-start">
-                    <h4 className="text-[#fff] text-4xl text-center font-semibold mb-8">{selectedProces.title}</h4>
+                <div className="flex w-full md:ml-12 flex-col items-start">
+                    <h4 className="text-[#fff] text-2xl lg:text-4xl text-center lg:text-left font-semibold mb-8">{selectedProces.title}</h4>
                     <p className="text-md text-[#fff] mb-8">{selectedProces.text}</p>
                     <p className="text-md text-[#fff]">{selectedProces.textTwo}</p>
                 </div>

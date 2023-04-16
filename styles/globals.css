@@ -4,13 +4,24 @@
 
 @font-face {
   font-family: 'AvertaStd-All';
-  src: url('/fonts/AvertaStd-Regular.ttf') format('truetype'),
-       url('/fonts/AvertaStd-Bold.ttf') format('truetype'),
-       url('/fonts/AvertaStd-Light.ttf') format('truetype'),
-       url('/fonts/AvertaStd-Medium.ttf') format('truetype'),
-       url('/fonts/AvertaStd-Semibold.ttf') format('truetype'),
-       url('/fonts/AvertaStd-Thin.ttf') format('truetype');
-  font-weight: normal 300 500 600 bold;
+  src: url('/fonts/AvertaStd-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: 'AvertaStd-All';
+  src: url('/fonts/AvertaStd-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: 'AvertaStd-All';
+  src: url('/fonts/AvertaStd-Thin.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
   unicode-range: U+000-5FF;
@@ -26,6 +37,9 @@ html, body, #__next {
   overflow-y: overlay;
   font-family: 'AvertaStd-All', sans-serif !important;
 }
+
+body{max-width: 2000px; margin: 0 auto;}
+
 .rec-arrow-right, .rec-arrow-right:hover, .rec-arrow-right:enabled{background-color: #8717F8 !important; color: #fff !important; font-family: 'Averta-All', sans-serif !important;}
 .rec-arrow-left, .rec-arrow-left:hover, .rec-arrow-left:enabled {background-color: #8717F8 !important; color: #fff !important; font-family: 'Averta-All', sans-serif !important;}
 .home-carousel .rec-arrow-right, .home-carousel .rec-arrow-right:hover, .home-carousel .rec-arrow-right:enabled {position: absolute; right: 36px; z-index: 20;}
@@ -47,3 +61,8 @@ html, body, #__next {
 }
 
 .shadow-box {box-shadow: 0px 4px 46px rgba(38, 0, 86, 0.22)}
+
+@media only screen and (max-width: 700px) {
+.rec-arrow-right, .rec-arrow-right:hover, .rec-arrow-right:enabled {display: none !important;}
+.rec-arrow-left, .rec-arrow-left:hover, .rec-arrow-left:enabled {display: none !important;}
+}

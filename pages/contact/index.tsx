@@ -1,14 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
-import { backCarousel, nextCarousel } from "../../utils/functions";
-import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 import NewsLetter from "../../components/global/newsletter";
 import Head from "next/head";
 import toast from "react-hot-toast";
 import Axios from "axios";
-import ReCAPTCHA from "react-google-recaptcha";
+import Rezultate from "../../components/Rezultate";
  
 export default function Contact() {
   
@@ -85,10 +82,11 @@ export default function Contact() {
                     alt="Yellow triangle"
                 />
             </section>
+            <div className="bg-[#F6EFFF] w-[100vw] h-[50vh] absolute top-0 left-0 z-[-1]"></div>
             <section className="w-full flex flex-row items-start my-32 justify-between px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-                <div className="flex flex-col w-full mr-12 bg-[#260056] rounded-3xl p-6">
+                <div className="flex flex-col w-full mr-12 bg-[#260056] rounded-3xl p-8">
                     <div className="flex flex-row mb-6">
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-4 h-[max-content] jutify-center mr-2">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-4 h-[max-content] jutify-center mr-4">
                             <Image
                                 src="/images/OurServices/consultanta.svg"
                                 alt="Hero blue circle"
@@ -103,7 +101,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="flex flex-row mb-6">
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-4 h-[max-content] jutify-center mr-2">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-4 h-[max-content] jutify-center mr-4">
                             <Image
                                 src="/images/OurServices/consultanta.svg"
                                 alt="Hero blue circle"
@@ -244,10 +242,6 @@ export default function Contact() {
                         <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-[#260056]">Accept <a href="#" className="text-[#260056] underline">Termenii și Condițiile</a></label>
                     </div>
                     <div className="flex flex-col md:flex-row justify-center w-full">
-                        <ReCAPTCHA
-                            size="invisible"
-                            sitekey="6LfVxkYlAAAAADLaMI9tniaG9fdkNEfFyzZaARFN"
-                        />
                         <button                      
                             className='py-4 bg-[#8717F8] h-auto text-white rounded-[28px] font-medium px-14 text-center text-sm md:text-[16px]'>
                             trimite
@@ -255,35 +249,60 @@ export default function Contact() {
                     </div>
                 </form>
             </section>
-            <section className="w-full flex flex-col items-center my-32 justify-center px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-                <div className="rounded-3xl bg-[#260056] w-full md:max-w-[1000px] md:p-16 md:px-20 p-6 py-12 max-w-[350px] flex flex-col">
-                    <h2 className="text-xl text-center mb-10 text-white">Sau ne poți găsi și aici</h2>
-                    <div className="flex md:flex-row flex-col w-full">
-                        <div className="flex flex-row w-full mb-5 md:mb-0 justify-center">
-                            <div className="flex items-center w-[58px] bg-[#7000FF] mr-4 p-3 rounded-xl justify-center">
-                                <Image width={30} height={30} src="/images/mail.svg" alt="mail" />
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-lg text-white">
-                                    Email
-                                </span>
-                                <a className="text-lg text-white" href="mailto:example@gmail.com">example@gmail.com</a>
-                            </div>
+            <Rezultate />
+            <section id='why-us' className='mt-[10.25rem] w-full relative px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+                <h2 className='text-[#260056] text-center font-bold md:text-base lg:text-2xl xl:text-4xl mb-32'>De ce să alegi Consultify?</h2>
+                <div className='relative flex flex-wrap justify-center items-center md:justify-between md:items-start gap-y-20'>
+                    {/* Left-Side */}
+                    <div className='mx-auto lg:mx-0 w-full z-[2] md:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>
+                        <div className='flex flex-col gap-2'>
+                            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-md'>
+                                <img src='/images/questions-comment.png' className='mx-auto' alt='Questions comment' width={25} height={10} />
+                            </span>
+                            <h3 className='font-bold text-[24px] text-[#260056]'>Comunicare</h3>
+                            <p className='font-normal text-[#260056] text-sm md:text-[16px'>
+                                Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
+                            </p>
                         </div>
-                        <div className="flex flex-row w-full justify-center">
-                            <div className="flex items-center w-[58px] bg-[#8717F8] mr-4 p-3 rounded-xl justify-center">
-                                <Image width={30} height={30} src="/images/phone.svg" alt="mail" />
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-lg text-white">
-                                    Email
-                                </span>
-                                <a className="text-lg text-white" href="tel:0735234642">0735234642</a>
-                            </div>
+                        <div className='flex flex-col gap-2'>
+                            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-md'>
+                                <img src='/images/flash.png' className='mx-auto' alt='Questions comment' width={17} height={10} />
+                            </span>
+                            <h3 className='font-bold text-[24px] text-[#260056]'>Spirit tânăr</h3>
+                            <p className='font-normal text-[#260056] text-sm md:text-[16px'>
+                                Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
+                            </p>
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-md'>
+                                <img src='/images/heart.png' className='mx-auto' alt='Questions comment' width={25} height={24} />
+                            </span>
+                            <h3 className='font-bold text-[24px] text-[#260056]'>Suport non-stop</h3>
+                            <p className='font-normal text-[#260056] text-sm md:text-[16px'>
+                                Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
+                            </p>
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-md'>
+                                <img src='/images/chart.png' className='mx-auto' alt='Questions comment' width={21} height={21} />
+                            </span>
+                            <h3 className='font-bold text-[24px] text-[#260056]'>Profesionalism</h3>
+                            <p className='font-normal text-[#260056] text-sm md:text-[16px'>
+                                Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
+                            </p>
                         </div>
                     </div>
+                    {/* Right-Side */}
+                    <div className='relative mx-auto lg:mx-0'>
+                        <Image src='/images/About/about.png' alt='Why-Us' className='relative rounded-[35px] md:mr-10 z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+                        <img src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
+                    </div>
                 </div>
+                <Link href='/contact' className="bg-[#8717F8] mt-12 flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
+                    vreau să completez
+                </Link>
             </section>
+            <NewsLetter />
         </>
     );
 }

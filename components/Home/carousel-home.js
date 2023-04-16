@@ -10,13 +10,13 @@ const HomeCarousel = () => {
         >
             <div className='w-full flex items-center relative justify-center'>    
                 <div className='absolute w-full flex flex-col items-center justify-center z-[14]'>
-                    <h5 className='text-white text-[28px] mb-2'>
+                    <h5 className='text-white text-xs lg:text-3xl mb-2'>
                         PNRR / C9 / 13 / Măsura 1
                     </h5>
-                    <h4 className='text-white text-[70px] mb-2'>
+                    <h4 className='text-white text-lg lg:text-6xl font-bold mb-2'>
                         Digitalizarea IMM-urilor
                     </h4>
-                    <h6 className='text-white text-[50px]'>
+                    <h6 className='text-white text-xl lg:text-5xl'>
                         20.000 € - 100.000 €
                     </h6>
                 </div>
@@ -31,13 +31,13 @@ const HomeCarousel = () => {
             </div>
             <div className='w-full flex items-center relative justify-center'>
                 <div className='absolute w-full flex flex-col items-center justify-center z-[14]'>
-                    <h5 className='text-white text-[28px] mb-2'>
+                    <h5 className='text-white text-xs lg:text-3xl mb-2'>
                         PNRR / C9 / 13 / Măsura 1
                     </h5>
-                    <h4 className='text-white text-[70px] mb-2'>
+                    <h4 className='text-white text-lg lg:text-6xl font-bold mb-2'>
                         Digitalizarea IMM-urilor
                     </h4>
-                    <h6 className='text-white text-[50px]'>
+                    <h6 className='text-white text-xl lg:text-5xl'>
                         20.000 € - 100.000 €
                     </h6>
                 </div>
@@ -52,13 +52,13 @@ const HomeCarousel = () => {
             </div>
             <div className='w-full flex items-center relative justify-center'>
                 <div className='absolute w-full flex flex-col items-center justify-center z-[14]'>
-                    <h5 className='text-white text-[28px] mb-2'>
+                    <h5 className='text-white text-xs lg:text-3xl mb-2'>
                         PNRR / C9 / 13 / Măsura 1
                     </h5>
-                    <h4 className='text-white text-[70px] mb-2'>
+                    <h4 className='text-white text-lg lg:text-6xl font-bold mb-2'>
                         Digitalizarea IMM-urilor
                     </h4>
-                    <h6 className='text-white text-[50px]'>
+                    <h6 className='text-white text-xl lg:text-5xl'>
                         20.000 € - 100.000 €
                     </h6>
                 </div>

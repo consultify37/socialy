@@ -23,7 +23,7 @@ const HomeHeader = () => {
     <section
       ref={sectionRef}
       id="HeroContainer"
-      className={`flex flex-col min-h-[55vh] md:min-h-[45vh] xl:min-h-[65vh] w-full items-center justify-center bg-[#260056] relative`}
+      className={`flex flex-col min-h-[55vh] md:min-h-[45vh] xl:min-h-[65vh] w-full items-center justify-start bg-[#260056] relative`}
       style={{
         marginBottom: `${margin - 50}px`,
         paddingBottom: `${
@@ -50,10 +50,19 @@ const HomeHeader = () => {
         alt="Hero green circle"
         width={200}
         height={200}
-        className="absolute w-[200px] xl:w-[250px] left-0 -top-44 xl:top-[50%] xl:translate-y-[-50%] z-[5]"
+        className="absolute w-[100px] xl:w-[250px] left-0 -top-20 lg:-top-44 xl:top-[50%] xl:translate-y-[-50%] z-[5]"
       />
-      <span className="bg-[#260056] w-[130vw] xl:w-[113vw] 2xl:w-[112vw] h-[110%] z-[4] -left-[133] -rotate-[5deg] rounded-[0_0_199px_64px] md:rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] 2xl:rounded-[0_0_170px_250px] xl:-left-32 2xl:-left-40 -top-2 xl:top-20 absolute overflow-hidden" />
-      <div className="z-10 w-full flex justify-center flex-col items-center gap-7 relative">
+      <span className="bg-[#260056] w-[130vw] xl:w-[113vw] 2xl:w-[112vw] h-[140%] z-[4] -left-[133] -rotate-[5deg] rounded-[0_0_199px_64px] md:rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] 2xl:rounded-[0_0_170px_250px] xl:-left-32 2xl:-left-40 -top-[7.5rem] xl:top-[-11rem] absolute overflow-hidden" />
+      <div className="z-10 w-full flex flex-col items-center gap-7 relative pt-12">
+        <h1 className="text-white text-3xl xl:text-6xl font-bold max-w-[80%] xl:max-w-[800px] text-center">
+          Obține fonduri europene pentru afacerea ta
+        </h1>
+        <button
+          type="button"
+          className="px-10 py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] mb-12 text-base"
+        >
+          cum pot accesa fonduri?
+        </button>
         <div className="absolute top-[100%] w-full">
           <div className="relative w-[90%] home-carousel xl:w-[75%] flex items-center justify-center mx-auto">
             <HomeCarousel />
@@ -67,15 +76,6 @@ const HomeHeader = () => {
             />
           </div>
         </div>
-        <h1 className="text-white text-4xl xl:text-6xl font-bold max-w-[80%] xl:max-w-[800px] text-center">
-          Obține fonduri europene pentru afacerea ta
-        </h1>
-        <button
-          type="button"
-          className="px-10 py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] mb-12 text-base"
-        >
-          cum pot accesa fonduri?
-        </button>
       </div>
     </section>
   );
