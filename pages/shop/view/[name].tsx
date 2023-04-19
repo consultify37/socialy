@@ -92,11 +92,7 @@ const ItemView = () => {
         desc_adreseaza={desc_adreseaza}
       />
       {/* FAQ */}
-      <FAQAbout
-        intrebari={intrebari}
-      />
-      {/* FAQ */}
-      <FAQAbout intrebari={intrebari} />
+      <FAQAbout/>
       {/* Store items */}
       <div className="px-7 md:px-[80px] xl:px-[200px] 2xl:px-[276px] mt-10">
         {/* <ShopItem itemId="sugestii" categoryVisible={false} /> */}
