@@ -83,16 +83,16 @@ export default function Contact() {
                 />
             </section>
             <div className="bg-[#F6EFFF] w-[100vw] h-[50vh] absolute top-0 left-0 z-[-1]"></div>
-            <section className="w-full flex flex-row items-start my-32 justify-between px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+            <section className="w-full flex flex-col lg:flex-row items-start my-32 justify-between px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 <div className="flex flex-col w-full mr-12 bg-[#260056] rounded-3xl p-8">
                     <div className="flex flex-row mb-6">
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-4 h-[max-content] jutify-center mr-4">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-4">
                             <Image
                                 src="/images/OurServices/consultanta.svg"
                                 alt="Hero blue circle"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[30px] h-[30px]"
+                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
                         <div className="flex flex-col justify-center">
@@ -101,13 +101,13 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="flex flex-row mb-6">
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-4 h-[max-content] jutify-center mr-4">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-4">
                             <Image
                                 src="/images/OurServices/consultanta.svg"
                                 alt="Hero blue circle"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[30px] h-[30px]"
+                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
                         <div className="flex flex-col justify-center">
@@ -117,36 +117,36 @@ export default function Contact() {
                     </div>
                     <h6 className="text-xl text-white mb-4">Sau ne poți găsi și aici</h6>
                     <div className="flex flex-row">
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] mr-2 flex items-center rounded-full bg-[#fff] p-4 h-[max-content] jutify-center mr-2">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] mr-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                             <Image
                                 src="/images/contact/instagram.svg"
                                 alt="instagram"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[30px] h-[30px]"
+                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] mr-2 ml-2 flex items-center rounded-full bg-[#fff] p-4 h-[max-content] jutify-center mr-2">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] mr-2 ml-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                             <Image
                                 src="/images/contact/facebook.svg"
                                 alt="instagram"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[30px] h-[30px]"
+                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-4 h-[max-content] jutify-center mr-2">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                             <Image
                                 src="/images/contact/linkedin.svg"
                                 alt="instagram"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[30px] h-[30px]"
+                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
                     </div>
                 </div>
-                <form onSubmit={upload} className="w-full ml-12 rounded-3xl shadow-box bg-[#fff] w-full max-w-[1000px] p-8 px-4 md:px-8 flex flex-col">
+                <form onSubmit={upload} className="w-full mt-12 lg:mt-0 lg:ml-12 rounded-3xl shadow-box bg-[#fff] w-full max-w-[1000px] p-8 px-4 md:px-8 flex flex-col">
                     <h2 className="text-ms font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună</h2>
                     <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6">
                         <div className="flex flex-col w-full md:w-[47%] mr-2">
@@ -251,7 +251,7 @@ export default function Contact() {
             </section>
             <Rezultate />
             <section id='why-us' className='mt-[10.25rem] w-full relative px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
-                <h2 className='text-[#260056] text-center font-bold md:text-base lg:text-2xl xl:text-4xl mb-32'>De ce să alegi Consultify?</h2>
+                <h2 className='text-[#260056] text-center font-bold md:text-base text-xl lg:text-2xl xl:text-4xl mb-12 lg:mb-32'>De ce să alegi Consultify?</h2>
                 <div className='relative flex flex-wrap justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
                     <div className='mx-auto lg:mx-0 w-full z-[2] md:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>

@@ -16,9 +16,9 @@ const News = () => {
     return(
         <section className='flex flex-col gap-5 items-center mt-[4rem] justify-center w-full px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
             <div className='flex justify-between w-full items-center'>
-                <h2 className='md:text-xl lg:text-2xl xl:text-4xl text-[#8717F8] font-medium max-w-[80%] md:max-w-[60%]'>Descoperă ultimile noutăți din business si mediul online</h2>
-                <div className='hidden md:flex gap-4 mr-10'>
-                    <span className='bg-[#260056] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer' onClick={() => backCarousel(setScrollAmount, carouselRef, cardRef)}>
+                <h2 className='md:text-xl lg:text-2xl xl:text-4xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[60%]'>Descoperă ultimile noutăți din business si mediul online</h2>
+                <div className='flex flex-row'>
+                    <span className='bg-[#260056] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer mr-2' onClick={() => backCarousel(setScrollAmount, carouselRef, cardRef)}>
                         <AiOutlineArrowLeft className='text-[#fff]' size={18} />
                     </span>
                     <span className='bg-[#260056] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer' onClick={() => nextCarousel(setScrollAmount, carouselRef, cardRef)}>

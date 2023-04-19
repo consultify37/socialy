@@ -150,28 +150,28 @@ export default function Testimoniale() {
         <Link href='/shop' className="bg-[#8717F8] mt-5 px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
           vezi toate produsele
         </Link>
-        <div className="flex w-full mt-20 justify-between items-center">
-          <div className="flex flex-col w-full mr-12 max-w-[600px]">
-            <h4 className="text-white text-4xl">
+        <div className="flex w-full flex-col lg:flex-row mt-20 justify-between items-center">
+          <div className="flex flex-col w-full lg:mr-12 lg:max-w-[600px]">
+            <h4 className="text-white text-2xl lg:text-4xl font-bold mb-2">
               Ești în pană de idei de afaceri?
             </h4>
             <p className="text-white text-xl">
               Introdu adresa de mail, iar noi îți vom trimite un document cu peste 100 de idei de afaceri eligibile pentru fonduri nerambursabile
             </p>
-            <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
+            <form onSubmit={upload} className="relative flex mt-10 mb-20 lg:mb-0 lg:flex-row items-center">
               <input
-                className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
+                className="py-4 text-[#fff] w-full xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
                 type="email"
                 placeholder={newsletter}
                 required
                 onChange={(e) => setNewsletter(e.target.value)}
               />
-              <button type="submit" className="text-[#fff] font-bold lg:absolute w-[max-content] mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
+              <button type="submit" className="text-[#fff] w-full font-bold absolute w-[max-content] flex mt-3 mt-0 right-0 z-30 transition-all hover:scale-[1.05] border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
                 Vreau documentul
               </button>
             </form>
           </div>
-          <div className='relative flex justify-end ml-12'>
+          <div className='relative flex justify-end lg:ml-12'>
             <Image src='/images/testimonials.png' alt='Why-Us' className='relative w-[450px] rounded-[35px] z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
             {/* <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' />  */}
             <Image src='/images/proces/hexagon.svg' className="absolute -right-[50px] -bottom-[50px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>

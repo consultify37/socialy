@@ -62,7 +62,7 @@ export default function Servicii() {
         </Head>
         <section
             id="about-header"
-            className="relative bg-[#260056] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
+            className="relative bg-[#260056] mb-60 w-full pb-14 flex flex-col items-center justify-center overflow-visible"
         >
             <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">
                 Cunoaște succesele clienților noștri
@@ -79,7 +79,7 @@ export default function Servicii() {
                 src="/images/proces/hexagon.svg"
                 width={130}
                 height={130}
-                className="absolute bottom-2 -left-2 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
+                className="absolute -bottom-12 -left-12 md:bottom-2 md:-left-2 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
                 alt="Yellow triangle"
             />
         </section>

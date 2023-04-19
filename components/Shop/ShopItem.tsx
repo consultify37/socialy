@@ -44,9 +44,9 @@ const ShopItem = ({
         <h2 className="md:text-xl lg:text-2xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[30%]">
           {categorie.nume}
         </h2>
-        <div className="hidden md:flex gap-4 mr-10">
+        <div className="md:flex flex-row">
           <span
-            className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
+            className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer mr-2"
             onClick={() =>
               backCarousel(setScrollAmount, carouselRef, cardRef[0])
             }
@@ -54,7 +54,7 @@ const ShopItem = ({
             <AiOutlineArrowLeft className="text-[#fff]" size={18} />
           </span>
           <span
-            className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer"
+            className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer mr-2"
             onClick={() =>
               nextCarousel(setScrollAmount, carouselRef, cardRef[0])
             }

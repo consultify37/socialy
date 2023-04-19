@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { useState } from "react";
-import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 import Carousel from 'react-elastic-carousel';
-
+import Link from "next/link";
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
 ];
@@ -56,6 +54,9 @@ const OurClients = () => {
                 }
                 </Carousel>
             </div>
+            <Link href='/testimoniale' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
+                vezi toate testimonialele
+            </Link>
         </section>
     )
 }

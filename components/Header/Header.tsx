@@ -123,6 +123,17 @@ const Header = () => {
                     : ""
                 }`}
               >
+                <Link href="/testimoniale" className="font-medium text-white">
+                  testimoniale
+                </Link>
+              </li>
+              <li
+                className={`${
+                  toggle
+                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-4 lg:p-0 lg:border-0"
+                    : ""
+                }`}
+              >
                 <Link href="/blog" className="font-medium text-white">
                   blog
                 </Link>
