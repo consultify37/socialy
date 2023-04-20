@@ -15,6 +15,7 @@ import Rezultate from "../components/Rezultate";
 import Proces from "../components/Proces";
 import CTA from "../components/CTA";
 import NewsLetter from "../components/global/newsletter";
+import Garantii from "../components/Garantii";
 export default function Home() {
   return (
     <>
@@ -30,6 +31,7 @@ export default function Home() {
       <AboutHome />
       <CarouselPrograme />
       <Rezultate />
+      <Garantii />
       {/* Discover */}
       {/* <Discover /> */}
       {/* Why-Us */}
