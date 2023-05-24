@@ -103,7 +103,6 @@ body{max-width: 2000px; margin: 0 auto;}
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
 }
 
 .h-calc {height: calc(100% - 120px);}

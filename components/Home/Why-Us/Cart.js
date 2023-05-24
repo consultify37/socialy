@@ -33,7 +33,7 @@ const WhyUsCart = () => {
         .finally(function () {
           // always executed
         });
-    }, []);
+    }, [products]);
     const ProductsData = products;
     return(
       <section id='our-clients' className='w-full flex items-center justify-center flex-col gap-5'>

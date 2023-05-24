@@ -60,7 +60,7 @@ export default function PaginaProgram() {
                         <p className='text-[#260056] text-md font-normal'>Lorem lispum dolor sit amet</p>
                     </li>
                     <li className='flex gap-5 items-center mt-4'>
-                        <span className='text-[#00103C] w-8 h-8 rounded-[50%] bg-[#CF9FFF] flex items-center justify-center font-medium'>3</span>
+                        <span className='text-[#00103C] w-[50px] md:w-8 h-8 rounded-[50%] bg-[#CF9FFF] flex items-center justify-center font-medium'>3</span>
                         <p className='text-[#260056] text-md font-normal'>Lorem lispum dolor sit amet</p>
                     </li>
                 </ul>

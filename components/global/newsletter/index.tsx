@@ -59,7 +59,7 @@ export default function NewsLetter() {
         </div>
         <div className="lg:mt-0 max-w-[470px]">
           <h2 className="text-white text-[16px] md:text-[26px] font-bold">
-            Abonează-te la newsletter pentru informații actualizate despre afaceri
+            Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!
           </h2>
           <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
             <input

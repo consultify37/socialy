@@ -32,7 +32,7 @@ const OurClients = () => {
     return(
         <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
             <p className="text-[#8717F8] text-xl md:text-3xl font-semibold mb-5">
-                Clienții noștri au avut doar de câștigat
+                Gândurile și experiențele clienților noștri - testimoniale de succes
             </p>
             <div className='flex w-full justify-between items-center gap-5'>
                 <Carousel

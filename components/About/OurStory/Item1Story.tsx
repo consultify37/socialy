@@ -6,35 +6,32 @@ const Item1Story = () => {
     <article className="flex flex-wrap gap-x-20 gap-y-10 mt-10 md:mt-20 justify-between items-center">
       <div className="flex-1">
         <h2 className="text-[#260056] font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-4xl">
-          Despre Consultify
+          Ne diferențiem prin:
         </h2>
         <p className="text-[#260056] font-normal text-base">
-          Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce
-          sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla
-          libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.
+          Suntem mândri să fim un partener de încredere pentru clienții noștri, ajutându-i să obțină finanțarea necesarăpentru a-și
+          realiza obiectivele. În cadrul Consultify, lucrăm strâns cu clienții noștri, oferindu-le cele mai bune soluții personalizate
+          pentru fiecare proiect în parte.
         </p>
         <br />
         <p className="text-[#260056] font-normal text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies
-          nibh vel massa iaculis porttitor. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. In pretium ac orci at convallis. Vivamus
-          a auctor sapien, sed viverra erat. Cras aliquam auctor urna.
-          Pellentesque molestie orci quis leo ornare dapibus. Nulla auctor
-          finibus aliquam. Etiam vitae efficitur orci, id gravida sapien. Nulla
-          facilisis est lorem, tincidunt elementum felis bibendum eu.
+          Echipa noastră tânără și dinamică este dedicată în întregime clienților noștri și lucrează cu fiecare client în mod individual,
+          pentru a înțelege și a aborda nevoile specifice ale fiecăruia. De la evaluarea inițială a proiectului până la prezentarea finală
+          a acestuia, suntem mereu acolo pentru clienții noștri și ne asigurăm că aceștia obțin finanțarea de care au nevoie. Cu o rată de
+          succes ridicată și o abordare personalizată, Consultify este partenerul ideal în accesarea fondurilor europene.
         </p>
         <div className="flex gap-4 mt-4">
           <Link
-            href="/news"
-            className="p-2 bg-[#BA63FF] text-[#FFFFFF] rounded-[28.5px] font-medium px-10 text-xs md:text-base"
+            href="/programe"
+            className="p-2 bg-[#BA63FF] text-[#FFFFFF] flex items-center rounded-[28.5px] font-medium px-10 text-xs md:text-base"
           >
-            noutăți
+            programe
           </Link>
           <Link
-            href="/shop"
-            className="p-2 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#8717F8] font-medium px-10 text-xs md:text-base"
+            href="/servicii"
+            className="p-2 bg-transparent text-[#260056] flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-medium px-10 text-xs md:text-base"
           >
-            shop
+            servicii
           </Link>
         </div>
       </div>

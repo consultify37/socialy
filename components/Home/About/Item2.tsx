@@ -11,25 +11,29 @@ const Item2About = () => {
             <div className='w-full md:w-[48%]'>
                 <h2 className='text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl'>Cum funcționează Consultify?</h2>
                 <p className='text-white font-thin text-[16px] mt-5'>
-                    Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.
+                    Bine ai venit la Consultify - experți în accesarea fondurilor europene! Misiunea noastră este de a sprijini antreprenorii în accesarea fondurilor europene și de a-i ajuta să-și transforme proiectele în realitate. Cu o echipă tânără și dedicată, suntem gata să ne asumăm provocările și să obținem cele mai bune rezultate pentru clienții noștri. Iată câteva dintre obiectivele noastre:
                 </p>
                 <ul className='list-none mt-4'>
                     <li className='flex gap-5 items-center'>
-                        <span className='text-[#260056] w-8 h-8 rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>1</span>
-                        <p className='text-white text-[16px] font-normal'>Lorem lispum dolor sit amet</p>
+                        <span className='text-[#260056] px-[15px] w-8 h-8 rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>1</span>
+                        <p className='text-white text-[16px] font-normal'>Să fim lideri de piață în domeniul consultanței în accesarea fondurilor europene.</p>
                     </li>
                     <li className='flex gap-5 items-center mt-4'>
-                        <span className='text-white w-8 h-8 rounded-[50%] bg-[#8717F8] flex items-center justify-center font-medium'>2</span>
-                        <p className='text-white text-[16px] font-normal'>Lorem lispum dolor sit amet</p>
+                        <span className='text-white px-[15px] w-8 h-8 rounded-[50%] bg-[#8717F8] flex items-center justify-center font-medium'>2</span>
+                        <p className='text-white text-[16px] font-normal'>Să creștem gradul de satisfacție al clienților noștri la peste 90%.</p>
                     </li>
                     <li className='flex gap-5 items-center mt-4'>
-                        <span className='text-[#00103C] w-8 h-8 rounded-[50%] bg-[#CF9FFF] flex items-center justify-center font-medium'>3</span>
-                        <p className='text-white text-[16px] font-normal'>Lorem lispum dolor sit amet</p>
+                        <span className='text-[#00103C] px-[15px] w-8 h-8 rounded-[50%] bg-[#CF9FFF] flex items-center justify-center font-medium'>3</span>
+                        <p className='text-white text-[16px] font-normal'>Să dezvoltăm parteneriate solide cu companii din diverse domenii.</p>
+                    </li>
+                    <li className='flex gap-5 items-center mt-4'>
+                        <span className='text-[#260056] px-[15px] w-8 h-8 rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>4</span>
+                        <p className='text-white text-[16px] font-normal'>Să fim recunoscuți ca un brand de încredere și profesionalism.</p>
                     </li>
                 </ul>
                 <div className='flex gap-4 mt-6'>
-                    <Link href='' className='py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12'>shop</Link>
-                    <Link href='' className='py-3 bg-transparent text-white rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12'>testimoniale</Link>
+                    <Link href='/shop' className='py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12'>Shop</Link>
+                    <Link href='/servicii' className='py-3 bg-transparent text-white rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12'>Servicii</Link>
                 </div>
             </div>
         </div>

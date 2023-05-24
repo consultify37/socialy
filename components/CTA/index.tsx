@@ -12,8 +12,8 @@ export default function CTA(){
                 <Image src='/images/CTA/circle-thin.svg' className="absolute left-0 top-[0px] w-[100px] lg:w-[200px]" alt='triangle' width={250} height={250}/>
                 <Image src='/images/proces/hexagon.svg' className="absolute -left-6 -bottom-6 lg:-left-[80px] lg:-bottom-[50px] w-[60px] lg:w-[160px]" alt='triangle' width={250} height={250}/>
 
-                <h2 className="text-[#260056] text-lg lg:text-4xl font-bold mb-4 max-w-[750px] text-center mb-12">Aplică acum la fonduri <span className="text-[#8717F8]"> nerambursabile</span> pentru afacerea ta</h2>
-                <Link className="py-4 bg-[#8717F8] text-center text-white rounded-[28.5px] font-medium px-10 text-xs md:text-[16px]" href="/contact">Completează formularul de contact</Link>
+                <h2 className="text-[#260056] text-lg lg:text-4xl font-bold mb-4 max-w-[750px] text-center mb-12">Acțiunea ta contează - Începe-ți proiectul de<span className="text-[#8717F8]"> succes</span> acum!</h2>
+                <Link className="py-4 bg-[#8717F8] text-center text-white rounded-[28.5px] font-medium px-10 text-xs md:text-[16px]" href="/contact">Completează formularul!</Link>
             </div>
         </section>
     )

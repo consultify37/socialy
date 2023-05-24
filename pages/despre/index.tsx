@@ -15,7 +15,7 @@ const About: NextPage = () => {
         <>
             {/* PageSettings */}
             <Head>
-                <title>Consultify | Programe</title>
+                <title>Consultify | Despre</title>
             </Head>
             {/* About header */}
             <AboutHeader />
