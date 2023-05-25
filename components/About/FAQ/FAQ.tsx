@@ -13,23 +13,34 @@ const FAQAbout = () => {
     const [selectedQuestion, setSelectedQuestion] = useState<number | null>(null);
 
     const handleSelectQuestion = (id: number) => {
-        setSelectedQuestion(id);
+        if (id === selectedQuestion) {
+          setSelectedQuestion(null); // Close the selected question if it's clicked again
+        } else {
+          setSelectedQuestion(id); // Open the clicked question
+        }
     };
+      
     const Intrebari: FAQInterface[] = [
         {
-            id: 1, intrebari: '1Text aici pentru acest pas', raspuns: '1Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.',
+            id: 1, intrebari: 'Cum funcționează procesul de accesare a fondurilor europene?', raspuns: 'Procesul de accesare a fondurilor europene implică identificarea programelor de finanțare relevante, elaborarea și depunerea unui proiect în conformitate cu cerințele specifice, evaluarea și selecția acestuia de către autoritățile competente, și gestionarea finanțării și raportarea în timpul implementării proiectului.',
         },
         {
-            id: 2, intrebari: '2fsaText aici pentru acest pas', raspuns: '2Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.',
+            id: 2, intrebari: 'Ce tipuri de proiecte sunt eligibile pentru finanțare europeană?', raspuns: 'Domeniile eligibile pentru finanțare europeană sunt diverse și acoperă inovarea, dezvoltarea regională, protecția mediului, cercetarea și dezvoltarea tehnologică, antreprenoriatul, educația, cultura, agricultura și multe altele. Fiecare program de finanțare are cerințe specifice și criterii de eligibilitate.',
         },
         {
-            id: 3, intrebari: '3ffText aici pentru acest pas', raspuns: '3Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.',
+            id: 3, intrebari: 'Care sunt criteriile de eligibilitate și termenele limită pentru aplicarea la fondurile europene?', raspuns: 'Criteriile de eligibilitate și termenele limită variază în funcție de programul de finanțare. Acestea pot include aspecte legate de beneficiar, proiect, buget, plan de implementare, impact social sau economic, durată proiect etc. Respectarea cerințelor și depunerea în timp util sunt esențiale.',
         },
         {
-            id: 4, intrebari: '41Text aici pentru acest pas', raspuns: '4Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.',
+            id: 4, intrebari: 'Care sunt avantajele de a lucra cu o firmă de consultanță în fonduri europene?', raspuns: 'Avantajele de a lucra cu o firmă de consultanță în fonduri europene includ acces la expertiză și experiență specializată, reducerea riscurilor și erorilor, economisirea timpului și resurselor, îmbunătățirea șanselor de succes și optimizarea rezultatelor proiectelor.',
         },
         {
-            id: 5, intrebari: '5Text aici pentru acest pas', raspuns: '5Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.',
+            id: 5, intrebari: 'Ce experiență și expertiză are firma dvs. în accesarea fondurilor europene?', raspuns: 'Firma noastră are o vastă experiență în accesarea fondurilor europene, cu un portofoliu divers de proiecte de succes în diferite sectoare. Echipa noastră de experți are cunoștințe solide în privința programelor de finanțare și poate oferi asistență completă în elaborarea și implementarea proiectelor.',
+        },
+        {
+            id: 6, intrebari: 'Care sunt costurile implicate în consultanța în fonduri europene?', raspuns: 'Costurile consultanței în fonduri europene variază în funcție de complexitatea proiectului și serviciile solicitate. Vom discuta în detaliu nevoile dvs. și vă vom prezenta o ofertă personalizată, transparentă și competitivă, în conformitate cu cerințele proiectului dvs.',
+        },
+        {
+            id: 7, intrebari: 'Cum pot stabili o întâlnire sau obține mai multe informații?', raspuns: 'Pentru a stabili o întâlnire sau obține mai multe informații despre serviciile noastre de consultanță în fonduri europene, vă rugăm să ne contactați prin intermediul formularului de contact de pe site-ul nostru, la adresa de email sau la numărul de telefon afișat. Vom fi încântați să răspundem la întrebările dvs. și să vă oferim suportul necesar!',
         },
     ]
     return(

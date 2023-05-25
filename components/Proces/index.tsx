@@ -85,8 +85,8 @@ export default function Proces(){
                         </button>
                     ))}
                 </div>
-                <div className="flex w-full md:ml-12 flex-col items-start">
-                    <h4 className="text-[#fff] text-2xl lg:text-4xl text-center lg:text-left font-semibold mb-8">{selectedProces.titluText}</h4>
+                <div className="flex w-full md:ml-12 mt-12 flex-col items-start">
+                    <h4 className="text-[#fff] text-2xl lg:text-4xl font-semibold mb-8">{selectedProces.titluText}</h4>
                     <p className="text-md text-[#fff]">{selectedProces.text}</p>
                 </div>
             </div>

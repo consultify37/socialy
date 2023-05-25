@@ -58,7 +58,7 @@ const WhyUsAbout = () => {
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
                         <Image src='/images/About/about.png' alt='Why-Us' className='relative rounded-[35px] md:mr-10 z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
-                        <img src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
+                        <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>
                 <Link href='/' className='p-2 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-medium px-10 mt-16'>ce spun clienții noștri?</Link>

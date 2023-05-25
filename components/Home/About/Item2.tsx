@@ -32,8 +32,8 @@ const Item2About = () => {
                     </li>
                 </ul>
                 <div className='flex gap-4 mt-6'>
-                    <Link href='/shop' className='py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12'>Shop</Link>
-                    <Link href='/servicii' className='py-3 bg-transparent text-white rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12'>Servicii</Link>
+                    <Link href='/shop' className='py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12'>Shop</Link>
+                    <Link href='/servicii' className='py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12'>Servicii</Link>
                 </div>
             </div>
         </div>

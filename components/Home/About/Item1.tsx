@@ -17,13 +17,13 @@ const Item1About = () => {
         <div className="flex gap-4 mt-4 z-[2]">
           <Link
             href="/news"
-            className="py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12"
+            className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12"
           >
             programe
           </Link>
           <Link
             href="/contact"
-            className="py-3 bg-transparent text-white rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12"
+            className="py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12"
           >
             contact
           </Link>

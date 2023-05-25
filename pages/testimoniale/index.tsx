@@ -180,7 +180,11 @@ export default function Testimoniale() {
           </div>
         </div>
       </section>
-      <CTA />
+                  <CTA
+                title="Aplică acum și transformă-ți proiectele în cu Consultify!"
+                linkText="Completează formularul!"
+                linkHref="/contact"
+            />
       <News />
       <NewsLetter />
     </>

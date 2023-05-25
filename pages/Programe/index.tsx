@@ -61,17 +61,19 @@ export default function Programe() {
                 />
             </section>
             <section className="flex flex-col gap-5 pb-20 items-stretch justify-center px-7 lg:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-                <select className="bg-[#ECECEC] mb-12 rounded-full py-4 px-3 text-xl" name="categorie">
-                    <option value="toate">Toate</option>
-                    <option value="fonduri-europene">Fonduri europene</option>
-                    <option value="marketing">Marketing</option>
-                </select>
+                <div className="bg-[#ECECEC] mb-12 flex items-center px-4 justify-center w-full rounded-full">
+                    <select className="bg-[#ECECEC] px-4 rounded-full py-4 text-xl w-full" name="categorie">
+                        <option value="toate">Toate</option>
+                        <option value="fonduri-europene">Fonduri europene</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                </div>
                 {
                     Programe.map(programe => (
                         programe.id % 2 === 0 ? (
                             <div 
                                 style={{backgroundImage:"url('/images/fonduri/fonduri-img-1.png')"}}
-                                className="rounded-3xl mx-2 lg:mx-[30px] relative w-full h-auto flex flex-col-reverse lg:flex-row justify-between px-4 lg:px-20 py-10 bg-cover bg-no-repeat align-center mb-20"
+                                className="rounded-3xl relative w-full h-auto flex flex-col-reverse lg:flex-row justify-between px-4 lg:px-20 py-10 bg-cover bg-no-repeat align-center mb-20"
                             >   
                                 <div style={{background: 'rgba(0, 0, 0, 0.45)'}} className="w-full h-full absolute rounded-3xl left-0 z-[1] top-0"></div>
                                 <div className="flex flex-col justify-center items-center z-[10] rounded-2xl relative top-[100px] z-[100] bg-[#260056] py-8 px-8">
@@ -82,7 +84,7 @@ export default function Programe() {
                                         <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
                                         <li className="text-[#EDD7FF] text-md mb-8">Lorem lispum dolor sit amet</li>
                                     </ul>
-                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
+                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
                                 </div>
                                 <div className='flex flex-col items-end justify-center z-[10]'>
                                     <h5 className='text-white text-xs lg:text-xl mb-2'>
@@ -99,7 +101,7 @@ export default function Programe() {
                         ) : (
                             <div 
                                 style={{backgroundImage:"url('/images/fonduri/fonduri-img-1.png')"}}
-                                className="rounded-3xl mx-2 lg:mx-[30px] relative w-full h-auto flex flex-col-reverse lg:flex-row-reverse justify-between px-4 lg:px-20 py-10 bg-cover bg-no-repeat align-center mb-20"
+                                className="rounded-3xl relative w-full h-auto flex flex-col-reverse lg:flex-row-reverse justify-between px-4 lg:px-20 py-10 bg-cover bg-no-repeat align-center mb-20"
                             >   
                                 <div style={{background: 'rgba(0, 0, 0, 0.45)'}} className="w-full h-full absolute rounded-3xl left-0 z-[1] top-0"></div>
                                 <div className="flex flex-col justify-center items-center z-[10] rounded-2xl relative top-[100px] z-[100] bg-[#260056] py-8 px-8">
@@ -110,7 +112,7 @@ export default function Programe() {
                                         <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
                                         <li className="text-[#EDD7FF] text-md mb-8">Lorem lispum dolor sit amet</li>
                                     </ul>
-                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
+                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
                                 </div>
                                 <div className='flex flex-col items-start justify-center z-[10]'>
                                     <h5 className='text-white text-xs lg:text-xl mb-2'>
@@ -128,7 +130,11 @@ export default function Programe() {
                     ))
                 }
             </section>
-            <CTA />
+            <CTA
+                title="Aplică acum la fonduri nerambursabile pentru afacerea ta!"
+                linkText="Completează formularul!"
+                linkHref="/contact"
+            />
             <div className="w-full mt-20 px-7 lg:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 <div className="flex justify-start items-start">
                     <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">

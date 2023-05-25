@@ -17,7 +17,7 @@ export default function FonduriComponent() {
                     <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
                     <li className="text-[#EDD7FF] text-md mb-8">Lorem lispum dolor sit amet</li>
                 </ul>
-                <Link className="py-3 bg-[#BA63FF] text-[#fff] rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
+                <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
             </div>
             <div className='flex flex-col items-end justify-center z-[10]'>
                 <h5 className='text-white text-xs lg:text-xl mb-2'>
