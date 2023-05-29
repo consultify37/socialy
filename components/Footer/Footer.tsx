@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-2 w-full md:w-[35%]'>
                     <Image src='/images/logo-invert.svg' alt='Footer logo' width={200} height={53} className='aspect-auto w-[177px] md:w-[200px]' />
                     <p className='text-[#260056] text-[14px] md:text-[16px]'>
-                        Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
+                        Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale
                     </p>
                 </div>
                 <div className='flex flex-col gap-1'>
@@ -35,13 +35,16 @@ const Footer = () => {
                     <h3 className='font-bold text-[#260056] text-[24px]'>Informații</h3>
                     <ul className='list-none flex flex-col gap-1'>
                         <li>
-                            <p className='font-medium text-[#8717F8] text-[16px]'>email: exemplu@gmail.com</p>
+                            <p className='font-medium text-[#8717F8] text-[16px]'>Numele firmei: MHC INSPERON SRL</p>
                         </li>
                         <li>
-                            <p className='font-medium text-[#8717F8] text-[16px]'>telefon: 0712 345 678</p>
+                            <p className='font-medium text-[#8717F8] text-[16px]'>Adresa: Strada Crișul Alb, Numărul 6, Sector 4, București.</p>
                         </li>
                         <li>
-                            <p className='font-medium text-[#8717F8] text-[16px]'>SC. Consultify S.R.L.</p>
+                            <p className='font-medium text-[#8717F8] text-[16px]'>Număr de telefon: (0727) 153 317</p>
+                        </li>
+                        <li>
+                            <Link href='/' className='font-medium text-[#8717F8] text-[16px]'>Email: contact@consultify.ro</Link>
                         </li>
                         <li>
                             <Link href='/' className='font-medium text-[#8717F8] text-[16px]'>Termenii și Condițiile</Link>

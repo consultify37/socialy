@@ -3,7 +3,11 @@ import Axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
-export default function NewsLetter() {
+interface NewsLetterProps {
+  headingText: string;
+}
+
+export default function NewsLetter({ headingText }: NewsLetterProps) {
   const [newsletter, setNewsletter] = useState('Adresa ta de email');
   const [buttonNews, setButtonNews] = useState('Mă abonez')
   
@@ -59,7 +63,7 @@ export default function NewsLetter() {
         </div>
         <div className="lg:mt-0 max-w-[470px]">
           <h2 className="text-white text-[16px] md:text-[26px] font-bold">
-            Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!
+            {headingText}
           </h2>
           <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
             <input

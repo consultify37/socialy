@@ -12,6 +12,8 @@ import CTA from "../../components/CTA";
 import News from "../../components/Home/News/News";
 import Axios from "axios";
 import toast from "react-hot-toast";
+import Item1About from "../../components/Home/About/Item1";
+import Item2About from "../../components/Home/About/Item2";
 
 export default function Testimoniale() {
   const [scrollAmount, setScrollAmount] = useState<number>(0);
@@ -64,7 +66,7 @@ export default function Testimoniale() {
         className="relative bg-[#260056] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
       >
         <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">
-          Cunoaște succesele clienților noștri
+          Experiențe de succes prin fonduri europene
         </h1>
         <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
         <Image
@@ -86,10 +88,10 @@ export default function Testimoniale() {
         id="feedback-firme"
         className="w-full flex flex-col items-center my-32 justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
       >
-        <h2 className="text-[#8717F8] font-medium text-base md:text-xl lg:text-2xl xl:text-4xl text-center">
-          Peste 5000 de firme au accesat fonduri europene cu ajutorul nostru
+        <h2 className="text-[#8717F8] font-bold text-3xl md:text-xl lg:text-2xl xl:text-4xl text-center">
+          Peste 850 de companii au accesat fonduri europene cu ajutorul nostru. Iată câteva dintre ele:
         </h2>
-        <h3 className="text-[#8717F8] font-medium text-base md:text-lg lg:text-xl xl:text-3xl">
+        <h3 className="text-[#8717F8] font-bold text-xl md:text-lg lg:text-xl xl:text-3xl">
           Iată câteva dintre ele
         </h3>
         <div className="flex mt-4 gap-5 flex-wrap justify-center">
@@ -134,9 +136,88 @@ export default function Testimoniale() {
       <section className="relative bg-[#260056] w-full pt-32 mt-60 pb-14 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <span className="bg-[#260056] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
         <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0">
-          Am ajutat clienți din toată România să obțină fonduri nerambursabile pentru afacerile lor 
+          Gânduri și experiențe ale clienților noștri: testimoniale de succes
         </h2>
         <Testimonials />
+        <section id='trust-us' className='bg-[#260056] mt-[6.25rem] flex flex-col items-center w-full py-20 relative'>
+            <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-5">
+              Încă nu te-am convins? Descarcă lista completă cu rezultate:
+            </h2>
+            <Link href='/shop' className="bg-[#8717F8] mb-16 px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
+              Descarcă lista aici!
+            </Link>
+            <h2 className="text-lg md:text-2xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-24">
+              Sau vizionați următoarele studii de caz!
+            </h2>
+            <div className="w-full mx-auto gap-5 flex gap-y-20 justify-between flex-wrap z-[2] mb-32">
+              <div className="w-full flex-1 z-[2]">
+                <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl">
+                  Despre platforma noastră
+                </h2>
+                <p className="text-white font-thin text-[16px] mt-5 z-[2] mb-8 max-w-[600px]">
+                  Ești în căutarea unei soluții de finanțare prin fonduri europene pentru proiectul tău? Consultify este aici pentru a te ajuta! Suntem o companie specializată în accesarea fondurilor europene pentru proiecte diverse, de la dezvoltarea turismului și cercetarea și dezvoltarea tehnologiei, la agricultura durabilă și dezvoltarea rurală.
+                </p>
+                <p className="text-white font-thin text-[16px] mt-5 z-[2] max-w-[600px]">
+                  La Consultify, suntem puși pe treabă și ne concentrăm pe nevoile specifice ale fiecărui client. Indiferent de domeniul în care activezi, echipa noastră de experți îți va oferi cele mai bune soluții de finanțare personalizate, astfel încât să-ți poți realiza proiectul fără griji. Accesarea fondurilor europene poate fi complicată, dar nu trebuie să fie - Consultify poate face acest proces mai ușor și mai eficient pentru tine!
+                </p>
+                <div className="flex gap-4 mt-4 z-[2]">
+                  <Link
+                    href="/news"
+                    className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12"
+                  >
+                    programe
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12"
+                  >
+                    contact
+                  </Link>
+                </div>
+              </div>
+              <Image
+                src="/images/home-about-1.png"
+                alt="About home 1"
+                className="relative rounded-[28.5px] w-full md:w-[400px] mx-auto z-[4]"
+                width={400}
+                height={400}
+              />
+            </div>
+            <div className='w-full mt-16 mx-auto flex gap-y-20 gap-5 justify-between flex-col-reverse md:flex-row flex-wrap z-[2]'>
+              <div className='relative w-full md:w-auto'>
+                  <Image src='/images/home-about-2.png' alt='About home 2' className='rounded-[28.5px] w-full md:w-[400px] mx-auto lg:mx-0' object-fit='cover' placeholder='blur' width={400} height={400} blurDataURL='/images/home-about-1.png' />
+                  <Image src='/images/patrat.svg' className='absolute left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[100px] lg:w-[150px]' width={150} height={150} alt='Polygon img' />
+              </div>
+              <div className='w-full md:w-[48%]'>
+                  <h2 className='text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl'>Cum funcționează Consultify?</h2>
+                  <p className='text-white font-thin text-[16px] mt-5 max-w-[600px]'>
+                      Bine ai venit la Consultify - experți în accesarea fondurilor europene! Misiunea noastră este de a sprijini antreprenorii în accesarea fondurilor europene și de a-i ajuta să-și transforme proiectele în realitate. Cu o echipă tânără și dedicată, suntem gata să ne asumăm provocările și să obținem cele mai bune rezultate pentru clienții noștri. Iată câteva dintre obiectivele noastre:
+                  </p>
+                  <ul className='list-none mt-4'>
+                      <li className='flex gap-5 items-center'>
+                          <span className='text-[#260056] px-[15px] w-8 h-8 rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>1</span>
+                          <p className='text-white text-[16px] font-normal'>Să fim lideri de piață în domeniul consultanței în accesarea fondurilor europene.</p>
+                      </li>
+                      <li className='flex gap-5 items-center mt-4'>
+                          <span className='text-white px-[15px] w-8 h-8 rounded-[50%] bg-[#8717F8] flex items-center justify-center font-medium'>2</span>
+                          <p className='text-white text-[16px] font-normal'>Să creștem gradul de satisfacție al clienților noștri la peste 90%.</p>
+                      </li>
+                      <li className='flex gap-5 items-center mt-4'>
+                          <span className='text-[#00103C] px-[15px] w-8 h-8 rounded-[50%] bg-[#CF9FFF] flex items-center justify-center font-medium'>3</span>
+                          <p className='text-white text-[16px] font-normal'>Să dezvoltăm parteneriate solide cu companii din diverse domenii.</p>
+                      </li>
+                      <li className='flex gap-5 items-center mt-4'>
+                          <span className='text-[#260056] px-[15px] w-8 h-8 rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>4</span>
+                          <p className='text-white text-[16px] font-normal'>Să fim recunoscuți ca un brand de încredere și profesionalism.</p>
+                      </li>
+                  </ul>
+                  <div className='flex gap-4 mt-6'>
+                      <Link href='/shop' className='py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12'>Shop</Link>
+                      <Link href='/servicii' className='py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12'>Servicii</Link>
+                  </div>
+              </div>
+          </div>
+        </section>
         <div className="w-full mt-20">
           <div className="flex justify-start items-start">
             <h3 className="text-lg text-white font-bold">
@@ -180,13 +261,13 @@ export default function Testimoniale() {
           </div>
         </div>
       </section>
-                  <CTA
-                title="Aplică acum și transformă-ți proiectele în cu Consultify!"
-                linkText="Completează formularul!"
-                linkHref="/contact"
-            />
+      <CTA
+        title="Transformă-ți ideile în realitate cu fonduri europene!"
+        linkText="Completează formularul de contact!"
+        linkHref="/contact"
+      />
       <News />
-      <NewsLetter />
+      <NewsLetter headingText='Fii la curent cu cele mai recente informații despre fonduri europene!' />
     </>
   );
 }

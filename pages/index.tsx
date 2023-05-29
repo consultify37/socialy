@@ -49,7 +49,7 @@ export default function Home() {
           </Link>
       </div>
       <News />
-      <NewsLetter />
+      <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
     </>
   );
 }

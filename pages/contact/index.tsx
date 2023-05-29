@@ -64,7 +64,7 @@ export default function Contact() {
                 className="relative bg-[#260056] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
             >
                 <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">
-                    Suntem aici pentru tine
+                    Suntem aici pentru tine!
                 </h1>
                 <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
                 <Image
@@ -96,7 +96,7 @@ export default function Contact() {
                             />
                         </div>
                         <div className="flex flex-col justify-center">
-                            <h5 className="text-xl text-white">Email</h5>
+                            <h5 className="text-xl text-white">Email:</h5>
                             <Link href='mailto:fsafsa@fsa.com' className="text-lg text-white">examply@gmail.com</Link>
                         </div>
                     </div>
@@ -111,11 +111,11 @@ export default function Contact() {
                             />
                         </div>
                         <div className="flex flex-col justify-center">
-                            <h5 className="text-xl text-white">Email</h5>
-                            <Link href='mailto:fsafsa@fsa.com' className="text-lg text-white">examply@gmail.com</Link>
+                            <h5 className="text-xl text-white">Telefon:</h5>
+                            <span className="text-lg text-white"><Link href='tel:6789'>0712 345 678</Link> | <Link href='tel:6789'>0798 765 432</Link></span>
                         </div>
                     </div>
-                    <h6 className="text-xl text-white mb-4">Sau ne poți găsi și aici</h6>
+                    <h6 className="text-xl text-white mb-4">Sau ne poți găsi și aici:</h6>
                     <div className="flex flex-row">
                         <div className="w-[-webkit-fill-available] max-w-[fit-content] mr-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                             <Image
@@ -147,7 +147,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <form onSubmit={upload} className="w-full mt-12 lg:mt-0 lg:ml-12 rounded-3xl shadow-box bg-[#fff] w-full max-w-[1000px] p-8 px-4 md:px-8 flex flex-col">
-                    <h2 className="text-ms font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună</h2>
+                    <h2 className="text-ms font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună!</h2>
                     <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6">
                         <div className="flex flex-col w-full md:w-[47%] mr-2">
                             <span className="text-sm mb-2">
@@ -239,7 +239,7 @@ export default function Contact() {
                         <input 
                             checked={isChecked} onChange={handleChange}
                             required id="link-checkbox" type="checkbox" value="" className="w-4 cursor-pointer h-4 text-[#260056] rounded border-[2px] bg-[#F2F4FF] border-[#8717F8] focus:ring-blue-500" />
-                        <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-[#260056]">Accept <a href="#" className="text-[#260056] underline">Termenii și Condițiile</a></label>
+                        <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-[#260056]">Accept <a href="#" className="text-[#260056] underline">Termenii și Condițiile.</a></label>
                     </div>
                     <div className="flex flex-col md:flex-row justify-center w-full">
                         <button                      
@@ -257,7 +257,7 @@ export default function Contact() {
                     <div className='mx-auto lg:mx-0 w-full z-[2] md:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <div className='flex flex-col gap-2'>
                             <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-md'>
-                                <img src='/images/questions-comment.png' className='mx-auto' alt='Questions comment' width={25} height={10} />
+                                <Image src='/images/questions-comment.png' className='mx-auto' alt='Questions comment' width={25} height={10} />
                             </span>
                             <h3 className='font-bold text-[24px] text-[#260056]'>Comunicare</h3>
                             <p className='font-normal text-[#260056] text-sm md:text-[16px'>
@@ -266,7 +266,7 @@ export default function Contact() {
                         </div>
                         <div className='flex flex-col gap-2'>
                             <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-md'>
-                                <img src='/images/flash.png' className='mx-auto' alt='Questions comment' width={17} height={10} />
+                                <Image src='/images/flash.png' className='mx-auto' alt='Questions comment' width={17} height={10} />
                             </span>
                             <h3 className='font-bold text-[24px] text-[#260056]'>Spirit tânăr</h3>
                             <p className='font-normal text-[#260056] text-sm md:text-[16px'>
@@ -275,7 +275,7 @@ export default function Contact() {
                         </div>
                         <div className='flex flex-col gap-2'>
                             <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-md'>
-                                <img src='/images/heart.png' className='mx-auto' alt='Questions comment' width={25} height={24} />
+                                <Image src='/images/heart.png' className='mx-auto' alt='Questions comment' width={25} height={24} />
                             </span>
                             <h3 className='font-bold text-[24px] text-[#260056]'>Suport non-stop</h3>
                             <p className='font-normal text-[#260056] text-sm md:text-[16px'>
@@ -284,7 +284,7 @@ export default function Contact() {
                         </div>
                         <div className='flex flex-col gap-2'>
                             <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-md'>
-                                <img src='/images/chart.png' className='mx-auto' alt='Questions comment' width={21} height={21} />
+                                <Image src='/images/chart.png' className='mx-auto' alt='Questions comment' width={21} height={21} />
                             </span>
                             <h3 className='font-bold text-[24px] text-[#260056]'>Profesionalism</h3>
                             <p className='font-normal text-[#260056] text-sm md:text-[16px'>
@@ -295,14 +295,14 @@ export default function Contact() {
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
                         <Image src='/images/About/about.png' alt='Why-Us' className='relative rounded-[35px] md:mr-10 z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
-                        <img src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
+                        <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>
                 <Link href='/contact' className="bg-[#8717F8] mt-12 flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
                     vreau să completez
                 </Link>
             </section>
-            <NewsLetter />
+            <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
         </>
     );
 }

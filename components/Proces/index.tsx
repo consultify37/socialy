@@ -90,6 +90,9 @@ export default function Proces(){
                     <p className="text-md text-[#fff]">{selectedProces.text}</p>
                 </div>
             </div>
+            <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
+                Contactează-ne!
+            </Link>
         </section>
     )
 }

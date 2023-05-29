@@ -45,7 +45,7 @@ const About: NextPage = () => {
             </div>
             {/* News */}
             <News />
-            <NewsLetter />
+            <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
         </>
     )
 }

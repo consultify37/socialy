@@ -42,7 +42,7 @@ export default function Programe() {
                 className="relative bg-[#260056] mb-40 w-full pt-[130px] pb-16 flex flex-col items-center justify-center overflow-visible"
             >
                 <h1 className="text-xl lg:text-4xl font-bold text-white lg:max-w-[50%] text-center pt-20 lg:pt-0">
-                    Alege programul potrivit pentru tine
+                    Alege programul potrivit pentru tine:
                 </h1>
                 <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] lg:w-[103vw] -rotate-2 z-[-1] absolute -left-5 -bottom-[3rem] h-32" />
                 <Image
@@ -53,7 +53,7 @@ export default function Programe() {
                     className="absolute right-0 top-0 z-[5] w-[80px] lg:w-[120px]"
                 />
                 <Image
-                    src="/images/shop-hexagon.png"
+                    src="/images/proces/hexagon.svg"
                     width={130}
                     height={130}
                     className="absolute top-7 -left-2 lg:bottom-5 lg:left-0 w-[100px] lg:w-[130px]"
@@ -148,7 +148,7 @@ export default function Programe() {
                 </Link>
             </div>
             <News />
-            <NewsLetter />
+            <NewsLetter headingText={'Fii la curent cu cele mai recente informații despre fonduri europene!'} />
         </>
     );
 }

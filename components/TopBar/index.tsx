@@ -7,13 +7,13 @@ export default function TopBar() {
         <div className="bg-[#8717F8] z-10">
             <div className="flex flex-col justify-center lg:flex-row lg:justify-between mx-3 py-4 md:mx-[80px] xl:mx-[140px] 2xl:mx-[276px]">
                 <div className="flex flex-row justify-between mb-4 lg:mb-0 flex-wrap">
-                    <Link href='tel:0712345679' className="flex flex-row items-center text-white text-xs lg:text-base mr-2">
+                    <Link href='tel:0727153317' className="flex flex-row items-center text-white text-xs lg:text-base mr-2">
                         <Image src='/images/TopBar/phone.svg' width={10} height={10} alt="phone" className="w-[10px] lg:w-[20px] mr-1 lg:ml-2 lg:mr-2"/>
-                        0712 345 679
+                        (0727) 153 317
                     </Link>
-                    <Link href='mailto:exemplu@email.com' className="flex flex-row items-center text-white text-xs lg:text-base mr-2">
+                    <Link href='mailto:contact@consultify.ro' className="flex flex-row items-center text-white text-xs lg:text-base mr-2">
                         <Image src='/images/TopBar/mail.svg' width={10} height={10} alt="phone" className="w-[10px] lg:w-[20px] mr-1 lg:ml-2 lg:mr-2"/>
-                        exemplu@email.com
+                        contact@consultify.ro
                     </Link>
                     <span className="flex flex-row items-center text-white text-xs lg:text-base mr-2">
                         <Image src='/images/TopBar/clock.svg' width={10} height={10} alt="phone" className="w-[10px] lg:w-[20px] mr-1 lg:ml-2 lg:mr-2"/>
