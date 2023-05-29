@@ -48,25 +48,25 @@ export default function PaginaProgram() {
             <div className='w-full md:w-[48%]'>
                 <h2 className='text-xl font-bold text-[#260056] z-[2] md:text-xl lg:text-2xl xl:text-4xl'>Cum implementam proiectele?</h2>
                 <p className='text-[#260056] font-thin text-[16px] mt-5 mb-10'>
-                    Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. Praesent non maximus lorem, nec sagittis metus. Nulla libero nisl, scelerisque et imperdiet mattis, suscipit eu elit.
+                    Cu o abordare agilă și expertiză în fondurile europene, ne asigurăm că proiectele dvs. sunt implementate cu succes. De la analiza inițială și planificare riguroasă, până la execuția atentă și monitorizarea progresului, vă oferim soluții personalizate pentru a maximiza rezultatele. Iată ce pași urmăm:
                 </p>
                 <ul className='list-none mt-4'>
                     <li className='flex gap-5 items-center'>
                         <span className='text-[#260056] w-8 h-8 rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>1</span>
-                        <p className='text-[#260056] text-md font-normal'>Lorem lispum dolor sit amet</p>
+                        <p className='text-[#260056] text-md font-normal'>Achiziții strategice și conforme cu specificațiile proiectului.</p>
                     </li>
                     <li className='flex gap-5 items-center mt-4'>
                         <span className='text-white w-8 h-8 rounded-[50%] bg-[#8717F8] flex items-center justify-center font-medium'>2</span>
-                        <p className='text-[#260056] text-md font-normal'>Lorem lispum dolor sit amet</p>
+                        <p className='text-[#260056] text-md font-normal'>Formulare precisă a cererilor de plată conform reglementărilor programului.</p>
                     </li>
                     <li className='flex gap-5 items-center mt-4'>
                         <span className='text-[#00103C] w-[50px] md:w-8 h-8 rounded-[50%] bg-[#CF9FFF] flex items-center justify-center font-medium'>3</span>
-                        <p className='text-[#260056] text-md font-normal'>Lorem lispum dolor sit amet</p>
+                        <p className='text-[#260056] text-md font-normal'>Proces rapid și eficient de cereri de rambursare pentru maximizarea resurselor financiare.</p>
                     </li>
                 </ul>
                 <div className='flex gap-4 mt-6'>
-                    <Link href='/contact' className='py-3 bg-[#7000FF] text-[#fff] rounded-[28.5px] font-xl text-xs lg:text-lg px-10 lg:px-12'>contacteaza-ne</Link>
-                    <Link href='/testimoniale' className='py-3 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#8717F8] text-xs lg:text-lg px-10 lg:px-12'>testimoniale</Link>
+                    <Link href='/contact' className='py-3 bg-[#7000FF] text-[#fff] rounded-[28.5px] font-xl text-xs lg:text-lg px-10 lg:px-12'>Contactează-ne</Link>
+                    <Link href='/testimoniale' className='py-3 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#8717F8] text-xs lg:text-lg px-10 lg:px-12'>Testimoniale</Link>
                 </div>
             </div>
         </section>
@@ -77,27 +77,27 @@ export default function PaginaProgram() {
                 <Image src='/images/patrat.svg' className='absolute z-[-1] left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[100px] lg:w-[150px]' width={150} height={150} alt='Polygon img' />
             </div>
             <div className='w-full md:w-[48%]'>
-                <h2 className='text-xl font-bold text-[#260056] z-[2] md:text-xl lg:text-2xl xl:text-4xl'>Acest serviciu este pentru tine</h2>
+                <h2 className='text-xl font-bold text-[#260056] z-[2] md:text-xl lg:text-2xl xl:text-4xl'>Acest serviciu este pentru tine dacă vrei:</h2>
                 <ul className='list-none mt-4'>
                     <li className='flex'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={20} height={20} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-normal'>Lorem lispum dolor sit amet</p>
+                        <p className='text-[#260056] lg:text-md font-normal'>Accelerarea procesului de implementare cu resursele și know-how-ul nostru.</p>
                     </li>
                     <li className='flex mt-4'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={20} height={20} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-normal'>Lorem lispum dolor sit amet</p>
+                        <p className='text-[#260056] lg:text-md font-normal'>Asigurarea conformității cu cerințele și termenele stricte ale fondurilor europene.</p>
                     </li>
                     <li className='flex mt-4'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={20} height={20} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-normal'>Lorem lispum dolor sit amet</p>
+                        <p className='text-[#260056] lg:text-md font-normal'>Reducerea stresului și a presiunii asupra echipei dumneavoastră.</p>
                     </li>
                     <li className='flex mt-4'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={20} height={20} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-normal'>Lorem lispum dolor sit amet</p>
+                        <p className='text-[#260056] lg:text-md font-normal'>LoremAcces la rețeaua noastră extinsă de parteneri și contacte relevante.</p>
                     </li>
                     <li className='flex mt-4'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={20} height={20} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-normal'>Lorem lispum dolor sit amet</p>
+                        <p className='text-[#260056] lg:text-md font-normal'>Suportul dedicat și consultanța pe tot parcursul implementării proiectului tău.</p>
                     </li>
                 </ul>
                 <div className='flex gap-4 mt-6'>
@@ -115,27 +115,31 @@ export default function PaginaProgram() {
                     <Image src='/images/proces/hexagon.svg' className='absolute z-[1] left-[-2.25rem] bottom-[-2.5rem] lg:left-[-4.25rem] lg:bottom-[-3.5rem] rotate-2 w-[100px] lg:w-[150px]' width={150} height={150} alt='hexagon' />
                 </div>
                 <div className='flex flex-col gap-2 w-full mr-12'>
-                    <h2  className='font-bold text-white text-xl lg:text-2xl xl:text-4xl mb-4'>Stiai ca?</h2>
-                    <p className='text-white text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies nibh vel massa iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium ac orci at convallis. Vivamus a auctor sapien, sed viverra erat. Cras aliquam auctor urna. Pellentesque molestie orci quis leo ornare dapibus. Nulla auctor finibus aliquam. Etiam vitae efficitur orci, id gravida sapien. Nulla facilisis est lorem, tincidunt elementum felis bibendum eu.</p>
+                    <h2  className='font-bold text-white text-xl lg:text-2xl xl:text-4xl mb-4'>Stiai că?</h2>
+                    <p className='text-white text-base'>
+                        Stiai că implementarea proiectelor tale pe fonduri europene prin intermediul consultanților noștri te poate propulsa către succesul dorit? Cu o echipă de experți dedicați și o abordare strategică, garantăm rezultate remarcabile.
+                        <br /><br />
+                        De la planificarea detaliată și coordonarea achizițiilor, până la monitorizarea progresului, consultanții noștri transformă viziunea ta în realitate. Statisticile vorbesc de la sine: peste 97% dintre proiectele implementate de consultanții noștri sunt finalizate cu succes și nu întâmpină probleme în perioada de monitorizare, comparativ cu doar 65% în cazul implementării făcute de aplicanți. Alege parteneriatul cu noi pentru a maximiza șansele de succes și a-ți atinge obiectivele în implementarea proiectului tău pe fonduri europene    
+                    </p>
                 </div>
             </div>
             <div className='flex flex-col lg:flex-row justify-between items-center mb-12'>
                 <Image src='/images/PaginaProgram/cui.svg' alt='About home 1' className='relative rounded-[28.5px] w-full md:w-[800px] mx-auto z-[4]' width={400} height={400} />
                 <div className='flex flex-col gap-2 w-full'>
-                    <h2  className='font-bold text-white text-xl lg:text-2xl xl:text-4xl mb-4'>Programul ideal pentru antreprenorii în domeniul agriculturii și al apiculturii</h2>
-                    <p className='text-white text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies nibh vel massa iaculis porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium ac orci at convallis. Vivamus a auctor sapien, sed viverra erat. Cras aliquam auctor urna. Pellentesque molestie orci quis leo ornare dapibus. Nulla auctor finibus aliquam. Etiam vitae efficitur orci, id gravida sapien. Nulla facilisis est lorem, tincidunt elementum felis bibendum eu.</p>
+                    <h2  className='font-bold text-white text-xl lg:text-2xl xl:text-4xl mb-4'>Serviciul perfect pentru antreprenori care vor să-și implementeze proiectul cu succes.</h2>
+                    <p className='text-white text-base'>Implementarea proiectelor prin noi se adresează întreprinderilor și organizațiilor care doresc rezultate de succes. Cu expertiza vastă și abordarea profesionistă, oferim suport și consultanță pe tot parcursul procesului. Indiferent de mărimea și complexitatea proiectului, ne asigurăm că implementarea este eficientă, conform cerințelor și obiectivelor. Alegând colaborarea cu noi, beneficiați de expertiză specializată și soluții personalizate pentru succesul proiectului dvs. pe fonduri europene.</p>
                 </div>
             </div>
             <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-0 lg:mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
-                vezi toate produsele
+                vreau să completez!
             </Link>
         </section>
         <FAQAbout />
-                    <CTA
-                title="Aplică acum și transformă-ți proiectele în cu Consultify!"
-                linkText="Completează formularul!"
-                linkHref="/contact"
-            />
+        <CTA
+            title="Aplică acum și transformă-ți proiectele în cu Consultify!"
+            linkText="Completează formularul!"
+            linkHref="/contact"
+        />
         <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <div className="flex justify-start items-start">
                 <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">
