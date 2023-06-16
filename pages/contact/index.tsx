@@ -82,13 +82,13 @@ export default function Contact() {
                     alt="Yellow triangle"
                 />
             </section>
-            <div className="bg-[#F6EFFF] w-[100vw] h-[50vh] absolute top-0 left-0 z-[-1]"></div>
+            <div className="bg-[#F6EFFF] w-[100vw] h-[80vh] absolute top-0 left-0 z-[-1]"></div>
             <section className="w-full flex flex-col lg:flex-row items-start my-32 justify-between px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 <div className="flex flex-col w-full mr-12 bg-[#260056] rounded-3xl p-8">
                     <div className="flex flex-row mb-6">
                         <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-4">
                             <Image
-                                src="/images/OurServices/consultanta.svg"
+                                src="/images/mail-white.svg"
                                 alt="Hero blue circle"
                                 width={60}
                                 height={60}
@@ -103,7 +103,7 @@ export default function Contact() {
                     <div className="flex flex-row mb-6">
                         <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-4">
                             <Image
-                                src="/images/OurServices/consultanta.svg"
+                                src="/images/phone.svg"
                                 alt="Hero blue circle"
                                 width={60}
                                 height={60}
@@ -294,7 +294,7 @@ export default function Contact() {
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
-                        <Image src='/images/About/about.png' alt='Why-Us' className='relative rounded-[35px] md:mr-10 z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+                        <Image src='/images/About/about.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[400px]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>

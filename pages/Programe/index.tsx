@@ -73,7 +73,7 @@ export default function Programe() {
                         programe.id % 2 === 0 ? (
                             <div 
                                 style={{backgroundImage:"url('/images/fonduri/fonduri-img-1.png')"}}
-                                className="rounded-3xl relative w-full h-auto flex flex-col-reverse lg:flex-row justify-between px-4 lg:px-20 py-10 bg-cover bg-no-repeat align-center mb-20"
+                                className="rounded-3xl relative w-full h-auto flex flex-col-reverse lg:flex-row justify-between px-4 lg:px-20 py-2 bg-cover bg-no-repeat align-center mb-[10rem]"
                             >   
                                 <div style={{background: 'rgba(0, 0, 0, 0.45)'}} className="w-full h-full absolute rounded-3xl left-0 z-[1] top-0"></div>
                                 <div className="flex flex-col justify-center items-center z-[10] rounded-2xl relative top-[100px] z-[100] bg-[#260056] py-8 px-8">
@@ -101,7 +101,7 @@ export default function Programe() {
                         ) : (
                             <div 
                                 style={{backgroundImage:"url('/images/fonduri/fonduri-img-1.png')"}}
-                                className="rounded-3xl relative w-full h-auto flex flex-col-reverse lg:flex-row-reverse justify-between px-4 lg:px-20 py-10 bg-cover bg-no-repeat align-center mb-20"
+                                className="rounded-3xl relative w-full h-auto flex flex-col-reverse lg:flex-row-reverse justify-between px-4 lg:px-20 py-2 bg-cover bg-no-repeat align-center mb-[10rem]"
                             >   
                                 <div style={{background: 'rgba(0, 0, 0, 0.45)'}} className="w-full h-full absolute rounded-3xl left-0 z-[1] top-0"></div>
                                 <div className="flex flex-col justify-center items-center z-[10] rounded-2xl relative top-[100px] z-[100] bg-[#260056] py-8 px-8">

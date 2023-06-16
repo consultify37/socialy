@@ -26,7 +26,7 @@ const HomeCarousel = () => {
                     alt="Hero video"
                     width={2000}
                     height={2000}
-                    className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[550px] aspect-video z-[5] filter-brightness"
+                    className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[400px] aspect-video z-[5] filter-brightness"
                 />
             </div>
             <div className='w-full flex items-center relative justify-center'>
@@ -47,7 +47,7 @@ const HomeCarousel = () => {
                     alt="Hero video"
                     width={2000}
                     height={2000}
-                    className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[550px] aspect-video z-[5] filter-brightness"
+                    className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[400px] aspect-video z-[5] filter-brightness"
                 />
             </div>
             <div className='w-full flex items-center relative justify-center'>
@@ -68,7 +68,7 @@ const HomeCarousel = () => {
                     alt="Hero video"
                     width={2000}
                     height={2000}
-                    className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[550px] aspect-video z-[5] filter-brightness"
+                    className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[400px] aspect-video z-[5] filter-brightness"
                 />
             </div>
         </Carousel>

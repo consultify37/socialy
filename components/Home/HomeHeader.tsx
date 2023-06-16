@@ -43,7 +43,7 @@ const HomeHeader = () => {
         alt="Hero blue circle"
         width={140}
         height={140}
-        className="absolute -right-8 w-24 xl:w-[140px] -bottom-2 xl:right-10 xl:bottom-2 z-[11]"
+        className="absolute -right-8 w-24 xl:w-[140px] bottom-[1.5rem] z-[-1] xl:right-10 xl:bottom-2 z-[11]"
       />
       <Image
         src="/images/circle-hero-left.svg"
@@ -52,10 +52,10 @@ const HomeHeader = () => {
         height={200}
         className="absolute w-[100px] xl:w-[250px] left-0 -top-20 lg:-top-44 xl:top-[50%] xl:translate-y-[-50%] z-[5]"
       />
-      <span className="bg-[#260056] w-[130vw] xl:w-[113vw] 2xl:w-[112vw] h-[140%] z-[4] -left-[133] -rotate-[5deg] rounded-[0_0_199px_64px] md:rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] 2xl:rounded-[0_0_170px_250px] xl:-left-32 2xl:-left-40 -top-[7.5rem] xl:top-[-11rem] absolute overflow-hidden" />
+      <span className="bg-[#260056] w-[130vw] xl:w-[113vw] 2xl:w-[112vw] h-[126%] z-[4] -left-[133] -rotate-[5deg] 2xl:h-[145%] 2xl:-rotate-[3deg] rounded-[0_0_199px_64px] md:rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] 2xl:rounded-[0_0_170px_250px] xl:-left-32 2xl:-left-40 -top-[7.5rem] xl:-top-[0rem] 2xl:-top-[11rem] absolute overflow-hidden" />
       <div className="z-10 w-full flex flex-col items-center gap-9 relative pt-12">
-        <div className="relative flex items-center justify-center">
-          <h1 className="text-white text-3xl lg:text-5xl 2xl:text-6xl font-bold text-center">
+        <div className="relative flex items-center justify-center mb-8">
+          <h1 className="text-white text-3xl lg:text-4xl 2xl:text-5xl font-bold text-center">
             Finanțarea potrivită <br className="block md:hidden"/> pentru firma potrivită!
           </h1>
           <Image
@@ -64,10 +64,10 @@ const HomeHeader = () => {
             alt="Hero like"
             width={500}
             height={500}
-            className="absolute w-[625px] right-0 -bottom-4 lg:w-[505px] lg:w-[625px] lg:-bottom-8"
+            className="absolute w-[625px] right-0 -bottom-6 lg:w-[505px] lg:w-[500px] lg:-bottom-10"
           />
         </div>
-        <p className="text-white text-center text-xs lg:text-xl">
+        <p className="text-white font-[lighter] text-center text-[18px] lg:max-w-[60%]">
           Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale.
         </p>
         {/* <p className="text-white text-lg xl:text-xl">
@@ -80,7 +80,7 @@ const HomeHeader = () => {
           cum pot accesa fonduri?
         </button>
         <div className="absolute top-[100%] w-full">
-          <div className="relative w-[90%] home-carousel xl:w-[75%] flex items-center justify-center mx-auto">
+          <div className="relative w-[100%] home-carousel flex items-center justify-center mx-auto">
             <HomeCarousel />
             <Image
               id="hero-video"

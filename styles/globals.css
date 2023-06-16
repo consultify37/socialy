@@ -35,13 +35,30 @@ html, body, #__next {
   overflow-x: hidden;
   min-height: 100vh;
   overflow-y: overlay;
-  font-family: 'AvertaStd-All', sans-serif !important;
+  font-family: AvertaStd-All, sans-serif !important;
 }
 
 body{max-width: 2000px; margin: 0 auto;}
+.rec-arrow-right {
+  background-image: url('/images/arrows/arrow-right.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  text-indent: -9999px; /* Hide the text content */
+  border: none; /* Optional: Remove any default button styles */
+}
+* {
+  font-family: AvertaStd-All, sans-serif !important;
+}
+.rec-arrow-left {
+  background-image: url('/images/arrows/arrow-left.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  text-indent: -9999px; /* Hide the text content */
+  border: none; /* Optional: Remove any default button styles */
+}
 
-.rec-arrow-right, .rec-arrow-right:hover, .rec-arrow-right:enabled{background-color: #8717F8 !important; color: #fff !important; font-family: 'Averta-All', sans-serif !important;}
-.rec-arrow-left, .rec-arrow-left:hover, .rec-arrow-left:enabled {background-color: #8717F8 !important; color: #fff !important; font-family: 'Averta-All', sans-serif !important;}
+.rec-arrow-right, .rec-arrow-right:hover, .rec-arrow-right:enabled{background-color: #8717F8 !important; color: #fff !important; font-family: Averta-All, sans-serif !important;}
+.rec-arrow-left, .rec-arrow-left:hover, .rec-arrow-left:enabled {background-color: #8717F8 !important; color: #fff !important; font-family: Averta-All, sans-serif !important;}
 .home-carousel .rec-arrow-right, .home-carousel .rec-arrow-right:hover, .home-carousel .rec-arrow-right:enabled {position: absolute; right: 36px; z-index: 20;}
 .home-carousel .rec-arrow-left, .home-carousel .rec-arrow-left:hover, .home-carousel .rec-arrow-left:enabled {position: absolute; left: 36px; z-index: 20;}
 

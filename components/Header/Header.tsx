@@ -145,6 +145,17 @@ const Header = () => {
                     : ""
                 }`}
               >
+                <Link href="/servicii" className="font-medium text-white">
+                  servicii
+                </Link>
+              </li>
+              <li
+                className={`${
+                  toggle
+                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-4 lg:p-0 lg:border-0"
+                    : ""
+                }`}
+              >
                 <Link href="/shop" className="font-medium text-white">
                   shop
                 </Link>

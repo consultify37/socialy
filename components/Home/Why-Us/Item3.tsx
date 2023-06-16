@@ -6,9 +6,9 @@ const WhyUsItem3 = () => {
             <span className='h-[51px] w-[51px] flex items-center bg-[#8717F861] rounded-md'>
                 <Image src='/images/heart.png' className='mx-auto' alt='Questions comment' width={25} height={24} />
             </span>
-            <h3 className='font-bold text-[24px] text-white'>Suport Continuu</h3>
+            <h3 className='font-bold text-[24px] text-white'>Abordare individuală</h3>
             <p className='font-normal text-white text-sm md:text-[16px'>
-                Suportul nostru continuu asigură asistență constantă și soluții prompte pentru fiecare nevoie a clienților noștri
+                Oferim o abordare individuală pentru a ne asigura că satisfacem nevoile și obiectivele fiecărui client.
             </p>
         </div>
     )

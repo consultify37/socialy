@@ -26,7 +26,7 @@ const WhyUsAbout = () => {
                     <div className="grid gap-5 w-full grid-cols-2 justify-between mt-6 lg:mt-0 lg:ml-12">
                         <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
                             <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">850+</h6>
-                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">CLIENTI FERICITI</span>
+                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">clienți fericiți</span>
                             <p className="text-xs">Peste 850 de companii din diverse domenii și-au obținut finanțarea dorită prin serviciile noastre.</p>
                         </div>
                         <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
@@ -57,7 +57,7 @@ const WhyUsAbout = () => {
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
-                        <Image src='/images/About/about.png' alt='Why-Us' className='relative rounded-[35px] md:mr-10 z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+                        <Image src='/images/About/about.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[400px]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>

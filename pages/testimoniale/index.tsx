@@ -88,10 +88,10 @@ export default function Testimoniale() {
         id="feedback-firme"
         className="w-full flex flex-col items-center my-32 justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
       >
-        <h2 className="text-[#8717F8] font-bold text-3xl md:text-xl lg:text-2xl xl:text-4xl text-center">
+        <h2 className="text-[#8717F8] font-bold text2xl xl:text-[24px] text-center">
           Peste 850 de companii au accesat fonduri europene cu ajutorul nostru. Iată câteva dintre ele:
         </h2>
-        <h3 className="text-[#8717F8] font-bold text-xl md:text-lg lg:text-xl xl:text-3xl">
+        <h3 className="text-[#8717F8] text-xl md:text-lg lg:text-xl xl:text-2xl">
           Iată câteva dintre ele
         </h3>
         <div className="flex mt-4 gap-5 flex-wrap justify-center">
@@ -149,16 +149,16 @@ export default function Testimoniale() {
             <h2 className="text-lg md:text-2xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-24">
               Sau vizionați următoarele studii de caz!
             </h2>
-            <div className="w-full mx-auto gap-5 flex gap-y-20 justify-between flex-wrap z-[2] mb-32">
+            <div className="w-full mx-auto gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2] mb-32">
               <div className="w-full flex-1 z-[2]">
-                <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl">
-                  Despre platforma noastră
+                <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
+                  Stefan - Pasiunea pentru muzică și drumul către îndeplinirea visului antreprenorial
                 </h2>
                 <p className="text-white font-thin text-[16px] mt-5 z-[2] mb-8 max-w-[600px]">
-                  Ești în căutarea unei soluții de finanțare prin fonduri europene pentru proiectul tău? Consultify este aici pentru a te ajuta! Suntem o companie specializată în accesarea fondurilor europene pentru proiecte diverse, de la dezvoltarea turismului și cercetarea și dezvoltarea tehnologiei, la agricultura durabilă și dezvoltarea rurală.
+                  Stefan, în vârstă de 25 de ani, și-a deschis o școală privată de muzică prin programul Start-Up Nation Diaspora. Având o pasiune pentru vioară și dorința de a combina muzica cu pedagogia și antreprenoriatul, Stefan a visat să aibă propria sa școală de muzică. A ales firma Consultify ca partener de consultanță, datorită profesionalismului și serviciilor personalizate.
                 </p>
                 <p className="text-white font-thin text-[16px] mt-5 z-[2] max-w-[600px]">
-                  La Consultify, suntem puși pe treabă și ne concentrăm pe nevoile specifice ale fiecărui client. Indiferent de domeniul în care activezi, echipa noastră de experți îți va oferi cele mai bune soluții de finanțare personalizate, astfel încât să-ți poți realiza proiectul fără griji. Accesarea fondurilor europene poate fi complicată, dar nu trebuie să fie - Consultify poate face acest proces mai ușor și mai eficient pentru tine!
+                  După o perioadă petrecută în Londra pentru a strânge bani, Stefan s-a întors în România și a început să exploreze modalități de a-și finanța afacerea. Pentru a vedea povestea completă, vă invităm să vizionați clipul urmator:
                 </p>
                 <div className="flex gap-4 mt-4 z-[2]">
                   <Link
@@ -178,45 +178,66 @@ export default function Testimoniale() {
               <Image
                 src="/images/home-about-1.png"
                 alt="About home 1"
-                className="relative rounded-[28.5px] w-full md:w-[400px] mx-auto z-[4]"
-                width={400}
-                height={400}
+                className="relative rounded-[28.5px] w-full md:w-[450px] mx-auto z-[4]"
+                width={450}
+                height={450}
               />
             </div>
-            <div className='w-full mt-16 mx-auto flex gap-y-20 gap-5 justify-between flex-col-reverse md:flex-row flex-wrap z-[2]'>
+            <div className='w-full mt-16 mb-32 mx-auto gap-[6rem] flex gap-y-20 justify-between flex-col-reverse md:flex-row flex-wrap z-[2]'>
               <div className='relative w-full md:w-auto'>
-                  <Image src='/images/home-about-2.png' alt='About home 2' className='rounded-[28.5px] w-full md:w-[400px] mx-auto lg:mx-0' object-fit='cover' placeholder='blur' width={400} height={400} blurDataURL='/images/home-about-1.png' />
+                  <Image src='/images/home-about-2.png' alt='About home 2' className='rounded-[28.5px] w-full md:w-[450px] mx-auto lg:mx-0' object-fit='cover' placeholder='blur' width={450} height={450} blurDataURL='/images/home-about-1.png' />
                   <Image src='/images/patrat.svg' className='absolute left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[100px] lg:w-[150px]' width={150} height={150} alt='Polygon img' />
               </div>
               <div className='w-full md:w-[48%]'>
-                  <h2 className='text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl'>Cum funcționează Consultify?</h2>
-                  <p className='text-white font-thin text-[16px] mt-5 max-w-[600px]'>
-                      Bine ai venit la Consultify - experți în accesarea fondurilor europene! Misiunea noastră este de a sprijini antreprenorii în accesarea fondurilor europene și de a-i ajuta să-și transforme proiectele în realitate. Cu o echipă tânără și dedicată, suntem gata să ne asumăm provocările și să obținem cele mai bune rezultate pentru clienții noștri. Iată câteva dintre obiectivele noastre:
-                  </p>
-                  <ul className='list-none mt-4'>
-                      <li className='flex gap-5 items-center'>
-                          <span className='text-[#260056] px-[15px] w-8 h-8 rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>1</span>
-                          <p className='text-white text-[16px] font-normal'>Să fim lideri de piață în domeniul consultanței în accesarea fondurilor europene.</p>
-                      </li>
-                      <li className='flex gap-5 items-center mt-4'>
-                          <span className='text-white px-[15px] w-8 h-8 rounded-[50%] bg-[#8717F8] flex items-center justify-center font-medium'>2</span>
-                          <p className='text-white text-[16px] font-normal'>Să creștem gradul de satisfacție al clienților noștri la peste 90%.</p>
-                      </li>
-                      <li className='flex gap-5 items-center mt-4'>
-                          <span className='text-[#00103C] px-[15px] w-8 h-8 rounded-[50%] bg-[#CF9FFF] flex items-center justify-center font-medium'>3</span>
-                          <p className='text-white text-[16px] font-normal'>Să dezvoltăm parteneriate solide cu companii din diverse domenii.</p>
-                      </li>
-                      <li className='flex gap-5 items-center mt-4'>
-                          <span className='text-[#260056] px-[15px] w-8 h-8 rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>4</span>
-                          <p className='text-white text-[16px] font-normal'>Să fim recunoscuți ca un brand de încredere și profesionalism.</p>
-                      </li>
-                  </ul>
-                  <div className='flex gap-4 mt-6'>
-                      <Link href='/shop' className='py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12'>Shop</Link>
-                      <Link href='/servicii' className='py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12'>Servicii</Link>
-                  </div>
+                <h2 className='text-xl font-bold text-white z-[2] xl:text-[24px]'>
+                  Alexandra, tânăra antreprenoare care a obținut 40.000 de euro pentru afacerea sa prin programul Femeia Antreprenor
+                </h2>
+                <p className='text-white font-thin text-[16px] mt-5 max-w-[600px]'>
+                  Alexandra, în vârstă de 22 de ani, marketer digital, a obținut o finanțare în valoare de 40.000 de euro pentru afacerea sa prin programul Femeia Antreprenor. Pasionată de marketingul digital, Alexandra și-a dorit să transforme pasiunea sa într-o afacere, dar avea nevoie de fonduri pentru a-și deschide o locație nouă, a achiziționa echipamente și a angaja personal. Aflând despre finanțările nerambursabile, Alexandra a decis să încerce și ea norocul.
+                </p>
+                <p className="text-white font-thin text-[16px] mt-5 z-[2] max-w-[600px]">
+                  După căutări și discuții cu diverse firme de consultanță, Alexandra a ales să colaboreze cu Consultify. Consultantul cu care a discutat i-a oferit încredere și a realizat o simulare de punctaj, confirmându-i că are șanse mari să obțină finanțarea. Pentru a afla întreaga poveste, vă invităm să urmăriți videoclipul:
+                </p>
+                <div className='flex gap-4 mt-6'>
+                    <Link href='/shop' className='py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12'>Shop</Link>
+                    <Link href='/servicii' className='py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12'>Servicii</Link>
+                </div>
               </div>
-          </div>
+            </div>
+            <div className="w-full mt-16 mx-auto gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2]">
+              <div className="w-full flex-1 z-[2]">
+                <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
+                  O tânără studentă la Facultatea de Medicină obține o finanțare semnificativă pentru cabinetul medical al familiei
+                </h2>
+                <p className="text-white font-thin text-[16px] mt-5 z-[2] mb-8 max-w-[600px]">
+                  Iulia, în vârstă de 21 de ani, studentă în anul 2 la Medicină, a avut ocazia să obțină o finanțare nerambursabilă în valoare de 60.150 euro prin intermediul programului PNRR C12 - Dotare și renovare cabinete medici de familie. Fiind pasionată de domeniul medical și urmând exemplul ambilor săi părinți, care sunt medici, Iulia și familia ei au dorit să își dezvolte cabinetul medical și să ofere servicii de calitate comunității locale.
+                </p>
+                <p className="text-white font-thin text-[16px] mt-5 z-[2] max-w-[600px]">
+                  Totul a început atunci când Iulia a văzut un videoclip pe internet în care se discuta despre posibilitatea obținerii de fonduri europene pentru domeniul medical. Având un cabinet mic care necesită renovare și echipamente noi, dar fără resurse financiare suficiente pentru a realiza
+                </p>
+                <div className="flex gap-4 mt-4 z-[2]">
+                  <Link
+                    href="/news"
+                    className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12"
+                  >
+                    programe
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12"
+                  >
+                    contact
+                  </Link>
+                </div>
+              </div>
+              <Image
+                src="/images/home-about-1.png"
+                alt="About home 1"
+                className="relative rounded-[28.5px] w-full md:w-[450px] mx-auto z-[4]"
+                width={450}
+                height={450}
+              />
+            </div>
         </section>
         <div className="w-full mt-20">
           <div className="flex justify-start items-start">

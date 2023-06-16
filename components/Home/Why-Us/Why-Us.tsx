@@ -24,7 +24,7 @@ const WhyUs = () => {
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
-                        <Image src='/images/home-about-1.png' alt='Why-Us' className='relative rounded-[35px] md:mr-10 z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+                        <Image src='/images/home-about-1.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[400px]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
                         <img src='/images/triangle.png' alt='triangle' width={164} height={164} className='z-[1] absolute -top-6 -left-7 lg:-top-16 mlgd:-left-16 w-[80px] lg:w-[164px]' />
                         <img src='/images/circle.png' className='absolute bottom-2 md:-bottom-2 left-60 md:left-72 z-[0] w-[350px] md:w-[400px]' width={400} height={300} alt='circle-svg' />
                     </div>
