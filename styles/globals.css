@@ -2,41 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'AvertaStd-All';
-  src: url('/fonts/AvertaStd-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+000-5FF;
-}
-@font-face {
-  font-family: 'AvertaStd-All';
-  src: url('/fonts/AvertaStd-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+000-5FF;
-}
-@font-face {
-  font-family: 'AvertaStd-All';
-  src: url('/fonts/AvertaStd-Thin.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+000-5FF;
-}
-
-html, body, #__next {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  min-height: 100vh;
-  overflow-y: overlay;
-  font-family: AvertaStd-All, sans-serif !important;
-}
+@font-face {font-family: "AvertaStd-Regular"; src: url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.eot"); src: url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.woff") format("woff"), url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.svg#AvertaStd-Regular") format("svg"); } 
 
 body{max-width: 2000px; margin: 0 auto;}
 .rec-arrow-right {
@@ -47,8 +13,19 @@ body{max-width: 2000px; margin: 0 auto;}
   border: none; /* Optional: Remove any default button styles */
 }
 * {
-  font-family: AvertaStd-All, sans-serif !important;
+  font-family: "AvertaStd-Regular", sans-serif;
 }
+html, body, #__next {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  min-height: 100vh;
+  overflow-y: overlay;
+  font-family:inherit;
+}
+
 .rec-arrow-left {
   background-image: url('/images/arrows/arrow-left.svg') !important;
   background-repeat: no-repeat !important;

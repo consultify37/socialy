@@ -25,7 +25,7 @@ const WhyUsCart = () => {
         })
         .then(function (response) {
           setProducts(response.data)
-          console.log(products)
+          // console.log(products)
         })
         .catch(function (error) {
           console.log(error);

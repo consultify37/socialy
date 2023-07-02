@@ -26,7 +26,7 @@ const About: NextPage = () => {
             {/* FAQ */}
             <FAQAbout />
             <CTA
-                title="Aplică acum și transformă-ți proiectele în cu Consultify!"
+                title="Aplică acum și transformă-ți proiectele în realitate cu Consultify!"
                 linkText="Completează formularul!"
                 linkHref="/contact"
             />
