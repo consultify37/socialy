@@ -16,6 +16,7 @@ import Proces from "../components/Proces";
 import CTA from "../components/CTA";
 import NewsLetter from "../components/global/newsletter";
 import Garantii from "../components/Garantii";
+import ReactElasticCarousel from "react-elastic-carousel";
 export default function Home() {
   return (
     <>
@@ -36,10 +37,10 @@ export default function Home() {
                 linkText="Completează formularul!"
                 linkHref="/contact"
             />
-      <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
           <div className="flex justify-start items-start">
-            <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">
-              Crește eficiența și productivitatea cu serviciile și produsele digitale oferite de Consultify și Inspirely!
+            <h3 className="md:text-xl lg:text-2xl xl:text-[32px] text-[#8717F8] font-bold">
+              Crește eficiența și productivitatea cu serviciile <br /> și produsele digitale oferite de Consultify și Inspirely!
             </h3>
           </div>
           {/* Cart */}

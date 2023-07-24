@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Item1Story = () => {
   return (
-    <article className="flex flex-wrap gap-y-10 gap-x-[6rem] mt-10 md:mt-20 justify-between items-center">
+    <article className="flex flex-wrap gap-y-10 gap-x-[6rem] mt-10 md:mt-32 justify-between items-center">
       <div className="flex-1">
         <h2 className="text-[#260056] font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-4xl">
           Ne diferențiem prin:

@@ -21,7 +21,7 @@ const Parteners = () => {
         },
     ]
     return(
-        <section id='our-parteners' className='flex flex-col gap-5 mt-[6.25rem] items-center justify-center w-full'>
+        <section id='our-parteners' className='flex flex-col gap-5 mt-32 items-center justify-center w-full'>
             <h2 className='md:text-xl lg:text-2xl xl:text-4xl text-[#8717F8] font-medium max-w-[80%] md:max-w-[30%] text-center'>Firmele partenere Consultify</h2>
             <div className='px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] grid grid-cols-1 md:grid-cols-2 gap-5 w-full'>
                 {

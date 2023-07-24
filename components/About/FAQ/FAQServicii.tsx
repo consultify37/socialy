@@ -38,7 +38,7 @@ const FAQServicii = () => {
         }
     ]
     return(
-        <section id='faq' className='mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] w-full flex flex-col items-center gap-2'>
+        <section id='faq' className='mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] w-full flex flex-col items-center gap-2'>
             <h2 className='text-2xl xl:text-4xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[60%] mb-5'>Întrebări frecvente</h2>
             {
                 Intrebari.map(faq => (

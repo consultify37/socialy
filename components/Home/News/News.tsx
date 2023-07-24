@@ -14,9 +14,9 @@ const News = () => {
         })
     }, [scrollAmount])
     return(
-        <section className='flex flex-col gap-5 items-center mt-[4rem] justify-center w-full px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+        <section className='flex flex-col gap-5 items-center mt-32 justify-center w-full px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
             <div className='flex justify-between w-full items-center'>
-                <h2 className='md:text-xl lg:text-2xl xl:text-4xl text-[#8717F8] font-bold'>Descoperă ultimele noutăți în materie de business și finanțe:</h2>
+                <h2 className='md:text-xl lg:text-2xl xl:text-[32px] text-[#8717F8] font-bold'>Descoperă ultimele noutăți <br />în materie de business și finanțe:</h2>
                 <div className='flex flex-row'>
                     <span className='bg-[#260056] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer mr-2' onClick={() => backCarousel(setScrollAmount, carouselRef, cardRef)}>
                         <AiOutlineArrowLeft className='text-[#fff]' size={18} />

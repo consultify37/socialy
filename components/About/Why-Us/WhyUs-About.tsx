@@ -21,7 +21,7 @@ const WhyUsAbout = () => {
                     <div className="flex items-start w-full flex-col md:mr-12">
                         <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">DESCRIERE GENERALĂ</h2>
                         <p className="text-sm mb-4 md:mb-10">Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să își realizeze proiectele cu succes.</p>
-                        <Link className="py-3 md:py-4 bg-[#8717F8] text-white rounded-[28.5px] font-medium px-10 text-md md:text-[16px]" href="/contact">Contactează-ne!</Link>
+                        <Link className="py-3 md:py-4 bg-[#8717F8] text-white rounded-[28.5px] font-medium px-12 text-md md:text-[16px]" href="/contact">Contactează-ne!</Link>
                     </div>
                     <div className="grid gap-5 w-full grid-cols-2 justify-between mt-6 lg:mt-0 lg:ml-12">
                         <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">

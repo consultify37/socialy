@@ -24,7 +24,7 @@ export default function PaginaProgram() {
         <h1 className="text-2xl lg:text-4xl text-[#8717F8] font-bold mb-8">digiimm - POC 411 / POC 411 BIS</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, voluptates impedit. Rerum, nesciunt tempore animi aspernatur beatae iste inventore quod quisquam sed. A modi ad deleniti quae dolores facilis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laboriosam, hic esse magnam modi veniam velit incidunt a cum doloremque iure cumque similique eligendi id ab repellendus, odit sapiente eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis optio provident mollitia, dolorem molestiae beatae animi exercitationem dicta sint cum quo fuga culpa excepturi consequuntur suscipit ipsa vitae. Architecto, quibusdam!</p>
       </div>
-      <section className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <section className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <div className="w-full flex relative flex-col h-[300px] lg:h-[400px] justify-center items-center px-6 py-6 lg:py-12 lg:px-12 bg-[#260056] rounded-[38px] border-[16px] border-[#EDD7FF]">
           <Image src='/images/PaginaProgram/triangle.svg' className="absolute right-[-2rem] top-[-2rem] w-[60px] lg:w-[110px]" alt='triangle' width={146} height={146}/>
           <Image src='/images/PaginaProgram/hexagon.svg' className="absolute lg:-right-[-2rem] lg:-bottom-[3rem] right-[1rem] -bottom-[2rem] w-[70px] lg:w-[120px]" alt='triangle' width={146} height={146}/>
@@ -37,7 +37,7 @@ export default function PaginaProgram() {
           <Link className="py-4 bg-[#8717F8] text-center text-white rounded-[28.5px] font-medium px-10 text-xs md:text-[16px]" href="/contact">Aplica acum!</Link>
         </div>
       </section>
-      <section id='product-guide' className='mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+      <section id='product-guide' className='mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
         <div className='flex flex-col lg:flex-row justify-between items-center'>
             <Image src='/images/PaginaProgram/cui.svg' alt='About home 1' className='relative rounded-[28.5px] w-full md:w-[400px] mx-auto z-[4]' width={400} height={400} />
             <div className='flex flex-col gap-2 w-full'>
@@ -46,7 +46,7 @@ export default function PaginaProgram() {
             </div>
         </div>
       </section>
-      <section className="w-full flex flex-col lg:grid lg:gap-5 lg:grid-cols-2 mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <section className="w-full flex flex-col lg:grid lg:gap-5 lg:grid-cols-2 mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <div className="flex flex-row bg-[#260056] p-6 rounded-3xl mb-8">
             <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                 <span className="text-lg lg:text-3xl text-white text-center w-[25px] lg:w-[30px] h-[25px] lg:h-[30px] font-bold">1</span>
@@ -128,7 +128,7 @@ export default function PaginaProgram() {
       </section>
       <Rezultate />
       <FAQAbout />
-      <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
           <div className="flex justify-start items-start">
             <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">
               Consultify vine în ajutorul tău cu produse digitale pentru scalarea

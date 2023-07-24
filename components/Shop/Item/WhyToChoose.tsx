@@ -2,7 +2,7 @@ import { WhyToChooseItems } from "../../../pages/shop/view/[name]"
 
 const WhyToChoose = ({data} : {data: WhyToChooseItems[]}) => {
     return(
-        <section id='why-to-choose' className='flex flex-col gap-2 mt-[6.25rem] px-7 md:px-[80px] xl:px-[200px] 2xl:px-[276px]'>
+        <section id='why-to-choose' className='flex flex-col gap-2 mt-32 px-7 md:px-[80px] xl:px-[200px] 2xl:px-[276px]'>
             <h2 className='font-bold text-[#260056] md:text-xl lg:text-2xl xl:text-4xl'>De ce să alegi produsul</h2>
             <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-[60px]'>
                 <div className='flex flex-col gap-2 w-full'>

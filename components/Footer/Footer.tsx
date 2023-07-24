@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Footer = () => {
     return (
-        <footer className='w-full mt-[6.25rem]'>
+        <footer className='w-full mt-32'>
             <div className='flex flex-wrap flex-col justify-between md:flex-row gap-10 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
                 <div className='flex flex-col gap-2 w-full md:w-[35%]'>
                     <Image src='/images/logo-invert.svg' alt='Footer logo' width={200} height={53} className='aspect-auto w-[177px] md:w-[200px]' />

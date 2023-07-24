@@ -35,7 +35,7 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
   };
   
   return (
-    <section className="my-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+    <section className="my-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
       <div className="relative px-6 pb-20 md:px-20 md:py-0 py-2 flex items-center mt-32 justify-between flex-col lg:flex-row bg-[#260056] rounded-[16px] w-auto lg:h-[350px]">
         <Image src='/images/triangle-news.svg' className="absolute right-[-2rem] bottom-[-2rem] md:bottom-[ihnerit] md:top-[-2rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
         <div className="relative flex">

@@ -38,7 +38,7 @@ const Testimonials = () => {
         }
       ];
     return(
-        <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5'>
+        <section id='our-clients' className='mt-32 w-full flex items-center justify-center flex-col gap-5'>
             <div className='flex w-full justify-between items-center gap-5'>
                 <Carousel
                     isRTL={false}

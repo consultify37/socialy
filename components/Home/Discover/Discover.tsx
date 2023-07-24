@@ -6,7 +6,7 @@ import DiscoverItem3 from "./Item3"
 
 const Discover = () => {
     return(
-        <section id='discover' className='flex flex-col gap-2 mt-[6.25rem] items-center justify-center w-full'>
+        <section id='discover' className='flex flex-col gap-2 mt-32 items-center justify-center w-full'>
             <h2 className='md:text-xl lg:text-2xl xl:text-4xl text-[#8717F8] font-medium max-w-[80%] md:max-w-[50%] text-center'>Descoperă brandurile Consultify, cei care vor face posibil succesul afacerii tale</h2>
             {/* Item1 */}
             <DiscoverItem1 />

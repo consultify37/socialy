@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const CategoryHeader = ({name, description} : {name: string | undefined, description: string}) => {
     return(
-        <section id='category-header' className='mt-[6.25rem] px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] '>
+        <section id='category-header' className='mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] '>
             <div className='bg-[#260056] w-full gap-4 rounded-[35px] flex flex-col items-center justify-center py-14 relative mx-auto overflow-hidden'>
                 <h1 className='font-bold text-white text-xl md:text-2xl pt-20 md:pt-0'>{name?.toString()}</h1>
                 <p className='text-base text-white text-center max-w-[95%] md:max-w-[50%]'>{description}</p>

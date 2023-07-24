@@ -30,7 +30,7 @@ const OurClients = () => {
         }
     ]
     return(
-        <section id='our-clients' className='mt-[6.25rem] w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+        <section id='our-clients' className='mt-32 w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
             <p className="text-[#8717F8] text-xl md:text-3xl font-semibold mb-5">
                 Gândurile și experiențele clienților noștri - testimoniale de succes
             </p>
@@ -43,18 +43,18 @@ const OurClients = () => {
                 >
                 {
                     Testimonials.map(testimonial =>
-                        <article key={testimonial.id} className='bg-[#260056] mx-[15px] rounded-[16px] justify-center md:justify-between items-center flex-col md:flex-row gap-y-5 flex flex-1 pt-10 md:pt-5'>
+                        <article key={testimonial.id} className='bg-[#36007B] mx-[15px] rounded-[16px] justify-center md:justify-between items-center flex-col md:flex-row gap-y-5 flex flex-1 py-10 md:pt-5'>
                             <div className='w-full md:w-[49%] px-7 md:px-10'>
                                 <h3 className='text-white font-bold text-base md:max-w-[90%] md:text-[24px]'>{testimonial.text}</h3>
                                 <p className='text-[16px] text-[#B8CCFF] font-medium mt-2'>{testimonial.by}</p>
                             </div>
-                            <Image src={testimonial.image} blurDataURL='/images/ourclients.png' alt='Our clients' width={200} height={200} className='mt-auto w-[250px] md:mr-5 rounded-t-[18px]'/>
+                            <Image src={testimonial.image} blurDataURL='/images/ourclients.png' alt='Our clients' width={200} height={200} className='mt-auto w-[250px] md:mr-5 rounded-[18px]'/>
                         </article>
                     )
                 }
                 </Carousel>
             </div>
-            <Link href='/testimoniale' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
+            <Link href='/testimoniale' className="bg-[#BA63FF] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
                 vezi toate testimonialele
             </Link>
         </section>

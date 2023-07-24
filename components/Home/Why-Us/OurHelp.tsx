@@ -17,7 +17,7 @@ const OurHelp = () => {
         })
     }, [scrollAmount])
     return(
-        <div className='w-full mt-20'>
+        <div className='w-full mt-32'>
             <div className='flex justify-between items-center'>
                 <h3 className='text-[32px] text-white font-bold'>Consultify vine în ajutorul tău<br /> cu produse digitale pentru scalarea afacerii tale</h3>
                 <div className='flex flex-row'>

@@ -64,7 +64,7 @@ export default function PaginaProgram() {
                         <p className='text-[#260056] text-md font-normal'>Proces rapid și eficient de cereri de rambursare pentru maximizarea resurselor financiare.</p>
                     </li>
                 </ul>
-                <div className='flex gap-4 mt-6'>
+                <div className='flex gap-6 mt-6'>
                     <Link href='/contact' className='py-3 bg-[#7000FF] text-[#fff] rounded-[28.5px] font-xl text-xs lg:text-lg px-10 lg:px-12'>Contactează-ne</Link>
                     <Link href='/testimoniale' className='py-3 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#8717F8] text-xs lg:text-lg px-10 lg:px-12'>Testimoniale</Link>
                 </div>
@@ -100,14 +100,14 @@ export default function PaginaProgram() {
                         <p className='text-[#260056] lg:text-md font-normal'>Suportul dedicat și consultanța pe tot parcursul implementării proiectului tău.</p>
                     </li>
                 </ul>
-                <div className='flex gap-4 mt-6'>
+                <div className='flex gap-6 mt-6'>
                     <Link href='/shop' className='py-3 bg-[#7000FF] text-[#fff] flex items-center rounded-[28.5px] font-xl text-xs lg:text-lg px-10 lg:px-12'>Shop</Link>
                     <Link href='/contact' className='py-3 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#8717F8] text-xs lg:text-lg px-10 lg:px-12'>contact</Link>
                 </div>
             </div>
         </section>
         <OurClients />
-        <section className="bg-[#36007B] mt-20 py-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] flex flex-col">
+        <section className="bg-[#36007B] mt-32 py-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] flex flex-col">
             <div className='flex flex-col-reverse lg:flex-row-reverse justify-between items-center'>
                 <div className='relative w-full md:w-auto mt-12 lg:mt-0 ml-0 lg:ml-12'>
                     <Image src='/images/servicii/circle-lit.svg' className='absolute z-[1] right-[-8.25rem] lg:right-[-4.25rem] top-[-4.5rem] lg:top-[-2.5rem] rotate-2 w-[250px] lg:w-[150px]' width={150} height={150} alt='hexagon' />
@@ -140,7 +140,7 @@ export default function PaginaProgram() {
             linkText="Completează formularul!"
             linkHref="/contact"
         />
-        <div className="w-full mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <div className="flex justify-start items-start">
                 <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">
                 Consultify vine în ajutorul tău cu produse digitale pentru scalarea

@@ -139,7 +139,7 @@ export default function Testimoniale() {
           Gânduri și experiențe ale clienților noștri: testimoniale de succes
         </h2>
         <Testimonials />
-        <section id='trust-us' className='bg-[#260056] mt-[6.25rem] flex flex-col items-center w-full py-20 relative'>
+        <section id='trust-us' className='bg-[#260056] mt-32 flex flex-col items-center w-full py-20 relative'>
             <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-5">
               Încă nu te-am convins? Descarcă lista completă cu rezultate:
             </h2>
@@ -198,7 +198,7 @@ export default function Testimoniale() {
                 <p className="text-white font-thin text-[16px] mt-5 z-[2] max-w-[600px]">
                   După căutări și discuții cu diverse firme de consultanță, Alexandra a ales să colaboreze cu Consultify. Consultantul cu care a discutat i-a oferit încredere și a realizat o simulare de punctaj, confirmându-i că are șanse mari să obțină finanțarea. Pentru a afla întreaga poveste, vă invităm să urmăriți videoclipul:
                 </p>
-                <div className='flex gap-4 mt-6'>
+                <div className='flex gap-6 mt-6'>
                     <Link href='/shop' className='py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12'>Shop</Link>
                     <Link href='/servicii' className='py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12'>Servicii</Link>
                 </div>
@@ -239,7 +239,7 @@ export default function Testimoniale() {
               />
             </div>
         </section>
-        <div className="w-full mt-20">
+        <div className="w-full mt-32">
           <div className="flex justify-start items-start">
             <h3 className="text-lg text-white font-bold">
               Consultify vine în ajutorul tău cu produse digitale pentru scalarea
@@ -252,7 +252,7 @@ export default function Testimoniale() {
         <Link href='/shop' className="bg-[#8717F8] mt-5 px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
           vezi toate produsele
         </Link>
-        <div className="flex w-full flex-col lg:flex-row mt-20 justify-between items-center">
+        <div className="flex w-full flex-col lg:flex-row mt-32 justify-between items-center">
           <div className="flex flex-col w-full lg:mr-12 lg:max-w-[600px]">
             <h4 className="text-white text-2xl lg:text-4xl font-bold mb-2">
               Ești în pană de idei de afaceri?

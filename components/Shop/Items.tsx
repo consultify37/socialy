@@ -39,7 +39,7 @@ const ShopItems = () => {
   return (
     <section
       id="shop-items"
-      className="px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] mt-[6.25rem]"
+      className="px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] mt-32"
     >
       <div className="flex flex-col gap-10 w-full mt-10">
         {categorie.map((categorii: any, i: any) => (

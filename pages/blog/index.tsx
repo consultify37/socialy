@@ -139,7 +139,7 @@ export default function Testimoniale() {
                             </div>
                             <h3 className='text-[#260056] font-bold text-base p-2'>{item.description}</h3>
                             <div className='flex justify-between p-2 items-center'>
-                                <p className='text-[#828282] text-sm font-bold'>{item.data}</p>
+                                <p className='text-[#828282] text-sm'>{item.data}</p>
                                 <Link href={item.link} className='text-[#8717F8] font-bold text-sm underline'>citește mai mult</Link>
                             </div>
                         </article>                        

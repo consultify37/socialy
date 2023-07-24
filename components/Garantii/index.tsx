@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Garantii(){
     return(
-        <section className="w-full flex flex-col items-center mt-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        <section className="w-full flex flex-col items-center mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <h2 className="text-xl lg:text-3xl text-[#8717F8] self-start lg:self-center font-bold mb-12">Iată ce garanții îți oferim la Consultify:</h2>
             <div className="relative flex flex-col items-center w-full pb-20 lg:pb-16">
                 <div className="absolute bg-[#F1DFFF] w-full h-calc lg:h-[400px] left-0 bottom-0 rounded-2xl"></div>
@@ -45,7 +45,11 @@ export default function Garantii(){
                         </div>
                     </div>
                 </div>
-                <Link href='/testimoniale' className="bg-[#7000FF] relative z-2 flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
+                
+                <Link
+                    href="/testimoniale"
+                    className="py-3 bg-[#7000FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12"
+                >
                     ce spun clienții noștri?
                 </Link>
             </div>

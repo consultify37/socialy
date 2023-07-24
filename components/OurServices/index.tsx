@@ -8,7 +8,7 @@ export default function OurServices(){
             <h2 className="text-[#8717F8] font-bold text-3xl lg:text-4xl text-center">
                 Iată ce îți oferim:
             </h2>
-            <div className="flex flex-col lg:grid lg:gap-5 lg:grid-cols-2 mt-20 ">
+            <div className="flex flex-col lg:grid lg:gap-5 lg:grid-cols-2 mt-32 ">
                 <div className="flex flex-row bg-[#F6EFFF] p-6 pb-6 lg:pb-16 rounded-3xl mb-8">
                     <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                         <Image

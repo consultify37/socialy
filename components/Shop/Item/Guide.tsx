@@ -7,7 +7,7 @@ interface Props {
 
 const Guide: React.FC<Props> = ({ titlu_adreseaza, desc_adreseaza }) => {
     return(
-        <section id='product-guide' className='mt-[6.25rem] px-7 md:px-[80px] xl:px-[200px] 2xl:px-[276px] my-10 md:my-20'>
+        <section id='product-guide' className='mt-32 px-7 md:px-[80px] xl:px-[200px] 2xl:px-[276px] my-10 md:my-20'>
             <div className='grid gap-3 grid-cols-1 md:grid-cols-2 place-items-center'>
                 <Image src='/images/shop-view.png' alt='About home 1' className='relative rounded-[28.5px] w-full md:w-[400px] mx-auto z-[4]' width={400} height={400} />
                 <div className='flex flex-col gap-2 w-full'>

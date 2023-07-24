@@ -186,7 +186,7 @@ const ItemViewContent = ({
             </button>
           )}
         </div>
-        <div className="flex flex-col gap-2 mt-[6.25rem]">
+        <div className="flex flex-col gap-2 mt-32">
           <h2 className="font-bold text-[#260056] md:text-xl lg:text-2xl xl:text-4xl">
             Descrierea produsului
           </h2>

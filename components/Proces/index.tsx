@@ -47,15 +47,15 @@ export default function Proces(){
         console.log(selectedProces)
     }
     return(
-        <section className="relative w-full mt-20 py-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        <section className="relative w-full mt-36 py-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <Image src='/images/proces/triangle-proces.svg' className="absolute right-[1rem] bottom-[3rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
             <div className="w-[120%] bg-[#260056] h-full absolute rotate-[-2.69deg] rounded-3xl left-[-10%] z-[-1] top-0"></div>
 
             <Image src='/images/proces/circle-proces.svg' className="hidden md:block absolute right-[-80px] top-0 w-[300px] h-[300px]" alt='triangle' width={250} height={250}/>
             <Image src='/images/proces/hexagon.svg' className="hidden md:block absolute bottom-[5%] -left-12 w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
-            <h2 className="text-[#fff] text-3xl md:text-4xl text-center font-bold mb-28">Ghidul nostru pentru accesarea fondurilor: Pas cu pas cu Consultify</h2>
+            <h2 className="text-[#fff] text-3xl md:text-4xl text-center font-bold mb-28">Ghidul nostru pentru accesarea fondurilor: <br /> Pas cu pas cu Consultify</h2>
             <div className="w-full flex relative flex-col md:flex-row justify-between items-start">
-                <div className="flex items-start w-full flex-col md:mr-12">
+                <div className="flex items-center w-full flex-col md:mr-8">
                     {Proces.map(proces => (
                         <button
                             key={proces.id}
@@ -74,7 +74,7 @@ export default function Proces(){
                                 alt="check"
                             />
                             <span
-                                className={`text-xl ${
+                                className={`text-xl font-bold ${
                                     proces.id === selectedProces.id
                                         ? "text-[#260056]"
                                         : "text-[#fff]"
@@ -85,12 +85,12 @@ export default function Proces(){
                         </button>
                     ))}
                 </div>
-                <div className="flex w-full md:ml-12 mt-12 flex-col items-start">
+                <div className="flex w-full md:ml-8 mt-12 flex-col items-start">
                     <h4 className="text-[#fff] text-2xl lg:text-4xl font-semibold mb-8">{selectedProces.titluText}</h4>
                     <p className="text-md text-[#fff]">{selectedProces.text}</p>
                 </div>
             </div>
-            <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
+            <Link href='/shop' className="py-3 bg-[#8717F8] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 flex items-center justify-center w-fit mx-auto">
                 Contactează-ne!
             </Link>
         </section>

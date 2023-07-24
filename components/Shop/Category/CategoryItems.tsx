@@ -86,7 +86,7 @@ const CategoryItems = () => {
     return (
         <section
             id="category-items"
-            className="mt-[6.25rem] px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] flex flex-col gap-3"
+            className="mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] flex flex-col gap-3"
         >
             <p className="mx-auto md:mx-0 md:ml-auto text-black font-bold text-base">
                 Sortează după:
