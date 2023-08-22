@@ -43,12 +43,22 @@ const OurClients = () => {
                 >
                 {
                     Testimonials.map(testimonial =>
-                        <article key={testimonial.id} className='bg-[#36007B] mx-[15px] rounded-[16px] justify-center md:justify-between items-center flex-col md:flex-row gap-y-5 flex flex-1 py-10 md:pt-5'>
-                            <div className='w-full md:w-[49%] px-7 md:px-10'>
-                                <h3 className='text-white font-bold text-base md:max-w-[90%] md:text-[24px]'>{testimonial.text}</h3>
-                                <p className='text-[16px] text-[#B8CCFF] font-medium mt-2'>{testimonial.by}</p>
+                        <article key={testimonial.id} className="bg-[#36007B] rounded-[16px] justify-center md:justify-between items-center flex-col md:flex-row gap-y-5 flex flex-1 py-10 md:py-5">
+                            <div className="w-full md:w-200px px-7 md:px-5 py-2 mr-8">
+                                <h3 className="text-white font-bold text-base md:max-w-[90%] md:text-[24px]">
+                                {testimonial.text}
+                                </h3>
+                                <p className="text-sm text-[#fff] font-medium mt-4">{testimonial.description}</p>
+                                <p className="text-sm text-[#fff] font-medium mt-2">{testimonial.descriptionTwo}</p>
                             </div>
-                            <Image src={testimonial.image} blurDataURL='/images/ourclients.png' alt='Our clients' width={200} height={200} className='mt-auto w-[250px] md:mr-5 rounded-[18px]'/>
+                            <Image
+                                src={testimonial.image}
+                                blurDataURL="/images/ourclients.png"
+                                alt="Our clients"
+                                width={200}
+                                height={200}
+                                className="mt-auto w-[250px] md:mr-5 rounded-[23px]"
+                            />
                         </article>
                     )
                 }

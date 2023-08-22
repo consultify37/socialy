@@ -43,15 +43,15 @@ const Header = () => {
         <FixedLeft />
         <nav
           role="main"
-          className="z-[999] relative bg-[#260056] left-[50%] w-full translate-x-[-50%]"
+          className="z-[999] w-[-moz-available] mx-3 md:mx-[60px] xl:mx-[110px] 2xl:mx-[216px]"
         >
-          <div className="bg-[#260056] mx-3 md:mx-[80px] xl:mx-[140px] 2xl:mx-[276px] rounded-[38.5px] flex justify-between items-center  py-3">
+          <div className="bg-[#260056] rounded-full flex justify-between items-center px-[60px] py-4">
             <Link href="/" className="flex items-center justify-center z-[99]">
               <Image
                 src="/images/logo.svg"
                 width={120}
                 height={38}
-                className="align-middle"
+                className="align-middle w-auto md:w-[260px]"
                 alt="Consultify logo"
               />
             </Link>
@@ -77,7 +77,7 @@ const Header = () => {
               )}
             </div>
             <ul
-              className={`list-none absolute lg:relative gap-2 duration-300 z-[10] items-center ${
+              className={`list-none absolute lg:relative gap-[30px] duration-300 z-[10] items-center ${
                 toggle
                   ? "-left-1 w-[102vw] rounded-[38.5px_38.5px_0_0] translate-y-0 -top-4 pt-[70px] bg-[#260056] lg:top-0 lg:w-auto lg:pt-0"
                   : "translate-y-[-200%] lg:translate-y-0"
@@ -90,7 +90,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/" className="font-medium text-white">
+                <Link href="/" className="font-medium text-white text-[16px]">
                   acasă
                 </Link>
               </li>
@@ -101,7 +101,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/despre" className="font-medium text-white">
+                <Link href="/despre" className="font-medium text-white text-[16px]">
                   despre
                 </Link>
               </li>
@@ -112,7 +112,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/programe" className="font-medium text-white">
+                <Link href="/programe" className="font-medium text-white text-[16px]">
                   programe
                 </Link>
               </li>
@@ -123,7 +123,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/testimoniale" className="font-medium text-white">
+                <Link href="/testimoniale" className="font-medium text-white text-[16px]">
                   testimoniale
                 </Link>
               </li>
@@ -134,7 +134,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/blog" className="font-medium text-white">
+                <Link href="/blog" className="font-medium text-white text-[16px]">
                   blog
                 </Link>
               </li>
@@ -145,7 +145,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/servicii" className="font-medium text-white">
+                <Link href="/servicii" className="font-medium text-white text-[16px]">
                   servicii
                 </Link>
               </li>
@@ -156,7 +156,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/shop" className="font-medium text-white">
+                <Link href="/shop" className="font-medium text-white text-[16px]">
                   shop
                 </Link>
               </li>
@@ -167,7 +167,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/contact" className="font-medium text-white">
+                <Link href="/contact" className="font-medium text-white text-[16px]">
                   contact
                 </Link>
               </li>
