@@ -144,7 +144,7 @@ export default function Categories() {
                             />
                             <input
                                 type="file"
-                                className="w-full rounded-xl mb-5 border-[#8717F8] text-ms border-2 cursor-pointer border-[#8717F8] dark:text-gray-400 focus:outline-none" 
+                                className="w-full rounded-xl mb-5 text-ms border-2 cursor-pointer border-[#8717F8] dark:text-gray-400 focus:outline-none" 
                                 onChange={handleImageChange} 
                                 accept=".png, .jpg, .jpeg, .svg, .webp"
                             />

@@ -141,7 +141,7 @@ const Header = () => {
                     : ""
                 }`}
               >
-                <Link href="/programe" className="font-semibold text-white text-[16px]">
+                <Link href="/Programe" className="font-semibold text-white text-[16px]">
                   programe
                 </Link>
               </li>
