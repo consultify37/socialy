@@ -1,9 +1,9 @@
-type Condition = {
+export type Condition = {
   condition: string
   description: string
 }
 
-type Faq = {
+export type Faq = {
   question: string
   answear: string
 }

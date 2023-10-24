@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import FormInput from './FormInput'
+import { Condition } from '../../../types'
 
 type Props = {
   conditions: Condition[]

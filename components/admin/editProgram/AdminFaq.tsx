@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import FormInput from './FormInput'
 import FormTextArea from './FormTextArea'
 import FaqDropdown from './FaqDropdown'
+import { Faq } from '../../../types'
 
 type Props = {
   faqs: Faq[]

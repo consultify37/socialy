@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Faq } from '../../../types'
 
 type Props = {
   faq: Faq
