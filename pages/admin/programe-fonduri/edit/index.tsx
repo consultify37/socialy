@@ -7,6 +7,7 @@ import ImageFormComponent from '../../../../components/admin/editProgram/ImageFo
 import FormTextArea from '../../../../components/admin/editProgram/FormTextArea'
 import Conditions from '../../../../components/admin/editProgram/Conditions'
 import AdminFaq from '../../../../components/admin/editProgram/AdminFaq'
+import { Condition, Faq } from '../../../../types'
 
 const EditProgram = () => {
   const [bulletPoints, setBulletPoints] = useState< string[] >([])
