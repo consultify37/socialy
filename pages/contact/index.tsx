@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import NewsLetter from "../../components/global/newsletter";
@@ -61,7 +61,7 @@ export default function Contact() {
             </Head>
             <section
                 id="about-header"
-                className="relative bg-[#260056] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
+                className="relative bg-[#260056] mb-60 w-full pt-48 pb-14 flex flex-col items-center justify-center overflow-visible"
             >
                 <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">
                     Suntem aici pentru tine!
@@ -92,47 +92,47 @@ export default function Contact() {
                                 alt="Hero blue circle"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
+                                className="z-[5] h-[max-content] w-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
                         <div className="flex flex-col justify-center">
                             <h5 className="text-xl text-white">Email:</h5>
-                            <Link href='mailto:fsafsa@fsa.com' className="text-lg text-white">examply@gmail.com</Link>
+                            <Link href='mailto:fsafsa@fsa.com' className="text-lg text-white">contact@consultify.ro</Link>
                         </div>
                     </div>
                     <div className="flex flex-row mb-6">
                         <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-4">
                             <Image
-                                src="/images/phone.svg"
+                                src="/images/phone.svg" 
                                 alt="Hero blue circle"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
+                                className="z-[5] h-[max-content] w-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
                         <div className="flex flex-col justify-center">
                             <h5 className="text-xl text-white">Telefon:</h5>
-                            <span className="text-lg text-white"><Link href='tel:6789'>0712 345 678</Link> | <Link href='tel:6789'>0798 765 432</Link></span>
+                            <span className="text-lg text-white"><Link href='tel:6789'>0727 153 317</Link></span>
                         </div>
                     </div>
                     <h6 className="text-xl text-white mb-4">Sau ne poți găsi și aici:</h6>
                     <div className="flex flex-row">
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] mr-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                             <Image
                                 src="/images/contact/instagram.svg"
                                 alt="instagram"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
+                                className="z-[5] h-[max-content w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
-                        <div className="w-[-webkit-fill-available] max-w-[fit-content] mr-2 ml-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
+                        <div className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                             <Image
                                 src="/images/contact/facebook.svg"
                                 alt="instagram"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
+                                className="z-[5] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
                         <div className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
@@ -141,110 +141,134 @@ export default function Contact() {
                                 alt="instagram"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
+                                className="z-[5] w-[15px] h-[15px] lg:w-[30px] lg:h-[30px]"
                             />
                         </div>
                     </div>
                 </div>
-                <form onSubmit={upload} className="w-full mt-12 lg:mt-0 lg:ml-12 rounded-3xl shadow-box bg-[#fff] w-full max-w-[1000px] p-8 px-4 md:px-8 flex flex-col">
+                <form 
+                    className="mt-12 lg:mt-0 lg:ml-12 rounded-3xl shadow-box bg-[#fff] w-full max-w-[1000px] p-8 px-4 md:px-8 flex flex-col"
+                    method="POST"
+                    action="https://script.google.com/macros/s/AKfycbyOaR1qjdOFCOfS4U9OvdvIOoPa4cF9x_8bVvWofPDfZjTWsSZITlFZ495b-zK-XBJpqA/exec"
+                >
                     <h2 className="text-ms font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună!</h2>
                     <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6">
                         <div className="flex flex-col w-full md:w-[47%] mr-2">
-                            <span className="text-sm mb-2">
+                            <span className="text-md mb-2">
                                 Nume*
                             </span>
                             <input
                                 required 
                                 type="text"
-                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2" 
+                                name="Nume"
+                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2 outline-none" 
                                 placeholder="ex: Popescu"
                                 onChange={(e) => setNume(e.target.value)}
                             />
                         </div>
                         <div className="flex flex-col w-full md:w-[47%]">
-                            <span className="text-sm mb-2">
+                            <span className="text-md mb-2">
                                 Prenume*
                             </span>
                             <input
                                 required 
                                 type="text"
-                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2" 
+                                name="Prenume"
+                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2 outline-none" 
                                 placeholder="ex: Andrei"
                                 onChange={(e) => setPrenume(e.target.value)}
                             />
                         </div>
                     </div>
-                    <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6">
-                        <div className="flex flex-col w-full md:w-[47%] mr-2">
-                            <span className="text-sm mb-2">
+                    <div className="flex w-full flex-col items-center justify-between mb-6">
+                        <div className="flex flex-col w-full mr-2">
+                            <span className="text-md mb-2">
                                 Telefon
                             </span>
                             <input
                                 required 
-                                type="number"
-                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2" 
+                                type="tel"
+                                name="Telefon"
+                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2 mb-6 outline-none" 
                                 placeholder="ex: 07XX XXX XXX"
                                 onChange={(e) => setTelefon(e.target.value)}
                             />
                         </div>
-                        <div className="flex flex-col w-full md:w-[47%]">
-                            <span className="text-sm mb-2">
+                        <div className="flex flex-col w-full">
+                            <span className="text-md mb-2">
                                 Email
                             </span>
                             <input
                                 required 
-                                type="text"
-                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2" 
+                                type="email"
+                                name="Email"
+                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2 outline-none" 
                                 placeholder="ex: exemplu@email.com"
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
                     </div>
-                    <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6">
+                    <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6 outline-none">
                         <div className="flex flex-col w-full md:w-[47%] mr-2">
-                            <span className="text-sm mb-2">
+                            <span className="text-md mb-2">
                                 Nume firmă (opțional)
                             </span>
                             <input
-                                required 
                                 type="string"
-                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2" 
-                                placeholder="ex: Popescu"
+                                name="Nume firma"
+                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2 outline-none" 
+                                placeholder="Nume firmă"
                                 onChange={(e) => setTelefon(e.target.value)}
                             />
                         </div>
-                        <div className="flex flex-col w-full md:w-[47%]">
-                            <span className="text-sm mb-2">
-                                Email
+                        <div className="flex flex-col w-full md:w-[47%] mr-2">
+                            <span className="text-md mb-2">
+                                CUI (opțional)
                             </span>
-                            <select className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 h-[44px] p-2 py-2" name="categorie">
-                                <option value="toate">Toate</option>
-                                <option value="fonduri-europene">Fonduri europene</option>
-                                <option value="marketing">Marketing</option>
-                            </select>
+                            <input
+                                type="string"
+                                name="CUI"
+                                className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2 outline-none" 
+                                placeholder="Nume firmă"
+                                onChange={(e) => setTelefon(e.target.value)}
+                            />
                         </div>
                     </div>
-                    <div className="flex flex-col w-full mb-6">
-                        <span className="text-lg mb-2">
+                    <div className="flex flex-col w-full">
+                            <span className="text-md mb-2">
+                                De ce anume ai nevoie?
+                            </span>
+                            <select className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 h-[44px] p-2 py-2 outline-none" name="categorie">
+                                <option value="Selectează aici" className="hidden">Selectează aici</option>
+                                <option value="fonduri-europene">Consultanță Fonduri Europene</option>
+                                <option value="marketing">Implementare proiect</option>
+                                <option value="marketing">Colaborări & Angajări</option>
+                            </select>
+                        </div>
+                    <div className="flex flex-col w-full my-6">
+                        <span className="text-md mb-2">
                             Oferă-ne câteva detalii*
                         </span>
                         <textarea
-                            className="rounded-xl w-full bg-[#fff] h-48 border-[#8717F8] text-ms border-2 p-2" 
-                            placeholder="scrie aici mesajul tău"
+                            className="rounded-xl w-full bg-[#fff] h-48 border-[#8717F8] text-ms border-2 p-2 outline-none" 
+                            placeholder="Scrie aici mesajul tău"
                             required
+                            name="Detalii"
                             onChange={(e) => setMesaj(e.target.value)}
                         ></textarea>
                     </div>
-                    <div className="flex items-center justify-center mb-6">
+                    <div className="flex items-center justify-center mb-6 self-start ml-1">
                         <input 
                             checked={isChecked} onChange={handleChange}
-                            required id="link-checkbox" type="checkbox" value="" className="w-4 cursor-pointer h-4 text-[#260056] rounded border-[2px] bg-[#F2F4FF] border-[#8717F8] focus:ring-blue-500" />
-                        <label htmlFor="link-checkbox" className="ml-2 text-sm font-medium text-[#260056]">Accept <a href="#" className="text-[#260056] underline">Termenii și Condițiile.</a></label>
+                            required id="link-checkbox" type="checkbox" value="" className="w-4 cursor-pointer h-4 text-[#260056] rounded border-[2px] bg-[#F2F4FF] border-[#8717F8] outline-none" />
+                        <label htmlFor="link-checkbox" className="ml-2 text-md font-medium text-[#260056]">Accept <a href="#" className="text-[#260056] underline">Termenii și Condițiile.</a></label>
                     </div>
                     <div className="flex flex-col md:flex-row justify-center w-full">
                         <button                      
-                            className='py-4 bg-[#8717F8] h-auto text-white rounded-[28px] font-medium px-14 text-center text-sm md:text-[16px]'>
-                            trimite
+                            className='py-3 md:py-4 bg-[#8717F8] h-auto text-white rounded-[28px] font-semibold px-14 text-center text-md md:text-[16px] hover:scale-[1.05] transition-all'
+                            type="submit"
+                        >
+                            Trimite
                         </button>
                     </div>
                 </form>
@@ -260,7 +284,7 @@ export default function Contact() {
                                 <Image src='/images/questions-comment.png' className='mx-auto' alt='Questions comment' width={25} height={10} />
                             </span>
                             <h3 className='font-bold text-[24px] text-[#260056]'>Comunicare</h3>
-                            <p className='font-normal text-[#260056] text-sm md:text-[16px'>
+                            <p className='font-normal text-[#260056] text-md md:text-[16px'>
                                 Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
                             </p>
                         </div>
@@ -269,7 +293,7 @@ export default function Contact() {
                                 <Image src='/images/flash.png' className='mx-auto' alt='Questions comment' width={17} height={10} />
                             </span>
                             <h3 className='font-bold text-[24px] text-[#260056]'>Spirit tânăr</h3>
-                            <p className='font-normal text-[#260056] text-sm md:text-[16px'>
+                            <p className='font-normal text-[#260056] text-md md:text-[16px'>
                                 Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
                             </p>
                         </div>
@@ -278,7 +302,7 @@ export default function Contact() {
                                 <Image src='/images/heart.png' className='mx-auto' alt='Questions comment' width={25} height={24} />
                             </span>
                             <h3 className='font-bold text-[24px] text-[#260056]'>Suport non-stop</h3>
-                            <p className='font-normal text-[#260056] text-sm md:text-[16px'>
+                            <p className='font-normal text-[#260056] text-md md:text-[16px'>
                                 Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
                             </p>
                         </div>
@@ -287,7 +311,7 @@ export default function Contact() {
                                 <Image src='/images/chart.png' className='mx-auto' alt='Questions comment' width={21} height={21} />
                             </span>
                             <h3 className='font-bold text-[24px] text-[#260056]'>Profesionalism</h3>
-                            <p className='font-normal text-[#260056] text-sm md:text-[16px'>
+                            <p className='font-normal text-[#260056] text-md md:text-[16px]'>
                                 Mauris tristique pulvinar massa, ut hendrerit enim pretium nec. Fusce sed dolor est. 
                             </p>
                         </div>
@@ -298,8 +322,8 @@ export default function Contact() {
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>
-                <Link href='/contact' className="bg-[#8717F8] mt-12 flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
-                    vreau să completez
+                <Link href='/contact' className="bg-[#8717F8] mt-12 flex font-semibold items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px] hover:scale-[1.05] transition-all">
+                    Vreau să completez
                 </Link>
             </section>
             <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />

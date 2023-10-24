@@ -3,14 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
-import { backCarousel, nextCarousel } from "../../utils/functions";
-import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 import NewsLetter from "../../components/global/newsletter";
 import Head from "next/head";
 import { PaginationBlog } from "../../utils/functions"
 import {RiArrowLeftSLine, RiArrowRightSLine} from 'react-icons/ri'
 import NewsInterface from '../../components/Home/News/NewsContainer';
 import { isPartiallyEmittedExpression } from "typescript";
+import TabsComponent from "../../components/TabsComponent";
 
 export interface blogData {
     id: number;
@@ -22,57 +21,58 @@ export interface blogData {
     link: string;
 }
 
+const Blog: blogData[] = [
+    {
+        id: 1, categorie: 'digitalizare', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 2, categorie: 'fonduri-europene', image: '/images/blog-post-1.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 3, categorie: 'marketing', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 4, categorie: 'marketing', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 5, categorie: 'marketing', image: '/images/blog-post-1.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 6, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 7, categorie: 'fonduri-europene', image: '/images/blog-post-test-2.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 8, categorie: 'fonduri-europene', image: '/images/home-about-2.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 9, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 10, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 11, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 12, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 13, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 14, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 15, categorie: 'fonduri-europene', image: '/images/blog-post-1.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+    {
+        id: 16, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
+    },
+]
+
 export default function Testimoniale() {
-    const Blog: blogData[] = [
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/blog-post-1.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'marketing', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'marketing', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'marketing', image: '/images/blog-post-1.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/blog-post-test-2.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/home-about-2.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/blog-post-1.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-        {
-            id: 1, categorie: 'fonduri-europene', image: '/images/news-image.png', title: 'Ghid fonduri europene', description: 'Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice', data: '20/01/2023', link: '/blog-post'
-        },
-    ]
     const [page, setPage] = useState(0)
     let maxPages = Math.ceil(Blog.length/9)
     const [products, setProducts] = useState(Blog);
@@ -84,28 +84,29 @@ export default function Testimoniale() {
       setShowReduced(!showReduced);
     };
   
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string>('toate');
+    const [filteredPosts, setFilteredPosts] = useState(Blog)
 
-    const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        setSelectedCategory(event.target.value);
-    }
-    
-    let filteredData = selectedCategory
-        ? Blog.filter(products => products.categorie === selectedCategory)
-        : Blog;
-    if (selectedCategory == 'toate') {
-        filteredData = Blog;
-    }
+    useEffect(() => {
+        if (selectedCategory == 'toate') {
+            setFilteredPosts(Blog)
+            return
+        }
+
+        let filteredData = Blog.filter(products => products.categorie === selectedCategory)
+        setFilteredPosts(filteredData)
+    }, [selectedCategory])
+
   return (
     <>
         <Head>
-            <title>Admin | Blog</title>
+            <title>Consultify | Blog</title>
         </Head>
         <section
             id="about-header"
             className="relative bg-[#260056] mb-40 w-full pt-[110px] pb-16 flex flex-col items-center justify-center overflow-visible"
         >
-            <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">
+            <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-20">
                 Află noutățile din business și nu numai
             </h1>
             <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-[3rem] z-[-1] h-32" />
@@ -125,24 +126,25 @@ export default function Testimoniale() {
             />
         </section>
         <section className="flex flex-col gap-5 pb-20 items-stretch justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-            <select onChange={handleCategoryChange} className="bg-[#ECECEC] rounded-full py-4 px-3 text-xl" name="categorie">
-                <option value="toate">Toate</option>
-                <option value="fonduri-europene">Fonduri europene</option>
-                <option value="marketing">Marketing</option>
-            </select>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10'>
+                <TabsComponent 
+                    values={('toate digitalizare agricultură horeca susținere industrie').split(' ')}
+                    setSelectedValue={setSelectedCategory}
+                />
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mt-0'>
                 {
-                    PaginationBlog(filteredData, page, 9).map(item =>
-                        <article className='max-w-[350px] m-auto relative bg-[#F5F5F5] rounded-[16px] snap-center'>
-                            <div className="relative overflow-hidden h-64 rounded-[20px_20px_0_0] object-cover">
-                                <Image src={item.image} placeholder='blur' blurDataURL={item.image} alt={item.title} width={300} height={300} className='w-full object-cover h-full'/>
-                            </div>
-                            <h3 className='text-[#260056] font-bold text-base p-2'>{item.description}</h3>
-                            <div className='flex justify-between p-2 items-center'>
-                                <p className='text-[#828282] text-sm'>{item.data}</p>
-                                <Link href={item.link} className='text-[#8717F8] font-bold text-sm underline'>citește mai mult</Link>
-                            </div>
-                        </article>                        
+                    PaginationBlog(filteredPosts, page, 9).map(item =>
+                        <Link href={item.link}>
+                            <article className='max-w-[350px] m-auto relative bg-[#F5F5F5] rounded-[16px] snap-center'>
+                                <div className="relative overflow-hidden h-64 rounded-[20px_20px_0_0] object-cover">
+                                    <Image src={item.image} placeholder='blur' blurDataURL={item.image} alt={item.title} width={300} height={300} className='w-full object-cover h-full'/>
+                                </div>
+                                <h3 className='text-[#260056] font-bold text-base p-2'>{item.description}</h3>
+                                <div className='flex justify-between p-2 items-center'>
+                                    <p className='text-[#828282] text-sm'>{item.data}</p>
+                                    <Link href={item.link} className='text-[#8717F8] font-bold text-sm underline'>Citește mai mult</Link>
+                                </div>
+                            </article>   
+                        </Link>                     
                     )
                 }
             </div>

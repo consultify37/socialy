@@ -2,6 +2,7 @@ import { backCarousel, nextCarousel } from "../../../utils/functions"
 import {useState, useEffect, useRef} from 'react'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
 import NewsContainer from "./NewsContainer"
+
 const News = () => {
     const cardRef = useRef<HTMLElement>(null)
     const carouselRef = useRef<HTMLDivElement>(null)
@@ -14,14 +15,14 @@ const News = () => {
         })
     }, [scrollAmount])
     return(
-        <section className='flex flex-col gap-5 items-center mt-32 justify-center w-full px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+        <section className='flex flex-col gap-5 items-center mt-12 md:mt-24 justify-center w-full'>
             <div className='flex justify-between w-full items-center'>
-                <h2 className='md:text-xl lg:text-2xl xl:text-[32px] text-[#8717F8] font-bold'>Descoperă ultimele noutăți <br />în materie de business și finanțe:</h2>
-                <div className='flex flex-row'>
-                    <span className='bg-[#260056] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer mr-2' onClick={() => backCarousel(setScrollAmount, carouselRef, cardRef)}>
+                <h2 className='md:text-xl lg:text-2xl xl:text-[32px] text-[#8717F8] font-bold pl-7 md:pl-[80px] xl:pl-[140px] 2xl:pl-[276px]'>Descoperă ultimele noutăți <br />în materie de business și finanțe:</h2>
+                <div className='flex flex-row pr-7 md:pr-[80px] xl:pr-[140px] 2xl:pr-[276px]'>
+                    <span className='bg-[#260056] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer mr-2 transition-all hover:scale-[1.05]' onClick={() => backCarousel(setScrollAmount, carouselRef, cardRef)}>
                         <AiOutlineArrowLeft className='text-[#fff]' size={18} />
                     </span>
-                    <span className='bg-[#260056] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer' onClick={() => nextCarousel(setScrollAmount, carouselRef, cardRef)}>
+                    <span className='bg-[#260056] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer transition-all hover:scale-[1.05]' onClick={() => nextCarousel(setScrollAmount, carouselRef, cardRef)}>
                         <AiOutlineArrowRight className='text-[#fff]'  size={18} />
                     </span>
                 </div>

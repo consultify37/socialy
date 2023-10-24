@@ -345,14 +345,13 @@ console.log(questions)
                   />
                 </button>
               </form>
-              <ul>
+              {/* <ul>
                 {toDos.map((toDo) => (
                   <li
                     key={toDo.id}
                     className="flex flex-row mt-4 justify-between"
                   >
                     {toDo.task}
-                    {/* <button onClick={() => handleToggleCompleted(toDo.id)}>Toggle Completed</button> */}
                     <button onClick={() => handleDeleteToDo(toDo.id)}>
                       <img
                         className="w-[30px]"
@@ -362,7 +361,7 @@ console.log(questions)
                     </button>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>
@@ -403,7 +402,7 @@ console.log(questions)
                   Add Q&A
                 </button>
               </form>
-              <ul className="w-2/5">
+              {/* <ul className="w-2/5">
                 {questions.map((qa) => (
                   <li
                     className="flex flex-row relative justify-between w-full mb-6 p-4 px-5 rounded-xl bg-[#F2F4FF]"
@@ -442,7 +441,7 @@ console.log(questions)
                     </button>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

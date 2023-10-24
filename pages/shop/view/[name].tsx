@@ -49,6 +49,7 @@ const ItemView = () => {
       },
     })
       .then(function(response) {
+        console.log(response.data)
         setId(response.data.id);
         setNume(response.data.nume);
         setDescriere_1(response.data.descriere_1);

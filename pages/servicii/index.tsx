@@ -61,7 +61,7 @@ export default function Servicii() {
         <Head>
             <title>Consultify | Servicii</title>
         </Head>
-        <section id='about-header' className='relative bg-[#260056] w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]' style={{marginBottom: `200px`}}>
+        <section id='about-header' className='relative bg-[#260056] w-full pt-32 lg:pt-52 pb-14 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]' style={{marginBottom: `200px`}}>
           <h1 className='text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0'>
             Împreună pentru succesul tău: servicii și produse de calitate
           </h1>
@@ -77,7 +77,7 @@ export default function Servicii() {
               src="/images/proces/hexagon.svg"
               width={130}
               height={130}
-              className="absolute -bottom-12 -left-12 md:bottom-2 md:-left-2 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
+              className="absolute -bottom-12 -left-12 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
               alt="Yellow triangle"
           />
         </section>
@@ -89,18 +89,18 @@ export default function Servicii() {
           linkText="Completează formularul!"
           linkHref="/contact"
         />
-        <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        {/* <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <div className="flex justify-start items-start">
                 <h3 className="md:text-xl lg:text-2xl xl:text-[32px] text-[#8717F8] font-bold">
                   Crește eficiența și productivitatea cu serviciile  <br /> și produsele digitale oferite de Consultify și Inspirely!
                 </h3>
             </div>
             <WhyUsCart />
-            <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
-                vezi toate produsele
+            <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px] hover:scale-[1.05] transition-all">
+                Vezi toate produsele
             </Link>
-        </div>
-        <News />
+        </div> */}
+        {/* <News /> */}
         <NewsLetter headingText='Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!' />
     </>
   );

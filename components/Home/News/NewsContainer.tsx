@@ -34,10 +34,15 @@ const NewsContainer = ({cardRef, carouselRef} : {cardRef: React.RefObject<HTMLEl
         },
     ]
     return(
-        <div className='flex gap-4 mt-5 overflow-x-auto snap-mandatory snap-x w-full scrollbar-none' ref={carouselRef}>
+        <div className='flex gap-4 mt-5 overflow-x-auto w-full scrollbar-none' ref={carouselRef}>
             {
-                News.map(news =>
-                    <NewsItem key={news.id} cardRef={cardRef} image={news.image} title={news.title} date={news.date} link={news.link} />    
+                News.map((news, index) =>
+                    <div 
+                        key={news.id}
+                        className={index == 0 ? "pl-7 md:pl-[80px] xl:pl-[140px] 2xl:pl-[276px]" : ( index == News.length - 1 ? "pr-4" : "" )}
+                    >
+                        <NewsItem cardRef={cardRef} image={news.image} title={news.title} date={news.date} link={news.link} /> 
+                    </div>   
                 )
             }
         </div>

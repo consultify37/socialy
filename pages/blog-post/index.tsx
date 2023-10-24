@@ -14,23 +14,43 @@ const BlogPost: NextPage = () => {
             <Head>
                 <title>Consultify | BlogPost</title>
             </Head>
-            <section className="flex flex-col gap-5 pt-[6.25rem] bg-[#F5F5F5] pb-20 items-stretch justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+            <div className="relative">
                 <Image
-                    className="w-full h-full rounded-3xl"
+                    className="w-full h-[70vh] lg:h-[95vh] object-cover"
                     src="/images/blog-post-test-1.jpg"
                     width={200}
                     height={100}
                     alt="blog-post-1"
                 />
+                <div className="absolute w-full h-full flex justify-center items-center top-0 bg-[#260056] opacity-70"></div>
+                <div className="absolute w-full h-full flex flex-col justify-center items-center top-0 pt-12">
+                    <h2 className="font-bold text-[#F7EDFF] text-base lg:text-lg 2xl:text-xl mb-5">Marketing</h2>
+                    <h1 className="font-extrabold text-2xl lg:text-3xl  2xl:text-5xl leading-relaxed text-white z-10 text-center w-[80vw] lg:w-[50vw]">Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice</h1>
+                    <div className="p-8 rounded-3xl mt-12 border-[1px] border-[hsla(0,0%,100%,.03)] bg-[linear-gradient(132deg,#4e2869,#260056)] flex flex-col items-center">
+                        <p className="text-white text-base lg:text-lg 2xl:text-xl font-light">Articol de <span className="font-semibold">Andrei Radu</span></p>
+                        <p className="text-[#F7EDFF] text-base lg:text-lg 2xl:text-xl font-semibold mt-2">CEO & Mobile Developer</p>
+                    </div>
+                </div>
+                <div className="absolute w-full bottom-4 hidden lg:flex items-center justify-center animate-bounce">
+                    <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier"> 
+                            <path d="M19 11L12 17L5 11" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+                            <path opacity="0.6" d="M19 7L12 13L5 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <section className="flex flex-col gap-6 bg-[#F5F5F5] pb-20 items-stretch pt-12 justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">       
                 <div className="flex-col flex md:flex-row justify-between w-full">
                     <div className="w-full flex flex-row mb-4 md:mb-0">
-                        <span className="text-base font-bold mr-8">
+                        <span className="text-base font-bold mr-4">
                             12 Decembrie 2022
                         </span>
-                        <span className="text-base font-bold text-[#8717F8]">Marketing</span>
+                        {/* <span className="text-base font-bold text-[#8717F8]">Marketing</span> */}
                     </div>
                     <div className="w-full flex md:justify-end items-center flex-row">
-                        <span className="text-sm font-bold mr-8">
+                        <span className="text-base font-bold mr-4">
                             Distribuie pe social media
                         </span>
                         <div className="flex flex-row items-center">
@@ -54,9 +74,9 @@ const BlogPost: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <p className="text-2lg font-bold">
+                {/* <p className="text-3xl font-bold">
                     Anul 2023 va veni la pachet cu una dintre cele mai mari crize economice
-                </p>
+                </p> */}
                 <p className="text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue augue ac mattis venenatis. Curabitur eu semper augue. Donec semper, elit hendrerit aliquet volutpat, orci eros vehicula nulla, et auctor magna ipsum ac metus. Nam ex dui, vestibulum vel gravida in, vehicula a enim. 
 
@@ -71,7 +91,7 @@ const BlogPost: NextPage = () => {
                     height={100}
                     alt="blog-post-1"
                 />
-                <p className="text-2lg font-bold">
+                <p className="text-2xl font-bold">
                     Lorem ipsum dolor sit
                 </p>
                 <p className="text-sm">

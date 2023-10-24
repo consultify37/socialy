@@ -137,7 +137,8 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
       });
   };
   return (
-    <div className="fixed top-[5%] left-[50%] ml-[-155px] md:ml-[-270px] px-4 md:px-8 md:min-w-[500px] min-w-[270px] rounded-[35px] z-[9999] bg-white">
+    <div className="fixed w-full h-full flex justify-center items-center z-[9999]">
+      <div className="px-4 md:px-8 md:min-w-[500px] min-w-[320px] rounded-[35px] bg-white shadow-2xl">
       {whichModalToShow === "login" ? (
         <>
           {" "}
@@ -297,6 +298,8 @@ export function LoginModal({ handleModalClosingClick }: ModalProps) {
         </>
       )}
     </div>
+    </div>
+    
   );
 }
 export function CartModal({ handleModalClosingClick }: ModalProps) {
@@ -311,7 +314,7 @@ export function CartModal({ handleModalClosingClick }: ModalProps) {
     removeItemFromCart(item);
   };
   return (
-    <div className="fixed top-[5%] left-[50%] ml-[-155px] md:ml-[10px] px-4 md:px-8 md:min-w-[500px] min-w-[270px] rounded-[35px] z-[999999] bg-white">
+    <div className="fixed top-[5%] left-[50%] ml-[-155px] md:ml-[10px] px-4 md:px-8 md:min-w-[500px] min-w-[270px] rounded-[35px] z-[999999] bg-white shadow-2xl">
       <div className="flex flex-row justify-between border-b-[3px] py-5 border-[#F2F4FF]">
         <h2 className="text-lg font-semibold text-[#260056]">Coșul tău</h2>
         <AiOutlineClose

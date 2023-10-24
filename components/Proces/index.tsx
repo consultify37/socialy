@@ -47,7 +47,7 @@ export default function Proces(){
         console.log(selectedProces)
     }
     return(
-        <section className="relative w-full mt-36 py-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        <section className="relative w-full mt-20 py-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <Image src='/images/proces/triangle-proces.svg' className="absolute right-[1rem] bottom-[3rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
             <div className="w-[120%] bg-[#260056] h-full absolute rotate-[-2.69deg] rounded-3xl left-[-10%] z-[-1] top-0"></div>
 
@@ -74,7 +74,7 @@ export default function Proces(){
                                 alt="check"
                             />
                             <span
-                                className={`text-xl font-bold ${
+                                className={`text-lg sm:text-xl font-bold text-start ${
                                     proces.id === selectedProces.id
                                         ? "text-[#260056]"
                                         : "text-[#fff]"
@@ -90,7 +90,7 @@ export default function Proces(){
                     <p className="text-md text-[#fff]">{selectedProces.text}</p>
                 </div>
             </div>
-            <Link href='/shop' className="py-3 bg-[#8717F8] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 flex items-center justify-center w-fit mx-auto">
+            <Link href='/shop' className="mt-12 md:mt-0 py-3 md:py-4 font-semibold bg-[#8717F8] text-[#fff] rounded-[28.5px] font-xl px-12 flex items-center justify-center w-fit mx-auto transition-all hover:scale-[1.05]">
                 Contactează-ne!
             </Link>
         </section>

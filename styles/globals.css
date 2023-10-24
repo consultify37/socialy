@@ -2,7 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {font-family: "AvertaStd-Regular"; src: url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.eot"); src: url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.woff") format("woff"), url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/19b8f54eb1f074fb01efb1c4f02e9623.svg#AvertaStd-Regular") format("svg"); } 
+@font-face {
+  font-family: "AvertaStd";
+  src: url("../public/fonts/AvertaStd-Extrathin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvertaStd";
+  src: url("../public/fonts/AvertaStd-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvertaStd";
+  src: url("../public/fonts/AvertaStd-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvertaStd";
+  src: url("../public/fonts/AvertaStd-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvertaStd";
+  src: url("../public/fonts/AvertaStd-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvertaStd";
+  src: url("../public/fonts/AvertaStd-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvertaStd";
+  src: url("../public/fonts/AvertaStd-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
 
 body{max-width: 2000px; margin: 0 auto;}
 .rec-arrow-right {
@@ -12,9 +59,11 @@ body{max-width: 2000px; margin: 0 auto;}
   text-indent: -9999px; /* Hide the text content */
   border: none; /* Optional: Remove any default button styles */
 }
+
 * {
-  font-family: "AvertaStd-Regular", sans-serif;
+  font-family: "AvertaStd", sans-serif;
 }
+
 html, body, #__next {
   width: 100%;
   padding: 0;
@@ -100,3 +149,170 @@ html, body, #__next {
 }
 
 .h-calc {height: calc(100% - 120px);}
+
+#toggle_nav:checked ~ div #hamburger #line
+{
+    @apply rotate-45 translate-y-1.5 
+}
+
+#toggle_nav:checked ~ div #hamburger #line2
+{
+    @apply -rotate-45 -translate-y-1
+}
+
+#toggle_dropdown:checked ~ div #dropdown #chevron-down
+{
+  @apply rotate-180
+}
+
+#toggle_dropdown:checked ~ div #dropdown #chevron-down
+{
+  @apply rotate-180
+}
+
+#toggle_dropdown:checked ~ div #dropdown-container {
+  display: block;
+  opacity: 0;
+  animation: slideDown 300ms linear forwards;
+}
+
+#toggle_dropdown:not(:checked) ~ div #dropdown-container {
+  display: block;
+  opacity: 1;
+  animation: slideUp 300ms linear forwards;
+}
+
+#toggle_dropdown0:checked ~ div #dropdown #chevron-down
+{
+  @apply rotate-180
+}
+
+#toggle_dropdown0:checked ~ div #dropdown-container {
+  display: block;
+  opacity: 0;
+  animation: slideDown 300ms linear forwards;
+}
+
+#toggle_dropdown0:not(:checked) ~ div #dropdown-container {
+  display: block;
+  opacity: 1;
+  animation: slideUp 300ms linear forwards;
+}
+
+#toggle_dropdown1:checked ~ div #dropdown #chevron-down
+{
+  @apply rotate-180
+}
+
+#toggle_dropdown1:checked ~ div #dropdown-container {
+  display: block;
+  opacity: 0;
+  animation: slideDown 300ms linear forwards;
+}
+
+#toggle_dropdown1:not(:checked) ~ div #dropdown-container {
+  display: block;
+  opacity: 1;
+  animation: slideUp 300ms linear forwards;
+}
+
+#toggle_dropdown2:checked ~ div #dropdown-container {
+  display: block;
+  opacity: 0;
+  animation: slideDown 300ms linear forwards;
+}
+
+#toggle_dropdown2:not(:checked) ~ div #dropdown-container {
+  display: block;
+  opacity: 1;
+  animation: slideUp 300ms linear forwards;
+}
+
+#toggle_dropdown3:checked ~ div #dropdown #chevron-down
+{
+  @apply rotate-180
+}
+
+#toggle_dropdown3:checked ~ div #dropdown-container {
+  display: block;
+  opacity: 0;
+  animation: slideDown 300ms linear forwards;
+}
+
+#toggle_dropdown3:not(:checked) ~ div #dropdown-container {
+  display: block;
+  opacity: 1;
+  animation: slideUp 300ms linear forwards;
+}
+
+#toggle_dropdown4:checked ~ div #dropdown #chevron-down
+{
+  @apply rotate-180
+}
+
+#toggle_dropdown4:checked ~ div #dropdown-container {
+  display: block;
+  opacity: 0;
+  animation: slideDown 300ms linear forwards;
+}
+
+#toggle_dropdown4:not(:checked) ~ div #dropdown-container {
+  display: block;
+  opacity: 1;
+  animation: slideUp 300ms linear forwards;
+}
+
+#toggle_dropdown5:checked ~ div #dropdown #chevron-down
+{
+  @apply rotate-180
+}
+
+#toggle_dropdown5:checked ~ div #dropdown-container {
+  display: block;
+  opacity: 0;
+  animation: slideDown 300ms linear forwards;
+}
+
+#toggle_dropdown5:not(:checked) ~ div #dropdown-container {
+  display: block;
+  opacity: 1;
+  animation: slideUp 300ms linear forwards;
+}
+
+#toggle_dropdown6:checked ~ div #dropdown #chevron-down
+{
+  @apply rotate-180
+}
+
+#toggle_dropdown6:checked ~ div #dropdown-container {
+  display: block;
+  opacity: 0;
+  animation: slideDown 300ms linear forwards;
+}
+
+#toggle_dropdown6:not(:checked) ~ div #dropdown-container {
+  display: block;
+  opacity: 1;
+  animation: slideUp 300ms linear forwards;
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 0;
+    /* transform: translateY(100%); */
+  }
+}
+
+.hidden-new-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: hidden;
+  text-overflow: ellipsis;
+}

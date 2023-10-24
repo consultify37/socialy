@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function FonduriComponent() {
     return(
         <div 
-            className="rounded-[35px] mx-2 md:mx-[30px] relative w-full h-auto flex flex-col-reverse md:flex-row justify-between px-4 md:px-20 py-2 bg-cover bg-no-repeat align-center"
+            className="rounded-[35px] mb-8 mx-2 md:mx-[30px] relative w-full h-auto flex flex-col-reverse md:flex-row justify-between px-4 md:px-20 py-2 bg-cover bg-no-repeat align-center"
         >   
             <div style={{background: "url('/images/fonduri/fonduri-img-1.png'), rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
             <div style={{background: "rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
@@ -17,7 +17,7 @@ export default function FonduriComponent() {
                     <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
                     <li className="text-[#EDD7FF] text-md mb-8">Lorem lispum dolor sit amet</li>
                 </ul>
-                <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12" href="/">Aplica acum!</Link>
+                <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 transition-all hover:scale-[1.05]" href="/">Aplica acum!</Link>
             </div>
             <div className='flex flex-col items-end justify-center z-[10] pt-12'>
                 <h5 className='text-white text-xs lg:text-xl mb-2'>

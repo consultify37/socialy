@@ -44,12 +44,12 @@ const FAQAbout = () => {
         },
     ]
     return(
-        <section id='faq' className='mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] w-full flex flex-col items-center gap-2'>
+        <section id='faq' className='mt-24 md:mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] w-full flex flex-col items-center gap-2'>
             <h2 className='text-2xl xl:text-4xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[60%] mb-5'>Întrebări frecvente</h2>
             {
                 Intrebari.map(faq => (
                     <article key={faq.id} className='w-full rounded-[8px] bg-[#FAF3FF]'>
-                        <div className='flex justify-between p-4 px-6 cursor-pointer' onClick={() => handleSelectQuestion(faq.id)}>
+                        <div className='flex justify-between p-4 px-6 cursor-pointer w-full' onClick={() => handleSelectQuestion(faq.id)}>
                             <h3 className='text-[12px] md:text-lg text-[#260056] font-bold'>{faq.intrebari}</h3>
                             <Image
                                 className={`w-[20px] right-[10px] top-[23px]

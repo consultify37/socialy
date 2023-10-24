@@ -1,10 +1,10 @@
-import Axios from "axios";
-import { useEffect, useState } from "react";
-import ShopItem from "./ShopItem";
+import Axios from "axios"
+import { useEffect, useState } from "react"
+import ShopItem from "./ShopItem"
 
 const ShopItems = () => {
-  const [products, setProducts] = useState<any>([]);
-  const [categorie, setCategorie] = useState<any>([]);
+  const [products, setProducts] = useState<any>([])
+  const [categorie, setCategorie] = useState<any>([])
 
   useEffect(() => {
     Axios.get("https://api.inspiredconsulting.ro/products/filtreaza_produse", {
@@ -14,13 +14,13 @@ const ShopItems = () => {
       },
     })
       .then(function(response) {
-        setProducts(response.data);
-        console.log(response.data, "produse");
+        setProducts(response.data)
+        console.log(response.data, "produse")
       })
       .catch(function(error) {
-        console.log(error);
-      });
-  }, []);
+        console.log(error)
+      })
+  }, [])
 
   useEffect(() => {
     Axios.get(
@@ -28,18 +28,18 @@ const ShopItems = () => {
       {}
     )
       .then(function(response) {
-        setCategorie(response.data);
-        console.log(response.data, " categorie");
+        setCategorie(response.data)
+        console.log(response.data, " categorie")
       })
       .catch(function(error) {
-        console.log(error);
-      });
-  }, []);
-  console.log(categorie);
+        console.log(error)
+      })
+  }, [])
+
   return (
     <section
       id="shop-items"
-      className="px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] mt-32"
+      className=""
     >
       <div className="flex flex-col gap-10 w-full mt-10">
         {categorie.map((categorii: any, i: any) => (
@@ -54,7 +54,7 @@ const ShopItems = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ShopItems;
+export default ShopItems

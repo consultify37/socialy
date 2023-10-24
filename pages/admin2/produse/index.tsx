@@ -8,16 +8,17 @@ import Image from "next/image";
 import toast from "react-hot-toast";
 
 export default function ProductsPanel() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState< any[] >([]);
   const [reducere, setReducere] = useState(false);
   const [id, setId] = useState();
   const [showReduced, setShowReduced] = React.useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   useEffect(() => {
     Axios.get("https://api.inspiredconsulting.ro/products/filtreaza_produse", {
       params: {
         reducere: "",
-        categorie: "",
+        categorie: selectedCategory ? selectedCategory : "",
       },
     })
       .then(function (response) {
@@ -30,28 +31,21 @@ export default function ProductsPanel() {
       .finally(function () {
         // always executed
       });
-  }, []);
+  }, [selectedCategory]);
 
-  const ProductsData: any[] = products;
   const toggleShowReduced = () => {
     setShowReduced(!showReduced);
   };
 
   const productsToShow = showReduced
-    ? ProductsData.filter((product) => product.reducere !== "")
-    : ProductsData;
-
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    ? products.filter((product) => product.reducere !== "")
+    : products;
 
   const handleCategoryChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setSelectedCategory(event.target.value);
   };
-
-  const filteredData = selectedCategory
-    ? ProductsData.filter((products) => products.categorie === selectedCategory)
-    : ProductsData;
 
   //sterge produs
 
@@ -97,6 +91,7 @@ export default function ProductsPanel() {
         // always executed
       });
   }, []);
+
   const CategorieData: any[] = categorie;
 
   //recall
@@ -118,6 +113,7 @@ export default function ProductsPanel() {
         // always executed
       });
   }
+
   return (
     <div className="flex p-10 pt-28">
       <NavAdmin />
@@ -188,7 +184,7 @@ export default function ProductsPanel() {
                     <tr key={product.nume} className="border-b bg-[#E3E8FF]">
                       <th
                         scope="row"
-                        className="py-4 px-6 text-black font-medium text-black whitespace-nowrap"
+                        className="py-4 px-6 text-black font-medium whitespace-nowrap"
                       >
                         <Image
                           src={`https://api.inspiredconsulting.ro/${product.poza}`}
@@ -236,14 +232,14 @@ export default function ProductsPanel() {
                       </td>
                     </tr>
                   ))
-                : filteredData.map((productCategorie) => (
+                : productsToShow.map((productCategorie) => (
                     <tr
                       key={productCategorie.nume}
                       className="border-b bg-[#E3E8FF]"
                     >
                       <th
                         scope="row"
-                        className="py-4 px-6 text-black font-medium text-black whitespace-nowrap"
+                        className="py-4 px-6 font-medium text-black whitespace-nowrap"
                       >
                         <Image
                           src={`https://api.inspiredconsulting.ro/${productCategorie.poza}`}

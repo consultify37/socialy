@@ -24,11 +24,11 @@ const HomeHeader = () => {
       <section
         ref={sectionRef}
         id="HeroContainer"
-        className={`relative flex flex-col w-full items-center justify-start relative px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]`}
+        className={`relative flex flex-col w-full items-center justify-start pt-24 md:pt-40 px-6 sm:px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]`}
         >
         <div className="z-10 w-full flex flex-col items-center gap-9 relative pt-12">
           <div className="relative flex items-center justify-center mb-8">
-            <h1 className="text-white text-2xl lg:text-4xl 2xl:text-5xl font-bold text-center">
+            <h1 className="text-white text-2xl lg:text-4xl xl:text-[44px] font-extrabold text-center">
               Finanțarea potrivită <br className="block md:hidden"/> pentru firma potrivită!
             </h1>
             <Image
@@ -37,17 +37,17 @@ const HomeHeader = () => {
               alt="Hero like"
               width={500}
               height={500}
-              className="absolute w-[625px] right-0 -bottom-6 lg:w-[380px] 2xl:w-[500px] lg:-bottom-6 2xl:-bottom-10"
+              className="absolute w-[625px] right-0 -bottom-6 lg:w-[380px] xl:w-[460px] 2xl:w-[460px] lg:-bottom-8 2xl:-bottom-10"
               />
           </div>
           <p className="text-white text-center text-[18px] lg:max-w-[60%]">
-            Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale.
+            Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale
           </p>
           <button
             type="button"
-            className="px-10 py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] mb-12 text-base"
+            className="px-10 py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] mb-8 text-base font-semibold transition-all hover:scale-[1.05]"
             >
-            cum pot accesa fonduri?
+            Cum pot accesa fonduri?
           </button>
           <div className="relative w-[100%] home-carousel flex items-center justify-center mx-auto">
             <HomeCarousel />
@@ -62,6 +62,7 @@ const HomeHeader = () => {
           </div>
           </div>
         <span className="absolute block md:hidden -left-[4rem] -top-12 bg-[#260056] w-[127vw] h-[118%] -rotate-[5deg] z-[4] rounded-[0_0_165px_100px] overflow-hidden"/>
+        <span className="absolute block md:hidden -left-[4rem] -top-12 bg-[#260056] w-[127vw] h-[40%] z-[4] rounded-[0_0_165px_100px] overflow-hidden"/>
         <Image
           src="/images/circle-hero-right.svg"
           alt="Hero blue circle"
@@ -84,6 +85,7 @@ const HomeHeader = () => {
           className="block md:hidden absolute w-[176px] -left-20 -top-64 z-[100]"
         />
       </section>
+      <span className="absolute hidden md:block top-0 bg-[#260056] w-[102vw] md:h-[400px] z-[4] overflow-hidden" />
       <span className="absolute hidden md:block -left-4 top-0 bg-[#260056] w-[102vw] md:h-[600px] z-[4] -rotate-[5deg] rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] overflow-hidden">
         <Image
           src="/images/circle-hero-right.svg"
@@ -97,7 +99,7 @@ const HomeHeader = () => {
           alt="Hero blue circle"
           width={140}
           height={140}
-          className="absolute -right-8 w-24 xl:w-[140px] bottom-[1.5rem] z-[100] xl:right-[300px] xl:bottom-28 z-[11]"
+          className="absolute -right-8 w-24 xl:w-[140px] bottom-[1.5rem] z-[100] xl:right-[300px] xl:bottom-28"
           />
         <Image
           src="/images/circle-hero-left.svg"

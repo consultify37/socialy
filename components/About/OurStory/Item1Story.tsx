@@ -5,7 +5,7 @@ const Item1Story = () => {
   return (
     <article className="flex flex-wrap gap-y-10 gap-x-[6rem] mt-10 md:mt-32 justify-between items-center">
       <div className="flex-1">
-        <h2 className="text-[#260056] font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-4xl">
+        <h2 className="text-[#260056] font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-3xl">
           Ne diferențiem prin:
         </h2>
         <p className="text-[#260056] font-normal text-base">
@@ -17,16 +17,16 @@ const Item1Story = () => {
         </p>
         <div className="flex gap-4 mt-4">
           <Link
-            href="/programe"
-            className="p-2 bg-[#BA63FF] text-[#FFFFFF] flex items-center rounded-[28.5px] font-medium px-10 text-xs md:text-base"
+            href="/programe" 
+            className="bg-[#BA63FF] py-3 text-[#fff] font-semibold rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all"
           >
-            programe
+            Programe
           </Link>
           <Link
             href="/servicii"
-            className="p-2 bg-transparent text-[#260056] flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-medium px-10 text-xs md:text-base"
+            className="py-3 bg-transparent font-semibold text-[#260056] flex items-center rounded-[28.5px] border-2 border-[#8717F8] px-12 hover:scale-[1.05] transition-all"
           >
-            servicii
+            Servicii
           </Link>
         </div>
       </div>

@@ -39,12 +39,12 @@ const ShopItem = ({
     });
   }, [scrollAmount]);
   return (
-    <div className="flex flex-col gap-4">
-      <div key={categorie.id} className="flex justify-between w-full">
-        <h2 className="md:text-xl lg:text-2xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[30%]">
+    <div className="flex flex-col">
+      <div key={categorie.id} className="flex justify-between w-full items-center">
+        <h2 className="md:text-xl lg:text-2xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[30%] pl-7 md:pl-[80px] xl:pl-[140px] 2xl:pl-[276px]">
           {categorie.nume}
         </h2>
-        <div className="md:flex flex-row">
+        <div className="md:flex flex-row pr-7 md:pr-[80px] xl:pr-[140px] 2xl:pr-[276px]">
           <span
             className="bg-[#7000FF] w-[43px] h-[43px] flex items-center justify-center rounded-full cursor-pointer mr-2"
             onClick={() =>
@@ -64,13 +64,13 @@ const ShopItem = ({
         </div>
       </div>
       <div
-        className="flex gap-4 items-stretch overflow-y-auto scrollbar-none"
+        className="flex gap-4 items-stretch overflow-y-auto scrollbar-none pb-6 pt-4"
         ref={carouselRef}
       >
         <Link
           key={categorie.id}
-          href={`/shop/categorie/${categorie.nume.replace(/\s+/g, "-").toLowerCase()}`}
-          className={`min-h-[334px] max-h-[334px] p-2 rounded-[35px] shadow-md min-w-[60%] md:min-w-[280px] flex flex-col gap-4 snap-center relative bg-no-repeat bg-center bg-cover`}
+          href={`/shop/categorie/${ categorie.nume.replace(/\s+/g, "-").toLowerCase()} `}
+          className={`min-h-[334px] max-h-[334px] p-2 rounded-[35px] shadow-lg min-w-[60%] md:min-w-[280px] flex flex-col gap-4 snap-center relative bg-no-repeat bg-center bg-cover ml-7 md:ml-[80px] ml:pl-[140px] 2xl:ml-[276px]`}
           style={{
             background: `linear-gradient(rgba(0, 0, 0, 0.7),  rgba(0, 0, 0, 0.7)), url(https://api.inspiredconsulting.ro/${categorie.poza})`,
           }}
@@ -84,11 +84,12 @@ const ShopItem = ({
             ref={cardRef[j]}
             key={item.id}
             href={`/shop/view/${item.nume.replace(/\s+/g, "-").toLowerCase()}`}
-            className="p-2 bg-[#F2F4FF] rounded-[35px] shadow-md min-w-[60%] md:min-w-[280px] flex flex-col gap-4 snap-center"
+            className="p-2 bg-[#F2F4FF] rounded-[35px] shadow-lg min-w-[60%] md:min-w-[280px] flex flex-col gap-4 snap-center "
+            style={{marginRight: j == products.length - 1 ? 24 : 0}}
           >
             <div className="relative h-[250px]">
               <Image
-                src={`https://api.inspiredconsulting.ro/${item.poza}`}
+                src={`https://api.inspiredconsulting.ro/${ item.poza }`}
                 alt="cart image"
                 placeholder="blur"
                 blurDataURL="/images/whyus-cart-image.png"

@@ -4,7 +4,7 @@ const ShopHeader = () => {
     return (
         <section
             id="about-header"
-            className="relative bg-[#260056] w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
+            className="relative bg-[#260056] w-full pt-44 pb-14 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
             style={{ marginBottom: `128px` }}
         >
             <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0">

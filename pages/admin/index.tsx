@@ -1,19 +1,19 @@
-/* eslint-disable @next/next/no-img-element */
-import * as React from "react";
-import Head from 'next/head'
-import Image from "next/image";
-import Link from 'next/link';
-import { IoIosArrowDown } from "react-icons/io";
-import { useEffect, useRef, useState } from "react";
-import NavAdmin from "../../components/admin-nav";
-import Orders from "./comenzi";
-import ProductsPanel from "./produse";
-import AddProduct from "./adauga-produs";
+import React, { useEffect } from 'react'
+import AdminLayout from '../../components/admin-nav/AdminLayout'
+import { useRouter } from 'next/navigation'
 
-export default function Admin() {
-    return (
-        <>
-            <Orders /> 
-        </>
-    );
+const Admin = () => {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.push('/admin/slide-homepage')
+  }, [router])
+
+  return (
+    <AdminLayout>
+      
+    </AdminLayout>
+  )
 }
+
+export default Admin

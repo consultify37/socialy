@@ -129,7 +129,7 @@ const ItemViewContent = ({
   return (
     <section
       id="product-info"
-      className="flex flex-col gap-2 mt-[8rem] px-7 md:px-[80px] xl:px-[200px] 2xl:px-[276px]"
+      className="flex flex-col gap-2 mt-[8rem] px-7 md:px-[80px] xl:px-[200px] 2xl:px-[276px] md:pt-16"
     >
       <div className="w-full flex flex-wrap justify-between items-stretch gap-10">
         <div className="relative h-[350px] w-full md:w-[40%] py-6 rounded-[35px] bg-[#F2F4FF] shadow-md flex items-center justify-center">
@@ -155,10 +155,10 @@ const ItemViewContent = ({
             {price} lei
           </p>
           <button
-            className="outline-none border-none text-white bg-[#8717F8] font-semibold px-20 py-3 mr-auto rounded-[28.5px] mb-10"
+            className="outline-none border-none text-white bg-[#8717F8] font-semibold px-20 py-3 mr-auto rounded-[28.5px] mb-10 hover:scale-[1.05] transition-all"
             onClick={addToCart}
           >
-            adaugă în coș
+            Adaugă în coș
           </button>
           {!isFavorite ? (
             <button

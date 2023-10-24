@@ -6,7 +6,7 @@ const HomeCarousel = () => {
     return(
         <Carousel
             isRTL={false}
-            pagination={false}
+            pagination={true}
         >
             <div className='w-full flex items-center relative justify-center'>    
                 <div className='absolute w-full flex flex-col items-center justify-center z-[14]'>

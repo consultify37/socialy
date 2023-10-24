@@ -35,7 +35,7 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
   };
   
   return (
-    <section className="my-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+    <section className="mb-32 mt-12 md:mt-24 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
       <div className="relative px-6 pb-20 md:px-20 md:py-0 py-2 flex items-center mt-32 justify-between flex-col lg:flex-row bg-[#260056] rounded-[16px] w-auto lg:h-[350px]">
         <Image src='/images/triangle-news.svg' className="absolute right-[-2rem] bottom-[-2rem] md:bottom-[ihnerit] md:top-[-2rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
         <div className="relative flex">
@@ -67,7 +67,7 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
           </h2>
           <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
             <input
-              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
+              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full outline-none"
               type="email"
               placeholder={newsletter}
               required

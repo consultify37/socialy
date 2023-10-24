@@ -130,8 +130,8 @@ export default function PaginaProgram() {
                     <p className='text-white text-base'>Implementarea proiectelor prin noi se adresează întreprinderilor și organizațiilor care doresc rezultate de succes. Cu expertiza vastă și abordarea profesionistă, oferim suport și consultanță pe tot parcursul procesului. Indiferent de mărimea și complexitatea proiectului, ne asigurăm că implementarea este eficientă, conform cerințelor și obiectivelor. Alegând colaborarea cu noi, beneficiați de expertiză specializată și soluții personalizate pentru succesul proiectului dvs. pe fonduri europene.</p>
                 </div>
             </div>
-            <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-0 lg:mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
-                vreau să completez!
+            <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-0 lg:mx-auto justify-self-center px-12 py-3 md:py-4 text-white rounded-[28.5px]">
+                Vreau să completez!
             </Link>
         </section>
         <FAQAbout />
@@ -140,20 +140,19 @@ export default function PaginaProgram() {
             linkText="Completează formularul!"
             linkHref="/contact"
         />
-        <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        {/* <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <div className="flex justify-start items-start">
                 <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">
                 Consultify vine în ajutorul tău cu produse digitale pentru scalarea
                 afacerii tale
                 </h3>
             </div>
-            {/* Cart */}
             <WhyUsCart />
             <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
                 vezi toate produsele
             </Link>
-        </div>
-        <News />
+        </div> */}
+        {/* <News /> */}
         <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
     </>
   )

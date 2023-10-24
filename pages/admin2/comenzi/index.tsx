@@ -93,9 +93,9 @@ export default function Orders() {
     }
     
     return (
-        <div className="flex p-10 pt-28">
+        <div className="flex p-10 pt-12">
             <NavAdmin />
-            <div className="container mx-auto mt-12 ml-10">
+            <div className="container mx-auto mt-4 ml-10">
                 <Head>
                     <title>Admin - comenzi</title>
                 </Head>

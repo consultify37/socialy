@@ -1,7 +1,7 @@
-import { NextPage } from "next";
-import Head from "next/head";
-import ShopItems from "../../components/Shop/Items";
-import ShopHeader from "../../components/Shop/ShopHeader";
+import { NextPage } from "next"
+import Head from "next/head"
+import ShopItems from "../../components/Shop/Items"
+import ShopHeader from "../../components/Shop/ShopHeader"
 
 const About: NextPage = () => {
     return(

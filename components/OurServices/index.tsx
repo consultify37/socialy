@@ -6,16 +6,16 @@ export default function OurServices(){
     return(
         <section className="w-full flex flex-col items-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <h2 className="text-[#8717F8] font-bold text-3xl lg:text-4xl text-center">
-                Iată ce îți oferim:
+                Iată ce îți oferim
             </h2>
-            <div className="flex flex-col lg:grid lg:gap-5 lg:grid-cols-2 mt-32 ">
+            <div className="flex flex-col lg:grid lg:gap-5 lg:grid-cols-2 mt-24 ">
                 <div className="flex flex-row bg-[#F6EFFF] p-6 pb-6 lg:pb-16 rounded-3xl mb-8">
                     <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                         <Image
                             src="/images/OurServices/consultanta.svg"
                             alt="Hero blue circle"
-                            width={60}
-                            height={60}
+                            width={32}
+                            height={32}
                             className="z-[5] h-[max-content]"
                         />
                     </div>
@@ -33,8 +33,8 @@ export default function OurServices(){
                         <Image
                             src="/images/OurServices/registru.svg"
                             alt="Hero blue circle"
-                            width={60}
-                            height={60}
+                            width={32}
+                            height={32}
                             className="z-[5] h-[max-content]"
                         />
                     </div>
@@ -52,8 +52,8 @@ export default function OurServices(){
                         <Image
                             src="/images/OurServices/implementare.svg"
                             alt="Hero blue circle"
-                            width={60}
-                            height={60}
+                            width={32}
+                            height={32}
                             className="z-[5] h-[max-content]"
                         />
                     </div>
@@ -71,8 +71,8 @@ export default function OurServices(){
                         <Image
                             src="/images/OurServices/mentorat.svg"
                             alt="Hero blue circle"
-                            width={60}
-                            height={60}
+                            width={32}
+                            height={32}
                             className="z-[5] h-[max-content]"
                         />
                     </div>
