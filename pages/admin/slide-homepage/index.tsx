@@ -1,39 +1,95 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import AdminLayout from '../../../components/admin-nav/AdminLayout'
 import InputField from '../../../components/admin/InputField'
 import SlideHomePageImages from '../../../components/admin/SlideHomePageImages'
 import Image from 'next/image'
+import { uploadFile } from '../../../utils/b2_storage/upload_file'
+import { addDoc, collection, deleteDoc, doc, getDocs } from 'firebase/firestore'
+import { db } from '../../../firebase'
+import ReactLoading from 'react-loading'
+import { deleteFile } from '../../../utils/b2_storage/delete_file'
+import { Slide } from '../../../types'
+import toast from 'react-hot-toast'
 
 const SlideHomepage = () => {
   const [link, setLink] = useState("")
-  const [images, setImages] = useState< { link: string, image: File }[] >([])
+  const [slides, setSlides] = useState< Slide[] >([])
   const [newImage, setNewImage] = useState< File | null >(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [isFetching, setIsFetching] = useState(false)
+
+  const fetchSlides = async () => {
+    setIsFetching(true)
+
+    const docsRef = collection(db, 'slides-homepage')
+    const docsSnap = await getDocs(docsRef)
+
+    const data: any[] = docsSnap.docs.map(doc => (
+      { id: doc.id, ...doc.data() }
+    ))
+    
+    setSlides(data)
+    setIsFetching(false)
+  } 
+
+  useEffect(() => {
+    fetchSlides()
+  }, [])
   
-  const handleDelete = (image: any) => {
-    setImages((images) => images.filter((item) => item != image))
-  }
+  const handleDelete = async (slide: Slide) => {
+    setIsFetching(true)
 
-  const handleUpload = () => {
-    if ( link == '' ) {
-      alert('Adaugă link!')
+    if (!confirm('Ești sigur că vrei să elimini slide-ul? Acțiunea este ireversibilă.')) {
+      setIsFetching(false)
       return
     }
 
+    if ( slide.file ) {
+      try {
+        const docRef = doc(db, 'slides-homepage', slide.id! )
+        await deleteDoc(docRef)
+        await deleteFile(slide.file)
+      } catch (e) {
+        toast.error('Ceva nu a mers bine. Încearcă din nou!')
+      }
+    }
+
+    setSlides((slides) => slides.filter((item) => item != slide))
+    setIsFetching(false)
+  }
+
+  const handleUpload = async (e: any) => {
+    e.preventDefault()
     if ( !newImage ) {
-      alert('Adaugă imagine!')
+      toast.error('Adaugă imaginea!')
       return
     }
 
-    setImages(images => [{link, image: newImage}, ...images])
-    setLink('')
-    setNewImage(null)
-  }
+    setIsLoading(true)
 
+    try {
+      const result = await uploadFile(newImage!)
+      
+      const doc = await addDoc(collection(db, 'slides-homepage'), { link, file: result, image: `https://f005.backblazeb2.com/file/inspirely-consultify-socialy-creditfy/${result.fileName}` })
+
+      setSlides(slides => [{id: doc.id, link, image: newImage!, file: null}, ...slides])
+      setLink('')
+      setNewImage(null)
+    } catch (e) {
+      toast.error('Ceva nu a mers bine, încearcă din nou!')
+    }
+
+    setIsLoading(false)
+  }
+  
   return (
     <AdminLayout>
       <h1 className='text-[28px] text-secondary font-bold '>Adaugă o imagine în slide - 1066 x 411</h1>
       <div className='mt-8 flex flex-row'>
-        <div className='flex flex-col mr-16'>
+        <form 
+          className='flex flex-col mr-16'
+          onSubmit={handleUpload}
+        >
           { newImage ?
               <Image 
                 src={URL.createObjectURL(newImage)}
@@ -76,19 +132,26 @@ const SlideHomepage = () => {
             text={link}
             setText={setLink}
             placeholder='Atașează link-ul aici'
+            required={true}
           />
 
-          <button 
-            className='rounded-xl bg-primary w-full flex items-center justify-center hover:scale-[1.05] transition-all mt-8 p-4'
-            onClick={handleUpload}
-          >
-            <p  className='text-onPrimary text-base font-semibold'>Adaugă</p>
-          </button>
-        </div>
+            { isLoading ?
+              <div className='mt-8 w-full flex items-center justify-center'>
+                <ReactLoading type="spin" color="#8717F8" width={32} height={32} />
+              </div> :
+              <button 
+                className='rounded-xl bg-primary w-full flex items-center justify-center hover:scale-[1.05] transition-all mt-8 p-4'
+                type='submit'
+              >
+                <p  className='text-onPrimary text-base font-semibold'>Adaugă</p>
+              </button>
+            }
+        </form>
 
         <SlideHomePageImages 
-          images={images}
+          slides={slides}
           handleDelete={handleDelete}
+          isFetching={isFetching}
         />
       </div>
     </AdminLayout>

@@ -58,6 +58,7 @@ body{max-width: 2000px; margin: 0 auto;}
   background-position: center !important;
   text-indent: -9999px; /* Hide the text content */
   border: none; /* Optional: Remove any default button styles */
+  @apply hover:scale-105 transition-all
 }
 
 * {
@@ -75,12 +76,17 @@ html, body, #__next {
   font-family:inherit;
 }
 
+html {
+  /* scroll-behavior: smooth !important; */
+}
+
 .rec-arrow-left {
   background-image: url('/images/arrows/arrow-left.svg') !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   text-indent: -9999px; /* Hide the text content */
   border: none; /* Optional: Remove any default button styles */
+  @apply hover:scale-105 transition-all
 }
 
 .rec-arrow-right, .rec-arrow-right:hover, .rec-arrow-right:enabled{background-color: #8717F8 !important; color: #fff !important; font-family: Averta-All, sans-serif !important;}
@@ -142,10 +148,6 @@ html, body, #__next {
 
 .back {
   transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .h-calc {height: calc(100% - 120px);}
@@ -316,3 +318,55 @@ html, body, #__next {
   text-overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding-left: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/* .logos:hover .logos-slide {
+  animation-play-state: paused;
+} */
+
+.logos-slide {
+  display: flex;
+  flex-direction: row;
+  animation: 45s slide infinite linear;
+}
+
+/* .logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+} */

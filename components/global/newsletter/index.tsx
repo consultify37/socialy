@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Axios from "axios";
-import { useState } from "react";
-import toast from "react-hot-toast";
+import Image from "next/image"
+import Axios from "axios"
+import { useState } from "react"
+import toast from "react-hot-toast"
 
 interface NewsLetterProps {
   headingText: string;
@@ -21,7 +21,7 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
     .then(function (response) {
       console.log(response.data)
       if (response.data == 'Esti deja abonat la newsletter') {
-        toast.error('Esti deja abonat la newsletter')
+        toast.error('Esti deja abonat la newsletter', { position: 'top-center' })
       } else {
         toast.success("Te-ai abonat la newsletter cu succes")
       }
@@ -35,7 +35,7 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
   };
   
   return (
-    <section className="mb-32 mt-12 md:mt-24 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+    <section className="my-16 md:my-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
       <div className="relative px-6 pb-20 md:px-20 md:py-0 py-2 flex items-center mt-32 justify-between flex-col lg:flex-row bg-[#260056] rounded-[16px] w-auto lg:h-[350px]">
         <Image src='/images/triangle-news.svg' className="absolute right-[-2rem] bottom-[-2rem] md:bottom-[ihnerit] md:top-[-2rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
         <div className="relative flex">
@@ -67,13 +67,13 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
           </h2>
           <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
             <input
-              className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full outline-none"
+              className="py-3 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
               type="email"
               placeholder={newsletter}
               required
               onChange={(e) => setNewsletter(e.target.value)}
             />
-            <button type="submit" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
+            <button type="submit" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-secondary bg-[#7000FF] py-4 px-10 text-sm rounded-full">
               Mă abonez
             </button>
           </form>

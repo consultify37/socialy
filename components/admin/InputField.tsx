@@ -4,9 +4,10 @@ type Props = {
   text: string
   setText: React.Dispatch<React.SetStateAction<string>>
   placeholder: string
+  required?: boolean
 }
 
-const InputField = ({ text, setText, placeholder }: Props) => {
+const InputField = ({ text, setText, placeholder, required = false }: Props) => {
 
   return (
     <input 
@@ -14,6 +15,7 @@ const InputField = ({ text, setText, placeholder }: Props) => {
       placeholder={placeholder}
       value={text}
       onChange={(e) => setText(e.target.value)}
+      required={required}
     />
   )
 }

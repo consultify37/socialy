@@ -3,6 +3,7 @@ import FormInput from './FormInput'
 import FormTextArea from './FormTextArea'
 import FaqDropdown from './FaqDropdown'
 import { Faq } from '../../../types'
+import toast from 'react-hot-toast'
 
 type Props = {
   faqs: Faq[]
@@ -15,12 +16,12 @@ const AdminFaq = ({ faqs, setFaqs }: Props) => {
 
   const handleAddFaq = () => {
     if (newAnsewar == '' ) {
-      alert('Adaugă răspuns!')
+      toast.error('Adaugă răspuns!')
       return
     }
 
     if (newQuestion == '') {
-      alert('Adaugă întrebare!')
+      toast.error('Adaugă întrebare!')
       return
     }
 
@@ -46,6 +47,7 @@ const AdminFaq = ({ faqs, setFaqs }: Props) => {
         />
 
         <button 
+          type='button'
           onClick={handleAddFaq}
           className="bg-primary cursor-pointer font-semibold flex items-center justify-center w-fit px-14 py-3 text-white rounded-lg hover:scale-[1.05] transition-all mt-8"
         >
@@ -58,7 +60,7 @@ const AdminFaq = ({ faqs, setFaqs }: Props) => {
           <FaqDropdown 
             faq={faq}
             index={index}
-            key={faq.answear+faq.question}
+            key={faq.answear+faq.question+index}
             setFaqs={setFaqs}
           />
         )) }

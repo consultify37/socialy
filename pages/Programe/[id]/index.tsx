@@ -7,16 +7,22 @@ import Conditions from '../../../components/programe/Conditions'
 import WhyUs from '../../../components/programe/WhyUs'
 import Faq from '../../../components/programe/Faq'
 import CTA from '../../../components/programe/CTA'
-import WhyUsCart from '../../../components/Home/Why-Us/Cart'
-import Link from 'next/link'
-import News from '../../../components/Home/News/News'
 import NewsLetter from '../../../components/global/newsletter'
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore'
+import { db } from '../../../firebase'
+import { NextPageContext } from 'next'
+import { Program } from '../../../types'
 
-const Program = () => {
+type Props = {
+  program: Program
+}
+
+const Program = ({ program }: Props) => {
+  
   return (
     <>
       <Head>
-          <title>Consultify | BlogPost</title>
+          <title>Consultify | {program.title2}</title>
       </Head>
       <section className="flex flex-col w-full pt-[140px] md:pt-40 pb-20 items-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <Image 
@@ -28,23 +34,19 @@ const Program = () => {
         />
 
         <h1 className='text-primary text-[28px] md:text-[35px] font-extrabold pt-10 text-center'>
-          digiimm - POC 411 / POC 411 BIS
+          { program.title2 }
         </h1>
 
         <div className='flex flex-col w-full items-center mt-10 px-2 md:px-8'>
           <p className='text-[13px] md:text-[16px] text-[#393939] text-justify'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue augue ac mattis venenatis. Curabitur eu semper augue. Donec semper, elit hendrerit aliquet volutpat, orci eros vehicula nulla, et auctor magna ipsum ac metus. Nam ex dui, vestibulum vel gravida in, vehicula a enim. 
-            <br/><br/>
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum massa. Nullam quis cursus sem. Aliquam purus dui, finibus sit amet diam eget, venenatis rutrum velit. In vehicula purus ac malesuada fermentum. Aenean a congue sapien, nec eleifend metus. Nullam faucibus ipsum congue nunc dapibus, sed ultrices erat rhoncus. Phasellus et sagittis erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur ligula elit, porttitor eget aliquam ut, ornare eu est.
-            <br/><br/>
-            Nullam efficitur fermentum tristique. Maecenas sed odio eu nisl semper sollicitudin nec vitae nibh. Duis rhoncus mauris sit amet risus malesuada tristique. Integer consectetur ante elit, vitae venenatis felis ullamcorper ut. Sed eget ipsum urna. Etiam tincidunt accumsan tortor et aliquam. Suspendisse vitae tempus ligula. Pellentesque vitae pulvinar ipsum, nec sodales est. Etiam eu eros faucibus, rutrum elit eu, suscipit enim. Quisque tincidunt felis sapien, et rutrum risus maximus vitae. Curabitur dictum pulvinar gravida.
+            { program.descriere }
           </p>
-          <PriceCTA />
-          <CuiIseAdreseaza />
-          <Conditions />
+          <PriceCTA suma={program.suma2} />
+          <CuiIseAdreseaza title={program.title3} description={program.descriere3}  />
+          <Conditions conditions={program.conditions} />
         </div>
         <WhyUs />
-        <Faq />
+        <Faq faqs={program.faqs} />
         <CTA
           title="Aplică acum la fonduri nerambursabile pentru afacerea ta"
           linkText="Completează formularul!"
@@ -64,3 +66,25 @@ const Program = () => {
 }
 
 export default Program
+
+export const getStaticPaths = async () => {
+  const programeRef = collection(db, 'programe-fonduri')
+  const programeSnap = await getDocs(programeRef)
+
+  const paths = programeSnap.docs.map((doc) => ({ params: { id: doc.id }}))
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export const getStaticProps = async (context: any) => {
+  const id = context.params.id
+  const programSnap = await  getDoc(doc(db, 'programe-fonduri', id))
+  const program = { id: programSnap.id, ...programSnap.data() }
+
+  return { 
+    props: { program }, 
+    revalidate: Number(process.env.REVALIDATE )
+  }
+}

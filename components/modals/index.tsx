@@ -1,12 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import toast, { Renderable, Toast, ValueFunction } from "react-hot-toast";
 import { AiOutlineClose } from "react-icons/ai";
-import Product from "./products";
 import Cookies from "js-cookie";
 import Axios from "axios";
-import { useRouter } from "next/router";
 import {
   CartItem,
   getAllItemFromLocalStorage,

@@ -7,11 +7,15 @@ const nextConfig = {
     defaultLocale: "ro",
   },
   images: {
-    domains: ["api.inspiredconsulting.ro"],
+    domains: ["api.inspiredconsulting.ro", "f005.backblazeb2.com"],
     remotePatterns: [
       {
         protocol: "https",
         hostname: "api.inspiredconsulting.ro",
+      },
+      {
+        protocol: 'https', 
+        hostname: 'f005.backblazeb2.com',
       },
     ],
   },

@@ -1,39 +1,21 @@
 /* eslint-disable react/jsx-key */
-import React, { useEffect, useRef, useState } from "react"
+import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import NewsLetter from "../../components/global/newsletter"
 import Head from "next/head"
 import CTA from "../../components/CTA"
-import WhyUsCart from "../../components/Home/Why-Us/Cart"
-import News from "../../components/Home/News/News"
 import TabsComponent from "../../components/TabsComponent"
+import { collection, getDocs } from "firebase/firestore"
+import { db } from "../../firebase"
+import { Category, Program } from "../../types"
 
-export interface ProgameData {
-    id: number;
-    titlu: string,
-    pret: string,
-    subTitlu: string,
-    titluDetalii: string,
-    detalii: string,
+type Props = {
+    categories: string[]
+    programe: Program[]
 }
 
-export default function Programe() {
-    const Programe: ProgameData[] = [
-        {
-            id: 1, titlu: 'POC 411 / POC 411 BIS', pret: "50.000 € - 500.000 €", subTitlu: 'POC / 411', titluDetalii: 'digiimm', detalii: 'fsafsa',
-        },
-        {
-            id: 2, titlu: 'POC 411 / POC 411 BIS', pret: "50.000 € - 500.000 €", subTitlu: 'POC / 411', titluDetalii: 'digiimm', detalii: 'fsafsa',
-        },
-        {
-            id: 3, titlu: 'POC 411 / POC 411 BIS', pret: "50.000 € - 500.000 €", subTitlu: 'POC / 411', titluDetalii: 'digiimm', detalii: 'fsafsa',
-        },
-        {
-            id: 4, titlu: 'POC 411 / POC 411 BIS', pret: "50.000 € - 500.000 €", subTitlu: 'POC / 411', titluDetalii: 'digiimm', detalii: 'fsafsa',
-        }
-    ]
-
+export default function Programe({categories, programe}: Props) {
     const [category, setCategory] = useState('toate')
 
     return (
@@ -73,36 +55,35 @@ export default function Programe() {
                     </select>
                 </div> */}
                 <TabsComponent 
-                    values={('toate digitalizare agricultură horeca susținere industrie').split(' ')}
+                    values={['toate', ...categories]}
                     setSelectedValue={setCategory}
                 />
                 {
-                    Programe.map((programe, index) => (
-                        programe.id % 2 === 0 ? (
+                    programe.filter((program) => program.categorie == category || category == 'toate').map((program, index) => (
+                        index % 2 === 0 ? (
                             <div 
                                 className="rounded-[35px] mx-2 md:mx-[30px] relative w-full h-auto flex flex-col-reverse md:flex-row justify-between px-4 md:px-20 py-2 bg-cover bg-no-repeat align-center mt-[8rem]"
                             >   
                                 <div style={{background: "url('/images/fonduri/fonduri-img-1.png'), rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
                                 <div style={{background: "rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
                                 <div className="flex flex-col justify-center items-center rounded-2xl relative top-[30px] md:top-[100px] z-[5] bg-[#260056] py-8 px-8">
-                                    <h5 className="text-white text-xl md:text-4xl mb-6">digiimm</h5>
+                                    <h5 className="text-white text-xl md:text-4xl mb-6">{program.title}</h5>
                                     <ul className="list-disc list-inside">
-                                        <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
-                                        <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
-                                        <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
-                                        <li className="text-[#EDD7FF] text-md mb-8">Lorem lispum dolor sit amet</li>
+                                        { program.bulletPoints.map((bulletPoint, index) => (
+                                            <li key={index} className="text-[#EDD7FF] text-md mb-4">{ bulletPoint }</li>
+                                        ))}
                                     </ul>
-                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all" href={"/programe/" + programe.id}>Aplica acum!</Link>
+                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all" href={"/Programe/" + program.id}>Aplică acum!</Link>
                                 </div>
                                 <div className='flex flex-col items-end justify-center pt-12'>
                                     <h5 className='text-white text-xs lg:text-xl mb-2'>
-                                        PNRR / C9 / 13 / Măsura 1
+                                        {program.text1}
                                     </h5>
                                     <h4 className='text-white text-xl lg:text-4xl mb-2 font-bold'>
-                                        Digitalizarea IMM-urilor
+                                        { program.text2 }
                                     </h4>
                                     <h6 className='text-white text-xl lg:text-4xl font-bold'>
-                                        20.000 € - 100.000 €
+                                        { program.suma }
                                     </h6>
                                 </div>
                             </div>
@@ -113,24 +94,23 @@ export default function Programe() {
                                 <div style={{background: "url('/images/fonduri/fonduri-img-1.png'), rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
                                 <div style={{background: "rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
                                 <div className="flex flex-col justify-center items-center rounded-2xl relative top-[100px] z-[5] bg-[#260056] py-8 px-8">
-                                    <h5 className="text-white text-xl lg:text-4xl mb-6">digiimm</h5>
+                                    <h5 className="text-white text-xl lg:text-4xl mb-6">{ program.title }</h5>
                                     <ul className="list-disc list-inside">
-                                        <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
-                                        <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
-                                        <li className="text-[#EDD7FF] text-md mb-4">Lorem lispum dolor sit amet</li>
-                                        <li className="text-[#EDD7FF] text-md mb-8">Lorem lispum dolor sit amet</li>
+                                        { program.bulletPoints.map((bulletPoint, index) => (
+                                            <li key={index} className="text-[#EDD7FF] text-md mb-4">{ bulletPoint }</li>
+                                        ))}
                                     </ul>
-                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all" href={"/programe/" + programe.id}>Aplica acum!</Link>
+                                    <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all" href={"/Programe/" + program.id}>Aplică acum!</Link>
                                 </div>
                                 <div className='flex flex-col items-start justify-center z-[5] pt-12'>
                                     <h5 className='text-white text-xs lg:text-xl mb-2'>
-                                        PNRR / C9 / 13 / Măsura 1
+                                        { program.text1 }
                                     </h5>
                                     <h4 className='text-white text-xl lg:text-4xl mb-2'>
-                                        Digitalizarea IMM-urilor
+                                        { program.text2 }
                                     </h4>
                                     <h6 className='text-white text-xl lg:text-4xl'>
-                                        20.000 € - 100.000 €
+                                        { program.suma }
                                     </h6>
                                 </div>
                             </div>
@@ -160,3 +140,22 @@ export default function Programe() {
         </>
     );
 }
+
+export const getStaticProps = async () => {
+    const programeRef = collection(db, 'programe-fonduri')
+    const programeSnap = await getDocs(programeRef)
+
+    const programe = programeSnap.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+
+    const categoriesRef = collection(db, 'categories')
+    const categoriesSnap = await getDocs(categoriesRef)
+
+    const categories = categoriesSnap.docs.map((doc) => ( doc.data().category )) 
+
+    return {
+        props: {
+            categories, programe
+        },
+        revalidate: Number(process.env.REVALIDATE)
+    }
+} 

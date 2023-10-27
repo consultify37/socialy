@@ -1,81 +1,79 @@
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
+import { auth, db } from '../../../firebase'
+import { signInWithEmailAndPassword } from 'firebase/auth'
+import ReactLoading from 'react-loading'
+import toast from 'react-hot-toast'
 
 const Login = () => {
   const router = useRouter()
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
-  const login = () => {
-    router.push('/admin/slide-homepage')
+  const login = async (e: any) => {
+    e.preventDefault()
+    setIsLoading(true)
+
+    try{
+      await signInWithEmailAndPassword(auth, email, password)
+      router.push('/admin/slide-homepage')
+    } catch (e: any) {
+      toast.error(e.message.replace('Firebase: ', ''))
+    }
+
+    setIsLoading(false)
   }
 
   return (
-    <div className="flex min-h-screen flex-col justify-center items-center px-6 lg:px-8">
-      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+    <div className='min-h-screen min-w-screen flex flex-col items-center justify-center'>
+      <div className='rounded-full p-4 bg-secondary border-white border-[10px] relative top-12'>
         <Image 
-          src="/images/logo-dark.svg"
-          width={120}
-          height={38} 
-          className="mx-auto h-10 w-auto"  
-          alt="Your Company" 
+          src='/favicon.ico'
+          width={64}
+          height={64}
+          alt='logo'
+          className='w-12 h-12'
         />
-        <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Conectează-te la contul tău de administrator</h2>
       </div>
 
-      <div className="mt-10 mx-auto w-full max-w-sm">
-        <form className="space-y-6" action="#" method="POST">
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">Email</label>
-            <div className="mt-2">
-              <input 
-                id="email" 
-                name="email" 
-                type="email" 
-                placeholder='Email'
-                autoComplete="email" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required 
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 outline-none sm:text-sm sm:leading-6 px-2" 
-              />
-            </div>
-          </div>
+      <div className='flex flex-col items-center rounded-3xl bg-admin-card p-12 pt-16 mb-16 w-[calc(100vw-40px)] max-w-[424px]'>
+        <h1 className='text-secondary text-[24px] font-bold'>Bun venit înapoi!</h1>
+        <p className='text-[16px] text-[#A1A1A1] mt-1'>Intră în contul tău</p>
 
-          <div>
-            <div className="flex items-center justify-between">
-              <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">Parolă</label>
-              {/* <div className="text-sm">
-                <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
-              </div> */}
-            </div>
-            <div className="mt-2">
-              <input 
-                id="password" 
-                name="password" 
-                type="password" 
-                placeholder='Parolă'
-                autoComplete="current-password" 
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required 
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 outline-none sm:text-sm sm:leading-6 px-2" 
-              />
-            </div>
-          </div>
+        <form onSubmit={login} className='w-full flex flex-col items-center'>
+          <input 
+            className='text-base p-4 pl-6 rounded-full border-2 border-primary outline-none w-full mt-8 max-w-[360px]'
+            placeholder='Email'
+            type='email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value) }
+            required
+          />
 
-          <div>
-            <button 
-              type="submit" 
-              className="flex w-full justify-center rounded-lg bg-primary px-6 py-1.5 font-semibold text-onPrimary hover:scale-[1.05] transition-all mt-2"
-              onClick={login}
-            >
-              Conectează-te
-            </button>
+          <input 
+            className='text-base p-4 pl-6 rounded-full border-2 border-primary outline-none w-full mt-4 max-w-[360px]'
+            placeholder='Parolă'
+            type='password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value) }
+            required
+          /> 
+          
+          <div className='mt-8 flex flex-col w-full items-center'>
+            { isLoading ?
+              <ReactLoading type="spin" color="#8717F8" width={32} height={32} /> :
+              <button 
+                type='submit' 
+                className='py-4 bg-primary flex items-center justify-center rounded-full w-full transition-all hover:scale-[1.05]'
+              > 
+                <p className='text-[#fff] font-semibold'>Intră în cont</p>
+              </button>
+            }
           </div>
-        </form>
+        </form>   
       </div>
     </div>
   )

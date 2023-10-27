@@ -2,7 +2,14 @@ import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { AiFillStar } from "react-icons/ai";
 import HomeCarousel from './carousel-home'
-const HomeHeader = () => {
+import { Slide } from "../../types"
+import Link from "next/link";
+
+type Props = {
+  slides: Slide[]
+}
+
+const HomeHeader = ({ slides }: Props) => {
   const sectionRef = useRef<HTMLElement>(null);
   const [loaded, setLoaded] = useState(false);
   const [margin, setMargin] = useState<number>(0);
@@ -40,17 +47,17 @@ const HomeHeader = () => {
               className="absolute w-[625px] right-0 -bottom-6 lg:w-[380px] xl:w-[460px] 2xl:w-[460px] lg:-bottom-8 2xl:-bottom-10"
               />
           </div>
-          <p className="text-white text-center text-[18px] lg:max-w-[60%]">
-            Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale
+          <p className="text-white font-regular text-center text-[18px] lg:max-w-[60%]">
+            Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale.
           </p>
-          <button
-            type="button"
+          <Link
+            href='#proces'
             className="px-10 py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] mb-8 text-base font-semibold transition-all hover:scale-[1.05]"
             >
             Cum pot accesa fonduri?
-          </button>
+          </Link>
           <div className="relative w-[100%] home-carousel flex items-center justify-center mx-auto">
-            <HomeCarousel />
+            <HomeCarousel slides={slides} />
             <Image
               id="hero-video"
               src="/images/polygon.svg"

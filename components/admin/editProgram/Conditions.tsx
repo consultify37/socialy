@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import FormInput from './FormInput'
 import { Condition } from '../../../types'
+import toast from 'react-hot-toast'
 
 type Props = {
   conditions: Condition[]
@@ -13,12 +14,12 @@ const Conditions = ({ conditions, setConditions}: Props) => {
 
   const handleAddCondition = () => {
     if ( newCondtition == '' ) {
-      alert('Titlu nu poate fii gol!')
+      toast.error('Titlu nu poate fii gol!')
       return
     }
 
     if ( newDescription == '' ) {
-      alert('Descrierea nu poate fii goală!')
+      toast.error('Descrierea nu poate fii goală!')
       return
     }
 
@@ -53,7 +54,7 @@ const Conditions = ({ conditions, setConditions}: Props) => {
 
       {
         conditions.map((item, index) => (
-          <div className='flex flex-row mt-8' key={item.condition}>
+          <div className='flex flex-row mt-8' key={item.condition+index}>
             <div className='flex flex-row w-[calc(50%-32px)] min-w-[220px] max-w-[480px] mr-8 pl-2'>
               <p className='text-secondary font-semibold mr-4'>{index+1}</p>
               <p className='text-secondary font-semibold'>{item.condition}</p>
@@ -63,7 +64,7 @@ const Conditions = ({ conditions, setConditions}: Props) => {
             </div>
             <div className='hover:scale-[1.05] transition-all cursor-pointer' onClick={() => setConditions(conditions => conditions.filter((item, i) => index != i))}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#8717F8"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#8717F8"/>
                 <rect x="14.8281" y="7.75732" width="2" height="10" rx="1" transform="rotate(45 14.8281 7.75732)" fill="#8717F8"/>
                 <rect x="16.2422" y="14.8284" width="2" height="10" rx="1" transform="rotate(135 16.2422 14.8284)" fill="#8717F8"/>
               </svg>

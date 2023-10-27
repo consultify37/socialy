@@ -3,27 +3,33 @@ import Head from "next/head";
 import HomeHeader from "../components/Home/HomeHeader";
 import AboutHome from "../components/Home/About/About";
 import TrustSRL from "../components/Home/Trust";
-import Discover from "../components/Home/Discover/Discover";
-import WhyUs from "../components/Home/Why-Us/Why-Us";
 import OurClients from "../components/Home/OurClients/OurClients";
-import Parteners from "../components/Home/Parteners/Parteners";
 import CarouselPrograme from "../components/fonduri/index";
 import Rezultate from "../components/Rezultate";
 import Proces from "../components/Proces";
 import CTA from "../components/CTA";
 import NewsLetter from "../components/global/newsletter";
 import Garantii from "../components/Garantii";
-export default function Home() {
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase";
+import { Program, Slide } from "../types";
+
+type Props = {
+  programe: Program[]
+  slides: Slide[]
+}
+
+export default function Home({ slides, programe }: Props) {
   return (
     <>
       {/* pageSettings */}
       <Head>
         <title>Consultify | Acasă</title>
       </Head>
-      <HomeHeader />
+      <HomeHeader slides={slides} />
       <TrustSRL />
       <AboutHome />
-      <CarouselPrograme />
+      <CarouselPrograme programe={programe} />
       <Rezultate />
       <Garantii />
       <Proces />
@@ -48,4 +54,25 @@ export default function Home() {
       <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
     </>
   );
+}
+
+export const getStaticProps = async () => {
+  const slidesRef = collection(db, 'slides-homepage')
+  const slidesSnap = await getDocs(slidesRef)
+
+  const slides = slidesSnap.docs.map((doc) => (
+    { id: doc.id, ...doc.data() }
+  ))
+
+  const programeRef = collection(db, 'programe-fonduri')
+  const programeSnap = await getDocs(programeRef)
+
+  const programe = programeSnap.docs.map((doc) => (
+    { id: doc.id, ...doc.data() }
+  ))
+
+  return {
+    props: { programe, slides },
+    revalidate: Number(process.env.REVALIDATE)
+  }
 }
