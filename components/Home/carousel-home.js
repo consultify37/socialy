@@ -30,7 +30,7 @@ const HomeCarousel = ({ slides }) => {
                             alt="Hero video"
                             width={2000}
                             height={2000}
-                            className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[400px] aspect-video z-[5] filter-brightness"
+                            className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[400px] aspect-video z-[5]"
                         />
                     </Link>
                 ))
