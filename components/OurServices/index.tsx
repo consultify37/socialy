@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+//
 export default function OurServices(){
     return(
         <section className="w-full flex flex-col items-center px-7 md:px-[80px] xl:px-[180px] 2xl:px-[276px]">
