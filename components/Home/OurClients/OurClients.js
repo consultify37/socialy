@@ -31,6 +31,38 @@ const OurClients = () => {
             descriptionTwo: "De asemenea, ne-au ajutat să răspundem clarificărilor primite de la finanțator și să începem perioada de implementare. Colaborarea a fost remarcabilă, iar profesionalismul și implicarea lor ne-au asigurat șanse considerabile de reușită în acest proiect. Suntem recunoscători pentru ajutorul lor și recomandăm cu încredere serviciile Consultify.",
             image: "/images/testimoniale/Recenzia 3.png",
         },
+        {
+            id: 4,
+            title: "Sprijin decisiv pentru agricultori: Cum am obținut finanțarea dorită cu ajutorul Consultify",
+            subTitle: 'Dinu Marcel - Agricultor',
+            description: 'Cu sprijinul Consultify, am avut succes în obținerea finanțării necesare pentru achiziționarea de materii prime și echipamente prin intermediul programului "Microgranturi și Granturi în Domeniul Agroalimentar". Echipa lor ne-a fost alături în fiecare pas al procesului, de la evaluarea eligibilității și elaborarea proiectului, până la depunerea acestuia.  ',
+            descriptionTwo: "Comunicarea fluentă și expertiza lor ne-au ajutat în demersurile noastre, iar profesionalismul de care au dat dovadă ne-a inspirat încredere. Recomand cu încredere Consultify!",
+            video: "/images/testimoniale/Recenzia 4.mp4",
+        },
+        {
+            id: 5,
+            title: "Dezvoltând cabinetul medical cu ajutorul Consultify: Succes în programul PNRR C12",
+            subTitle: 'Mihailescu Diana – Medic de familie',
+            description: 'Am aplicat în programul PNRR C12 și am avut norocul de a colabora cu Consultify pentru echiparea și renovarea cabinetului meu. Încă de la început, echipa lor mi-a oferit sprijin în verificarea eligibilității și înțelegerea procesului de finanțare.',
+            descriptionTwo: "Au fost alături de mine în etapa de planificare bugetară, asigurându-se că includem toate echipamentele necesare pentru desfășurarea activității medicale. După obținerea finanțării, au continuat să fie disponibili pentru întrebări și îndrumare suplimentară. Nu pot decât să le mulțumesc pentru profesionalismul și devotamentul lor!",
+            video: "/images/testimoniale/Recenzia 5.mp4",
+        },
+        {
+            id: 6,
+            title: "Deschiderea cu succes a propriei brutării cu sprijinul Consultify",
+            subTitle: 'Maria Prodan – Afacere în domeniul panificației',
+            description: 'Cu sprijinul Consultify, am reușit să deschidem cu succes propria brutărie. Echipa lor ne-a oferit întreaga asistență în fiecare etapă a procesului, de la verificarea eligibilității și elaborarea proiectului, până la depunerea acestuia și gestionarea achizițiilor necesare.',
+            descriptionTwo: "Comunicarea fluentă și abordarea lor profesionistă au fost cheia succesului proiectului nostru. Suntem foarte recunoscători pentru sprijinul lor.",
+            image: "/images/testimoniale/Recenzia 6.png",
+        },
+        {
+            id: 7,
+            title: "Transformarea fermelor prin Consultify: Povestea fermierului care a obținut finanțarea dorită",
+            subTitle: 'Niculae Andrei – Fermă',
+            description: 'Cu sprijinul Consultify, am reușit să obțin finanțarea necesară pentru dezvoltarea afacerii. Colaborarea cu echipa lor a fost esențială în fiecare etapă a procesului. Încă de la început, mi-au verificat eligibilitatea  și am construit împreună un plan bugetar detaliat.',
+            descriptionTwo: "Au fost ghidul meu de încredere în toți pașii necesari pentru depunerea proiectului și mi-au oferit suport constant și răspunsuri prompte la orice întrebare sau îngrijorare pe parcursul procesului. Îi recomand cu încredere!",
+            image: "/images/testimoniale/Recenzia 7.jpg",
+        },
     ]
     return(
         <section id='our-clients' className='mt-16 md:mt-32 w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
@@ -56,14 +88,23 @@ const OurClients = () => {
                                 <p className="text-sm text-[#fff] font-medium mt-4 text-justify">{testimonial.description}</p>
                                 <p className="text-sm text-[#fff] font-medium mt-2 text-justify">{testimonial.descriptionTwo}</p>
                             </div>
-                            <Image 
-                                className="w-[250px] md:w-[300px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
-                                key={testimonial.title}
-                                src={testimonial.image}
-                                alt={testimonial.title}
-                                width={1080}
-                                height={1080}
-                            />
+                            { testimonial.video ?
+                                <video 
+                                    className="w-[250px] md:w-[300px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
+                                    loop={true}
+                                    autoPlay={true}
+                                >
+                                    <source src={testimonial.video} type="video/mp4" />
+                                </video> :
+                                <Image 
+                                    className="w-[250px] md:w-[300px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
+                                    key={testimonial.title}
+                                    src={testimonial.image}
+                                    alt={testimonial.title}
+                                    width={1080}
+                                    height={1080}
+                                />
+                            }
                         </article>
                     )
                 }

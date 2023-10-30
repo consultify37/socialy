@@ -16,35 +16,69 @@ const breakPoints = [
 const Testimonials = () => {
   const Testimonial = [
     {
-        id: 3,
-        text: "O tânără studentă la Facultatea de Medicină obține o finanțare semnificativă pentru cabinetul medical al familiei",
-        description: "Iulia, în vârstă de 21 de ani, studentă în anul 2 la Medicină, a avut ocazia să obțină o finanțare nerambursabilă în valoare de 60.150 euro prin intermediul programului PNRR C12 - Dotare și renovare cabinete medici de familie. Fiind pasionată de domeniul medical și urmând exemplul ambilor săi părinți, care sunt medici, Iulia și familia ei au dorit să își dezvolte cabinetul medical și să ofere servicii de calitate comunității locale.",
-        descriptionTwo: "Totul a început atunci când Iulia a văzut un videoclip pe internet în care se discuta despre posibilitatea obținerii de fonduri europene pentru domeniul medical. Având un cabinet mic care necesită renovare și echipamente noi, dar fără resurse financiare suficiente pentru a realiza aceste investiții, Iulia a căutat mai multe informații despre programul PNRR și despre cum poate accesa aceste finanțări. Pentru a descoperi povestea completă, vă încurajăm să vizionați videoclipul:",
-        image: "/images/ourclients.png",
-        ytUrl: "https://www.youtube.com/embed/BGXhV4tjNFw?si=Gv1WtArL5Evemwvv"
+        id: 1,
+        title: "Colaborarea cu Consultify - Un pas sigur către succes în Programul Start Up Nation",
+        subTitle: 'Baloi Andrei – Fabricarea pieselor pentru roboți',
+        description: "Colaborarea cu Consultify în cadrul programului Start-Up Nation a fost un pas important pentru afacerea mea. Echipa lor m-a sprijinit în fiecare etapă, de la verificarea eligibilității societății mele până la achizițiile necesare. Comunicarea clară și transparentă a fost un aspect de apreciat, iar ei au răspuns prompt la întrebările și nevoile mele.",
+        descriptionTwo: "În urma aprobării proiectului, am beneficiat de ghidajul lor în identificarea și achiziționarea echipamentelor adecvate. Acum, aștept cu entuziasm începerea perioadei de monitorizare.",
+        image: "/images/testimoniale/Recenzia 1.png",
     },
     {
         id: 2,
-        text: "Alexandra, tânăra antreprenoare care a obținut 40.000 de euro pentru afacerea sa prin programul Femeia Antreprenor",
-        description: "Alexandra, în vârstă de 22 de ani, marketer digital, a obținut o finanțare în valoare de 40.000 de euro pentru afacerea sa prin programul Femeia Antreprenor. Pasionată de marketingul digital, Alexandra și-a dorit să transforme pasiunea sa într-o afacere, dar avea nevoie de fonduri pentru a-și deschide o locație nouă, a achiziționa echipamente și a angaja personal. Aflând despre finanțările nerambursabile, Alexandra a decis să încerce și ea norocul.",
-        descriptionTwo: "După căutări și discuții cu diverse firme de consultanță, Alexandra a ales să colaboreze cu Consultify. Consultantul cu care a discutat i-a oferit încredere și a realizat o simulare de punctaj, confirmându-i că are șanse mari să obțină finanțarea. Pentru a afla întreaga poveste, vă invităm să urmăriți videoclipul:",
-        image: "/images/ourclients.png",
-        ytUrl: "https://www.youtube.com/embed/0-qT2e_s6TE?si=EPCpLrfY-2gd0NW7"
+        title: "Ne-am deschis propria pensiune prin programul P.N.D.R. 6.4 cu ajutorul echipei Consultify",
+        subTitle: 'Familia Branduși – Turism',
+        description: "Cu ajutorul Consultify, am reușit să ne îndeplinim visul de a deschide o pensiune prin intermediul programului P.N.D.R. 6.4. Echipa lor ne-a ghidat și a oferit asistență în fiecare etapă a procesului, începând de la evaluarea eligibilității și redactarea proiectului, până la obținerea finanțării și implementarea sa. Comunicarea transparentă și suportul constant au fost de neprețuit.",
+        descriptionTwo: "",
+        image: "/images/testimoniale/Recenzia 2.png",
     },
     {
-        id: 1,
-        text: "Stefan - Pasiunea pentru muzică și drumul către îndeplinirea visului antreprenorial",
-        description: "Stefan, în vârstă de 25 de ani, și-a deschis o școală privată de muzică prin programul Start-Up Nation Diaspora. Având o pasiune pentru vioară și dorința de a combina muzica cu pedagogia și antreprenoriatul, Stefan a visat să aibă propria sa școală de muzică. A ales firma Consultify ca partener de consultanță, datorită profesionalismului și serviciilor personalizate.",
-        descriptionTwo: "După o perioadă petrecută în Londra pentru a strânge bani, Stefan s-a întors în România și a început să exploreze modalități de a-și finanța afacerea. Pentru a vedea povestea completă, vă invităm să vizionați clipul urmator:",
-        image: "/images/ourclients.png",
-        ytUrl: "https://www.youtube.com/embed/QJ6cWRy9q1U?si=5iy4AV3oF1QxmVB9"
+        id: 3,
+        title: "O colaborare de succes cu Consultify: Obținerea finanțării de 40.000 Euro pentru carmangeria noastră",
+        subTitle: 'Chitoiu Ioan – Carmangerie locală',
+        description: "Cu ajutorul echipei Consultify, am reușit să accesăm o finanțare de 40.000 de euro pentru carmangeria noastră. Echipa lor ne-a sprijinit de la verificarea eligibilității și scrierea proiectului, până la depunerea acestuia și construirea planului de achiziții. ",
+        descriptionTwo: "De asemenea, ne-au ajutat să răspundem clarificărilor primite de la finanțator și să începem perioada de implementare. Colaborarea a fost remarcabilă, iar profesionalismul și implicarea lor ne-au asigurat șanse considerabile de reușită în acest proiect. Suntem recunoscători pentru ajutorul lor și recomandăm cu încredere serviciile Consultify.",
+        image: "/images/testimoniale/Recenzia 3.png",
     },
+    {
+        id: 4,
+        title: "Sprijin decisiv pentru agricultori: Cum am obținut finanțarea dorită cu ajutorul Consultify",
+        subTitle: 'Dinu Marcel - Agricultor',
+        description: 'Cu sprijinul Consultify, am avut succes în obținerea finanțării necesare pentru achiziționarea de materii prime și echipamente prin intermediul programului "Microgranturi și Granturi în Domeniul Agroalimentar". Echipa lor ne-a fost alături în fiecare pas al procesului, de la evaluarea eligibilității și elaborarea proiectului, până la depunerea acestuia.  ',
+        descriptionTwo: "Comunicarea fluentă și expertiza lor ne-au ajutat în demersurile noastre, iar profesionalismul de care au dat dovadă ne-a inspirat încredere. Recomand cu încredere Consultify!",
+        video: "/images/testimoniale/Recenzia 4.mp4",
+    },
+    {
+        id: 5,
+        title: "Dezvoltând cabinetul medical cu ajutorul Consultify: Succes în programul PNRR C12",
+        subTitle: 'Mihailescu Diana – Medic de familie',
+        description: 'Am aplicat în programul PNRR C12 și am avut norocul de a colabora cu Consultify pentru echiparea și renovarea cabinetului meu. Încă de la început, echipa lor mi-a oferit sprijin în verificarea eligibilității și înțelegerea procesului de finanțare.',
+        descriptionTwo: "Au fost alături de mine în etapa de planificare bugetară, asigurându-se că includem toate echipamentele necesare pentru desfășurarea activității medicale. După obținerea finanțării, au continuat să fie disponibili pentru întrebări și îndrumare suplimentară. Nu pot decât să le mulțumesc pentru profesionalismul și devotamentul lor!",
+        video: "/images/testimoniale/Recenzia 5.mp4",
+    },
+    {
+        id: 6,
+        title: "Deschiderea cu succes a propriei brutării cu sprijinul Consultify",
+        subTitle: 'Maria Prodan – Afacere în domeniul panificației',
+        description: 'Cu sprijinul Consultify, am reușit să deschidem cu succes propria brutărie. Echipa lor ne-a oferit întreaga asistență în fiecare etapă a procesului, de la verificarea eligibilității și elaborarea proiectului, până la depunerea acestuia și gestionarea achizițiilor necesare.',
+        descriptionTwo: "Comunicarea fluentă și abordarea lor profesionistă au fost cheia succesului proiectului nostru. Suntem foarte recunoscători pentru sprijinul lor.",
+        image: "/images/testimoniale/Recenzia 6.png",
+    },
+    {
+        id: 7,
+        title: "Transformarea fermelor prin Consultify: Povestea fermierului care a obținut finanțarea dorită",
+        subTitle: 'Niculae Andrei – Fermă',
+        description: 'Cu sprijinul Consultify, am reușit să obțin finanțarea necesară pentru dezvoltarea afacerii. Colaborarea cu echipa lor a fost esențială în fiecare etapă a procesului. Încă de la început, mi-au verificat eligibilitatea  și am construit împreună un plan bugetar detaliat.',
+        descriptionTwo: "Au fost ghidul meu de încredere în toți pașii necesari pentru depunerea proiectului și mi-au oferit suport constant și răspunsuri prompte la orice întrebare sau îngrijorare pe parcursul procesului. Îi recomand cu încredere!",
+        image: "/images/testimoniale/Recenzia 7.jpg",
+    }
 ]
     return(
         <section id='our-clients' className='mt-32 w-full flex items-center justify-center flex-col gap-5'>
             <div className='flex w-full justify-between items-center gap-5'>
                 <Carousel
                     isRTL={false}
+                    disableArrowsOnEnd={false}
+                    pagination={true}
                 >
                 {
                     Testimonial.map(testimonial =>
@@ -57,13 +91,23 @@ const Testimonials = () => {
                             <p className="text-sm text-[#fff] font-medium mt-4 text-justify">{testimonial.description}</p>
                             <p className="text-sm text-[#fff] font-medium mt-2 text-justify">{testimonial.descriptionTwo}</p>
                         </div>
-                        <iframe 
-                            className="w-[250px] md:w-[400px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
-                            src={testimonial.ytUrl}
-                            title="YouTube video player" frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" 
-                            allowFullScreen={true}
-                        ></iframe>
+                        { testimonial.video ?
+                            <video 
+                                className="w-[250px] md:w-[300px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
+                                loop={true}
+                                autoPlay={true}
+                            >
+                                <source src={testimonial.video} type="video/mp4" />
+                            </video> :
+                            <Image 
+                                className="w-[250px] md:w-[300px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
+                                key={testimonial.title}
+                                src={testimonial.image}
+                                alt={testimonial.title}
+                                width={1080}
+                                height={1080}
+                            />
+                        }
                     </article>
                     )
                 }

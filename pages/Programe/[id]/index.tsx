@@ -12,6 +12,7 @@ import { collection, doc, getDoc, getDocs } from 'firebase/firestore'
 import { db } from '../../../firebase'
 import { NextPageContext } from 'next'
 import { Program } from '../../../types'
+import FormatText from '../../../utils/FormatText'
 
 type Props = {
   program: Program
@@ -24,23 +25,21 @@ const Program = ({ program }: Props) => {
       <Head>
           <title>Consultify | {program.title2}</title>
       </Head>
-      <section className="flex flex-col w-full pt-[140px] md:pt-40 pb-20 items-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <section className="flex flex-col w-full pt-[140px] md:pt-40 pb-20 items-center px-7 md:px-[110px] xl:px-[160px] 2xl:px-[276px]">
         <Image 
           src='/images/fonduri/fonduri-img-1.png'
           height={363}
           width={1066}
           alt='Imagine fonduri'
-          className='w-full h-[calc((100vw-28px*2)/3)] md:h-[calc((100vw-80px*2)/3)]  xl:h-[calc((100vw-140px*2)/3)]  2xl:h-[calc((100vw-276px*2)/3)] rounded-3xl md:rounded-[38px]'
+          className='w-full h-auto rounded-3xl md:rounded-[38px]'
         />
 
         <h1 className='text-primary text-[28px] md:text-[35px] font-extrabold pt-10 text-center'>
           { program.title2 }
         </h1>
 
-        <div className='flex flex-col w-full items-center mt-10 px-2 md:px-8'>
-          <p className='text-[13px] md:text-[16px] text-[#393939] text-justify'>
-            { program.descriere }
-          </p>
+        <div className='flex flex-col w-full items-center mt-10 px-2 md:px-12'>
+          <FormatText text={program.descriere} className='text-[13px] md:text-[16px] text-[#393939] text-justify' />
           <PriceCTA suma={program.suma2} />
           <CuiIseAdreseaza title={program.title3} description={program.descriere3}  />
           <Conditions conditions={program.conditions} />
@@ -48,8 +47,8 @@ const Program = ({ program }: Props) => {
         <WhyUs />
         <Faq faqs={program.faqs} />
         <CTA
-          title="Aplică acum la fonduri nerambursabile pentru afacerea ta"
-          linkText="Completează formularul!"
+          title="Transformă-ți ideile în realitate prin fonduri europene!"
+          linkText="Completează formularul de contact!"
           linkHref="/contact"
         />
         {/* <div className='h-12 md:h-24'></div> */}
@@ -60,7 +59,7 @@ const Program = ({ program }: Props) => {
         </Link> */}
       </section>
       {/* <News /> */}
-      <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
+      <NewsLetter headingText={'Fii la curent cu cele mai recente informații despre fonduri europene!'} />
     </>
   )
 }

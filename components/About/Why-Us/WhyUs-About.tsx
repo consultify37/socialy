@@ -20,33 +20,33 @@ const WhyUsAbout = () => {
 
                     <div className="flex items-start w-full flex-col md:mr-12">
                         <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">DESCRIERE GENERALĂ</h2>
-                        <p className="text-sm mb-4 md:mb-10">Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să își realizeze proiectele cu succes.</p>
+                        <p className="text-sm mb-4 md:mb-10">Iată rezultatele noastre: Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să-și realizeze proiectele cu succes.</p>
                         <Link className="py-3 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all" href="/contact">Contactează-ne!</Link>
                     </div>
                     <div className="grid gap-5 w-full grid-cols-2 justify-between mt-6 lg:mt-0 lg:ml-12">
                         <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
                             <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">850+</h6>
                             <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">clienți fericiți</span>
-                            <p className="text-xs">Peste 850 de companii din diverse domenii și-au obținut finanțarea dorită prin serviciile noastre.</p>
+                            <p className="text-xs text-[#260056]">Peste 850 de companii din diverse domenii au obținut finanțarea dorită prin intermediul nostru.</p>
                         </div>
                         <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
                             <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">20+</h6>
-                            <span className="text-[#BA63FF] font-semibold text-[14px] md:text-2xl mt-[-10px]">PROGRAME DIFERITE</span>
-                            <p className="text-xs"> Lucrând atât cu start-up-uri, cât și cu instituții publice, ne-am specializat în proiecte din domenii variate.</p>
+                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">programe diferite</span>
+                            <p className="text-xs text-[#260056]">Colaborând atât cu start-up-uri, cât și cu instituții publice, ne-am specializat în proiecte din domenii variate.</p>
                         </div>
                         <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
                             <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">2</h6>
-                            <span className="text-[#6A13D8] font-semibold text-[14px] md:text-2xl mt-[-10px]">BIROURI ROMANIA</span>
-                            <p className="text-xs">Siguranța și confortul clienților noștri sunt prioritatea noastră, de aceea avem birouri deschise în mai multe orașe din România.</p>
+                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">birouri în România</span>
+                            <p className="text-xs text-[#260056]">Siguranța și confortul clienților sunt prioritățile noastre, de aceea avem birouri deschise în mai multe orașe.</p>
                         </div>
                         <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
-                            <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">5</h6>
-                            <span className="text-[#5E07A3] font-semibold text-[14px] md:text-2xl mt-[-10px]">EXPERIENTA</span>
-                            <p className="text-xs">Cu peste 5 ani de experiență în consultanță pentru accesarea fondurilor europene, am ajutat oameni din diverse domenii să își îndeplinească visurile.</p>
+                            <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">5+</h6>
+                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">ani de experiență</span>
+                            <p className="text-xs text-[#260056]">Cu peste 5 ani de experiență, am ajutat oameni din diverse domenii să-și îndeplinească visurile.</p>
                         </div>
                     </div>
                 </div>
-                <h2 className='text-white font-bold md:text-base text-center w-full mt-16 lg:text-2xl xl:text-4xl mb-4 lg:mb-8'>De ce să alegi Consultify?</h2>
+                <h2 className='text-white font-bold md:text-base text-center w-full mt-12 md:mt-24 lg:text-2xl xl:text-4xl mb-8 lg:mb-16'>De ce să alegi Consultify?</h2>
                 <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
                     <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>
@@ -61,7 +61,7 @@ const WhyUsAbout = () => {
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>
-                <Link href='/' className='py-3 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all mt-16'>Ce spun clienții noștri?</Link>
+                <Link href='/' className='py-3 md:py-4 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all mt-16'>Ce spun clienții noștri?</Link>
             </div>
         </section>
     )

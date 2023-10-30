@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Footer = () => {
     return (
-        <footer className='w-full mt-32'>
+        <footer className='w-full mt-12 md:mt-24'>
             <div className='flex flex-wrap flex-col justify-between md:flex-row gap-10 px-7 md:px-12'>
                 <div className='flex flex-col gap-2 w-full md:w-[20%]'>
                     <Image src='/images/logo-invert.svg' alt='Footer logo' width={200} height={53} className='aspect-auto w-[177px] md:w-[200px]' />
@@ -95,8 +95,9 @@ const Footer = () => {
 
             <div className='w-full mt-5 text-center px-7 md:px-12'>
                 <p className='text-[#8717F8] text-[16px] font-medium  border-t-[3px] border-[#260056] py-4 px-16 md:px-0'>
-                    Copyright 2022 Consultify | Made with love by &nbsp;
-                    <Link href='https://marize.io' className="hover:text-[#8817f89b]" target='_blank'>Marize</Link>
+                    Copyright 2023 Consultify 
+                    {/* | Made with love by &nbsp; */}
+                    {/* <Link href='https://marize.io' className="hover:text-[#8817f89b]" target='_blank'>Marize</Link> */}
                 </p>
             </div>
         </footer>

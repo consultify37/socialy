@@ -34,7 +34,7 @@ const TabsComponent = ({ values, setSelectedValue }: Props) => {
             <p 
               key={value+index}
               ref={(el) => (tabsRef.current[index] = el)}
-              className='py-5 px-2 md:px-6 z-10 cursor-pointer'
+              className='py-[22px] px-2 md:px-6 z-10 cursor-pointer font-semibold'
               style={{color: index == activeTabIndex ? 'white' : 'black'}}
               onClick={() => {
                 setActiveTabIndex(index)
@@ -46,8 +46,8 @@ const TabsComponent = ({ values, setSelectedValue }: Props) => {
           ))
         }
         <span
-          className="absolute top-[6px] block h-[52px] bg-[#8717F8] transition-all duration-300 z-[0] rounded-full"
-          style={{ left: tabLeft-32, width: tabWidth+64 }}
+          className="absolute top-[6px] block h-[56px] bg-[#8717F8] transition-all duration-300 z-[0] rounded-full"
+          style={{ left: tabLeft-28, width: tabWidth+56 }}
         />
       </div>
       

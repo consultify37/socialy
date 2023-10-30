@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default function OurServices(){
     return(
-        <section className="w-full flex flex-col items-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        <section className="w-full flex flex-col items-center px-7 md:px-[80px] xl:px-[180px] 2xl:px-[276px]">
             <h2 className="text-[#8717F8] font-bold text-3xl lg:text-4xl text-center">
-                Iată ce îți oferim
+                Iată ce îți oferim: 
             </h2>
-            <div className="flex flex-col lg:grid lg:gap-5 lg:grid-cols-2 mt-24 ">
-                <div className="flex flex-row bg-[#F6EFFF] p-6 pb-6 lg:pb-16 rounded-3xl mb-8">
+            <div className="flex flex-col lg:grid lg:gap-5 lg:grid-cols-2 mt-24">
+                <div className="flex flex-row bg-[#F6EFFF] p-6 rounded-3xl mb-8">
                     <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                         <Image
                             src="/images/OurServices/consultanta.svg"
@@ -26,9 +26,15 @@ export default function OurServices(){
                         <p className="text-[#260056] text-xs lg:text-lg">
                         Oferim consultanță completă în accesarea fondurilor europene și guvernamentale, acoperind toate etapele, de la identificarea oportunităților de finanțare până la raportarea implementării proiectelor.
                         </p>
+                        <Link 
+                            href='/' 
+                            className="self-end mt-4 text-xs lg:text-lg text-primary underline font-semibold hover:scale-105 transition-all cursor-pointer"
+                        >
+                            Vezi mai mult
+                        </Link>
                     </div>
                 </div>
-                <div className="flex flex-row bg-[#F6EFFF] p-6 pb-6 lg:pb-16 rounded-3xl mb-8">
+                <div className="flex flex-row bg-[#F6EFFF] p-6 rounded-3xl mb-8">
                     <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                         <Image
                             src="/images/OurServices/registru.svg"
@@ -45,9 +51,15 @@ export default function OurServices(){
                         <p className="text-[#260056] text-xs lg:text-lg">
                             Descoperiți gama noastră variată de produse digitale și servicii, concepute pentru a sprijini creșterea și eficiența afacerii dumneavoastră. Obțineți contracte, pachete digitale și asistență de înaltă calitate, totul la un clic distanță.
                         </p>
+                        <Link 
+                            href='/' 
+                            className="self-end mt-4 text-xs lg:text-lg text-primary underline font-semibold hover:scale-105 transition-all cursor-pointer"
+                        >
+                            Vezi mai mult
+                        </Link>
                     </div>
                 </div>
-                <div className="flex flex-row bg-[#F6EFFF] p-6 pb-6 lg:pb-16 rounded-3xl mb-8">
+                <div className="flex flex-row bg-[#F6EFFF] p-6 rounded-3xl mb-8">
                     <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#A634FF] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                         <Image
                             src="/images/OurServices/implementare.svg"
@@ -64,6 +76,12 @@ export default function OurServices(){
                         <p className="text-[#260056] text-xs lg:text-lg">
                             Echipa noastră de experți vă oferă servicii exclusiviste pentru implementarea proiectelor deja depuse. Cu vastă experiență în gestionarea proiectelor, ne asigurăm că proiectul dumneavoastră va fi finalizat cu succes și în timp util.
                         </p>
+                        <Link 
+                            href='/' 
+                            className="self-end mt-4 text-xs lg:text-lg text-primary underline font-semibold hover:scale-105 transition-all cursor-pointer"
+                        >
+                            Vezi mai mult
+                        </Link>
                     </div>
                 </div>
                 <div className="relative flex flex-row bg-[#D5B5FF] p-6 pb-6 lg:pb-16 rounded-3xl mb-8">

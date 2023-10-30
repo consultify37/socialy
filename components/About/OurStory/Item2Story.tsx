@@ -3,7 +3,11 @@ import Link from "next/link";
 
 const Item2Story = () => {
   return (
-    <div className='flex flex-wrap lg:flex-wrap-reverse gap-y-10 gap-x-[6rem] mt-10 md:mt-32 justify-between items-center'>
+    <div className='flex flex-wrap-reverse lg:flex-wrap gap-y-10 gap-x-[6rem] mt-10 md:mt-32 justify-between items-center'>
+      <div className='relative w-full md:md:max-w-[450px]'>
+        <Image src='/images/home-about-2.png' alt='About home 2' className='rounded-[28.5px] w-full md:w-[450px] mx-auto lg:mx-0' object-fit='cover' placeholder='blur' width={400} height={400} blurDataURL='/images/home-about-1.png' />
+        <Image src='/images/patrat.svg' className='absolute left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[150px]' width={150} height={150} alt='Polygon img' />
+      </div>
       <div className='w-full xl:max-w-[48%]'>
         <h2 className='text-[#260056] font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-3xl'>Ce ne propunem să realizăm?</h2>
         <p className='text-[#260056] font-normal text-[16px] mt-5'>
@@ -27,10 +31,6 @@ const Item2Story = () => {
             <Link href='/shop' className='py-3 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all'>Shop</Link>
             <Link href='/testimoniale' className='py-3 bg-transparent text-[#260056] rounded-[28.5px] border-2 border-[#BA63FF] font-semibold px-12 hover:scale-[1.05] transition-all'>Testimoniale</Link>
         </div>
-      </div>
-      <div className='relative w-full md:md:max-w-[450px]'>
-        <Image src='/images/home-about-2.png' alt='About home 2' className='rounded-[28.5px] w-full md:w-[450px] mx-auto lg:mx-0' object-fit='cover' placeholder='blur' width={400} height={400} blurDataURL='/images/home-about-1.png' />
-        <Image src='/images/patrat.svg' className='absolute left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[150px]' width={150} height={150} alt='Polygon img' />
       </div>
     </div>
   );

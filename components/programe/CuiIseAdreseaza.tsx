@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import FormatText from '../../utils/FormatText'
 
 type Props = {
   title: string
@@ -18,9 +19,9 @@ const CuiIseAdreseaza = ({ title, description }: Props) => {
       />
       <div className='flex flex-col items-center'>
         <p className='text-primary text-[18px] md:text-[32px] font-bold'>{ title }</p>
-        <p className='text-[#00103C] text-[14px] md:text-[16px] text-justify mt-4 md:mt-8'>
-          { description }
-        </p>
+        <div className='mt-4 md:mt-8'>
+          <FormatText text={description} className='text-[#00103C] text-[14px] md:text-[16px] text-justify'/>
+        </div>
       </div>
     </div>
   )
