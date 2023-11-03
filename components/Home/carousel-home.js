@@ -1,7 +1,7 @@
-import Carousel, { consts } from 'react-elastic-carousel'
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import Carousel from 'react-elastic-carousel'
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const HomeCarousel = ({ slides }) => {
     return(
@@ -30,7 +30,7 @@ const HomeCarousel = ({ slides }) => {
                             alt="Hero video"
                             width={2000}
                             height={2000}
-                            className="w-full rounded-3xl lg:w-[90%] lg:max-h-[350px] xl:max-h-[400px] aspect-video z-[5]"
+                            className="w-full rounded-[36px] lg:w-[90%] lg:max-h-[350px] xl:max-h-[400px] aspect-video z-[5]"
                         />
                     </Link>
                 ))

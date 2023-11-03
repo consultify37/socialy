@@ -43,7 +43,9 @@ const Partners = () => {
       <Carousel 
         itemsToShow={1}
         isRTL={false}
-        pagination={windowSize.innerWidth > 640 ? false : true}
+        pagination={false}
+        disableArrowsOnEnd={true}
+        showArrows={false}
       >
         { listaFirme.map((item) => (
             <PartenerCard 

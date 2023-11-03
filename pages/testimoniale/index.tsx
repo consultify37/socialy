@@ -121,7 +121,7 @@ export default function Testimoniale() {
             <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-5">
               Încă nu te-am convins? Descarcă lista completă cu rezultate:
             </h2>
-            <Link href='/shop' className="bg-[#8717F8] mb-16 mt-4 font-semibold px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
+            <Link href='/files/Rezultate Consultify.pdf' download={true} target="_blank" className="bg-[#8717F8] mb-16 mt-4 font-semibold px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
               Descarcă lista aici!
             </Link>
             <h2 className="text-lg md:text-2xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-24">
@@ -251,9 +251,9 @@ export default function Testimoniale() {
                 required
                 onChange={(e) => setNewsletter(e.target.value)}
               />
-              <button type="submit" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
+              <Link href='/files/10 Idei de afaceri.pdf' download={true} target="_blank" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
                 Vreau documentul!
-              </button>
+              </Link>
             </form>
           </div>
           <div className='relative hidden lg:flex justify-end lg:ml-12'>

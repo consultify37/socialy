@@ -62,7 +62,7 @@ export default function Servicii() {
             <title>Consultify | Servicii</title>
         </Head>
         <section id='about-header' className='relative bg-[#260056] w-full pt-32 lg:pt-52 pb-14 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]' style={{marginBottom: `200px`}}>
-          <h1 className='text-xl xl:text-[44px] font-extrabold md:leading-[48px] text-white md:max-w-[75%] text-center pt-20 lg:pt-0'>
+          <h1 className='text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0'>
             Împreună pentru succesul tău: servicii și produse de calitate
           </h1>
           <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />

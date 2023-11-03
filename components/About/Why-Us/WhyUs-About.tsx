@@ -19,8 +19,8 @@ const WhyUsAbout = () => {
                     <Image src='/images/rezultate/hexagon.svg' className="hidden lg:block absolute left-[5%] bottom-[-39px] w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
 
                     <div className="flex items-start w-full flex-col md:mr-12">
-                        <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">DESCRIERE GENERALĂ</h2>
-                        <p className="text-sm mb-4 md:mb-10">Iată rezultatele noastre: Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să-și realizeze proiectele cu succes.</p>
+                        <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">Iată rezultatele noastre:</h2>
+                        <p className="text-sm mb-4 md:mb-10">Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să-și realizeze proiectele cu succes.</p>
                         <Link className="py-3 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all" href="/contact">Contactează-ne!</Link>
                     </div>
                     <div className="grid gap-5 w-full grid-cols-2 justify-between mt-6 lg:mt-0 lg:ml-12">
@@ -57,7 +57,7 @@ const WhyUsAbout = () => {
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
-                        <Image src='/images/About/about.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[400px]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+                        <Image src='/images/About/Pag - despre noi - structura misiunea noastra.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[400px]' width={350} height={400} placeholder='blur' blurDataURL='/images/About/Pag - despre noi - structura misiunea noastra.png' />
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>

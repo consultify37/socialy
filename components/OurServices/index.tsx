@@ -24,10 +24,10 @@ export default function OurServices(){
                             Consultanță fonduri
                         </h4>
                         <p className="text-[#260056] text-xs lg:text-lg">
-                        Oferim consultanță completă în accesarea fondurilor europene și guvernamentale, acoperind toate etapele, de la identificarea oportunităților de finanțare până la raportarea implementării proiectelor.
+                            Oferim consultanță completă în accesarea fondurilor europene și guvernamentale, acoperind toate etapele, de la identificarea oportunităților de finanțare până la raportarea implementării proiectelor.
                         </p>
                         <Link 
-                            href='/' 
+                            href='/Programe' 
                             className="self-end mt-4 text-xs lg:text-lg text-primary underline font-semibold hover:scale-105 transition-all cursor-pointer"
                         >
                             Vezi mai mult
@@ -52,7 +52,7 @@ export default function OurServices(){
                             Descoperiți gama noastră variată de produse digitale și servicii, concepute pentru a sprijini creșterea și eficiența afacerii dumneavoastră. Obțineți contracte, pachete digitale și asistență de înaltă calitate, totul la un clic distanță.
                         </p>
                         <Link 
-                            href='/' 
+                            href='/shop' 
                             className="self-end mt-4 text-xs lg:text-lg text-primary underline font-semibold hover:scale-105 transition-all cursor-pointer"
                         >
                             Vezi mai mult
@@ -77,7 +77,7 @@ export default function OurServices(){
                             Echipa noastră de experți vă oferă servicii exclusiviste pentru implementarea proiectelor deja depuse. Cu vastă experiență în gestionarea proiectelor, ne asigurăm că proiectul dumneavoastră va fi finalizat cu succes și în timp util.
                         </p>
                         <Link 
-                            href='/' 
+                            href='/servicii/implementare-proiect' 
                             className="self-end mt-4 text-xs lg:text-lg text-primary underline font-semibold hover:scale-105 transition-all cursor-pointer"
                         >
                             Vezi mai mult

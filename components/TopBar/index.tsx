@@ -21,7 +21,7 @@ export default function TopBar() {
                     </span>
                 </div>
                 <div className="flex flex-row justify-center items-center">
-                    <span className="hidden md:block text-white text-[16px] mr-2">Social media: </span>
+                    <span className="hidden lg:block text-white text-[16px] mr-2">Social media: </span>
                     <Link href='/' className="flex flex-row items-center text-white">
                         <Image src='/images/TopBar/socials/insta-white.svg' width={20} height={20} alt="phone" className="mr-2 w-[20px]"/>
                     </Link>

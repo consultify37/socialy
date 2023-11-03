@@ -76,8 +76,10 @@ html, body, #__next {
   font-family:inherit;
 }
 
-html {
-  /* scroll-behavior: smooth !important; */
+:root {
+  --react-international-phone-font-size: 16px;
+  --react-international-phone-border-color: transparent;
+  --react-international-phone-country-selector-border-color: transparent;
 }
 
 .rec-arrow-left {

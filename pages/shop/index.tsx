@@ -13,7 +13,7 @@ const About: NextPage = () => {
             {/* Shop header */}
             <ShopHeader />
             {/* Shop items */}
-            <ShopItems />
+            {/* <ShopItems /> */}
         </>
     )
 }

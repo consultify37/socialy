@@ -31,7 +31,7 @@ const Item1Story = () => {
         </div>
       </div>
       <Image
-        src="/images/ourstory-1.png"
+        src="/images/About/Pag - despre noi - structura despre noi.png"
         alt="Our Story 2"
         className="w-full md:max-w-[450px] rounded-[35px]"
         width={300}

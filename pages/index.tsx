@@ -34,11 +34,11 @@ export default function Home({ slides, programe }: Props) {
       <Garantii />
       <Proces />
       <OurClients />
-                  <CTA
-                title="Aplică acum și transformă-ți proiectele în realitate cu Consultify!"
-                linkText="Completează formularul!"
-                linkHref="/contact"
-            />
+      <CTA
+        title="Aplică acum și transformă-ți proiectele în realitate cu Consultify!"
+        linkText="Completează formularul!"
+        linkHref="/contact"
+      />
       {/* <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
           <div className="flex justify-start items-start">
             <h3 className="md:text-xl lg:text-2xl xl:text-[32px] text-[#8717F8] font-bold">

@@ -46,3 +46,9 @@ export type Program = {
     image: string 
   }
 }
+
+export type Faq2 = {
+  id: number,
+  intrebari:string,
+  raspuns: string,
+}
