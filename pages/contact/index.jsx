@@ -23,11 +23,11 @@ export default function Contact() {
     const [isChecked, setIsChecked] = useState(false)
     const [captchaVerified, setCaptchaVerified] = useState(false)
 
-    const handleSubmit = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleSubmit = (event) => {
         setIsChecked(event.target.checked)
     }
 
-    const upload = async (e: any) => {
+    const upload = async (e) => {
         if (!isChecked) {
             toast.error('Acceptă termenii și condițiile mai întăi.')
             e.preventDefault()
