@@ -14,7 +14,7 @@ const FormatText = ({ text, className }: Props) => {
             <p className={className} key={index}>{item}</p>
             { index != text.split('<enter>').length && <br />}
           </>
-        ))
+        )) 
       }
     </>
   )
