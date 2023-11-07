@@ -73,7 +73,7 @@ export const getStaticPaths = async () => {
   const paths = programeSnap.docs.map((doc) => ({ params: { id: doc.id }}))
   return {
     paths,
-    fallback: true
+    fallback: 'blocking'
   }
 }
 
