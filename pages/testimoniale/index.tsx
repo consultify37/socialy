@@ -1,13 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import NewsLetter from "../../components/global/newsletter";
-import Head from "next/head";
+import React, { useEffect, useRef, useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import NewsLetter from "../../components/global/newsletter"
+import Head from "next/head"
 import Testimonials from './carousel'
-import CTA from "../../components/CTA";
-import Axios from "axios";
-import toast from "react-hot-toast";
-import Logos from "../../components/Home/Logos";
+import CTA from "../../components/CTA"
+import Axios from "axios"
+import toast from "react-hot-toast"
+import Logos from "../../components/Home/Logos"
 
 const testimonials = [
   {
@@ -31,9 +31,9 @@ const testimonials = [
 ]
 
 export default function Testimoniale() {
-  const [scrollAmount, setScrollAmount] = useState<number>(0);
-  const cardRef = useRef<HTMLAnchorElement>(null);
-  const carouselRef = useRef<HTMLDivElement | null>(null);
+  const [scrollAmount, setScrollAmount] = useState<number>(0)
+  const cardRef = useRef<HTMLAnchorElement>(null)
+  const carouselRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     if (carouselRef.current) {
@@ -41,15 +41,15 @@ export default function Testimoniale() {
         top: 0,
         left: scrollAmount,
         behavior: "smooth",
-      });
+      })
     }
-  }, [scrollAmount]);
+  }, [scrollAmount])
   
-  const [newsletter, setNewsletter] = useState('Adresa ta de email');
+  const [newsletter, setNewsletter] = useState('Adresa ta de email')
   // const [buttonNews, setButtonNews] = useState('Mă abonez')
   
   const upload = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
+    e.preventDefault()
     Axios.get('https://api.inspiredconsulting.ro/newsletter', {
       params: {
         email: newsletter
@@ -64,12 +64,12 @@ export default function Testimoniale() {
       }
     })
     .catch(function (error) {
-      console.log(error);
+      console.log(error)
     })
     .finally(function () {
       // always executed
-    });
-  };
+    })
+  }
   return (
     <>
       <Head>
@@ -157,7 +157,7 @@ export default function Testimoniale() {
                   className="relative rounded-[28.5px] w-full md:w-[450px] mx-auto z-[4]"
                   src={testimonials[0].ytUrl}
                   title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" 
+                  allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
                   allowFullScreen={true}
               ></iframe>
             </div>
@@ -167,7 +167,7 @@ export default function Testimoniale() {
                     className="relative rounded-[28.5px] h-full w-full md:w-[450px] mx-auto z-[0]"
                     src={testimonials[1].ytUrl}
                     title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" 
+                    allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
                     allowFullScreen={true}
                 ></iframe>
                   {/* <Image src='/images/patrat.svg' className='absolute left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[100px] lg:w-[150px]' width={150} height={150} alt='Polygon img' /> */}
@@ -218,7 +218,7 @@ export default function Testimoniale() {
                   className="relative rounded-[28.5px] w-full md:w-[450px] mx-auto z-[0]"
                   src={testimonials[2].ytUrl}
                   title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" 
+                  allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
                   allowFullScreen={true}
               ></iframe>
             </div>
@@ -273,5 +273,5 @@ export default function Testimoniale() {
       {/* <News /> */}
       <NewsLetter headingText='Abonează-te și află secretele succesului în obținerea finanțăriilor europene!' />
     </>
-  );
+  )
 }

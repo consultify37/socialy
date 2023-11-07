@@ -50,9 +50,10 @@ export default function Programe({categories, programe}: Props) {
                     programe.filter((program) => program.categorie == category || category == 'toate').map((program, index) => (
                         index % 2 === 0 ? (
                             <div 
-                                className={"rounded-[35px] mx-2 md:mx-[30px] relative w-full h-auto flex flex-col-reverse md:flex-row justify-between px-4 md:px-20 py-2 bg-cover bg-no-repeat align-center " + ( index == 0 ? "mt-6 md:mt-8" : "mt-[8rem]")}
+                                style={{background: `url('${program.backgroundImage.image}')`, backgroundSize: 'cover'}}
+                                className={"rounded-[35px] mx-2 md:mx-[30px] relative w-full h-auto flex flex-col-reverse md:flex-row justify-between px-4 md:px-20 py-2 align-center " + ( index == 0 ? "mt-6 md:mt-8" : "mt-[8rem]")}
                             >   
-                                <div style={{background: "url('/images/fonduri/fonduri-img-1.png')", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
+                                {/* <div style={{background: `url('${program.backgroundImage.image}')`}} className="w-full h-[70%] md:h-full absolute rounded-[35px]left-0 z-[1] top-0"></div> */}
                                 <div style={{background: "rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
                                 <div className="flex flex-col justify-center items-center rounded-2xl relative top-[100px] z-[5] bg-[#260056] py-8 px-8">
                                     <h5 className="text-white text-xl md:text-4xl mb-6">{program.title}</h5>
