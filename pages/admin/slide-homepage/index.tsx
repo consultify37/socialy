@@ -76,6 +76,7 @@ const SlideHomepage = () => {
       setLink('')
       setNewImage(null)
     } catch (e) {
+      console.log(e)
       toast.error('Ceva nu a mers bine, încearcă din nou!')
     }
 

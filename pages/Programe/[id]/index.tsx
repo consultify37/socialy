@@ -19,7 +19,6 @@ type Props = {
 }
 
 const Program = ({ program }: Props) => {
-  
   return (
     <>
       <Head>

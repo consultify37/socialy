@@ -9,6 +9,8 @@ const HomeCarousel = ({ slides }) => {
             isRTL={false}
             pagination={true}
             disableArrowsOnEnd={false}
+            autoPlaySpeed={10000}
+            enableAutoPlay={true}
         >
             {
                 slides.map((slide) => (
