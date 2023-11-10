@@ -26,7 +26,7 @@ const Program = ({ program }: Props) => {
       </Head>
       <section className="flex flex-col w-full pt-[140px] md:pt-40 pb-20 items-center px-7 md:px-[110px] xl:px-[160px] 2xl:px-[276px]">
         <Image 
-          src='/images/fonduri/fonduri-img-1.png'
+          src={program.imaginePrincipala.image}
           height={363}
           width={1066}
           alt='Imagine fonduri'
