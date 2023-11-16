@@ -7,13 +7,13 @@ const DidYouKnow = () => {
     <div className='flex flex-col py-16 md:py-24 bg-secondary mt-16 md:mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
        <div className="w-full gap-[6rem] flex gap-y-20 justify-between flex-col lg:flex-row z-[2]">
           <div className="w-full flex-1 z-[2] gap-5 font-light">
-            <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl">
+            <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-3xl">
               Știai că
             </h2>
-            <p className="text-white font-base max-w-[500px] text-[16px] mt-5 z-[2] mb-8">
+            <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2] mb-8">
               De la planificarea detaliată și coordonarea achizițiilor, până la monitorizarea progresului, consultanții noștri transformă viziunea ta în realitate. Statisticile vorbesc de la sine: peste 97% dintre proiectele implementate de consultanții noștri sunt finalizate cu succes și nu întâmpină probleme în perioada de monitorizare, comparativ cu doar 65% în cazul implementării făcute de aplicanți.
             </p>
-            <p className="text-white font-base max-w-[500px] text-[16px] mt-5 z-[2]">
+            <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2]">
               Alege parteneriatul cu noi pentru a maximiza șansele de succes și a-ți atinge obiectivele în implementarea proiectului tău.
             </p>
           </div>
@@ -39,13 +39,13 @@ const DidYouKnow = () => {
           <Image 
             src="/images/PaginaProgram/Cui-adreseazaz.png"
             alt="About home 1"
-            className="relative rounded-[28.5px] w-[250px] md:w-[300px] mx-auto z-[4] lg:mr-8"
+            className="relative rounded-[28.5px] w-[250px] md:w-[300px] h-[250px] md:h-[300px]  mx-auto z-[4] lg:mr-8"
             width={400}
             height={400}
           />
           <div className="w-full flex-1 z-[2] gap-5 font-light">
-            <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl">
-              Serviciul perfect pentru antreprenori care vor să-și implementeze proiectul cu succes.
+            <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-3xl">
+              Serviciul perfect pentru antreprenori care vor să-și implementeze proiectul cu succes
             </h2>
             <p className="text-white font-base text-[16px] mt-5 z-[2] mb-8">
               Implementarea proiectelor prin noi se adresează întreprinderilor și organizațiilor care doresc rezultate de succes. Cu expertiza vastă și abordarea profesionistă, oferim suport și consultanță pe tot parcursul procesului. Indiferent de mărimea și complexitatea proiectului, ne asigurăm că implementarea este eficientă, conform cerințelor și obiectivelor.            </p>
@@ -53,7 +53,7 @@ const DidYouKnow = () => {
               Alegând colaborarea cu noi, beneficiați de expertiză specializată și soluții personalizate pentru succesul proiectului dvs. pe fonduri europene.
             </p>
             <Link
-              href="/shop"
+              href="/contact"
               className="py-3 md:py-4 bg-primary text-[#fff] flex items-center font-semibold rounded-[28.5px] px-16 transition-all hover:scale-[1.05] w-fit mt-6"
             >
               Contactează-ne!

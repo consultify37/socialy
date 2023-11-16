@@ -11,7 +11,7 @@ const Logos = () => {
             key={index}
             width={158}
             height={158}
-            className="w-20 md:w-23 lg:w-26 xl:w-29 2xl:w-32 h-auto object-contain"
+            className="w-[88px] md:w-[116px] lg:w-[126px] xl:w-[134px] 2xl:w-[150px] h-auto object-contain"
             placeholder="blur"
             alt="Feedback 1"
             blurDataURL={`/images/trust logos/${logo}.png`}

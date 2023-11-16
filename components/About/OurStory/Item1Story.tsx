@@ -17,7 +17,7 @@ const Item1Story = () => {
         </p>
         <div className="flex gap-4 mt-4">
           <Link
-            href="/programe" 
+            href="/Programe" 
             className="bg-[#BA63FF] py-3 text-[#fff] font-semibold rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all"
           >
             Programe
@@ -33,7 +33,7 @@ const Item1Story = () => {
       <Image
         src="/images/About/Pag - despre noi - structura despre noi.png"
         alt="Our Story 2"
-        className="w-full md:max-w-[450px] rounded-[35px]"
+        className="w-full md:max-w-[450px] md:h-[400px] object-cover rounded-[35px]"
         width={300}
         height={300}
       />

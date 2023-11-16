@@ -10,6 +10,7 @@ import {RiArrowLeftSLine, RiArrowRightSLine} from 'react-icons/ri'
 import NewsInterface from '../../components/Home/News/NewsContainer';
 import { isPartiallyEmittedExpression } from "typescript";
 import TabsComponent from "../../components/TabsComponent";
+import PageHeader from "../../components/Header/PageHeader";
 
 export interface blogData {
     id: number;
@@ -102,20 +103,15 @@ export default function Testimoniale() {
         <Head>
             <title>Consultify | Blog</title>
         </Head>
-        <section
-            id="about-header"
-            className="relative bg-[#260056] mb-40 w-full pt-[110px] pb-16 flex flex-col items-center justify-center overflow-visible"
+        <PageHeader 
+            title="Află noutățile din business și nu numai"
         >
-            <h1 className="text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-20">
-                Află noutățile din business și nu numai
-            </h1>
-            <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-[3rem] z-[-1] h-32" />
             <Image
                 src="/images/Star 1.svg"
                 alt="Hero blue circle"
                 width={100}
                 height={200}
-                className="absolute right-0 top-0 z-[5] w-[80px] md:w-[120px]"
+                className="absolute right-0 top-0 md:top-20 z-[5] w-[80px] md:w-[120px]"
             />
             <Image
                 src="/images/shop-hexagon.png"
@@ -124,7 +120,21 @@ export default function Testimoniale() {
                 className="absolute top-7 -left-2 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
                 alt="Yellow triangle"
             />
-        </section>
+        </PageHeader>
+
+        {/* <div className="relative">
+            <section
+                id="about-header"
+                className="relative bg-secondary mb-32 md:mb-60 w-full pt-32 md:pb-14 flex flex-col items-center justify-center overflow-visible z-10"
+            >
+                <h1 className="text-xl md:text-4xl xl:text-[44px] font-extrabold md:leading-[48px] text-white md:max-w-[50%] text-center pt-20 md:pt-20">
+                    Află noutățile din business și nu numai
+                </h1>
+                <span className='bg-[#260056] rounded-[0_0_200px_250px] w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32 hidden md:block' />
+            </section>
+            <span className="md:hidden bg-secondary rounded-[0_0_164px_144px] -left-[24vw] md:left-0 w-[136vw] -rotate-[5.09deg] absolute -bottom-12 h-[700px]" />
+        </div>
+        <span className="md:hidden bg-secondary rounded-[0_0_164px_144px] -left-[24vw] md:left-0 w-[136vw] -rotate-[5.09deg] absolute -bottom-12 h-[700px]" /> */}
         <section className="flex flex-col gap-5 pb-20 items-stretch justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 <TabsComponent 
                     values={('toate digitalizare agricultură horeca susținere industrie').split(' ')}
@@ -141,7 +151,7 @@ export default function Testimoniale() {
                                 <h3 className='text-[#260056] font-bold text-base p-2'>{item.description}</h3>
                                 <div className='flex justify-between p-2 items-center'>
                                     <p className='text-[#828282] text-sm'>{item.data}</p>
-                                    <Link href={item.link} className='text-[#8717F8] font-bold text-sm underline'>Citește mai mult</Link>
+                                    <p className="text-[#8717F8] font-bold text-sm underline hover:scale-105 transition-all">Citește mai mult</p>
                                 </div>
                             </article>   
                         </Link>                     

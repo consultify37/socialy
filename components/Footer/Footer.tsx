@@ -5,21 +5,13 @@ const Footer = () => {
     return (
         <footer className='w-full mt-12 md:mt-24'>
             <div className='flex flex-wrap flex-col justify-between md:flex-row gap-10 px-7 md:px-12'>
-                <div className='flex flex-col gap-2 w-full md:w-[20%]'>
+                <div className='flex flex-col gap-2 w-full lg:max-w-[20%]'>
                     <Image src='/images/logo-invert.svg' alt='Footer logo' width={200} height={53} className='aspect-auto w-[177px] md:w-[200px]' />
-                    <p className='text-[#260056] text-[14px] md:text-[16px]'>
+                    <p className='text-[#260056] text-[14px] md:text-[16px] mt-4'>
                         Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale
                     </p>
                 </div>
-                <div className='flex flex-col gap-2'>
-                    <Link href='https://anpc.ro/ce-este-sal/' target="_blank">
-                        <Image src='/images/anpc.png' alt='Anpc logo' width={180} height={49} className='aspect-auto' />
-                    </Link>
-                    <Link href='https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage' target="_blank">
-                        <Image src='/images/litigii.png' alt='Litigii logo' width={180} height={49} className='aspect-auto' />
-                    </Link>
-                </div>
-                <div className='flex flex-col gap-1'>
+                <div className='flex flex-col gap-1 lg:max-w-[20%]'>
                     <h3 className='font-bold text-[#260056] text-[24px]'>Navigație</h3>
                     <ul className='list-none flex flex-col gap-1'>
                         <li>
@@ -48,20 +40,14 @@ const Footer = () => {
                         </li> */}
                     </ul>
                 </div>
-                <div className='flex flex-col gap-1'>
-                    <h3 className='font-bold text-[#260056] text-[24px]'>Contact</h3>
+                <div className='flex flex-col gap-1 lg:max-w-[20%]'>
+                    <h3 className='font-bold text-[#260056] text-[24px]'>Legal</h3>
                     <ul className='list-none flex flex-col gap-1'>
                         <li>
-                            <p className='font-medium text-[#8717F8] text-[16px]'>Numele firmei: MHC INSPERON SRL</p>
+                            <p className='font-medium text-[#8717F8] text-[16px]'>MHC INSPERON SRL</p>
                         </li>
                         <li>
-                            <p className='font-medium text-[#8717F8] text-[16px]'>Adresa: Strada Crișul Alb, Numărul 6, Sector 4, București.</p>
-                        </li>
-                        <li>
-                            <Link href='tel:+40727153317' className='font-medium text-[#8717F8] text-[16px]'>Număr de telefon: (0727) 153 317</Link>
-                        </li>
-                        <li>
-                            <Link href='mailto:contact@consultify.ro' className='font-medium text-[#8717F8] text-[16px]'>Email: contact@consultify.ro</Link>
+                            <p className='font-medium text-[#8717F8] text-[16px]'>J40/6137/2020</p>
                         </li>
                         <li>
                             <Link href='/' className='font-medium text-[#8717F8] text-[16px]'>Termenii și Condițiile</Link>
@@ -71,8 +57,30 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex-col">
+                <div className='flex flex-col gap-1 lg:max-w-[20%]'>
+                    <h3 className='font-bold text-[#260056] text-[24px]'>Contact</h3>
+                    <ul className='list-none flex flex-col gap-1'>
+                        <li>
+                            <p className='font-medium text-[#8717F8] text-[16px]'>Adresa: Strada Crișul Alb, Numărul 6, Sector 4, București.</p>
+                        </li>
+                        <li>
+                            <Link href='tel:+40727153317' className='font-medium text-[#8717F8] text-[16px]'>Număr de telefon: (0727) 153 317</Link>
+                        </li>
+                        <li>
+                            <Link href='mailto:contact@consultify.ro' className='font-medium text-[#8717F8] text-[16px]'>Email: contact@consultify.ro</Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="flex flex-col lg:max-w-[20%]">
                     <h3 className='font-bold text-[#260056] text-[24px]'>Social Media</h3>
+                    <div className='flex flex-col gap-2'>
+                        <Link href='https://anpc.ro/ce-este-sal/' target="_blank">
+                            <Image src='/images/anpc.png' alt='Anpc logo' width={180} height={49} className='aspect-auto' />
+                        </Link>
+                        <Link href='https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage' target="_blank">
+                            <Image src='/images/litigii.png' alt='Litigii logo' width={180} height={49} className='aspect-auto' />
+                        </Link>
+                    </div>
                     <div className='flex flex-row gap-6 mt-4'>
                         <Link href='https://facebook.com' target="_blank">
                             <Image

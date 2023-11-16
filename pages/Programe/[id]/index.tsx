@@ -10,7 +10,6 @@ import CTA from '../../../components/programe/CTA'
 import NewsLetter from '../../../components/global/newsletter'
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore'
 import { db } from '../../../firebase'
-import { NextPageContext } from 'next'
 import { Program } from '../../../types'
 import FormatText from '../../../utils/FormatText'
 

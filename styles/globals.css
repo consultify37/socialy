@@ -74,6 +74,7 @@ html, body, #__next {
   min-height: 100vh;
   overflow-y: overlay;
   font-family:inherit;
+  scroll-behavior: smooth;
 }
 
 :root {

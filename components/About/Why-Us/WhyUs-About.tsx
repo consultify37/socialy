@@ -61,7 +61,7 @@ const WhyUsAbout = () => {
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>
-                <Link href='/' className='py-3 md:py-4 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all mt-16'>Ce spun clienții noștri?</Link>
+                <Link href='/testimoniale' className='py-3 md:py-4 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all mt-16'>Ce spun clienții noștri?</Link>
             </div>
         </section>
     )

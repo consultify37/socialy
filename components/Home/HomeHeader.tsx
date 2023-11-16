@@ -35,7 +35,7 @@ const HomeHeader = ({ slides }: Props) => {
         >
         <div className="z-10 w-full flex flex-col items-center gap-9 relative pt-12">
           <div className="relative flex items-center justify-center mb-8">
-            <h1 className="text-white text-2xl lg:text-4xl xl:text-[44px] font-extrabold text-center">
+            <h1 className="text-white text-2xl md:text-4xl xl:text-[44px] font-extrabold text-center">
               Finanțarea potrivită <br className="block md:hidden"/> pentru firma potrivită!
             </h1>
             <Image

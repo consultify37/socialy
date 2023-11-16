@@ -14,6 +14,7 @@ import toast from "react-hot-toast";
 import Proces from "../../components/Proces";
 import OurServices from "../../components/OurServices";
 import Garantii from "../../components/Garantii";
+import PageHeader from "../../components/Header/PageHeader";
 
 export default function Servicii() {
   const [scrollAmount, setScrollAmount] = useState<number>(0);
@@ -61,31 +62,29 @@ export default function Servicii() {
         <Head>
             <title>Consultify | Servicii</title>
         </Head>
-        <section id='about-header' className='relative bg-[#260056] w-full pt-32 lg:pt-52 pb-14 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]' style={{marginBottom: `200px`}}>
-          <h1 className='text-xl md:text-4xl font-bold text-white md:max-w-[50%] text-center pt-20 lg:pt-0'>
-            Împreună pentru succesul tău: servicii și produse de calitate
-          </h1>
-          <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
+        <PageHeader
+          title="Împreună pentru succesul tău: servicii și produse de calitate"
+        >
           <Image
               src="/images/star.svg"
               alt="Hero blue circle"
               width={100}
               height={200}
-              className="absolute right-6 -bottom-32 z-[5] w-[120px] md:w-[200px]"
+              className="absolute -right-12 bottom-12 z-[5] w-[120px] md:w-[200px]"
           />
           <Image
               src="/images/proces/hexagon.svg"
               width={130}
               height={130}
-              className="absolute -bottom-12 -left-12 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
+              className="absolute -bottom-0 -left-12 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
               alt="Yellow triangle"
           />
-        </section>
+        </PageHeader>
         <OurServices />
         <Proces />
         <Garantii />
         <CTA
-          title="Acțiunea ta contează - Începe-ți proiectul de succes acum!"
+          title="Acțiunea ta contează - Începe-ți <purple>proiectul<purple> de succes acum!"
           linkText="Completează formularul!"
           linkHref="/contact"
         />

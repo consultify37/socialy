@@ -93,14 +93,14 @@ const Testimonials = () => {
                         </div>
                         { testimonial.video ?
                             <video 
-                                className="w-[250px] md:w-[300px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
+                                className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] object-cover rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
                                 loop={true}
                                 autoPlay={true}
                             >
                                 <source src={testimonial.video} type="video/mp4" />
                             </video> :
                             <Image 
-                                className="w-[250px] md:w-[300px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
+                                className="w-[250px] md:w-[300px] h-[250px] object-cover md:h-[300px] rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
                                 key={testimonial.title}
                                 src={testimonial.image}
                                 alt={testimonial.title}

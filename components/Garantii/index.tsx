@@ -34,7 +34,7 @@ export default function Garantii(){
                             <div className="card">
                                 <div className="front flex flex-col justify-center px-6 bg-[#260056] border-8 border-[#7000FF]">
                                     <h4 className="text-white text-lg lg:text-2xl font-bold">{card.titleBack}</h4>
-                                    <p className="text-lg text-[#EDD7FF]">Apasa pentru a afla detalii</p>
+                                    <p className="text-lg text-[#EDD7FF]">Apasă pentru a afla detalii</p>
                                 </div>
                                 <div className="back flex flex-col items-center h-full bg-[#F7EEFF]">
                                     <div className="w-full bg-secondary rounded-t-[2rem] px-1 py-4">

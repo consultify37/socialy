@@ -5,6 +5,7 @@ import { Toaster } from 'react-hot-toast'
 import Footer from '../components/Footer/Footer'
 import TopBar from "../components/TopBar"
 import { usePathname } from 'next/navigation'
+import CookiePolicy from '../components/CookiePolicy'
 
 export default function App({ Component, pageProps }: AppProps) {
   const pathname = usePathname()
@@ -17,9 +18,10 @@ export default function App({ Component, pageProps }: AppProps) {
           <Header />
         </> : null
       }
-      <main className="flex-1">
+      <main className="flex-1 relative">
         <Component {...pageProps} />
         <Toaster />
+        <CookiePolicy />
       </main>
       { !pathname?.includes('/admin') ?
         <Footer /> : null

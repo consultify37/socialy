@@ -8,6 +8,7 @@ import CTA from "../../components/CTA"
 import Axios from "axios"
 import toast from "react-hot-toast"
 import Logos from "../../components/Home/Logos"
+import PageHeader from "../../components/Header/PageHeader"
 
 const testimonials = [
   {
@@ -73,16 +74,11 @@ export default function Testimoniale() {
   return (
     <>
       <Head>
-        <title>Testimoniale</title>
+        <title>Consultify | Testimoniale</title>
       </Head>
-      <section
-        id="about-header"
-        className="relative bg-[#260056] mb-60 w-full pt-32 pb-14 flex flex-col items-center justify-center overflow-visible"
+      <PageHeader
+        title="Experiențe de succes prin fonduri europene"
       >
-        <h1 className="text-xl xl:text-[44px] font-extrabold md:leading-[48px] text-white md:max-w-[50%] text-center pt-20 lg:pt-20">
-          Experiențe de succes prin fonduri europene
-        </h1>
-        <span className="bg-[#260056] rounded-[0_0_200px_250px] w-[115vw] md:w-[103vw] -rotate-2 absolute -left-5 -bottom-20 h-32" />
         <Image
           src="/images/Star 1.svg"
           alt="Hero blue circle"
@@ -97,7 +93,7 @@ export default function Testimoniale() {
           className='absolute -left-4 -top-28 lg:-top-56 lg:left-0 lg:w-[250px]' 
           alt='Circle hero green' 
         />
-      </section>
+      </PageHeader>
       <section
         id="feedback-firme"
         className="w-full flex flex-col items-center my-32 justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
@@ -127,7 +123,7 @@ export default function Testimoniale() {
             <h2 className="text-lg md:text-2xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-24">
               Sau vizionați următoarele studii de caz!
             </h2>
-            <div className="w-full mx-auto gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2]">
+            <div className="w-full mx-auto gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2] items-center">
               <div className="w-full flex-1 z-[2]">
                 <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
                   { testimonials[0].title }
@@ -138,33 +134,19 @@ export default function Testimoniale() {
                 <p className="text-white font-base text-[16px] mt-5 z-[2] max-w-[600px]">
                   { testimonials[0].text2}
                 </p>
-                <div className="flex gap-4 mt-4 z-[2]">
-                  <Link
-                    href="/news"
-                    className="py-3 md:py-4 font-semibold bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all"
-                  >
-                    Programe
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="py-3 md:py-4 font-semibold bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12 hover:scale-[1.05] transition-all"
-                  >
-                    Contact
-                  </Link>
-                </div>
               </div>
               <iframe 
-                  className="relative rounded-[28.5px] w-full md:w-[450px] mx-auto z-[4]"
+                  className="relative rounded-[28.5px] w-full md:w-[450px] md:h-[400px] mx-auto z-[4]"
                   src={testimonials[0].ytUrl}
                   title="YouTube video player"
                   allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
                   allowFullScreen={true}
               ></iframe>
             </div>
-            <div className='w-full mt-16 md:mt-32 mx-auto gap-[6rem] flex gap-y-20 justify-between flex-col-reverse md:flex-row flex-wrap z-[2]'>
+            <div className='w-full mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 justify-between items-center flex-col-reverse md:flex-row flex-wrap z-[2]'>
               <div className='relative w-full md:w-auto'>
                 <iframe 
-                    className="relative rounded-[28.5px] h-full w-full md:w-[450px] mx-auto z-[0]"
+                    className="relative rounded-[28.5px] h-full w-full md:w-[450px] md:h-[400px] mx-auto z-[0]"
                     src={testimonials[1].ytUrl}
                     title="YouTube video player"
                     allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
@@ -182,13 +164,9 @@ export default function Testimoniale() {
                 <p className="text-white font-base text-[16px] mt-5 z-[2] max-w-[600px]">
                   { testimonials[1].text2}
                 </p>
-                <div className='flex gap-6 mt-6'>
-                    <Link href='/shop' className='py-3 md:py-4 font-semibold bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all'>Shop</Link>
-                    <Link href='/servicii' className='py-3 md:py-4 font-semibold bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12 hover:scale-[1.05] transition-all'>Servicii</Link>
-                </div>
               </div>
             </div>
-            <div className="w-full mt-16 md:mt-32 mx-auto gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2]">
+            <div className="w-full mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 items-center justify-between flex-wrap z-[2]">
               <div className="w-full flex-1 z-[2]">
                 <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
                   { testimonials[2].title }
@@ -199,23 +177,9 @@ export default function Testimoniale() {
                 <p className="text-white font-base text-[16px] mt-5 z-[2] max-w-[600px]">
                   { testimonials[2].text2 }
                 </p>
-                <div className="flex gap-4 mt-4 z-[2]">
-                  <Link
-                    href="/news"
-                    className="py-3 md:py-4 font-semibold bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all"
-                  >
-                    Programe
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="py-3 md:py-4 font-semibold bg-transparent text-white flex items-center rounded-[28.5px] border-2 border-[#8717F8] font-xl px-12 hover:scale-[1.05] transition-all"
-                  >
-                    Contact
-                  </Link>
-                </div>
               </div>
               <iframe 
-                  className="relative rounded-[28.5px] w-full md:w-[450px] mx-auto z-[0]"
+                  className="relative rounded-[28.5px] w-full md:w-[450px] md:h-[400px] mx-auto z-[0]"
                   src={testimonials[2].ytUrl}
                   title="YouTube video player"
                   allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
@@ -266,8 +230,8 @@ export default function Testimoniale() {
         </div>
       </section>
       <CTA
-        title="Transformă-ți ideile în realitate prin fonduri europene!"
-        linkText="Completează formularul"
+        title="Transformă-ți ideile în <purple>realitate<purple> prin fonduri europene!"
+        linkText="Completează formularul!"
         linkHref="/contact"
       />
       {/* <News /> */}

@@ -25,7 +25,7 @@ const About: NextPage = () => {
             <Partners />
             <FAQAbout />
             <CTA
-                title="Aplică acum și transformă-ți proiectele în realitate cu Consultify!"
+                title="Aplică acum și transformă-ți <purple>proiectele<purple> în realitate cu Consultify!"
                 linkText="Completează formularul!"
                 linkHref="/contact"
             />
@@ -42,7 +42,7 @@ const About: NextPage = () => {
                 </Link>
             </div>
             <News /> */}
-            <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
+            <NewsLetter headingText={'Abonează-te la newsletter pentru informații actualizate despre afaceri!'} />
         </>
     )
 }

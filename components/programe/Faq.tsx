@@ -19,7 +19,7 @@ const Faq = ({ faqs }: Props) => {
     
   return(
       <section id='faq' className='mt-12 md:mt-24 w-full flex flex-col items-center gap-2 lg:px-20'>
-          <h2 className='text-2xl xl:text-4xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[60%] mb-6 md:mb-12'>Întrebări frecvente</h2>
+          <h2 className='text-2xl xl:text-4xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[60%] mb-6 md:mb-12'>Întrebări frecvente:</h2>
           {
               faqs.map((faq, index) => (
                   <article key={index} className='w-full rounded-[8px] bg-[#FAF3FF]'>
