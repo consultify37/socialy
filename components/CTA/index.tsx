@@ -20,9 +20,9 @@ export default function CTA({ title, linkText, linkHref }: CTAProps) {
 
                 <h2 className="text-[#260056] text-lg lg:text-4xl font-bold mb-8 max-w-[750px] text-center">{
                     title.split('<purple>').map((item, index) => (
-                        <>
+                        <span key={item+index}>
                             {index == 1 ? <span className="text-primary">{item}</span> : <span>{item}</span>}
-                        </>
+                        </span>
                     ))
                 }</h2>
                 <Link className="py-4 bg-[#8717F8] text-center text-white rounded-[28.5px] font-semibold px-10 text-sm md:text-[16px] transition-all hover:scale-[1.05]" href={linkHref}>{linkText}</Link>

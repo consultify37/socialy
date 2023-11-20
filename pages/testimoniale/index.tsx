@@ -99,10 +99,10 @@ export default function Testimoniale() {
         className="w-full flex flex-col items-center my-32 justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
       >
         <h2 className="text-[#8717F8] font-bold text2xl xl:text-[24px] text-center">
-          Peste 850 de companii au accesat fonduri europene cu ajutorul nostru. Iată câteva dintre ele:
+          Peste 850 de companii au accesat fonduri europene cu ajutorul nostru.
         </h2>
         <h3 className="text-[#8717F8] text-xl md:text-lg lg:text-xl xl:text-2xl mb-8">
-          Iată câteva dintre ele
+          Iată câteva dintre ele:
         </h3>
         
         <Logos />
@@ -114,13 +114,13 @@ export default function Testimoniale() {
         </h2>
         <Testimonials />
         <section id='trust-us' className='bg-[#260056] mt-24 flex flex-col items-center w-full relative'>
-            <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-5">
+            <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-5">
               Încă nu te-am convins? Descarcă lista completă cu rezultate:
             </h2>
             <Link href='/files/Rezultate Consultify.pdf' download={true} target="_blank" className="bg-[#8717F8] mb-16 mt-4 font-semibold px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
               Descarcă lista aici!
             </Link>
-            <h2 className="text-lg md:text-2xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-24">
+            <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-24">
               Sau vizionați următoarele studii de caz!
             </h2>
             <div className="w-full mx-auto gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2] items-center">

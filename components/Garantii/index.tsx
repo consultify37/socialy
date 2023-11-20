@@ -46,7 +46,7 @@ export default function Garantii(){
                                             href='/contact'
                                             className="px-12 py-4 bg-primary text-[#fff] rounded-[28.5px] text-base font-semibold transition-all hover:scale-[1.05]"
                                             >
-                                            Aplică acum
+                                            Aplică acum!
                                         </Link>
                                     </div>
                                 </div>

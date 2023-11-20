@@ -50,7 +50,7 @@ const FAQAbout = ({ intrebari=IntrebariStandard }: Props) => {
     };
     
     return(
-        <section id='faq' className='mt-24 md:mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[350px] w-full flex flex-col items-center gap-2'>
+        <section id='faq' className='mt-24 md:mt-32 px-7 md:px-[100px] xl:px-[160px] 2xl:px-[370px] w-full flex flex-col items-center gap-2'>
             <h2 className='text-2xl xl:text-4xl text-[#8717F8] font-bold max-w-[80%] md:max-w-[60%] mb-6 md:mb-8'>Întrebări frecvente:</h2>
             {
                 intrebari.map(faq => (

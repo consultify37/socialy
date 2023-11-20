@@ -40,7 +40,7 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
         <Image src='/images/triangle-news.svg' className="absolute right-[-2rem] bottom-[-2rem] md:bottom-[ihnerit] md:top-[-2rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
         <div className="relative flex">
           <Image
-            src="/images/pexels-fauxels-3184433 1.png"
+            src="/images/news.png"
             alt="people-cheering"
             className="relative top-[-90px] lg:top-[auto] w-[280px] lg:w-[380px] h-auto z-[2] rounded-3xl"
             width={200}

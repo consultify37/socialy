@@ -76,11 +76,12 @@ const OurClients = () => {
                     pagination={true}
                     showArrows={true}
                     disableArrowsOnEnd={false}
+                    className=""
                 >
                 {
                     Testimonials.map(testimonial =>
-                        <article key={testimonial.id} className="bg-[#36007B] h-full rounded-[16px] justify-center lg:justify-between items-center min-h-max mx-2 flex-col lg:flex-row flex flex-1 py-10 md:py-5">
-                            <div className="w-full md:w-200px px-7 md:px-5 py-2 md:pb-8 lg:mr-8">
+                        <article key={testimonial.id} className="bg-[#36007B] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-6 flex-col lg:flex-row flex flex-1 py-10 md:py-2">
+                            <div className="w-full md:w-200px px-7 md:px-5 lg:mr-8">
                                 <h3 className="text-white font-bold text-base md:max-w-[90%] md:text-[24px]">
                                     {testimonial.title}
                                 </h3>

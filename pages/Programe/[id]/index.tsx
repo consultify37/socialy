@@ -45,7 +45,7 @@ const Program = ({ program }: Props) => {
         <WhyUs />
         <Faq faqs={program.faqs} />
         <CTA
-          title="Transformă-ți ideile în realitate prin fonduri europene!"
+          title="Transformă-ți ideile în realitate prin <purple>fonduri europene!<purple>"
           linkText="Completează formularul de contact!"
           linkHref="/contact"
         />

@@ -47,7 +47,7 @@ const HomeHeader = ({ slides }: Props) => {
               className="absolute w-[625px] right-0 -bottom-6 lg:w-[380px] xl:w-[460px] 2xl:w-[460px] lg:-bottom-8 2xl:-bottom-10"
               />
           </div>
-          <p className="text-white font-regular text-center text-[18px] lg:max-w-[60%]">
+          <p className="text-white font-light text-center text-[18px] lg:max-w-[60%]">
             Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale.
           </p>
           <Link

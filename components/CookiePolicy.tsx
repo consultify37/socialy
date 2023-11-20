@@ -25,7 +25,7 @@ const CookiePolicy = () => {
     <>
       {
         !isAccepted ?
-        <div className="bg-white fixed top-[40vh] right-0 rounded-xl shadow-2xl p-8 flex flex-col items-center z-[50] mx-4 w-[calc(100%-32px)] max-w-[440px]">
+        <div className="bg-white fixed bottom-[25vh] md:bottom-8 left-0 rounded-xl shadow-2xl p-8 flex flex-col items-center z-[50] mx-4 w-[calc(100%-32px)] max-w-[440px]">
           <div className="flex flex-row justify-between items-center w-full">
             <div className="flex flex-row items-center">
               <Image 

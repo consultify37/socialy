@@ -12,7 +12,7 @@ const WhyUs = () => {
       <Image src='/images/rezultate/hexagon.svg' className="hidden lg:block absolute left-[5%] bottom-[-39px] w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
 
       <div className="flex items-start w-full flex-col md:mr-12">
-          <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">DESCRIERE GENERALĂ</h2>
+          <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">Iată rezultatele noastre</h2>
           <p className="text-sm mb-4 md:mb-10">Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să își realizeze proiectele cu succes.</p>
           <Link className="py-3 md:py-4 bg-[#8717F8] font-semibold text-[#fff] rounded-[28.5px] px-12 hover:scale-[1.05] transition-all" href="/contact">Contactează-ne!</Link>
       </div>
@@ -33,7 +33,7 @@ const WhyUs = () => {
               <p className="text-xs">Siguranța și confortul clienților noștri sunt prioritatea noastră, de aceea avem birouri deschise în mai multe orașe din România.</p>
           </div>
           <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
-              <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">5</h6>
+              <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">5+</h6>
               <span className="text-[#5E07A3] font-semibold text-[14px] md:text-2xl mt-[-10px]">EXPERIENTA</span>
               <p className="text-xs">Cu peste 5 ani de experiență în consultanță pentru accesarea fondurilor europene, am ajutat oameni din diverse domenii să își îndeplinească visurile.</p>
           </div>

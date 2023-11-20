@@ -9,6 +9,10 @@ import { PhoneInput } from 'react-international-phone'
 import 'react-international-phone/style.css'
 import ReCAPTCHA from "react-google-recaptcha"
 import PageHeader from "../../components/Header/PageHeader"
+import WhyUsItem1 from "../../components/Home/Why-Us/Item1"
+import WhyUsItem2 from "../../components/Home/Why-Us/Item2"
+import WhyUsItem3 from "../../components/Home/Why-Us/Item3"
+import WhyUsItem4 from "../../components/Home/Why-Us/Item4"
  
 export default function Contact() {
     const [nume, setNume] = useState('')
@@ -266,49 +270,17 @@ export default function Contact() {
             <Rezultate />
             <section id='why-us' className='mt-[10.25rem] w-full relative px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
                 <h2 className='text-[#260056] text-center font-bold md:text-base text-xl lg:text-2xl xl:text-4xl mb-12 lg:mb-32'>De ce să alegi Consultify?</h2>
-                <div className='relative flex flex-wrap justify-center items-center md:justify-between md:items-center gap-y-20'>
+                <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
-                    <div className='mx-auto lg:mx-0 w-full z-[2] md:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-16'>
-                        <div className='flex flex-col gap-4'>
-                            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-[10px]'>
-                                <Image src='/images/questions-comment.png' className='mx-auto' alt='Questions comment' width={25} height={10} />
-                            </span>
-                            <h3 className='font-bold text-[24px] text-[#260056]'>Comunicare</h3>
-                            <p className='font-normal text-[#260056] text-md md:text-[16px] text-justify'>
-                                Comunicare excelentă! Răspuns rapid și soluții eficiente pentru succesul proiectelor tale.
-                            </p>
-                        </div>
-                        <div className='flex flex-col gap-4'>
-                            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-[10px]'>
-                                <Image src='/images/flash.png' className='mx-auto' alt='Questions comment' width={17} height={10} />
-                            </span>
-                            <h3 className='font-bold text-[24px] text-[#260056]'>Spirit tânăr</h3>
-                            <p className='font-normal text-[#260056] text-md md:text-[16px] text-justify'>
-                                Echipă tânără, inovatoare și dinamică, aducând idei proaspete și abordări moderne.
-                            </p>
-                        </div>
-                        <div className='flex flex-col gap-4'>
-                            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-[10px]'>
-                                <Image src='/images/user (4) 1.png' className='mx-auto' alt='Questions comment' width={25} height={25} />
-                            </span>
-                            <h3 className='font-bold text-[24px] text-[#260056]'>Abordare individuală</h3>
-                            <p className='font-normal text-[#260056] text-md md:text-[16px] text-justify'>
-                                Oferim o abordare individuală pentru a ne asigura că satisfacem nevoile și obiectivele fiecărui client.
-                            </p>
-                        </div>
-                        <div className='flex flex-col gap-4'>
-                            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-[10px]'>
-                                <Image src='/images/chart.png' className='mx-auto' alt='Questions comment' width={21} height={21} />
-                            </span>
-                            <h3 className='font-bold text-[24px] text-[#260056]'>Profesionalism</h3>
-                            <p className='font-normal text-[#260056] text-md md:text-[16px] text-justify'>
-                                Profesionalismul nostru este evidențiat de abordarea noastră meticuloasă și atenția la detalii în fiecare proiect.
-                            </p>
-                        </div>
+                    <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>
+                        <WhyUsItem1 textColor="[#260056]" />
+                        <WhyUsItem2 textColor="[#260056]" />
+                        <WhyUsItem3 textColor="[#260056]" />
+                        <WhyUsItem4 textColor="[#260056]" />
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
-                        <Image src='/images/contact/pag - contact - structura calitati.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[460px]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+                        <Image src='/images/contact/pag - contact - structura calitati.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[400px]' width={350} height={400} placeholder='blur' blurDataURL='/images/About/Pag - despre noi - structura misiunea noastra.png' />
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>

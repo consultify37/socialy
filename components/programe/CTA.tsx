@@ -17,8 +17,14 @@ export default function CTA({ title, linkText, linkHref }: CTAProps) {
               <Image src='/images/CTA/circle-thin.svg' className="absolute left-0 top-[0px] w-[100px] lg:w-[200px]" alt='triangle' width={250} height={250}/>
               <Image src='/images/proces/hexagon.svg' className="absolute -left-6 -bottom-6 lg:-left-[80px] lg:-bottom-[50px] w-[60px] lg:w-[160px]" alt='triangle' width={250} height={250}/>
 
-              <h2 className="text-[#260056] text-lg lg:text-4xl font-bold mb-8 max-w-[750px] text-center">{title}</h2>
-              <Link className="py-4 bg-[#8717F8] text-center text-white rounded-[28.5px] font-medium px-10 text-sm md:text-[16px] transition-all hover:scale-[1.05]" href={linkHref}>{linkText}</Link>
+              <h2 className="text-[#260056] text-lg lg:text-4xl font-bold mb-8 max-w-[750px] text-center">{
+                    title.split('<purple>').map((item, index) => (
+                        <div key={item+index}>
+                            {index == 1 ? <span className="text-primary">{item}</span> : <span>{item}</span>}
+                        </div>
+                    ))
+                }</h2>
+              <Link className="py-4 bg-[#8717F8] text-center text-white rounded-[28.5px] font-semibold px-10 text-sm md:text-[16px] transition-all hover:scale-[1.05]" href={linkHref}>{linkText}</Link>
           </div>
       </section>
   )

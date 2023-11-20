@@ -32,10 +32,11 @@ export default function Home({ slides, programe }: Props) {
       <CarouselPrograme programe={programe} />
       <Rezultate />
       <Garantii />
+      <div id="proces"></div>
       <Proces />
       <OurClients />
       <CTA
-        title="Aplică acum și transformă-ți proiectele în realitate cu Consultify!"
+        title="Acțiunea ta contează - Începe-ți <purple>proiectul<purple> de succes acum!"
         linkText="Completează formularul!"
         linkHref="/contact"
       />

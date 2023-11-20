@@ -8,13 +8,13 @@ const DidYouKnow = () => {
        <div className="w-full gap-[6rem] flex gap-y-20 justify-between flex-col lg:flex-row z-[2]">
           <div className="w-full flex-1 z-[2] gap-5 font-light">
             <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-3xl">
-              Știai că
+              Știai că?
             </h2>
             <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2] mb-8">
-              De la planificarea detaliată și coordonarea achizițiilor, până la monitorizarea progresului, consultanții noștri transformă viziunea ta în realitate. Statisticile vorbesc de la sine: peste 97% dintre proiectele implementate de consultanții noștri sunt finalizate cu succes și nu întâmpină probleme în perioada de monitorizare, comparativ cu doar 65% în cazul implementării făcute de aplicanți.
+              Știai că implementarea proiectelor pe fonduri europene prin intermediul consultanților noștri te poate propulsa către succesul dorit? Cu o echipă de experți dedicați și o abordare strategică, garantăm rezultate remarcabile.
             </p>
             <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2]">
-              Alege parteneriatul cu noi pentru a maximiza șansele de succes și a-ți atinge obiectivele în implementarea proiectului tău.
+              De la planificarea detaliată și coordonarea achizițiilor, până la monitorizarea progresului, consultanții noștri transformă viziunea ta în realitate. Statisticile vorbesc de la sine: peste 97% dintre proiectele implementate de consultanții noștri sunt finalizate cu succes și nu întâmpină probleme în perioada de monitorizare, comparativ cu doar 65% în cazul implementării făcute de aplicanți. Alege parteneriatul cu noi pentru a maximiza șansele de succes și a-ți atinge obiectivele în implementarea proiectului tău.
             </p>
           </div>
           <div className='relative h-fit md:w-fit'>
@@ -47,6 +47,7 @@ const DidYouKnow = () => {
             <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-3xl">
               Serviciul perfect pentru antreprenori care vor să-și implementeze proiectul cu succes
             </h2>
+            
             <p className="text-white font-base text-[16px] mt-5 z-[2] mb-8">
               Implementarea proiectelor prin noi se adresează întreprinderilor și organizațiilor care doresc rezultate de succes. Cu expertiza vastă și abordarea profesionistă, oferim suport și consultanță pe tot parcursul procesului. Indiferent de mărimea și complexitatea proiectului, ne asigurăm că implementarea este eficientă, conform cerințelor și obiectivelor.            </p>
             <p className="text-white font-base text-[16px] mt-5 z-[2]">

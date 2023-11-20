@@ -50,10 +50,13 @@ const Footer = () => {
                             <p className='font-medium text-[#8717F8] text-[16px]'>J40/6137/2020</p>
                         </li>
                         <li>
-                            <Link href='/' className='font-medium text-[#8717F8] text-[16px]'>Termenii și Condițiile</Link>
+                            <p className='font-medium text-[#8717F8] text-[16px]'>RO42607998</p>
                         </li>
                         <li>
-                            <Link href='/' className='font-medium text-[#8717F8] text-[16px]'>Politica cookies</Link>
+                            <Link href='/' className='font-medium text-[#8717F8] text-[16px]'>Termeni și Condiții</Link>
+                        </li>
+                        <li>
+                            <Link href='/' className='font-medium text-[#8717F8] text-[16px]'>Politica Cookies</Link>
                         </li>
                     </ul>
                 </div>
@@ -117,7 +120,7 @@ const Footer = () => {
 
             <div className='w-full mt-5 text-center px-7 md:px-12'>
                 <p className='text-[#8717F8] text-[16px] font-medium  border-t-[3px] border-[#260056] py-4 px-16 md:px-0'>
-                    Copyright 2023 Consultify 
+                    Copyright © 2023 Consultify | Toate drepturile sunt rezervate.
                     {/* | Made with love by &nbsp; */}
                     {/* <Link href='https://marize.io' className="hover:text-[#8817f89b]" target='_blank'>Marize</Link> */}
                 </p>
