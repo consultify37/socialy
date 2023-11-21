@@ -56,7 +56,7 @@ export default function Contact() {
                     alt="Hero blue circle"
                     width={100}
                     height={200}
-                    className="absolute right-4 md:right-28 top-32 md:top-4 z-[5] w-[80px] md:w-[160px]"
+                    className="absolute -right-8 md:right-28 top-28 md:top-4 z-[5] w-[96px] md:w-[160px]"
                 />
                 <Image
                     src="/images/circle-contact.svg"
@@ -99,33 +99,33 @@ export default function Contact() {
                             <span className="text-lg md:text-xl text-white font-bold hover:text-primary transition-all"><Link href='tel:0727 153 317'>0727 153 317</Link></span>
                         </div>
                     </div>
-                    <h6 className="text-xl text-white mb-4 font-bold">Sau ne poți găsi și aici:</h6>
-                    <div className="flex flex-row">
-                        <Link href='https://instagram.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
+                    <h6 className="text-xl text-white mb-4 font-bold text-center">Sau ne poți găsi și aici:</h6>
+                    <div className="flex flex-row w-full justify-center">
+                        <Link href='https://instagram.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
                             <Image
                                 src="/images/contact/instagram.svg"
                                 alt="instagram"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content w-[15px] h-[15px] lg:w-[36px] lg:h-[36px]"
+                                className="z-[5] h-[max-content w-[24px] h-[24px] lg:w-[36px] lg:h-[36px"
                             />
                         </Link>
-                        <Link href='https://facebook.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
+                        <Link href='https://facebook.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
                             <Image
                                 src="/images/contact/facebook.svg"
                                 alt="facebook"
                                 width={60}
                                 height={60}
-                                className="z-[5] w-[15px] h-[15px] lg:w-[36px] lg:h-[36px]"
+                                className="z-[5] w-[24px] h-[24px] lg:w-[36px] lg:h-[36px"
                             />
                         </Link>
-                        <Link href='https://tiktok.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-3 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
+                        <Link href='https://tiktok.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
                             <Image
                                 src="/images/contact/tiktok.svg"
                                 alt="tiktok"
                                 width={60}
                                 height={60}
-                                className="z-[5] w-[15px] h-[15px] lg:w-[36px] lg:h-[36px]"
+                                className="z-[5] w-[24px] h-[24px] lg:w-[36px] lg:h-[36px"
                             />
                         </Link>
                     </div>
@@ -136,9 +136,9 @@ export default function Contact() {
                     action="https://script.google.com/macros/s/AKfycbzTZ6AzwzPd_Ol-LoBSHuHOW_xOoB0J2IG1O7FrOl0ZH2PxOCXp_qusy5w3O20aB7e7_Q/exec"
                     onSubmit={upload}
                 >
-                    <h2 className="text-ms font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună!</h2>
+                    <h2 className="text-xl font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună!</h2>
                     <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6">
-                        <div className="flex flex-col w-full md:w-[47%] mr-2 mb-6 md:mb-0">
+                        <div className="flex flex-col w-full md:w-[47%] md:mr-2 mb-6 md:mb-0">
                             <span className="text-md mb-2 font-semibold">
                                 Nume*
                             </span>
@@ -166,7 +166,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="flex w-full flex-col items-center justify-between mb-6">
-                        <div className="flex flex-col w-full mr-2">
+                        <div className="flex flex-col w-full md:mr-2">
                             <span className="text-md mb-2 font-semibold">
                                 Telefon*
                             </span>
@@ -193,7 +193,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6 outline-none">
-                        <div className="flex flex-col w-full md:w-[47%] mr-2 mb-6 md:mb-0">
+                        <div className="flex flex-col w-full md:w-[47%] md:mr-2 mb-6 md:mb-0">
                             <span className="text-md mb-2 font-semibold">
                                 Nume firmă (opțional)
                             </span>
@@ -205,7 +205,7 @@ export default function Contact() {
                                 onChange={(e) => setFirma(e.target.value)}
                             />
                         </div>
-                        <div className="flex flex-col w-full md:w-[47%] mr-2">
+                        <div className="flex flex-col w-full md:w-[47%] md:mr-2">
                             <span className="text-md mb-2 font-semibold">
                                 CUI (opțional)
                             </span>
@@ -268,15 +268,35 @@ export default function Contact() {
                 </form>
             </section>
             <Rezultate />
-            <section id='why-us' className='mt-[10.25rem] w-full relative px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+            <section id='why-us' className='mt-24 md:mt-48 w-full relative px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
                 <h2 className='text-[#260056] text-center font-bold md:text-base text-xl lg:text-2xl xl:text-4xl mb-12 lg:mb-32'>De ce să alegi Consultify?</h2>
                 <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
                     <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>
-                        <WhyUsItem1 textColor="[#260056]" />
-                        <WhyUsItem2 textColor="[#260056]" />
-                        <WhyUsItem3 textColor="[#260056]" />
-                        <WhyUsItem4 textColor="[#260056]" />
+                    <WhyUsItem1 
+                            src="/images/questions-comment.svg"
+                            text="Comunicare excelentă! Răspuns rapid și soluții eficiente pentru succesul proiectelor tale."
+                            title="Comunicare"
+                            textColor="[#260056]"
+                        />
+                        <WhyUsItem1 
+                            src="/images/flash.svg"
+                            text="Echipă tânără, inovatoare și dinamică, aducând idei proaspete și abordări moderne."
+                            title="Spirit tânăr"
+                            textColor="[#260056]"
+                        />
+                        <WhyUsItem1 
+                            src="/images/person.svg"
+                            text="Oferim o abordare individuală pentru a ne asigura că satisfacem nevoile și obiectivele fiecărui client."
+                            title="Abordare individuală"
+                            textColor="[#260056]"
+                        />
+                        <WhyUsItem1 
+                            src="/images/chart.svg"
+                            text="Profesionalismul nostru este evidențiat de abordarea noastră meticuloasă și atenția la detalii în fiecare proiect."
+                            title="Profesionalism"
+                            textColor="[#260056]"
+                        />
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>

@@ -120,7 +120,7 @@ export default function Testimoniale() {
             <Link href='/files/Rezultate Consultify.pdf' download={true} target="_blank" className="bg-[#8717F8] mb-16 mt-4 font-semibold px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
               Descarcă lista aici!
             </Link>
-            <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-24">
+            <h2 className="text-xl md:text-3xl font-bold text-white px-8 md:px-0 md:max-w-[80%] text-center pt-4 md:pt-20 lg:pt-0 mb-12 md:mb-24">
               Sau vizionați următoarele studii de caz!
             </h2>
             <div className="w-full mx-auto gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2] items-center">
@@ -128,15 +128,15 @@ export default function Testimoniale() {
                 <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
                   { testimonials[0].title }
                 </h2>
-                <p className="text-white font-base text-[16px] mt-5 z-[2] mb-8 max-w-[600px]">
+                <p className="text-white font-base text-[15px] md:text-[16px] mt-5 z-[2] mb-8 max-w-[600px]">
                   { testimonials[0].text1 }
                 </p>
-                <p className="text-white font-base text-[16px] mt-5 z-[2] max-w-[600px]">
+                <p className="text-white font-base text-[15px] md:text-[16px] mt-5 z-[2] max-w-[600px]">
                   { testimonials[0].text2}
                 </p>
               </div>
               <iframe 
-                  className="relative rounded-[28.5px] w-full md:w-[450px] md:h-[400px] mx-auto z-[4]"
+                  className="relative rounded-[28.5px] w-full sm:h-full h-[260px] md:w-[450px] md:h-[338px] mx-auto z-[4]"
                   src={testimonials[0].ytUrl}
                   title="YouTube video player"
                   allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
@@ -146,7 +146,7 @@ export default function Testimoniale() {
             <div className='w-full mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 justify-between items-center flex-col-reverse md:flex-row flex-wrap z-[2]'>
               <div className='relative w-full md:w-auto'>
                 <iframe 
-                    className="relative rounded-[28.5px] h-full w-full md:w-[450px] md:h-[400px] mx-auto z-[0]"
+                    className="relative rounded-[28.5px] sm:h-full h-[260px] w-full  md:w-[450px] md:h-[400px] mx-auto z-[0]"
                     src={testimonials[1].ytUrl}
                     title="YouTube video player"
                     allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
@@ -161,7 +161,7 @@ export default function Testimoniale() {
                 <p className='text-white font-base text-[16px] mt-5 max-w-[600px]'>
                   { testimonials[1].text1 } 
                 </p>
-                <p className="text-white font-base text-[16px] mt-5 z-[2] max-w-[600px]">
+                <p className="text-white font-base  text-[16px] mt-5 z-[2] max-w-[600px]">
                   { testimonials[1].text2}
                 </p>
               </div>
@@ -179,7 +179,7 @@ export default function Testimoniale() {
                 </p>
               </div>
               <iframe 
-                  className="relative rounded-[28.5px] w-full md:w-[450px] md:h-[400px] mx-auto z-[0]"
+                  className="relative rounded-[28.5px] h-[260px] sm:h-full w-full md:w-[450px] md:h-[400px] mx-auto z-[0]"
                   src={testimonials[2].ytUrl}
                   title="YouTube video player"
                   allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
@@ -200,12 +200,19 @@ export default function Testimoniale() {
           Vezi toate produsele
         </Link> */}
         <div className="flex w-full flex-col lg:flex-row mt-16 md:mt-48 justify-between items-center">
+          <div className='relative flex lg:flex justify-end my-16 lg:mb-0 lg:ml-12'>
+              <Image src='/images/testimoniale/Pag - testimoniale - structura idei afacere.png' alt='Why-Us' className='relative w-[450px] rounded-[35px] z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+              {/* <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' />  */}
+              <Image src='/images/proces/hexagon.svg' className="absolute -right-[50px] -bottom-[50px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>
+              <Image src='/images/circle-litle.svg' className="absolute -left-[40px] -top-[40px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>
+              <Image src='/images/triangle-litle.svg' className="absolute right-[15%] -top-[50px] w-[100px] h-[100px]" alt='triangle' width={250} height={250}/>
+          </div>
           <div className="flex flex-col w-full lg:mr-12 lg:max-w-[600px]">
             <h4 className="text-white text-2xl lg:text-4xl font-bold mb-2">
               Ești în pană de idei de afaceri?
             </h4>
-            <p className="text-white text-xl">
-              Inspiră-te din cele 10 idei de afaceri pregătite de noi cu care poți atrage o finanțare europeană. Introdu adresa ta de email și primește prezentarea gratuit
+            <p className="text-white text-[15px] md:text-xl">
+              Inspiră-te din cele 10 idei de afaceri pregătite de noi cu care poți atrage o finanțare europeană. Introdu adresa ta de email și primește prezentarea gratuit!
             </p>
             <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
               <input
@@ -215,12 +222,12 @@ export default function Testimoniale() {
                 required
                 onChange={(e) => setNewsletter(e.target.value)}
               />
-              <Link href='/files/10 Idei de afaceri.pdf' download={true} target="_blank" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
+              <Link href='/files/10 Idei de afaceri.pdf' download={true} target="_blank" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 text-center cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
                 Vreau documentul!
               </Link>
             </form>
           </div>
-          <div className='relative hidden lg:flex justify-end lg:ml-12'>
+          <div className='relative hidden lg:flex justify-end mt-16 lg:mt-0 lg:ml-12'>
             <Image src='/images/testimoniale/Pag - testimoniale - structura idei afacere.png' alt='Why-Us' className='relative w-[450px] rounded-[35px] z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
             {/* <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' />  */}
             <Image src='/images/proces/hexagon.svg' className="absolute -right-[50px] -bottom-[50px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>

@@ -14,16 +14,16 @@ const Item1About = () => {
         <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2]">
           La Consultify, ne concentrăm pe nevoile tale specifice. Echipa noastră de experți îți oferă cele mai bune soluții de finanțare personalizate, indiferent de domeniul în care activezi. Accesarea fondurilor europene poate fi complicată, dar Consultify simplifică și eficientizează acest proces pentru tine!
         </p>
-        <div className="flex gap-6 mt-6 z-[2]">
+        <div className="flex gap-4 mt-6 z-[2]">
           <Link
             href="/Programe"
-            className="py-3 bg-[#BA63FF] text-[#fff] flex items-center font-semibold rounded-[28.5px] px-12 transition-all hover:scale-[1.05]"
+            className="py-3 bg-[#BA63FF] text-[#fff] flex items-center font-semibold rounded-[28.5px] px-10 sm:px-12 transition-all hover:scale-[1.05]"
           >
             Programe
           </Link>
           <Link
             href="/contact"
-            className="py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 font-semibold border-[#8717F8] px-12 transition-all hover:scale-[1.05]"
+            className="py-3 bg-transparent text-white flex items-center rounded-[28.5px] border-2 font-semibold border-[#8717F8] px-10 sm:px-12 transition-all hover:scale-[1.05]"
           >
             Contact
           </Link>
