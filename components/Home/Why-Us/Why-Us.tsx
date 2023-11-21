@@ -17,16 +17,32 @@ const WhyUs = () => {
                 <div className='flex flex-wrap mt-10 gap-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
                     <div className='mx-auto lg:mx-0 w-full z-[2] flex-1 grid grid-cols-1 md:grid-cols-2 gap-4'>
-                        <WhyUsItem1 />
-                        <WhyUsItem2 />
-                        <WhyUsItem3 />
-                        <WhyUsItem4 />
+                        <WhyUsItem1 
+                            src="/images/questions-comment.svg"
+                            text="Comunicare excelentă! Răspuns rapid și soluții eficiente pentru succesul proiectelor tale."
+                            title="Comunicare"
+                        />
+                        <WhyUsItem1 
+                            src="/images/flash.svg"
+                            text="Echipă tânără, inovatoare și dinamică, aducând idei proaspete și abordări moderne."
+                            title="Spirit tânăr"
+                        />
+                        <WhyUsItem1 
+                            src="/images/person.svg"
+                            text="Oferim o abordare individuală pentru a ne asigura că satisfacem nevoile și obiectivele fiecărui client."
+                            title="Abordare individuală"
+                        />
+                        <WhyUsItem1 
+                            src="/images/chart.svg"
+                            text="Profesionalismul nostru este evidențiat de abordarea noastră meticuloasă și atenția la detalii în fiecare proiect."
+                            title="Profesionalism"
+                        />
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
                         <Image src='/images/home-about-1.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[400px]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
-                        <img src='/images/triangle.png' alt='triangle' width={164} height={164} className='z-[1] absolute -top-6 -left-7 lg:-top-16 mlgd:-left-16 w-[80px] lg:w-[164px]' />
-                        <img src='/images/circle.png' className='absolute bottom-2 md:-bottom-2 left-60 md:left-72 z-[0] w-[350px] md:w-[400px]' width={400} height={300} alt='circle-svg' />
+                        <Image src='/images/triangle.png' alt='triangle' width={164} height={164} className='z-[1] absolute -top-6 -left-7 lg:-top-16 mlgd:-left-16 w-[80px] lg:w-[164px]' />
+                        <Image src='/images/circle.png' className='absolute bottom-2 md:-bottom-2 left-60 md:left-72 z-[0] w-[350px] md:w-[400px]' width={400} height={300} alt='circle-svg' />
                     </div>
                 </div>
                 <Link href='/' className='py-3 bg-[#7000FF] text-[#260056] text-[16px] rounded-[28.5px] font-medium px-16 mt-5'>despre noi</Link>

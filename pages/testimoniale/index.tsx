@@ -200,7 +200,7 @@ export default function Testimoniale() {
           Vezi toate produsele
         </Link> */}
         <div className="flex w-full flex-col lg:flex-row mt-16 md:mt-48 justify-between items-center">
-          <div className='relative flex lg:flex justify-end my-16 lg:mb-0 lg:ml-12'>
+          <div className='relative flex lg:hidden justify-end my-16 lg:mb-0 lg:ml-12'>
               <Image src='/images/testimoniale/Pag - testimoniale - structura idei afacere.png' alt='Why-Us' className='relative w-[450px] rounded-[35px] z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
               {/* <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' />  */}
               <Image src='/images/proces/hexagon.svg' className="absolute -right-[50px] -bottom-[50px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>

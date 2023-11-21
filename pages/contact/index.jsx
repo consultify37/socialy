@@ -308,6 +308,7 @@ export default function Contact() {
                     Vreau să completez!
                 </Link>
             </section>
+            <div className="h-16"></div>
             <NewsLetter headingText={'Fii la curent cu cele mai recente informații despre fonduri europene!'} />
         </>
     )
