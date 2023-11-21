@@ -48,9 +48,9 @@ const DidYouKnow = () => {
               Serviciul perfect pentru antreprenori care vor să-și implementeze proiectul cu succes
             </h2>
             
-            <p className="text-white font-base text-[16px] mt-5 z-[2] mb-8">
+            <p className="text-white font-base text-[15px] md:text-[16px] mt-5 z-[2] mb-8">
               Implementarea proiectelor prin noi se adresează întreprinderilor și organizațiilor care doresc rezultate de succes. Cu expertiza vastă și abordarea profesionistă, oferim suport și consultanță pe tot parcursul procesului. Indiferent de mărimea și complexitatea proiectului, ne asigurăm că implementarea este eficientă, conform cerințelor și obiectivelor.            </p>
-            <p className="text-white font-base text-[16px] mt-5 z-[2]">
+            <p className="text-white font-base text-[15px] md:text-[16px] mt-5 z-[2]">
               Alegând colaborarea cu noi, beneficiați de expertiză specializată și soluții personalizate pentru succesul proiectului dvs. pe fonduri europene.
             </p>
             <Link

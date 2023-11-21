@@ -79,19 +79,19 @@ export default function PaginaProgram() {
                         <p className='text-[16.5px] text-sm md:text-base font-semibold'>Proces rapid și eficient de cereri de rambursare pentru maximizarea resurselor financiare.</p>
                     </li>
                 </ul>
-                <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                <Link
-                    href="/contact" 
-                    className="bg-[#7000FF] py-3 text-[#fff] font-semibold rounded-[28.5px] flex justify-center items-center font-xl px-12 hover:scale-[1.05] transition-all"
-                >
-                    Contactează-ne!
-                </Link>
-                <Link
-                    href="/testimoniale"
-                    className="py-3 bg-transparent font-semibold text-[#260056] flex items-center justify-center rounded-[28.5px] border-2 border-[#8717F8] px-12 hover:scale-[1.05] transition-all"
-                >
-                    Testimoniale
-                </Link>
+                <div className="flex flex-row gap-2 md:gap-4 mt-4">
+                    <Link
+                        href="/contact" 
+                        className="bg-[#7000FF] py-3 text-[#fff] font-semibold rounded-[28.5px] flex justify-center items-center px-6 sm:px-12 hover:scale-[1.05] transition-all"
+                    >
+                        Contactează-ne!
+                    </Link>
+                    <Link
+                        href="/testimoniale"
+                        className="py-3 bg-transparent font-semibold text-[#260056] flex items-center justify-center rounded-[28.5px] border-2 border-[#8717F8] px-6 sm:px-12 hover:scale-[1.05] transition-all"
+                    >
+                        Testimoniale
+                    </Link>
                 </div>
             </div>
             <Image
@@ -122,35 +122,35 @@ export default function PaginaProgram() {
                 <ul className='list-none mt-4'>
                     <li className='flex'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-bold '>Accelerarea procesului de implementare cu resursele și know-how-ul nostru.</p>
+                        <p className='text-[#260056] text-[15px] lg:text-base font-bold '>Accelerarea procesului de implementare cu resursele și know-how-ul nostru.</p>
                     </li>
                     <li className='flex mt-4'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-semibold'>Asigurarea conformității cu cerințele și termenele stricte ale fondurilor europene.</p>
+                        <p className='text-[#260056] text-[15px] lg:text-base font-semibold'>Asigurarea conformității cu cerințele și termenele stricte ale fondurilor europene.</p>
                     </li>
                     <li className='flex mt-4'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-semibold'>Reducerea stresului și a presiunii asupra echipei dumneavoastră.</p>
+                        <p className='text-[#260056] text-[15px] lg:text-base font-semibold'>Reducerea stresului și a presiunii asupra echipei dumneavoastră.</p>
                     </li>
                     <li className='flex mt-4'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-semibold'>Acces la rețeaua noastră extinsă de parteneri și contacte relevante.</p>
+                        <p className='text-[#260056] text-[15px] lg:text-base font-semibold'>Acces la rețeaua noastră extinsă de parteneri și contacte relevante.</p>
                     </li>
                     <li className='flex mt-4'>
                         <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] lg:text-md font-semibold'>Suportul dedicat și consultanța pe tot parcursul implementării proiectului tău.</p>
+                        <p className='text-[#260056] text-[15px] lg:text-base font-semibold'>Suportul dedicat și consultanța pe tot parcursul implementării proiectului tău.</p>
                     </li>
                 </ul>
-                <div className='flex flex-col sm:flex-row gap-6 mt-6'>
+                <div className='flex flex-row gap-2 md:gap-4 mt-6'>
                 <Link
                     href="/shop" 
-                    className="bg-primary py-3 text-[#fff] flex justify-center items-center font-semibold rounded-[28.5px] font-xl px-12 hover:scale-[1.05] transition-all"
+                    className="bg-primary py-3 text-[#fff] flex justify-center items-center font-semibold rounded-[28.5px] px-8 sm:px-12 hover:scale-[1.05] transition-all"
                 >
                     Shop
                 </Link>
                 <Link
                     href="/contact"
-                    className="py-3 bg-transparent font-semibold text-[#260056] flex items-center justify-center rounded-[28.5px] border-2 border-[#8717F8] px-12 hover:scale-[1.05] transition-all"
+                    className="py-3 bg-transparent font-semibold text-[#260056] flex items-center justify-center rounded-[28.5px] border-2 border-[#8717F8] px-8 sm:px-12 hover:scale-[1.05] transition-all"
                 >
                     Contactează-ne!
                 </Link>

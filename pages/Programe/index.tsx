@@ -26,6 +26,20 @@ export default function Programe({categories, programe}: Props) {
         setPage(0)
     }, [category])
 
+    const handleNext = () => {
+        if ( page < maxPages-1 ) {
+            window.scrollTo({top: 280, left: 0, behavior: 'smooth'})
+            setPage(page+1)
+        }
+    }
+
+    const handlePrev = () => {
+        if ( page != 0 ) {
+            window.scrollTo({top: 280, left: 0, behavior: 'smooth'})
+            setPage(page-1)
+        }
+    }
+
     return (
         <>
             <Head>
@@ -35,7 +49,7 @@ export default function Programe({categories, programe}: Props) {
                 title="Alege programul potrivit pentru tine:"
             >
                 <Image src='/images/circle-hero-left.svg' width={150} height={150} className='absolute -left-4 -top-28 lg:-top-56 lg:left-0 lg:w-[250px]' alt='Circle hero green' />
-                <Image src='/images/proces/hexagon.svg' width={100} height={100} className='absolute bottom-[118px] lg:-bottom-20 right-0 lg:right-16 w-[120px] lg:w-[150px] z-10' alt='Yellow triangle' />
+                <Image src='/images/proces/hexagon.svg' width={100} height={100} className='absolute bottom-[96px] lg:-bottom-20 right-0 lg:right-16 w-[120px] lg:w-[150px] z-10' alt='Yellow triangle' />
             </PageHeader>
             <section className="flex flex-col gap-5 pb-20 items-stretch justify-center px-7 lg:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 {/* <div className="bg-[#ECECEC] mb-12 flex items-center px-4 justify-center w-full rounded-full">
@@ -46,7 +60,7 @@ export default function Programe({categories, programe}: Props) {
                     </select>
                 </div> */}
                 <TabsComponent 
-                    values={['toate', ...categories]}
+                    values={['Toate', ...categories]}
                     setSelectedValue={setCategory}
                 />
                 <div className="md:px-8">
@@ -54,18 +68,18 @@ export default function Programe({categories, programe}: Props) {
                         programe.filter((program) => program.categorie == category || category == 'toate').filter((program, index) => (index >= page*4 && index < (page+1)*4) ).map((program, index) => (
                             index % 2 === 0 ? (
                                 <div 
-                                    className={"rounded-4xl relative w-full xl:min-h-[400px] flex flex-col-reverse lg:flex-row justify-between px-4 lg:px-20 py-2 bg-cover bg-no-repeat align-center " + ( index == 0 ? 'mt-[3rem]' : 'mt-[8rem]')  }
+                                    className={"rounded-4xl relative w-full xl:min-h-[400px] flex flex-col-reverse lg:flex-row justify-between px-4 lg:px-20 py-2 bg-cover bg-no-repeat align-center " + ( index == 0 ? 'mt-[2rem] md:mt-[4rem]' : 'mt-[8rem]')  }
                                 >   
                                     <div style={{background: `url('${program.backgroundImage.image}')`, backgroundSize: 'cover'}} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
                                     <div style={{background: "rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
-                                    <div className="flex flex-col justify-center items-center rounded-2xl md:rounded-3xl relative top-[100px] z-[5] bg-[#260056] py-8 px-8">
+                                    <div className="flex flex-col justify-center items-center rounded-2xl relative top-[100px] z-[5] bg-[#260056] py-8 px-8">
                                         <h5 className="text-white text-xl md:text-4xl font-bold mb-6">{program.title}</h5>
                                         <ul className="list-disc list-inside">
                                             { program.bulletPoints.map((bulletPoint, index) => (
-                                                <li key={index} className="text-[#EDD7FF] font-semibold text-sm md:text-base mb-4">{ bulletPoint }</li>
+                                                <li key={index} className="text-[#EDD7FF] font-semibold text-[15px] md:text-base mb-4">{ bulletPoint }</li>
                                             ))}
                                         </ul>
-                                        <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all" href={"/Programe/" + program.id}>Aplică acum!</Link>
+                                        <Link className="py-3 mt-4 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all" href={"/Programe/" + program.id}>Aplică acum!</Link>
                                     </div>
                                     <div className='flex flex-col items-end justify-center pt-12 z-[1]'>
                                         <h5 className='text-white font-bold text-sm lg:text-xl mb-2 md:mb-3'>
@@ -89,10 +103,10 @@ export default function Programe({categories, programe}: Props) {
                                         <h5 className="text-white text-xl font-bold lg:text-4xl mb-6">{ program.title }</h5>
                                         <ul className="list-disc list-inside">
                                             { program.bulletPoints.map((bulletPoint, index) => (
-                                                <li key={index} className="text-[#EDD7FF] text-md font-semibold mb-4">{ bulletPoint }</li>
+                                                <li key={index} className="text-[#EDD7FF] font-semibold text-[15px] md:text-base mb-4">{ bulletPoint }</li>
                                             ))}
                                         </ul>
-                                        <Link className="py-3 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all" href={"/Programe/" + program.id}>Aplică acum!</Link>
+                                        <Link className="py-3 mt-4 bg-[#BA63FF] text-[#fff] flex items-center rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all" href={"/Programe/" + program.id}>Aplică acum!</Link>
                                     </div>
                                     <div className='flex flex-col items-start justify-center z-[100] pt-12'>
                                         <h5 className='text-white font-bold text-sm lg:text-xl mb-2 md:mb-3'>
@@ -111,14 +125,14 @@ export default function Programe({categories, programe}: Props) {
                     }
                 </div>
                 <div className='mt-32 flex items-center justify-center w-full gap-2'>
-                    <RiArrowLeftSLine size={24} onClick={() => setPage(0)} className={`${page === 0 ? 'text-[#CDCDCD]' : 'text-[#260056]'} cursor-pointer`} />
+                    <RiArrowLeftSLine size={24} onClick={handlePrev} className={`${page === 0 ? 'text-[#CDCDCD]' : 'text-[#260056]'} cursor-pointer`} />
                     {
                         maxPages > 0 &&
                             Array.from({length: maxPages}, (_, i) =>
-                                <p key={i} onClick={() => setPage(i)} className={`${i === page ? 'bg-[#260056] text-white' : 'text-[#260056]'} cursor-pointer h-8 w-8 rounded-full flex items-center justify-center`}>{i+1}</p>
+                                <p key={i} onClick={() => {window.scrollTo({top: 280, left: 0, behavior: 'smooth'}); setPage(i)}} className={`${i === page ? 'bg-[#260056] text-white' : 'text-[#260056]'} cursor-pointer h-8 w-8 rounded-full flex items-center justify-center`}>{i+1}</p>
                             )
                     }
-                    <RiArrowRightSLine size={24} onClick={() => setPage(maxPages-1)} className={`${page === maxPages - 1 ? 'text-[#CDCDCD]' : 'text-[#260056]'} cursor-pointer`} />
+                    <RiArrowRightSLine size={24} onClick={handleNext} className={`${page === maxPages - 1 ? 'text-[#CDCDCD]' : 'text-[#260056]'} cursor-pointer`} />
                 </div>
             </section>
             <div className="-mt-24">

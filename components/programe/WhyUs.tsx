@@ -12,7 +12,7 @@ const WhyUs = () => {
       <Image src='/images/rezultate/hexagon.svg' className="hidden lg:block absolute left-[5%] bottom-[-39px] w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
 
       <div className="flex items-start w-full flex-col md:mr-12">
-          <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">Iată rezultatele noastre</h2>
+          <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">Iată rezultatele noastre:</h2>
           <p className="text-sm mb-4 md:mb-10">Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să își realizeze proiectele cu succes.</p>
           <Link className="py-3 md:py-4 bg-[#8717F8] font-semibold text-[#fff] rounded-[28.5px] px-12 hover:scale-[1.05] transition-all" href="/contact">Contactează-ne!</Link>
       </div>

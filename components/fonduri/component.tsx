@@ -17,7 +17,7 @@ export default function FonduriComponent({ program }: Props) {
                 <h5 className="text-white text-xl font-bold md:text-4xl mb-6">{program.title}</h5>
                 <ul className="list-disc list-inside">
                     { program.bulletPoints.map((bulletPoint, index) => (
-                        <li className="text-[#EDD7FF] text-md mb-4" key={bulletPoint+index}>{bulletPoint}</li>
+                        <li className="text-[#EDD7FF] font-semibold text-md mb-4" key={bulletPoint+index}>{bulletPoint}</li>
                     ))}
                 </ul>
                 <Link className="py-3 bg-[#BA63FF] text-[#fff] font-semibold flex items-center rounded-[28.5px] px-12 transition-all hover:scale-[1.05]" href={`/Programe/${program.id}`}>Aplică acum!</Link>

@@ -55,7 +55,7 @@ const TabsComponent = ({ values, setSelectedValue }: Props) => {
       <div className='relative'>
         <label role="button" htmlFor="toggle_dropdown" aria-label="dropdown" id="dropdown">
           <div className='md:hidden flex flex-row w-full items-center justify-between bg-[#F6EFFF] rounded-full p-5 px-6 mb-4 shadow-md z-[11]'> 
-            <p>{values[activeTabIndex]}</p>
+            <p className='font-semibold'>{values[activeTabIndex]}</p>
             <svg width="14" height="6" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg" 
               aria-hidden='true' id='chevron-down'
               className='transition duration-300'
@@ -81,7 +81,7 @@ const TabsComponent = ({ values, setSelectedValue }: Props) => {
                     setSelectedValue(value)
                   }}
                 >
-                  <p className='group-hover:text-white'>{value}</p>
+                  <p className='group-hover:text-white font-semibold'>{value}</p>
                 </div>
               </div>
             ))

@@ -65,8 +65,8 @@ const OurClients = () => {
         },
     ]
     return(
-        <section id='our-clients' className='mt-16 md:mt-32 w-full flex items-center justify-center flex-col gap-5 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
-            <p className="text-[#8717F8] text-xl md:text-3xl font-semibold mb-5">
+        <section id='our-clients' className='mt-16 md:mt-32 w-full flex items-center justify-center flex-col gap-5 px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
+            <p className="text-[#8717F8] text-xl md:text-3xl text-center font-bold px-7 md:px-0 mb-5">
                 Gândurile și experiențele clienților noștri - testimoniale de succes
             </p>
             <div className='flex w-full justify-between items-center gap-5'>
@@ -80,14 +80,14 @@ const OurClients = () => {
                 >
                 {
                     Testimonials.map(testimonial =>
-                        <article key={testimonial.id} className="bg-[#36007B] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-6 flex-col lg:flex-row flex flex-1 py-10 md:py-2">
+                        <article key={testimonial.id} className="bg-[#36007B] min-h-[880px] sm:min-h-[650px] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-6 flex-col lg:flex-row flex flex-1 py-10 md:py-2">
                             <div className="w-full md:w-200px px-7 md:px-5 lg:mr-8">
                                 <h3 className="text-white font-bold text-base md:max-w-[90%] md:text-[24px]">
                                     {testimonial.title}
                                 </h3>
                                 <p className="text-tertiary text-[16px] font-semibold mt-6">{testimonial.subTitle}</p>
-                                <p className="text-sm text-[#fff] font-medium mt-4 text-justify">{testimonial.description}</p>
-                                <p className="text-sm text-[#fff] font-medium mt-2 text-justify">{testimonial.descriptionTwo}</p>
+                                <p className="text-sm text-[#fff] font-base mt-4">{testimonial.description}</p>
+                                <p className="text-sm text-[#fff] font-base mt-2">{testimonial.descriptionTwo}</p>
                             </div>
                             { testimonial.video ?
                                 <video 

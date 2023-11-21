@@ -16,9 +16,10 @@ const CuiIseAdreseaza = ({ title, description }: Props) => {
         width={387}
         height={387}
         className='w-full h-full md:w-[25vw] max-w-[300px] max-h-[300px] md:h-[25vw] md:mr-10'
+        unoptimized={true}
       />
       <div className='flex flex-col items-center'>
-        <p className='text-primary text-[18px] md:text-[32px] font-bold'>{ title }</p>
+        <p className='text-primary text-[18px] md:text-[32px] font-extrabold'>{ title }</p>
         <div className='mt-4 md:mt-8'>
           <FormatText text={description} className='text-[#00103C] text-[14px] md:text-[16px] text-justify'/>
         </div>

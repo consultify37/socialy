@@ -5,12 +5,12 @@ const TrustSRL = () => {
   return (
     <section
       id="feedback-firme"
-      className="w-full flex flex-col items-center mt-40 md:mt-[72px] justify-center"
+      className="w-full flex flex-col items-center mt-32 md:mt-[72px] justify-center"
     >
-      <h2 className="text-[#8717F8] font-bold text-3xl md:text-xl lg:text-2xl xl:text-4xl text-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <h2 className="text-[#8717F8] font-bold text-[20px] md:text-xl lg:text-2xl xl:text-4xl text-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
       Peste 850 de companii au accesat fonduri europene cu ajutorul nostru. 
       </h2>
-      <h3 className="text-[#8717F8] text-xl md:text-lg lg:text-xl xl:text-2xl px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <h3 className="text-[#8717F8] text-[16px] md:text-lg lg:text-xl xl:text-2xl px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         Iată câteva dintre ele:
       </h3>
       <div className="md:px-[56px] xl:px-[100px] 2xl:px-[180px] pt-8">

@@ -1,16 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import WhyUsItem1 from "../../Home/Why-Us/Item1"
-import WhyUsItem2 from "../../Home/Why-Us/Item2"
-import WhyUsItem3 from "../../Home/Why-Us/Item3"
-import WhyUsItem4 from "../../Home/Why-Us/Item4"
 
 const WhyUsAbout = () => {
     return(
         <section id='why-us' className='mt-[12rem] w-full relative'>
             {/* Frames */}
-            <span className='bg-[#260056] rounded-[200px_250px_0_0] w-[115vw] md:w-[102vw] -rotate-2 absolute -left-5 -top-20 h-32' />
-            <div className="w-full flex relative flex-col justify-between items-center py-6 md:py-12 rounded-3xl bg-[#260056] px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+            <span className='bg-[#260056] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[102vw] -rotate-2 absolute -left-5 -top-20 h-32' />
+            <div className="w-full flex relative flex-col justify-between items-center py-6 pb-12 md:py-12 bg-[#260056] px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 <div className="w-full flex relative flex-col lg:flex-row justify-between items-start py-6 px-6 md:py-12 md:px-12 bg-[#F7EDFF] rounded-3xl">
                     <Image src='/images/rezultate/triangle.svg' className="absolute md:left-[-2rem] left-[-1.5rem] top-[-3rem] md:top-[-2rem] w-[60px] md:w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
                     <Image src='/images/rezultate/square.svg' className="absolute right-[-2.75rem] bottom-[-2.75rem] w-[99px] h-[99px]" alt='triangle' width={146} height={146}/>
@@ -46,14 +43,30 @@ const WhyUsAbout = () => {
                         </div>
                     </div>
                 </div>
-                <h2 className='text-white font-bold md:text-base text-center w-full mt-12 md:mt-24 lg:text-2xl xl:text-4xl mb-8 lg:mb-16'>De ce să alegi Consultify?</h2>
+                <h2 className='text-white font-bold text-center w-full mt-12 md:mt-24 text-xl lg:text-2xl xl:text-3xl mb-8 lg:mb-16'>De ce să alegi Consultify?</h2>
                 <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
                     <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>
-                        <WhyUsItem1 />
-                        <WhyUsItem2 />
-                        <WhyUsItem3 />
-                        <WhyUsItem4 />
+                        <WhyUsItem1 
+                            src="/images/questions-comment.svg"
+                            text="Comunicare excelentă! Răspuns rapid și soluții eficiente pentru succesul proiectelor tale."
+                            title="Comunicare"
+                        />
+                        <WhyUsItem1 
+                            src="/images/flash.svg"
+                            text="Echipă tânără, inovatoare și dinamică, aducând idei proaspete și abordări moderne."
+                            title="Spirit tânăr"
+                        />
+                        <WhyUsItem1 
+                            src="/images/person.svg"
+                            text="Oferim o abordare individuală pentru a ne asigura că satisfacem nevoile și obiectivele fiecărui client."
+                            title="Abordare individuală"
+                        />
+                        <WhyUsItem1 
+                            src="/images/chart.svg"
+                            text="Profesionalismul nostru este evidențiat de abordarea noastră meticuloasă și atenția la detalii în fiecare proiect."
+                            title="Profesionalism"
+                        />
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>

@@ -2,18 +2,23 @@ import Image from "next/image"
 
 type Props = {
     textColor?: string 
+    text: string
+    title: string
+    src: string
 }
 
-const WhyUsItem1 = ({textColor='white'}: Props) => {
+const WhyUsItem1 = ({textColor='white', title, src, text }: Props) => {
     return(
-        <div className={`flex flex-col gap-2 text-${textColor}`}>
-            <span className='h-[51px] w-[51px] flex items-center bg-[#A634FF] rounded-[10px]'>
-                <Image src='/images/questions-comment.svg' className='mx-auto' alt='Questions comment' width={25} height={10} />
+        <div className={`flex flex-row md:flex-col mb-4 md:mb-0 text-${textColor}`}>
+            <span className='h-[51px] w-[51px] min-w-[51px] flex items-center bg-[#A634FF] rounded-[10px] mr-4 md:mr-0'>
+                <Image src={src} className='mx-auto' alt='Questions comment' width={21} height={21} />
             </span>
-            <h3 className='font-bold text-[24px]'>Comunicare</h3>
-            <p className='font-normal  text-sm md:text-[16px'>
-                Comunicare excelentă! Răspuns rapid și soluții eficiente pentru succesul proiectelor tale.
-            </p>
+            <div className="flex flex-col gap-2">
+                <h3 className='font-bold text-[16px] md:text-[24px]'>{ title }</h3>
+                <p className='font-normal  text-sm md:text-[16px]'>
+                    { text }
+                </p>
+            </div>
         </div>
     )
 }

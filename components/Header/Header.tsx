@@ -193,7 +193,7 @@ const Header = () => {
                     : "hover:scale-[1.05] transition-all"
                 }`}
               >
-                <Link href="/contact" className={!toggle ? "font-semibold bg-[#7000FF] p-[14px] px-8 rounded-full text-[#fff]" : "font-semibold text-white text-[16px]"}>
+                <Link href="/contact" className={!toggle ? "font-semibold bg-[#7000FF] p-[14px] px-8 rounded-full text-[#fff]" : "font-semibold text-tertiary text-[16px]"}>
                   contactează-ne
                 </Link>
               </li>

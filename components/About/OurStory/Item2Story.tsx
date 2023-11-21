@@ -10,21 +10,21 @@ const Item2Story = () => {
       </div>
       <div className='w-full xl:max-w-[48%]'>
         <h2 className='text-[#260056] font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-3xl'>Ce ne propunem să realizăm?</h2>
-        <p className='text-[#260056] font-normal text-[16px] mt-5'>
+        <p className='text-[#260056] font-normal text-[14px] md:text-base mt-5'>
           Ne propunem să oferim soluții personalizate și eficiente clienților noștri, ajutându-i să-și realizeze proiectele. De la început, misiunea noastră a fost să simplificăm accesarea fondurilor europene și să sprijinim antreprenorii în obținerea finanțărilor necesare pentru dezvoltarea afacerilor lor. Pe lângă aceste obiective, dorim să le subliniem și pe urmatoarele: 
         </p>
         <ul className='list-none mt-4'>
             <li className='flex gap-5 items-center'>
               <span className='text-[#260056] w-8 h-8 min-w-[32px] rounded-[50%] bg-[#BA63FF] flex items-center justify-center font-medium'>1</span>
-              <p className='text-[#260056] text-[16px] font-normal'>Să furnizăm consultanță de înaltă calitate, adaptată nevoilor clienților.</p>
+              <p className='text-[#260056] text-[14px] md:text-base font-normal'>Să furnizăm consultanță de înaltă calitate, adaptată nevoilor clienților.</p>
             </li>
             <li className='flex gap-5 items-center mt-4'>
               <span className='text-white w-8 h-8 min-w-[32px] rounded-[50%] bg-[#8717F8] flex items-center justify-center font-medium'>2</span>
-              <p className='text-[#260056] text-[16px] font-normal'>Să oferim soluții inovatoare pentru maximizarea șanselor de succes.</p>
+              <p className='text-[#260056] text-[14px] md:text-base font-normal'>Să oferim soluții inovatoare pentru maximizarea șanselor de succes.</p>
             </li>
             <li className='flex gap-5 items-center mt-4'>
               <span className='text-[#00103C] px-[15px] w-8 h-8 rounded-[50%] bg-[#CF9FFF] flex items-center justify-center font-medium'>3</span>
-              <p className='text-[#260056] text-[16px] font-normal'>Să facilităm dezvoltarea durabilă a afacerilor prin proiecte finanțate.</p>
+              <p className='text-[#260056] text-[14px] md:text-base font-normal'>Să facilităm dezvoltarea durabilă a afacerilor prin proiecte finanțate.</p>
             </li>
         </ul>
         <div className='flex gap-4 mt-6'>

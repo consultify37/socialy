@@ -8,11 +8,11 @@ const Item1Story = () => {
         <h2 className="text-[#260056] font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-3xl">
           Ne diferențiem prin:
         </h2>
-        <p className="text-[#260056] font-normal text-base">
+        <p className="text-[#260056] font-normal text-[14px] md:text-base">
           Abilitatea noastră de a fi un partener de încredere pentru clienții noștri, ajutându-i să obțină finanțarea necesară pentru a-și atinge obiective. La Consultify, lucrăm strâns cu clienții noștri, oferindu-le soluții personalizate pentru fiecare proiect.
         </p>
         <br />
-        <p className="text-[#260056] font-normal text-base">
+        <p className="text-[#260056] font-normal text-[14px] md:text-base">
           Echipa noastră tânără și dinamică este dedicată clienților și lucrează individual cu fiecare dintre ei pentru a înțelege și aborda nevoile specifice. De la evaluarea inițială până la prezentarea finală a proiectului, suntem mereu alături de clienții noștri, asigurându-ne că obțin finanțarea necesară. Cu o rată de succes ridicată și o abordare personalizată, Consultify este partenerul ideal în accesarea fondurilor europene.
         </p>
         <div className="flex gap-4 mt-4">

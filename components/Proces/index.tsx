@@ -47,11 +47,11 @@ export default function Proces(){
     return(
         <section className="relative w-full mt-16 md:mt-32 py-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <Image src='/images/proces/triangle-proces.svg' className="absolute right-[1rem] bottom-[3rem] w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
-            <div className="w-[122%] md:w-[120%] bg-secondary h-full absolute rotate-[-2.69deg] rounded-3xl left-[-10%] z-[-1] top-0"></div>
+            <div className="w-[122%] md:w-[120%] bg-secondary h-full absolute rotate-[-2.69deg] left-[-10%] z-[-1] top-0"></div>
 
             <Image src='/images/proces/circle-proces.svg' className="hidden md:block absolute right-[-80px] top-0 w-[300px] h-[300px]" alt='triangle' width={250} height={250}/>
             <Image src='/images/proces/hexagon.svg' className="hidden md:block absolute bottom-[5%] -left-12 w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
-            <h2 className="text-[#fff] text-3xl md:text-4xl text-center font-bold mb-28">Ghidul nostru pentru accesarea fondurilor: <br /> Pas cu pas cu Consultify</h2>
+            <h2 className="text-[#fff] text-xl lg:text-2xl xl:text-3xl text-center font-bold mb-20 md:mb-28">Ghidul nostru pentru accesarea fondurilor: <br /> Pas cu pas cu Consultify</h2>
             <div className="w-full flex relative flex-col md:flex-row justify-between items-start">
                 <div className="flex items-center w-full flex-col md:mr-8">
                     {Proces.map(proces => (

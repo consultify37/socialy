@@ -96,25 +96,25 @@ export default function Testimoniale() {
       </PageHeader>
       <section
         id="feedback-firme"
-        className="w-full flex flex-col items-center my-32 justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
+        className="w-full flex flex-col items-center my-32 justify-center px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
       >
-        <h2 className="text-[#8717F8] font-bold text2xl xl:text-[24px] text-center">
+        <h2 className="text-[#8717F8] font-bold text-xl xl:text-[24px] text-center">
           Peste 850 de companii au accesat fonduri europene cu ajutorul nostru.
         </h2>
-        <h3 className="text-[#8717F8] text-xl md:text-lg lg:text-xl xl:text-2xl mb-8">
+        <h3 className="text-[#8717F8] text-base md:text-lg lg:text-xl xl:text-2xl mb-8 mt-2">
           Iată câteva dintre ele:
         </h3>
         
         <Logos />
       </section>
-      <section className="relative bg-[#260056] w-full pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <section className="relative bg-[#260056] w-full pt-16 md:pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <span className="bg-[#260056] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
-        <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0">
+        <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center md:pt-10 lg:pt-0">
           Gânduri și experiențe ale clienților noștri: testimoniale de succes
         </h2>
         <Testimonials />
         <section id='trust-us' className='bg-[#260056] mt-24 flex flex-col items-center w-full relative'>
-            <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-6 md:pt-20 lg:pt-0 mb-5">
+            <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-0 md:pt-20 lg:pt-0 mb-5">
               Încă nu te-am convins? Descarcă lista completă cu rezultate:
             </h2>
             <Link href='/files/Rezultate Consultify.pdf' download={true} target="_blank" className="bg-[#8717F8] mb-16 mt-4 font-semibold px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">

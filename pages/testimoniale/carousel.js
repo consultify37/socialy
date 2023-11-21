@@ -73,7 +73,7 @@ const Testimonials = () => {
     }
 ]
     return(
-        <section id='our-clients' className='mt-32 w-full flex items-center justify-center flex-col gap-5'>
+        <section id='our-clients' className='mt-16 md:mt-32 w-full flex items-center justify-center flex-col gap-5'>
             <div className='flex w-full justify-between items-center gap-5'>
                 <Carousel
                     isRTL={false}
@@ -82,7 +82,7 @@ const Testimonials = () => {
                 >
                 {
                     Testimonial.map(testimonial =>
-                      <article key={testimonial.id} className="bg-[#36007B] h-full md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center min-h-max mx-2 flex-col lg:flex-row flex flex-1 py-10 md:py-5">
+                      <article key={testimonial.id} className="bg-[#36007B] h-full min-h-[880px] sm:min-h-[650px] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-2 flex-col lg:flex-row flex flex-1 py-10 md:py-5">
                         <div className="w-full md:w-200px px-7 md:px-5 py-2 md:pb-8 lg:mr-8">
                             <h3 className="text-white font-bold text-base md:max-w-[90%] md:text-[24px]">
                                 {testimonial.title}

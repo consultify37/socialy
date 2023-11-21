@@ -16,7 +16,7 @@ const Item1About = () => {
         </p>
         <div className="flex gap-6 mt-6 z-[2]">
           <Link
-            href="/news"
+            href="/Programe"
             className="py-3 bg-[#BA63FF] text-[#fff] flex items-center font-semibold rounded-[28.5px] px-12 transition-all hover:scale-[1.05]"
           >
             Programe

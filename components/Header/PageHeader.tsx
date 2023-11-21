@@ -8,9 +8,9 @@ const PageHeader = ({ title, children }: Props) => {
     <div className="relative">
         <section
             id="about-header"
-            className="relative bg-secondary mb-32 md:mb-48 w-full pt-32 md:pb-14 flex flex-col items-center justify-center overflow-visible z-10"
+            className="relative bg-secondary mb-28 md:mb-48 w-full pt-32 pb-4 md:pb-14 flex flex-col items-center justify-center overflow-visible z-10"
         >
-            <h1 className="text-xl md:text-4xl xl:text-[44px] font-extrabold md:leading-[48px] text-white md:max-w-[68%] text-center pt-20 md:pt-20 mx-4 z-50">
+            <h1 className="text-[24px] md:text-4xl xl:text-[44px] font-extrabold md:leading-[48px] text-white md:max-w-[68%] text-center pt-20 md:pt-20 mx-4 z-50">
                 { title }
             </h1>
             { children }

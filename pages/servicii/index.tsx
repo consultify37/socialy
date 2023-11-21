@@ -70,13 +70,13 @@ export default function Servicii() {
               alt="Hero blue circle"
               width={100}
               height={200}
-              className="absolute -right-12 bottom-12 z-[5] w-[120px] md:w-[200px]"
+              className="absolute -right-12 bottom-24 md:bottom-12 z-[5] w-[120px] md:w-[200px]"
           />
           <Image
               src="/images/proces/hexagon.svg"
               width={130}
               height={130}
-              className="absolute -bottom-0 -left-12 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
+              className="absolute bottom-[88px] -left-12 md:bottom-5 md:left-0 w-[100px] md:w-[130px]"
               alt="Yellow triangle"
           />
         </PageHeader>

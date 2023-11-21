@@ -33,9 +33,9 @@ const HomeHeader = ({ slides }: Props) => {
         id="HeroContainer"
         className={`relative flex flex-col w-full items-center justify-start pt-24 md:pt-40 px-6 sm:px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]`}
         >
-        <div className="z-10 w-full flex flex-col items-center gap-9 relative pt-12">
+        <div className="z-10 w-full flex flex-col items-center gap-6 md:gap-9 relative pt-14 md:pt-12">
           <div className="relative flex items-center justify-center mb-8">
-            <h1 className="text-white text-2xl md:text-4xl xl:text-[44px] font-extrabold text-center">
+            <h1 className="text-white text-[27px] md:text-4xl xl:text-[44px] font-extrabold text-center">
               Finanțarea potrivită <br className="block md:hidden"/> pentru firma potrivită!
             </h1>
             <Image
@@ -47,12 +47,12 @@ const HomeHeader = ({ slides }: Props) => {
               className="absolute w-[625px] right-0 -bottom-6 lg:w-[380px] xl:w-[460px] 2xl:w-[460px] lg:-bottom-8 2xl:-bottom-10"
               />
           </div>
-          <p className="text-white font-light text-center text-[18px] lg:max-w-[60%]">
+          <p className="text-white font-light text-center text-[14px] md:text-[18px] lg:max-w-[60%]">
             Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale.
           </p>
           <Link
             href='#proces'
-            className="px-10 py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] mb-8 text-base font-semibold transition-all hover:scale-[1.05]"
+            className="relative px-10 py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] mb-8 text-base font-semibold transition-all hover:scale-[1.05] z-[12]"
             >
             Cum pot accesa fonduri?
           </Link>
@@ -75,7 +75,7 @@ const HomeHeader = ({ slides }: Props) => {
           alt="Hero blue circle"
           width={200}
           height={200}
-          className="block md:hidden absolute -right-36 -top-56 xl:top-0 z-[5] w-[321px]"
+          className="block md:hidden absolute -right-52 -top-24 xl:top-0 z-[5] w-[321px]"
           />
         <Image
           src="/images/triangle-hero.svg"
@@ -89,7 +89,7 @@ const HomeHeader = ({ slides }: Props) => {
           alt="Hero green circle"
           width={200}
           height={200}
-          className="block md:hidden absolute w-[176px] -left-20 -top-64 z-[100]"
+          className="block md:hidden absolute w-[176px] -left-20 -top-32 z-[100]"
         />
       </section>
       <span className="absolute hidden md:block top-0 bg-[#260056] w-[102vw] md:h-[400px] z-[4] overflow-hidden" />
