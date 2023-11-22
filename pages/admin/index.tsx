@@ -11,7 +11,7 @@ const Admin = () => {
 
   return (
     <AdminLayout>
-      
+      <div></div>
     </AdminLayout>
   )
 }
