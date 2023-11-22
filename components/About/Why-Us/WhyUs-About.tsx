@@ -44,9 +44,9 @@ const WhyUsAbout = () => {
                     </div>
                 </div>
                 <h2 className='text-white font-bold text-center w-full mt-12 md:mt-24 text-xl lg:text-2xl xl:text-3xl mb-8 lg:mb-16'>De ce să alegi Consultify?</h2>
-                <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
+                <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-center gap-y-20'>
                     {/* Left-Side */}
-                    <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>
+                    <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-y-8'>
                         <WhyUsItem1 
                             src="/images/questions-comment.svg"
                             text="Comunicare excelentă! Răspuns rapid și soluții eficiente pentru succesul proiectelor tale."

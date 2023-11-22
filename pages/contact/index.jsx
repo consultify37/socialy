@@ -81,7 +81,7 @@ export default function Contact() {
                         </div>
                         <div className="flex flex-col justify-center">
                             <h5 className="text-xl text-white font-bold">Email:</h5>
-                            <Link href='mailto:fsafsa@fsa.com' className="text-lg md:text:xl text-white font-bold hover:text-primary transition-all">contact@consultify.ro</Link>
+                            <Link href='mailto:contact@consultify.ro' className="text-lg md:text:xl text-white font-bold hover:text-primary transition-all">contact@consultify.ro</Link>
                         </div>
                     </div>
                     <div className="flex flex-row mb-6">
@@ -107,7 +107,7 @@ export default function Contact() {
                                 alt="instagram"
                                 width={60}
                                 height={60}
-                                className="z-[5] h-[max-content w-[24px] h-[24px] lg:w-[36px] lg:h-[36px"
+                                className="z-[5] h-[max-content w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                             />
                         </Link>
                         <Link href='https://facebook.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
@@ -116,7 +116,7 @@ export default function Contact() {
                                 alt="facebook"
                                 width={60}
                                 height={60}
-                                className="z-[5] w-[24px] h-[24px] lg:w-[36px] lg:h-[36px"
+                                className="z-[5] w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                             />
                         </Link>
                         <Link href='https://tiktok.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
@@ -125,7 +125,7 @@ export default function Contact() {
                                 alt="tiktok"
                                 width={60}
                                 height={60}
-                                className="z-[5] w-[24px] h-[24px] lg:w-[36px] lg:h-[36px"
+                                className="z-[5] w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                             />
                         </Link>
                     </div>
@@ -251,7 +251,7 @@ export default function Contact() {
                         <input 
                             checked={isChecked} onChange={(e) => setIsChecked(!isChecked) }
                             id="link-checkbox" type="checkbox" className="w-4 cursor-pointer h-4 text-[#260056] rounded border-[2px] bg-[#F2F4FF] border-[#8717F8] outline-none" />
-                        <label htmlFor="link-checkbox" className="ml-2 text-md font-bold text-[#260056]">Accept <a href="#" className="text-[#260056] underline">Termenii și Condițiile.</a></label>
+                        <label htmlFor="link-checkbox" className="ml-2 text-md font-bold text-[#260056]">Accept <Link href="/termeni" target="_blank" className="text-[#260056] underline">Termenii și Condițiile.</Link></label>
                     </div>
                     <div className="flex flex-col md:flex-row justify-center w-full items-center">
                         <ReCAPTCHA
@@ -272,7 +272,7 @@ export default function Contact() {
                 <h2 className='text-[#260056] text-center font-bold md:text-base text-xl lg:text-2xl xl:text-4xl mb-12 lg:mb-32'>De ce să alegi Consultify?</h2>
                 <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
-                    <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4'>
+                    <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-y-8'>
                     <WhyUsItem1 
                             src="/images/questions-comment.svg"
                             text="Comunicare excelentă! Răspuns rapid și soluții eficiente pentru succesul proiectelor tale."

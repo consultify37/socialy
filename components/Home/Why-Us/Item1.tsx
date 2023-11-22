@@ -14,8 +14,8 @@ const WhyUsItem1 = ({textColor='white', title, src, text }: Props) => {
                 <Image src={src} className='mx-auto' alt='Questions comment' width={21} height={21} />
             </span>
             <div className="flex flex-col gap-2">
-                <h3 className='font-bold text-[16px] md:text-[24px]'>{ title }</h3>
-                <p className='font-normal  text-sm md:text-[16px]'>
+                <h3 className='font-bold text-[16px] md:text-[24px] md:mt-3'>{ title }</h3>
+                <p className='font-normal  text-sm md:text-[14px]'>
                     { text }
                 </p>
             </div>

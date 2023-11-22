@@ -98,12 +98,12 @@ export default function Testimoniale() {
         id="feedback-firme"
         className="w-full flex flex-col items-center my-32 justify-center px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
       >
-        <h2 className="text-[#8717F8] font-bold text-xl xl:text-[24px] text-center">
-          Peste 850 de companii au accesat fonduri europene cu ajutorul nostru.
-        </h2>
-        <h3 className="text-[#8717F8] text-base md:text-lg lg:text-xl xl:text-2xl mb-8 mt-2">
-          Iată câteva dintre ele:
-        </h3>
+        <h2 className="text-[#8717F8] font-bold text-[20px] md:text-xl lg:text-2xl xl:text-4xl text-center px-7">
+          Peste 850 de companii au accesat fonduri europene cu ajutorul nostru. 
+          </h2>
+          <h3 className="text-[#8717F8] text-[16px] md:text-lg lg:text-xl xl:text-2xl">
+            Iată câteva dintre ele:
+          </h3>
         
         <Logos />
       </section>
