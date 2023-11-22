@@ -82,13 +82,13 @@ export default function PaginaProgram() {
                 <div className="flex flex-row gap-2 md:gap-4 mt-4">
                     <Link
                         href="/contact" 
-                        className="bg-[#7000FF] py-3 text-[#fff] font-semibold rounded-[28.5px] flex justify-center items-center px-6 sm:px-12 hover:scale-[1.05] transition-all"
+                        className="bg-[#7000FF] py-3 text-[#fff] font-semibold rounded-[28.5px] flex justify-center items-center px-5 sm:px-12 hover:scale-[1.05] transition-all"
                     >
                         Contactează-ne!
                     </Link>
                     <Link
                         href="/testimoniale"
-                        className="py-3 bg-transparent font-semibold text-[#260056] flex items-center justify-center rounded-[28.5px] border-2 border-[#8717F8] px-6 sm:px-12 hover:scale-[1.05] transition-all"
+                        className="py-3 bg-transparent font-semibold text-[#260056] flex items-center justify-center rounded-[28.5px] border-2 border-[#8717F8] px-5 sm:px-12 hover:scale-[1.05] transition-all"
                     >
                         Testimoniale
                     </Link>
