@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className='flex flex-col gap-2 w-full lg:max-w-[20%]'>
                     <Image src='/images/logo-invert.svg' alt='Footer logo' width={200} height={53} className='aspect-auto w-[177px] md:w-[200px]' />
                     <p className='text-[#260056] text-[14px] md:text-[16px] mt-4'>
-                        Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale
+                        Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale.
                     </p>
                 </div>
                 <div className='flex flex-col gap-1 lg:max-w-[20%]'>
@@ -53,10 +53,10 @@ const Footer = () => {
                             <p className='font-semibold text-[#8717F8] text-[16px]'>RO42607998</p>
                         </li>
                         <li>
-                            <Link href='/' className='font-semibold text-[#8717F8] text-[16px]'>Termeni și Condiții</Link>
+                            <Link href='/termeni' className='font-semibold text-[#8717F8] text-[16px]'>Termeni și Condiții</Link>
                         </li>
                         <li>
-                            <Link href='/' className='font-semibold text-[#8717F8] text-[16px]'>Politica Cookies</Link>
+                            <Link href='/politica-cookie' className='font-semibold text-[#8717F8] text-[16px]'>Politica Cookies</Link>
                         </li>
                     </ul>
                 </div>

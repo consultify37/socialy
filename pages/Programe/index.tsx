@@ -18,9 +18,9 @@ type Props = {
 }
 
 export default function Programe({categories, programe}: Props) {
-    const [category, setCategory] = useState('toate')
+    const [category, setCategory] = useState('Toate')
     const [page, setPage] = useState(0)
-    let maxPages = Math.ceil(programe.filter((program) => program.categorie == category || category == 'toate').length/4)
+    let maxPages = Math.ceil(programe.filter((program) => program.categorie == category || category == 'Toate').length/4)
 
     useEffect(() => {
         setPage(0)
@@ -65,10 +65,11 @@ export default function Programe({categories, programe}: Props) {
                 />
                 <div className="md:px-8">
                     {
-                        programe.filter((program) => program.categorie == category || category == 'toate').filter((program, index) => (index >= page*4 && index < (page+1)*4) ).map((program, index) => (
+                        programe.filter((program) => program.categorie == category || category == 'Toate').filter((program, index) => (index >= page*4 && index < (page+1)*4) ).map((program, index) => (
                             index % 2 === 0 ? (
                                 <div 
                                     className={"rounded-4xl relative w-full xl:min-h-[400px] flex flex-col-reverse lg:flex-row justify-between px-4 lg:px-20 py-2 bg-cover bg-no-repeat align-center " + ( index == 0 ? 'mt-[2rem] md:mt-[4rem]' : 'mt-[8rem]')  }
+                                    key={program.id}
                                 >   
                                     <div style={{background: `url('${program.backgroundImage.image}')`, backgroundSize: 'cover'}} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
                                     <div style={{background: "rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
@@ -96,6 +97,7 @@ export default function Programe({categories, programe}: Props) {
                             ) : (
                                 <div 
                                     className="rounded-4xl relative w-full h-auto flex flex-col-reverse lg:flex-row-reverse justify-between px-4 lg:px-20 py-2 bg-cover bg-no-repeat align-center mt-[8rem]"
+                                    key={program.id}
                                 >   
                                     <div style={{background: `url('${program.backgroundImage.image}')`, backgroundSize: 'cover'}} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>
                                     <div style={{background: "rgba(0, 0, 0, 0.45)", }} className="w-full h-[70%] md:h-full absolute rounded-[35px] left-0 z-[1] top-0"></div>

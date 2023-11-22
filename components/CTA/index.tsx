@@ -10,7 +10,7 @@ interface CTAProps {
 
 export default function CTA({ title, linkText, linkHref }: CTAProps) {
     return(
-        <section className="w-full mt-24 md:mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        <section className="w-full mt-24 md:mt-24 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <div className="w-full flex relative flex-col h-[300px] lg:h-[400px] justify-center items-center px-6 py-6 lg:py-12 lg:px-12 bg-[#F7EDFF] rounded-3xl">
                 <Image src='/images/CTA/triangle.svg' className="absolute right-[-2rem] top-[-2rem] w-[110px]" alt='triangle' width={146} height={146}/>
                 <Image src='/images/CTA/circle.svg' className="absolute right-0 bottom-[0px] w-[80px] lg:w-[220px]" alt='triangle' width={146} height={146}/>

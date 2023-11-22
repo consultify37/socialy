@@ -6,7 +6,7 @@ const Item1About = () => {
     <div className="w-full mx-auto px-7 md:px-[40px] xl:px-[140px] 2xl:px-[276px] gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2]">
       <div className="w-full flex-1 z-[2] gap-5 font-light">
         <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl">
-          Misiunea noastră este:
+          Despre Consultify
         </h2>
         <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2] mb-8">
           Ai nevoie de finanțare prin fonduri europene pentru proiectul tău? Consultify te poate ajuta! Suntem specializați în accesarea fondurilor europene pentru diverse proiecte, de la turism și tehnologie la agricultură durabilă și dezvoltare rurală.

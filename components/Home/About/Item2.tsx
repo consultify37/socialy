@@ -9,7 +9,7 @@ const Item2About = () => {
                 <Image src='/images/patrat.svg' className='absolute left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[100px] lg:w-[150px]' width={150} height={150} alt='Polygon img' />
             </div>
             <div className='w-full md:w-[48%] font-light'>
-                <h2 className='text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl'>Cum funcționează Consultify?</h2>
+                <h2 className='text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-4xl'>Misiunea noastră este:</h2>
                 <p className='text-white font-base text-[16px] mt-5 max-w-[560px]'>
                 Bine ai venit la Consultify -  experți în accesarea fondurilor europene! Misiunea noastră este să sprijinim antreprenorii să acceseze fondurile europene și să-și transforme proiectele în realitate. 
                 Cu o echipă tânără și dedicată, suntem pregătiți să acceptăm provocări și să obținem cele mai bune rezultate pentru clienții noștri. Iată câteva dintre obiectivele noastre:
