@@ -24,7 +24,7 @@ const Faq = ({ faqs }: Props) => {
               faqs.map((faq, index) => (
                   <article key={index} className='w-full rounded-[8px] bg-[#FAF3FF]'>
                       <div className='flex justify-between p-4 px-6 cursor-pointer w-full' onClick={() => handleSelectQuestion(index)}>
-                          <h3 className='text-[12px] md:text-lg text-[#260056] font-bold'>{faq.question}</h3>
+                          <h3 className='text-[14px] md:text-lg text-[#260056] font-bold'>{faq.question}</h3>
                           <Image
                               className={`w-[20px] right-[10px] top-[23px]
                               ${
@@ -40,7 +40,7 @@ const Faq = ({ faqs }: Props) => {
                           />
                       </div>
                       {index === selectedQuestion && (
-                          <p className='p-4 px-6 text-[#3F3F3F] text-[12px] md:text-base'>
+                          <p className='p-4 px-6 text-[#3F3F3F] text-[14px] md:text-base'>
                               {faq.answear}
                           </p>
                       )}

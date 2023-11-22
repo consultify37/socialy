@@ -304,7 +304,7 @@ export default function Contact() {
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>
-                <Link href='/contact' className="bg-[#8717F8] mt-12 flex font-semibold items-center justify-center w-[max-content] mx-auto justify-self-center px-16 py-3 md:py-4 text-white rounded-[28.5px] hover:scale-[1.05] transition-all">
+                <Link href='#' className="bg-[#8717F8] mt-12 flex font-semibold items-center justify-center w-[max-content] mx-auto justify-self-center px-16 py-3 md:py-4 text-white rounded-[28.5px] hover:scale-[1.05] transition-all">
                     Vreau să completez!
                 </Link>
             </section>

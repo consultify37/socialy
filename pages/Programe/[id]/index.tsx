@@ -47,7 +47,7 @@ const Program = ({ program }: Props) => {
         <Faq faqs={program.faqs} />
         <CTA
           title="Transformă-ți ideile în realitate prin <purple>fonduri europene!<purple>"
-          linkText="Completează formularul de contact!"
+          linkText="Completează formularul!"
           linkHref="/contact"
         />
         {/* <div className='h-12 md:h-24'></div> */}

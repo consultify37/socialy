@@ -94,7 +94,7 @@ export default function OurServices(){
                             className="z-[5] h-[max-content]"
                         />
                     </div>
-                    <div className="flex flex-col ml-2">
+                    <div className="flex flex-col ml-2 mb-[22px] lg:mb-0">
                         <h4 className="text-[#260056]  font-bold text-xl lg:text-2xl">
                             Mentorat start-up
                         </h4>

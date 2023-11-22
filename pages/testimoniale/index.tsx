@@ -136,7 +136,7 @@ export default function Testimoniale() {
                 </p>
               </div>
               <iframe 
-                  className="relative rounded-[28.5px] w-full sm:h-full h-[260px] md:w-[450px] md:h-[338px] mx-auto z-[4]"
+                  className="relative rounded-[28.5px] w-full sm:h-full h-[280px] md:w-[450px] md:h-[338px] mx-auto z-[4]"
                   src={testimonials[0].ytUrl}
                   title="YouTube video player"
                   allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
@@ -146,7 +146,7 @@ export default function Testimoniale() {
             <div className='w-full mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 justify-between items-center flex-col-reverse md:flex-row flex-wrap z-[2]'>
               <div className='relative w-full md:w-auto'>
                 <iframe 
-                    className="relative rounded-[28.5px] sm:h-full h-[260px] w-full  md:w-[450px] md:h-[400px] mx-auto z-[0]"
+                    className="relative rounded-[28.5px] sm:h-full h-[280px] w-full  md:w-[450px] md:h-[400px] mx-auto z-[0]"
                     src={testimonials[1].ytUrl}
                     title="YouTube video player"
                     allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 
@@ -179,7 +179,7 @@ export default function Testimoniale() {
                 </p>
               </div>
               <iframe 
-                  className="relative rounded-[28.5px] h-[260px] sm:h-full w-full md:w-[450px] md:h-[400px] mx-auto z-[0]"
+                  className="relative rounded-[28.5px] h-[280px] sm:h-full w-full md:w-[450px] md:h-[400px] mx-auto z-[0]"
                   src={testimonials[2].ytUrl}
                   title="YouTube video player"
                   allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share" 

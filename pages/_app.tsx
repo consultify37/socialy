@@ -16,7 +16,7 @@ function useNormalScrollRoutes() {
     router.events.on('routeChangeStart', () => {
       document.documentElement.classList.add('normal-scroll');
     });
-    router.events.on('routeChangeComplete', () => {
+    router.events.on('routeChangeComplete', (url) => {
       document.documentElement.classList.remove('normal-scroll');
     });
   }, [router.events]);

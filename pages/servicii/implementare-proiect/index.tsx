@@ -57,7 +57,7 @@ export default function PaginaProgram() {
             />
         </PageHeader>
         <article className="relative flex flex-wrap gap-y-10 gap-x-[6rem] md:mb-24 mt-20 md:mt-40 justify-between items-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-            <Image src='/images/servicii/circle.svg' className='absolute right-[-1.25rem] bottom-[-1rem] lg:bottom-[-5rem] rotate-2 w-[225px] lg:w-[225px] 2xl:w-[340px]' width={150} height={150} alt='Polygon img' />
+            <Image src='/images/servicii/circle.svg' className='absolute right-[-1.25rem] bottom-[-1rem] lg:bottom-[-5rem] rotate-2 w-[225px] lg:w-[225px] 2xl:w-[340px]' width={150} height={150} alt='Polygon img' unoptimized={true} />
             <div className="flex-1">
                 <h2 className="text-[#260056] font-bold text-xl mb-6 lg:text-2xl xl:text-3xl">
                     Cum implementăm proiectele?
