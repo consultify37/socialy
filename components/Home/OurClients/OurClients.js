@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Carousel from 'react-elastic-carousel';
 import Link from "next/link";
+import {isMobile} from 'react-device-detect';
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
 ];
@@ -92,9 +93,9 @@ const OurClients = () => {
                             { testimonial.video ?
                                 <video 
                                     className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] object-cover rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
-                                    loop={true}
-                                    autoPlay={true}
-                                    controls={false}
+                                    loop={!isMobile}
+                                    autoPlay={!isMobile}
+                                    controls={isMobile}
                                 >
                                     <source src={testimonial.video} type="video/mp4" />
                                 </video> :

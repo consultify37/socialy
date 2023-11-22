@@ -1,18 +1,18 @@
-import React from "react";
-import Head from "next/head";
-import HomeHeader from "../components/Home/HomeHeader";
-import AboutHome from "../components/Home/About/About";
-import TrustSRL from "../components/Home/Trust";
-import OurClients from "../components/Home/OurClients/OurClients";
-import CarouselPrograme from "../components/fonduri/index";
-import Rezultate from "../components/Rezultate";
-import Proces from "../components/Proces";
-import CTA from "../components/CTA";
-import NewsLetter from "../components/global/newsletter";
-import Garantii from "../components/Garantii";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase";
-import { Program, Slide } from "../types";
+import React from "react"
+import Head from "next/head"
+import HomeHeader from "../components/Home/HomeHeader"
+import AboutHome from "../components/Home/About/About"
+import TrustSRL from "../components/Home/Trust"
+import OurClients from "../components/Home/OurClients/OurClients"
+import CarouselPrograme from "../components/fonduri/index"
+import Rezultate from "../components/Rezultate"
+import Proces from "../components/Proces"
+import CTA from "../components/CTA"
+import NewsLetter from "../components/global/newsletter"
+import Garantii from "../components/Garantii"
+import { collection, getDocs } from "firebase/firestore"
+import { db } from "../firebase"
+import { Program, Slide } from "../types"
 
 type Props = {
   programe: Program[]
@@ -54,7 +54,7 @@ export default function Home({ slides, programe }: Props) {
       {/* <News /> */}
       <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
     </>
-  );
+  )
 }
 
 export const getStaticProps = async () => {

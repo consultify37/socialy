@@ -5,6 +5,7 @@ import Carousel from 'react-elastic-carousel'
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import {isMobile} from 'react-device-detect';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -94,8 +95,9 @@ const Testimonials = () => {
                         { testimonial.video ?
                             <video 
                                 className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] object-cover rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
-                                loop={true}
-                                autoPlay={true}
+                                loop={!isMobile}
+                                autoPlay={!isMobile}
+                                controls={isMobile}
                             >
                                 <source src={testimonial.video} type="video/mp4" />
                             </video> :
