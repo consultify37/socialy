@@ -13,10 +13,12 @@ function useNormalScrollRoutes() {
   const router = useRouter();
 
   useEffect(() => {
-    router.events.on('routeChangeStart', () => {
-      document.documentElement.classList.add('normal-scroll');
+    router.events.on('routeChangeStart', (url) => {
+      if ( url != "/contact#") {
+        document.documentElement.classList.add('normal-scroll');
+      }
     });
-    router.events.on('routeChangeComplete', (url) => {
+    router.events.on('routeChangeComplete', () => {
       document.documentElement.classList.remove('normal-scroll');
     });
   }, [router.events]);
