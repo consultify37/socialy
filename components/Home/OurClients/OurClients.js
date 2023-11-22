@@ -94,6 +94,7 @@ const OurClients = () => {
                                     className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] object-cover rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
                                     loop={true}
                                     autoPlay={true}
+                                    controls={false}
                                 >
                                     <source src={testimonial.video} type="video/mp4" />
                                 </video> :

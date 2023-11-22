@@ -54,7 +54,7 @@ export default function CheckOut() {
         console.log(cupoane);
         // always executed
       });
-  }, []);
+  }, [cupoane]);
 
   const makeCartString = () => {
     return products.reduce((acc, product) => {

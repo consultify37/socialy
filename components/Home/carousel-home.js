@@ -11,6 +11,7 @@ const HomeCarousel = ({ slides }) => {
             disableArrowsOnEnd={false}
             autoPlaySpeed={10000}
             enableAutoPlay={true}
+            className='h-full max-h-max min-h-max'
         >
             {
                 slides.map((slide) => (
@@ -32,7 +33,7 @@ const HomeCarousel = ({ slides }) => {
                             alt="Hero video"
                             width={2000}
                             height={2000}
-                            className="w-full h-auto rounded-[18px] md:rounded-[36px] lg:w-[90%] z-[5]"
+                            className="w-full h-max max-h-max min-h-max rounded-[18px] md:rounded-[36px] lg:w-[90%] z-[5]"
                         />
                     </Link>
                 ))

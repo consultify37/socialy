@@ -17,7 +17,7 @@ export default function PaginaProgram() {
       </Head>
       <div className="my-8 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <div className="relative h-[350px]">
-          <img className="mx-auto absolute w-full h-full object-cover rounded-[35px] p-2" src='/images/blog-post-1.png' alt="Banner"/>
+          <Image className="mx-auto absolute w-full h-full object-cover rounded-[35px] p-2" src='/images/blog-post-1.png' alt="Banner"/>
         </div>
       </div>
       <div className="flex flex-col items-center justify-center px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
