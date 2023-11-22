@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Carousel from 'react-elastic-carousel';
 import Link from "next/link";
-import {isMobile} from 'react-device-detect';
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
 ];
@@ -38,7 +37,7 @@ const OurClients = () => {
             subTitle: 'Dinu Marcel - Agricultor',
             description: 'Cu sprijinul Consultify, am avut succes în obținerea finanțării necesare pentru achiziționarea de materii prime și echipamente prin intermediul programului "Microgranturi și Granturi în Domeniul Agroalimentar". Echipa lor ne-a fost alături în fiecare pas al procesului, de la evaluarea eligibilității și elaborarea proiectului, până la depunerea acestuia.  ',
             descriptionTwo: "Comunicarea fluentă și expertiza lor ne-au ajutat în demersurile noastre, iar profesionalismul de care au dat dovadă ne-a inspirat încredere. Recomand cu încredere Consultify!",
-            video: "/images/testimoniale/Recenzia 4.mp4",
+            image: "/images/testimoniale/Recenzia 4.gif",
         },
         {
             id: 5,
@@ -46,7 +45,7 @@ const OurClients = () => {
             subTitle: 'Mihailescu Diana – Medic de familie',
             description: 'Am aplicat în programul PNRR C12 și am avut norocul de a colabora cu Consultify pentru echiparea și renovarea cabinetului meu. Încă de la început, echipa lor mi-a oferit sprijin în verificarea eligibilității și înțelegerea procesului de finanțare.',
             descriptionTwo: "Au fost alături de mine în etapa de planificare bugetară, asigurându-se că includem toate echipamentele necesare pentru desfășurarea activității medicale. După obținerea finanțării, au continuat să fie disponibili pentru întrebări și îndrumare suplimentară. Nu pot decât să le mulțumesc pentru profesionalismul și devotamentul lor!",
-            video: "/images/testimoniale/Recenzia 5.mp4",
+            image: "/images/testimoniale/Recenzia 5.gif",
         },
         {
             id: 6,
@@ -93,9 +92,8 @@ const OurClients = () => {
                             { testimonial.video ?
                                 <video 
                                     className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] object-cover rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
-                                    loop={!isMobile}
-                                    autoPlay={!isMobile}
-                                    controls={isMobile}
+                                    loop={true}
+                                    autoPlay={true}
                                 >
                                     <source src={testimonial.video} type="video/mp4" />
                                 </video> :
