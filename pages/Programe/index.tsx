@@ -28,14 +28,14 @@ export default function Programe({categories, programe}: Props) {
 
     const handleNext = () => {
         if ( page < maxPages-1 ) {
-            window.scrollTo({top: 280, left: 0, behavior: 'instant'})
+            window.scrollTo({top: 280, left: 0, behavior: "instant"})
             setPage(page+1)
         }
     }
 
     const handlePrev = () => {
         if ( page != 0 ) {
-            window.scrollTo({top: 280, left: 0, behavior: 'instant'})
+            window.scrollTo({top: 280, left: 0, behavior: "instant"})
             setPage(page-1)
         }
     }
@@ -101,7 +101,7 @@ export default function Programe({categories, programe}: Props) {
                     {
                         maxPages > 0 &&
                             Array.from({length: maxPages}, (_, i) =>
-                                <p key={i} onClick={() => {window.scrollTo({top: 280, left: 0, behavior: 'instant'}); setPage(i)}} className={`${i === page ? 'bg-[#260056] text-white' : 'text-[#260056]'} cursor-pointer h-8 w-8 rounded-full flex items-center justify-center`}>{i+1}</p>
+                                <p key={i} onClick={() => {window.scrollTo({top: 280, left: 0, behavior: "instant"}); setPage(i)}} className={`${i === page ? 'bg-[#260056] text-white' : 'text-[#260056]'} cursor-pointer h-8 w-8 rounded-full flex items-center justify-center`}>{i+1}</p>
                             )
                     }
                     <RiArrowRightSLine size={24} onClick={handleNext} className={`${page === maxPages - 1 ? 'text-[#CDCDCD]' : 'text-[#260056]'} cursor-pointer`} />
