@@ -45,7 +45,7 @@ const Testimonials = () => {
         subTitle: 'Dinu Marcel - Agricultor',
         description: 'Cu sprijinul Consultify, am avut succes în obținerea finanțării necesare pentru achiziționarea de materii prime și echipamente prin intermediul programului "Microgranturi și Granturi în Domeniul Agroalimentar". Echipa lor ne-a fost alături în fiecare pas al procesului, de la evaluarea eligibilității și elaborarea proiectului, până la depunerea acestuia.  ',
         descriptionTwo: "Comunicarea fluentă și expertiza lor ne-au ajutat în demersurile noastre, iar profesionalismul de care au dat dovadă ne-a inspirat încredere. Recomand cu încredere Consultify!",
-        video: "/images/testimoniale/Recenzia 4.gif",
+        image: "/images/testimoniale/Recenzia 4.gif",
     },
     {
         id: 5,
