@@ -133,7 +133,7 @@ export default function Contact() {
                 <form 
                     className="mt-12 lg:mt-0 lg:ml-12 rounded-3xl shadow-box bg-[#fff] w-full max-w-[1000px] p-8 px-4 md:px-8 flex flex-col"
                     method="POST"
-                    action="https://script.google.com/macros/s/AKfycbzTZ6AzwzPd_Ol-LoBSHuHOW_xOoB0J2IG1O7FrOl0ZH2PxOCXp_qusy5w3O20aB7e7_Q/exec"
+                    action="https://script.google.com/macros/s/AKfycbw2ppsLR7J95lZESrbXeDUDwFVV8oQ56J45I__eMWdVqWDbibt2ISPlbmhC-NDVUYYI1Q/exec"
                     onSubmit={upload}
                 >
                     <h2 className="text-xl font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună!</h2>
