@@ -91,7 +91,7 @@ const OurClients = () => {
                                 <p className="text-sm text-[#fff] font-base mt-4">{testimonial.description}</p>
                                 <p className="text-sm text-[#fff] font-base mt-2">{testimonial.descriptionTwo}</p>
                             </div>
-                            <div className='relative w-[250px] md:w-[300px] h-[250px] md:h-[300px] mt-8 lg:mt-0 lg:mr-5 min-w-max'>
+                            <div className='relative w-[250px] md:w-[300px] h-[250px] md:h-[300px] mt-8 lg:mt-0 lg:mr-5 lg:min-w-max'>
                                 <Image 
                                     className=" w-full h-full object-cover rounded-[24px] z-10"
                                     key={testimonial.title}
