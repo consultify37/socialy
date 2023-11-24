@@ -27,6 +27,20 @@ function useNormalScrollRoutes() {
 export default function App({ Component, pageProps }: AppProps) {
   const pathname = usePathname()
   useNormalScrollRoutes()
+  const router = useRouter()
+
+  useEffect(() => {
+    import('react-facebook-pixel')
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init('837955761665104') // facebookPixelId
+        ReactPixel.pageView()
+
+        router.events.on('routeChangeComplete', () => {
+          ReactPixel.pageView()
+        })
+      })
+  }, [router.events])
 
   return (
     <div className="flex flex-col">
