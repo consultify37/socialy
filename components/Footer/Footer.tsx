@@ -24,10 +24,10 @@ const Footer = () => {
                             <Link href='/Programe' className='font-semibold text-[#8717F8] text-[16px]'>Programe</Link>
                         </li>
                         <li>
-                            <Link href='/testimoniale' className='font-semibold text-[#8717F8] text-[16px]'>Testimoniale</Link>
+                            <Link href='/servicii' className='font-semibold text-[#8717F8] text-[16px]'>Servicii</Link>
                         </li>
                         <li>
-                            <Link href='/servicii' className='font-semibold text-[#8717F8] text-[16px]'>Servicii</Link>
+                            <Link href='/testimoniale' className='font-semibold text-[#8717F8] text-[16px]'>Testimoniale</Link>
                         </li>
                         <li>
                             <Link href='/contact' className='font-semibold text-[#8717F8] text-[16px]'>Contact</Link>

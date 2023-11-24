@@ -65,10 +65,16 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
           <h2 className="text-white text-[16px] md:text-[26px] font-bold">
             {headingText}
           </h2>
-          <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
+          <form 
+            //onSubmit={upload} 
+            action="https://script.google.com/macros/s/AKfycbz915BWLWbyKQytx8sbresnP_BW0UI0KH4kinvHI1BdaAjF9LYsY1G0EbHyhKGkXz4FQA/exec"
+            method="POST"
+            className="relative flex mt-10 flex-col lg:flex-row items-center"
+          >
             <input
               className="py-3 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
               type="email"
+              name="Email"
               placeholder={newsletter}
               required
               onChange={(e) => setNewsletter(e.target.value)}

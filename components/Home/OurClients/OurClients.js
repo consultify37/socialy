@@ -38,6 +38,7 @@ const OurClients = () => {
             description: 'Cu sprijinul Consultify, am avut succes în obținerea finanțării necesare pentru achiziționarea de materii prime și echipamente prin intermediul programului "Microgranturi și Granturi în Domeniul Agroalimentar". Echipa lor ne-a fost alături în fiecare pas al procesului, de la evaluarea eligibilității și elaborarea proiectului, până la depunerea acestuia.  ',
             descriptionTwo: "Comunicarea fluentă și expertiza lor ne-au ajutat în demersurile noastre, iar profesionalismul de care au dat dovadă ne-a inspirat încredere. Recomand cu încredere Consultify!",
             image: "/images/testimoniale/Recenzia 4.gif",
+            static: "/images/testimoniale/Recenzia 4.png",
         },
         {
             id: 5,
@@ -46,6 +47,7 @@ const OurClients = () => {
             description: 'Am aplicat în programul PNRR C12 și am avut norocul de a colabora cu Consultify pentru echiparea și renovarea cabinetului meu. Încă de la început, echipa lor mi-a oferit sprijin în verificarea eligibilității și înțelegerea procesului de finanțare.',
             descriptionTwo: "Au fost alături de mine în etapa de planificare bugetară, asigurându-se că includem toate echipamentele necesare pentru desfășurarea activității medicale. După obținerea finanțării, au continuat să fie disponibili pentru întrebări și îndrumare suplimentară. Nu pot decât să le mulțumesc pentru profesionalismul și devotamentul lor!",
             image: "/images/testimoniale/Recenzia 5.gif",
+            static: "/images/testimoniale/Recenzia 5.png",
         },
         {
             id: 6,
@@ -61,7 +63,7 @@ const OurClients = () => {
             subTitle: 'Niculae Andrei – Fermă',
             description: 'Cu sprijinul Consultify, am reușit să obțin finanțarea necesară pentru dezvoltarea afacerii. Colaborarea cu echipa lor a fost esențială în fiecare etapă a procesului. Încă de la început, mi-au verificat eligibilitatea  și am construit împreună un plan bugetar detaliat.',
             descriptionTwo: "Au fost ghidul meu de încredere în toți pașii necesari pentru depunerea proiectului și mi-au oferit suport constant și răspunsuri prompte la orice întrebare sau îngrijorare pe parcursul procesului. Îi recomand cu încredere!",
-            image: "/images/testimoniale/Recenzia 7.jpg",
+            image: "/images/testimoniale/Recenzia 7.png",
         },
     ]
     return(
@@ -80,7 +82,7 @@ const OurClients = () => {
                 >
                 {
                     Testimonials.map(testimonial =>
-                        <article key={testimonial.id} className="bg-[#36007B] min-h-[920px] sm:min-h-[650px] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-6 flex-col lg:flex-row flex flex-1 py-10 md:py-2">
+                        <article key={testimonial.id +testimonial.title} className="bg-[#36007B] min-h-[920px] sm:min-h-[650px] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-6 flex-col lg:flex-row flex flex-1 py-10 md:py-2">
                             <div className="w-full md:w-200px px-7 md:px-5 lg:mr-8">
                                 <h3 className="text-white font-bold text-base md:max-w-[90%] md:text-[24px]">
                                     {testimonial.title}
@@ -89,23 +91,26 @@ const OurClients = () => {
                                 <p className="text-sm text-[#fff] font-base mt-4">{testimonial.description}</p>
                                 <p className="text-sm text-[#fff] font-base mt-2">{testimonial.descriptionTwo}</p>
                             </div>
-                            { testimonial.video ?
-                                <video 
-                                    className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] object-cover rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
-                                    loop={true}
-                                    autoPlay={true}
-                                >
-                                    <source src={testimonial.video} type="video/mp4" />
-                                </video> :
+                            <div className='relative w-[250px] md:w-[300px] h-[250px] md:h-[300px] mt-8 lg:mt-0 lg:mr-5 min-w-max'>
                                 <Image 
-                                    className="w-[250px] md:w-[300px] h-[250px] md:h-[300px] object-cover rounded-[24px] mt-8 lg:mt-0 lg:mr-5"
+                                    className=" w-full h-full object-cover rounded-[24px] z-10"
                                     key={testimonial.title}
                                     src={testimonial.image}
                                     alt={testimonial.title}
                                     width={1080}
                                     height={1080}
                                 />
-                            }
+                                { testimonial.static &&
+                                    <Image 
+                                        className="absolute inset-0 w-full h-full object-cover rounded-[24px] -z-10"
+                                        key={testimonial.title}
+                                        src={testimonial.static}
+                                        alt={testimonial.title}
+                                        width={1080}
+                                        height={1080}
+                                    />
+                                }
+                            </div>
                         </article>
                     )
                 }
