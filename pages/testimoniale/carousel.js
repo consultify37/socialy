@@ -53,7 +53,6 @@ const Testimonials = () => {
         descriptionTwo: "Au fost alături de mine în etapa de planificare bugetară, asigurându-se că includem toate echipamentele necesare pentru desfășurarea activității medicale. După obținerea finanțării, au continuat să fie disponibili pentru întrebări și îndrumare suplimentară. Nu pot decât să le mulțumesc pentru profesionalismul și devotamentul lor!",
         image: "/images/testimoniale/Recenzia 5.gif",
         static: "/images/testimoniale/Recenzia 5.png",
-        static: "/images/testimoniale/Recenzia 5.png"
     },
     {
         id: 6,
@@ -81,8 +80,8 @@ const Testimonials = () => {
                     pagination={true}
                 >
                 {
-                    Testimonial.map(testimonial =>
-                      <article key={testimonial.id + testimonial.title } className="bg-[#36007B] -z-20 h-full min-h-[90px] sm:min-h-[650px] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-2 flex-col lg:flex-row flex flex-1 py-10 md:py-5">
+                    Testimonial.map((testimonial, index) =>
+                      <article key={index} className="bg-[#36007B] h-full min-h-[960px] sm:min-h-[650px] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-2 flex-col lg:flex-row flex flex-1 py-10 md:py-5">
                         <div className="w-full md:w-200px px-7 md:px-5 py-2 md:pb-8 lg:mr-8">
                             <h3 className="text-white font-bold text-base md:max-w-[90%] md:text-[24px]">
                                 {testimonial.title}
@@ -92,24 +91,22 @@ const Testimonials = () => {
                             <p className="text-sm text-[#fff] font-medium mt-2">{testimonial.descriptionTwo}</p>
                         </div>
                         <div className='relative w-[250px] md:w-[300px] h-[250px] md:h-[300px] mt-8 lg:mt-0 lg:mr-5 lg:min-w-max'>
-                            <Image 
-                                className=" w-full h-full object-cover rounded-[24px] z-10"
-                                key={testimonial.title}
-                                src={testimonial.image}
-                                alt={testimonial.title}
-                                width={1080}
-                                height={1080}
-                            />
                             { testimonial.static &&
                                 <Image 
-                                    className="absolute inset-0 w-full h-full object-cover rounded-[24px] -z-10"
-                                    key={testimonial.title}
+                                    className="w-full h-full object-cover rounded-[24px] z-10"
                                     src={testimonial.static}
                                     alt={testimonial.title}
                                     width={1080}
                                     height={1080}
                                 />
                             }
+                            <Image 
+                                className="absolute inset-0 w-full h-full object-cover rounded-[24px]"
+                                src={testimonial.image}
+                                alt={testimonial.title}
+                                width={1080}
+                                height={1080}
+                            />
                         </div>
                     </article>  
                     )
