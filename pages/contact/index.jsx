@@ -101,7 +101,7 @@ export default function Contact() {
                     </div>
                     <h6 className="text-xl text-white mb-4 font-bold text-center">Sau ne poți găsi și aici:</h6>
                     <div className="flex flex-row w-full justify-center">
-                        <Link href='https://instagram.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
+                        <Link href='https://www.instagram.com/consultify.ro?igshid=MzMyNGUyNmU2YQ%3D%3D' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
                             <Image
                                 src="/images/contact/instagram.svg"
                                 alt="instagram"
@@ -110,7 +110,7 @@ export default function Contact() {
                                 className="z-[5] h-[max-content w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                             />
                         </Link>
-                        <Link href='https://facebook.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
+                        <Link href='https://www.facebook.com/consultify.ro' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
                             <Image
                                 src="/images/contact/facebook.svg"
                                 alt="facebook"
@@ -119,7 +119,7 @@ export default function Contact() {
                                 className="z-[5] w-[24px] h-[24px] lg:w-[36px] lg:h-[36px]"
                             />
                         </Link>
-                        <Link href='https://tiktok.com' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
+                        <Link href='https://www.tiktok.com/@consultifyro?_t=8hf9YsK4ZsX&_r=1' target="_blank" className="w-[-webkit-fill-available] max-w-[fit-content] ml-2 flex items-center rounded-full bg-[#fff] p-5 lg:p-4 h-[max-content] jutify-center mr-2 hover:scale-105 transition-all">
                             <Image
                                 src="/images/contact/tiktok.svg"
                                 alt="tiktok"

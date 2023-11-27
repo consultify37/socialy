@@ -85,7 +85,7 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div className='flex flex-row gap-6 mt-4'>
-                        <Link href='https://facebook.com' target="_blank">
+                        <Link href='https://www.facebook.com/consultify.ro' target="_blank">
                             <Image
                                 src="/images/contact/facebook.svg"
                                 alt="facebook"
@@ -95,7 +95,7 @@ const Footer = () => {
                             />
                         </Link>
 
-                        <Link href='https://instagram.com' target="_blank">
+                        <Link href='https://www.instagram.com/consultify.ro?igshid=MzMyNGUyNmU2YQ%3D%3D' target="_blank">
                             <Image
                                 src="/images/contact/instagram.svg"
                                 alt="instagram"
@@ -105,7 +105,7 @@ const Footer = () => {
                             />
                         </Link>
 
-                        <Link href='https://tiktok.com' target="_blank">
+                        <Link href='https://www.tiktok.com/@consultifyro?_t=8hf9YsK4ZsX&_r=1' target="_blank">
                             <Image
                                 src="/images/contact/tiktok.svg"
                                 alt="tiktok"
