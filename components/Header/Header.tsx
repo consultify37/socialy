@@ -104,16 +104,16 @@ const Header = () => {
               </div>
             </div>
             <ul
-              className={`list-none absolute lg:relative gap-[30px] duration-300 h-[120vh] lg:h-auto z-[10] -mx-3 md:-mx-4 w-screen lg:mx-0 lg:w-auto items-center ${
+              className={`list-none absolute lg:relative gap-[30px] duration-300 h-[100vh] lg:h-auto z-[10] -mx-3 md:-mx-4 w-screen lg:mx-0 lg:w-auto items-center ${
                 toggle
-                  ? "-left-0 w-full lg:rounded-[38.5px] mt-[500px] md:mt-[580px] pt-[256px] bg-[#270056ef] lg:top-0 lg:w-auto lg:pt-0"
+                  ? "-left-0 w-full lg:rounded-[38.5px] mt-[calc(100vh-168px)] md:mt-[calc(100vh-186px)] pt-[128px] md:pt-[144px] bg-[#270056ef] lg:top-0 lg:w-auto lg:pt-0"
                   : "" //translate-y-[0] lg:translate-y-0
               } lg:flex`}
             >
               <li
                 className={`${
                   toggle
-                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -124,7 +124,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0" //border-b-[#C6CFFF] border-b-2
+                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0" //border-b-[#C6CFFF] border-b-2
                     : ""
                 }`}
               >
@@ -135,7 +135,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -146,7 +146,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -157,7 +157,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -168,7 +168,7 @@ const Header = () => {
               {/* <li
                 className={`${
                   toggle
-                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -179,7 +179,7 @@ const Header = () => {
               {/* <li
                 className={`${
                   toggle
-                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -190,7 +190,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? "border-b-0 w-full p-2 pl-12 lg:p-0 lg:border-0"
+                    ? "border-b-0 w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
                     : "hover:scale-[1.05] transition-all"
                 }`}
               >
@@ -201,7 +201,7 @@ const Header = () => {
               {/* <li
                 className={`${
                   toggle
-                    ? "w-full p-2 pl-12 pb-4 lg:p-0"
+                    ? "w-full p-2 pl-12 md:pl-14 pb-4 lg:p-0"
                     : "hidden"
                 }`}
               >
