@@ -1,14 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import Link from "next/link";
-import { backCarousel, nextCarousel } from "../../utils/functions";
-import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 import NewsLetter from "../../components/global/newsletter";
 import Head from "next/head";
-import WhyUsCart from "../../components/Home/Why-Us/Cart.js";
 import CTA from "../../components/CTA";
-import News from "../../components/Home/News/News";
 import Axios from "axios";
 import toast from "react-hot-toast";
 import Proces from "../../components/Proces";

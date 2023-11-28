@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation'
 import CookiePolicy from '../components/CookiePolicy'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 
 function useNormalScrollRoutes() {
   const router = useRouter();
@@ -43,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [router.events])
 
   return (
-    <div className="flex flex-col">
+    <motion.div className="flex flex-col">
       { !pathname?.includes('/admin') ?
         <>
           <TopBar />
@@ -58,6 +59,6 @@ export default function App({ Component, pageProps }: AppProps) {
       { !pathname?.includes('/admin') ?
         <Footer /> : null
       }
-    </div>
+    </motion.div>
   );
 }

@@ -62,7 +62,7 @@ const Header = () => {
           role="main"
           className="fixed z-[999] top-14 w-[calc(100%-12px*2)] md:w-[calc(100%-16px*2)] xl:w-[calc(100%-110px*2)] 2xl:w-[calc(100%-216px*2)] mx-3 md:mx-4 xl:mx-[110px] 2xl:mx-[216px]"
         >
-          <div className={"rounded-full flex flex-row justify-between items-center px-8 lg:px-[60px] py-2 md:py-4 duration-300 transition-all " + (!pathname?.includes('/blog-post') || scrollPosition != 0 ? "bg-[#260056]" : "bg-transparent")}>
+          <div className={"rounded-full flex flex-row justify-between items-center px-8 lg:px-[60px] py-2 md:py-4 duration-300 transition-all " + ((!toggle && !pathname?.includes('/blog-post')) || (!toggle && scrollPosition != 0) ? "bg-[#260056]" : "bg-transparent")}>
             <Link href="/" className="flex items-center justify-center z-[99]">
               <Image
                 src="/images/logo.svg"
@@ -104,16 +104,16 @@ const Header = () => {
               </div>
             </div>
             <ul
-              className={`list-none absolute lg:relative gap-[30px] duration-300 z-[10] items-center ${
+              className={`list-none absolute lg:relative gap-[30px] duration-300 h-[120vh] lg:h-auto z-[10] -mx-3 md:-mx-4 w-screen lg:mx-0 lg:w-auto items-center ${
                 toggle
-                  ? "-left-0 w-full rounded-[38.5px] translate-y-[124px] pt-[50px] bg-[#260056] lg:top-0 lg:w-auto lg:pt-0"
-                  : "translate-y-[-200%] lg:translate-y-0"
+                  ? "-left-0 w-full lg:rounded-[38.5px] mt-[500px] md:mt-[580px] pt-[256px] bg-[#270056ef] lg:top-0 lg:w-auto lg:pt-0"
+                  : "" //translate-y-[0] lg:translate-y-0
               } lg:flex`}
             >
               <li
                 className={`${
                   toggle
-                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-10 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -124,7 +124,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-10 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0" //border-b-[#C6CFFF] border-b-2
                     : ""
                 }`}
               >
@@ -135,7 +135,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-10 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -146,7 +146,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-10 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -157,7 +157,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-10 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -168,7 +168,7 @@ const Header = () => {
               {/* <li
                 className={`${
                   toggle
-                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-10 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -179,7 +179,7 @@ const Header = () => {
               {/* <li
                 className={`${
                   toggle
-                    ? "border-b-2 w-full  border-b-[#C6CFFF] p-2 pl-10 lg:p-0 lg:border-0"
+                    ? " w-full p-2 pl-12 lg:p-0 lg:border-0"
                     : ""
                 }`}
               >
@@ -190,7 +190,7 @@ const Header = () => {
               <li
                 className={`${
                   toggle
-                    ? "border-b-0 w-full  border-b-[#C6CFFF] p-2 pl-10 lg:p-0 lg:border-0"
+                    ? "border-b-0 w-full p-2 pl-12 lg:p-0 lg:border-0"
                     : "hover:scale-[1.05] transition-all"
                 }`}
               >
@@ -201,7 +201,7 @@ const Header = () => {
               {/* <li
                 className={`${
                   toggle
-                    ? "w-full p-2 pl-10 pb-4 lg:p-0"
+                    ? "w-full p-2 pl-12 pb-4 lg:p-0"
                     : "hidden"
                 }`}
               >
