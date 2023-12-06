@@ -49,6 +49,18 @@ const Header = () => {
       }
   }, [])
 
+  useEffect(() => {
+    function handleWindowResize() {
+      setToggle(false)
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
   return (
     <>
       <header className="">
