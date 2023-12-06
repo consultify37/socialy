@@ -104,62 +104,42 @@ const Header = () => {
               </div>
             </div>
             <ul
-              className={`list-none absolute lg:relative gap-[30px] duration-300 h-[100vh] lg:h-auto z-[10] -mx-3 md:-mx-4 w-screen lg:mx-0 lg:w-auto items-center ${
+              className={`list-none absolute lg:relative gap-[30px] duration-300 -top-[calc(100vh+56px)] h-[100vh] lg:h-auto z-[10] lg:mx-0 items-center -left-3 md:-left-4 w-screen lg:rounded-[38.5px] bg-[#270056ef] lg:top-0 lg:w-auto lg:pt-0 lg:flex ${
                 toggle
-                  ? "-left-0 w-full lg:rounded-[38.5px] mt-[calc(100vh-168px)] md:mt-[calc(100vh-186px)] pt-[128px] md:pt-[144px] bg-[#270056ef] lg:top-0 lg:w-auto lg:pt-0"
+                  ? "mt-[calc(100vh)] md:mt-[calc(100vh)] pt-[128px] md:pt-[144px]"
                   : "" //translate-y-[0] lg:translate-y-0
-              } lg:flex`}
+              }`}
             >
               <li
-                className={`${
-                  toggle
-                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
-                    : ""
-                }`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   acasă
                 </Link>
               </li>
               <li
-                className={`${
-                  toggle
-                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0" //border-b-[#C6CFFF] border-b-2
-                    : ""
-                }`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/despre" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   despre
                 </Link>
               </li>
               <li
-                className={`${
-                  toggle
-                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
-                    : ""
-                }`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/Programe" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   programe
                 </Link>
               </li>
               <li
-                className={`${
-                  toggle
-                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
-                    : ""
-                }`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/servicii" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   servicii
                 </Link>
               </li>
               <li
-                className={`${
-                  toggle
-                    ? " w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
-                    : ""
-                }`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/testimoniale" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   testimoniale
@@ -188,13 +168,9 @@ const Header = () => {
                 </Link>
               </li> */}
               <li
-                className={`${
-                  toggle
-                    ? "border-b-0 w-full p-2 pl-12 md:pl-14 lg:p-0 lg:border-0"
-                    : "hover:scale-[1.05] transition-all"
-                }`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0 lg:hover:scale-[1.05] lg:transition-all`}
               >
-                <Link href="/contact" className={!toggle ? "font-semibold bg-[#7000FF] p-[14px] px-8 rounded-full text-[#fff]" : "font-semibold text-tertiary text-[16px]"}>
+                <Link href="/contact" className="lg:font-semibold lg:bg-[#7000FF] lg:p-[14px] lg:px-8 lg:rounded-full lg:text-[#fff] font-semibold text-tertiary text-[16px]">
                   contactează-ne
                 </Link>
               </li>
