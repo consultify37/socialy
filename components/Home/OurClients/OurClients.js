@@ -5,7 +5,7 @@ const breakPoints = [
     { width: 1, itemsToShow: 1 },
 ];
 
-const OurClients = () => {
+const OurClients = ({hasTitle=false}) => {
     const Testimonials = [
         {
             id: 1,
@@ -14,14 +14,16 @@ const OurClients = () => {
             description: "Colaborarea cu Consultify în cadrul programului Start-Up Nation a fost un pas important pentru afacerea mea. Echipa lor m-a sprijinit în fiecare etapă, de la verificarea eligibilității societății mele până la achizițiile necesare. Comunicarea clară și transparentă a fost un aspect de apreciat, iar ei au răspuns prompt la întrebările și nevoile mele.",
             descriptionTwo: "În urma aprobării proiectului, am beneficiat de ghidajul lor în identificarea și achiziționarea echipamentelor adecvate. Acum, aștept cu entuziasm începerea perioadei de monitorizare.",
             image: "/images/testimoniale/Recenzia 1.png",
+            static: "/images/testimoniale/static.png"
         },
         {
             id: 2,
             title: "Ne-am deschis propria pensiune prin programul P.N.D.R. 6.4 cu ajutorul echipei Consultify",
             subTitle: 'Familia Branduși – Turism',
-            description: "Cu ajutorul Consultify, am reușit să ne îndeplinim visul de a deschide o pensiune prin intermediul programului P.N.D.R. 6.4. Echipa lor ne-a ghidat și a oferit asistență în fiecare etapă a procesului, începând de la evaluarea eligibilității și redactarea proiectului, până la obținerea finanțării și implementarea sa. Comunicarea transparentă și suportul constant au fost de neprețuit.",
-            descriptionTwo: "",
+            description: "Cu ajutorul Consultify, am reușit să ne îndeplinim visul de a deschide o pensiune prin intermediul programului P.N.D.R. 6.4. Echipa lor ne-a ghidat și a oferit asistență în fiecare etapă a procesului, începând de la evaluarea eligibilității și redactarea proiectului, până la obținerea finanțării și implementarea sa.",
+            descriptionTwo: "Comunicarea transparentă și suportul constant au fost de neprețuit.",
             image: "/images/testimoniale/Recenzia 2.png",
+            static: "/images/testimoniale/static.png"
         },
         {
             id: 3,
@@ -30,6 +32,7 @@ const OurClients = () => {
             description: "Cu ajutorul echipei Consultify, am reușit să accesăm o finanțare de 40.000 de euro pentru carmangeria noastră. Echipa lor ne-a sprijinit de la verificarea eligibilității și scrierea proiectului, până la depunerea acestuia și construirea planului de achiziții. ",
             descriptionTwo: "De asemenea, ne-au ajutat să răspundem clarificărilor primite de la finanțator și să începem perioada de implementare. Colaborarea a fost remarcabilă, iar profesionalismul și implicarea lor ne-au asigurat șanse considerabile de reușită în acest proiect. Suntem recunoscători pentru ajutorul lor și recomandăm cu încredere serviciile Consultify.",
             image: "/images/testimoniale/Recenzia 3.png",
+            static: "/images/testimoniale/static.png"
         },
         {
             id: 4,
@@ -56,6 +59,7 @@ const OurClients = () => {
             description: 'Cu sprijinul Consultify, am reușit să deschidem cu succes propria brutărie. Echipa lor ne-a oferit întreaga asistență în fiecare etapă a procesului, de la verificarea eligibilității și elaborarea proiectului, până la depunerea acestuia și gestionarea achizițiilor necesare.',
             descriptionTwo: "Comunicarea fluentă și abordarea lor profesionistă au fost cheia succesului proiectului nostru. Suntem foarte recunoscători pentru sprijinul lor.",
             image: "/images/testimoniale/Recenzia 6.png",
+            static: "/images/testimoniale/static.png"
         },
         {
             id: 7,
@@ -64,13 +68,17 @@ const OurClients = () => {
             description: 'Cu sprijinul Consultify, am reușit să obțin finanțarea necesară pentru dezvoltarea afacerii. Colaborarea cu echipa lor a fost esențială în fiecare etapă a procesului. Încă de la început, mi-au verificat eligibilitatea  și am construit împreună un plan bugetar detaliat.',
             descriptionTwo: "Au fost ghidul meu de încredere în toți pașii necesari pentru depunerea proiectului și mi-au oferit suport constant și răspunsuri prompte la orice întrebare sau îngrijorare pe parcursul procesului. Îi recomand cu încredere!",
             image: "/images/testimoniale/Recenzia 7.png",
+            static: "/images/testimoniale/static.png"
         },
     ]
+
     return(
-        <section id='our-clients' className='mt-16 md:mt-32 w-full flex items-center justify-center flex-col gap-5 px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
-            <p className="text-[#8717F8] text-xl md:text-3xl text-center font-bold px-7 md:px-0 mb-5">
-                Gândurile și experiențele clienților noștri - testimoniale de succes
-            </p>
+        <section id='our-clients' className='w-full flex items-center justify-center flex-col gap-5 z-10'>
+            {  hasTitle && 
+                <p className="text-[#8717F8] text-xl md:text-3xl text-center font-bold px-7 md:px-0 mb-5">
+                    Gândurile și experiențele clienților noștri - testimoniale de succes
+                </p>
+            }
             <div className='flex w-full justify-between items-center gap-5'>
                 <Carousel
                     breakPoints={breakPoints}
@@ -81,35 +89,33 @@ const OurClients = () => {
                     className=""
                 >
                 {
-                    Testimonials.map(testimonial =>
-                        <article key={testimonial.id + testimonial.title} className="bg-[#36007B] -z-20 min-h-[920px] sm:min-h-[650px] md:min-h-[600px] lg:min-h-[460px] xl:min-h-[400px] rounded-[16px] justify-center lg:justify-between items-center mx-6 flex-col lg:flex-row flex flex-1 py-10 md:py-2">
-                            <div className="w-full md:w-200px px-7 md:px-5 lg:mr-8">
-                                <h3 className="text-white font-bold text-base md:max-w-[90%] md:text-[24px]">
-                                    {testimonial.title}
-                                </h3>
-                                <p className="text-tertiary text-[16px] font-semibold mt-6">{testimonial.subTitle}</p>
-                                <p className="text-sm text-[#fff] font-base mt-4">{testimonial.description}</p>
-                                <p className="text-sm text-[#fff] font-base mt-2">{testimonial.descriptionTwo}</p>
+                    Testimonials.map((testimonial, index) =>
+                        <div key={testimonial.id + index} className="min-h-[880px] sm:min-h-[840px] md:min-h-[800px] lg:min-h-[500px] xl:min-h-[460px] 2xl:min-h-[440px] bg-[#36007B] rounded-[16px] p-12 px-8 lg:px-12 lg:py-8 mx-4 mb-4 flex flex-col lg:flex-row lg:justify-start items-center justify-between">
+                            <div className="flex flex-col lg:w-full lg:mr-8">
+                                <h1 className="text-[16px] xl:text-[23px] text-onPrimary font-bold">{testimonial.title}</h1>
+                                <p className="text-[14px] xl:text-[15px] text-tertiary font-semibold mt-4">{testimonial.subTitle}</p>
+                                <p className="text-[14px] xl:text-[15px] text-onPrimary mt-4">{testimonial.description}</p>
+                                <p className="text-[14px] xl:text-[15px] text-onPrimary mt-4">{testimonial.descriptionTwo}</p>
                             </div>
-                            <div className='relative w-[250px] md:w-[300px] h-[250px] md:h-[300px] mt-8 lg:mt-0 lg:mr-5 lg:min-w-max'>
+                            <div className="relative mt-4">
                                 <Image 
-                                    className=" w-full h-full object-cover rounded-[24px] z-10"
+                                    className="absolute inset-0 rounded-[24px] z-10"
+                                    width={512}
+                                    height={512}
                                     src={testimonial.image}
                                     alt={testimonial.title}
-                                    width={1080}
-                                    height={1080}
                                 />
                                 { testimonial.static &&
                                     <Image 
-                                        className="absolute inset-0 w-full h-full object-cover rounded-[24px] -z-10"
+                                        className="rounded-[24px] z-20"
+                                        width={512}
+                                        height={512}
                                         src={testimonial.static}
                                         alt={testimonial.title}
-                                        width={1080}
-                                        height={1080}
                                     />
                                 }
                             </div>
-                        </article>
+                        </div>
                     )
                 }
                 </Carousel>

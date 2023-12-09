@@ -3,12 +3,12 @@ import Image from "next/image"
 import Link from "next/link"
 import NewsLetter from "../../components/global/newsletter"
 import Head from "next/head"
-import Testimonials from './carousel'
 import CTA from "../../components/CTA"
 import Axios from "axios"
 import toast from "react-hot-toast"
 import Logos from "../../components/Home/Logos"
 import PageHeader from "../../components/Header/PageHeader"
+import OurClients from "../../components/Home/OurClients/OurClients"
 
 const testimonials = [
   {
@@ -109,10 +109,10 @@ export default function Testimoniale() {
       </section>
       <section className="relative bg-[#260056] w-full pt-16 md:pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <span className="bg-[#260056] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
-        <h2 className="text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center md:pt-10 lg:pt-0">
+        <h2 className="mb-12 md:mb-24 text-xl md:text-4xl font-bold text-white md:mxax-w-[80%] text-center md:pt-10 lg:pt-0">
           Gânduri și experiențe ale clienților noștri: testimoniale de succes
         </h2>
-        <Testimonials />
+        <OurClients />
         <section id='trust-us' className='bg-[#260056] mt-24 flex flex-col items-center w-full relative'>
             <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-0 md:pt-20 lg:pt-0 mb-5">
               Încă nu te-am convins? Descarcă lista completă cu rezultate:
