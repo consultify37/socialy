@@ -2,7 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Rezultate(){
+type Props = {
+    contact?: boolean 
+}
+
+export default function Rezultate({contact=true}: Props){
     return(
         <section className="w-full mt-16 md:mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
             <div className="w-full flex relative flex-col lg:flex-row justify-between items-start py-6 px-6 md:py-12 md:px-12 bg-[#F7EDFF] rounded-3xl">
@@ -15,7 +19,7 @@ export default function Rezultate(){
                 <div className="flex items-start w-full flex-col md:mr-12">
                     <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">Iată rezultatele noastre:</h2>
                     <p className="text-sm text-[#260056] mb-4 md:mb-8">Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să-și realizeze proiectele cu succes.</p>
-                    <Link className="py-3 md:py-4 bg-[#8717F8] text-white rounded-[28.5px] font-semibold px-12 text-md md:text-[16px] transition-all hover:scale-[1.05]" href="/contact">Contactează-ne!</Link>
+                    {contact && <Link className="py-3 md:py-4 bg-[#8717F8] text-white rounded-[28.5px] font-semibold px-12 text-md md:text-[16px] transition-all hover:scale-[1.05]" href="/contact">Contactează-ne!</Link>}
                 </div>
                 <div className="grid gap-5 w-full grid-cols-2 justify-between mt-6 lg:mt-0 lg:ml-12">
                     <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">

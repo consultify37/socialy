@@ -10,7 +10,7 @@ import Proces from "../components/Proces"
 import CTA from "../components/CTA"
 import NewsLetter from "../components/global/newsletter"
 import Garantii from "../components/Garantii"
-import { collection, getDocs } from "firebase/firestore"
+import { collection, getDocs, query, where } from "firebase/firestore"
 import { db } from "../firebase"
 import { Program, Slide } from "../types"
 
@@ -60,14 +60,14 @@ export default function Home({ slides, programe }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const slidesRef = collection(db, 'slides-homepage')
+  const slidesRef = query(collection(db, 'slides-homepage'), where('site', '==', process.env.SITE))
   const slidesSnap = await getDocs(slidesRef)
 
   const slides = slidesSnap.docs.map((doc) => (
     { id: doc.id, ...doc.data() }
   ))
 
-  const programeRef = collection(db, 'programe-fonduri')
+  const programeRef = query(collection(db, 'programe-fonduri'), where('site', '==', process.env.SITE))
   const programeSnap = await getDocs(programeRef)
 
   const programe = programeSnap.docs.map((doc) => (

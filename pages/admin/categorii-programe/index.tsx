@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AdminLayout from '../../../components/admin-nav/AdminLayout'
 import Categories from '../../../components/admin/Categories'
 import { Category } from '../../../types'
-import { addDoc, collection, deleteDoc, doc, getDoc, getDocs } from 'firebase/firestore'
+import { addDoc, collection, deleteDoc, doc, getDoc, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../../firebase'
 import ReactLoading from 'react-loading'
 import toast from 'react-hot-toast'
@@ -15,7 +15,7 @@ const CategoriiPrograme = () => {
 
   const fetchCategories = async () => {
     setIsFetching(true)
-    const docsRef = collection(db, 'categories')
+    const docsRef = query(collection(db, 'categories'), where('site', '==', process.env.SITE))
     const docsSnap = await getDocs(docsRef)
 
     const data = docsSnap.docs.map((doc) => (
@@ -35,7 +35,7 @@ const CategoriiPrograme = () => {
     setIsLoading(true)
 
     try {
-      const doc = await addDoc(collection(db, 'categories'), { category: newCategory })
+      const doc = await addDoc(collection(db, 'categories'), { category: newCategory, site: process.env.SITE })
       setCategories((categories) => [{ id: doc.id, category: newCategory }, ...categories ])
       setNewCategory('')
     } catch (e) {

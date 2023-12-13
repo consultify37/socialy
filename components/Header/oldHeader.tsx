@@ -1,66 +1,6 @@
-import Head from "next/head"
-import Image from "next/image"
-import Link from "next/link"
-import { useState, useEffect, useRef } from "react"
-import { useRouter } from "next/router"
-import { CartModal, LoginModal } from "../modals"
-import Cookies from "js-cookie"
-import { usePathname } from "next/navigation"
-import FixedLeft from "./FixedLeft"
+import React from 'react'
 
-const Header = () => {
-  const [toggle, setToggle] = useState<boolean>(false)
-  const [showLoginModal, setShowLoginModal] = useState<boolean>(false)
-  const [showCart, setShowCart] = useState<boolean>(false)
-  const ref = useRef(null)
-  const router = useRouter()
-  useEffect(() => {
-    router.events.on("routeChangeStart", () => setToggle(false))
-  }, [router.events])
-
-  const pathname = usePathname()
-
-  const handleLoginModalClosing = () => void setShowLoginModal(false)
-  const handleLoginModalOpening = () => void setShowLoginModal(true)
-  const handleCartClosing = () => void setShowCart(false)
-  const handleCartOpening = () => void setShowCart(true)
-  let user = Cookies.get("user")
-
-  const [loggedIn, setLoggedIn] = useState(false)
-  useEffect(() => {
-    if (user != null) {
-      setLoggedIn(true)
-    } else {
-      setLoggedIn(false)
-    }
-  }, [user])
-
-  const [scrollPosition, setScrollPosition] = useState(0)
-  const handleScroll = () => {
-      const position = window.scrollY
-      setScrollPosition(position)
-  }
-
-  useEffect(() => {
-      window.addEventListener('scroll', handleScroll, { passive: true })
-
-      return () => {
-          window.removeEventListener('scroll', handleScroll)
-      }
-  }, [])
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setToggle(false)
-    }
-
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, []);
-
+const oldHeader = () => {
   return (
     <>
       <header className="">
@@ -74,7 +14,7 @@ const Header = () => {
           role="main"
           className="fixed z-[999] top-14 w-[calc(100%-12px*2)] md:w-[calc(100%-16px*2)] xl:w-[calc(100%-110px*2)] 2xl:w-[calc(100%-216px*2)] mx-3 md:mx-4 xl:mx-[110px] 2xl:mx-[216px]"
         >
-          <div className={"rounded-full flex flex-row justify-between items-center px-8 lg:px-[60px] py-2 md:py-4 duration-300 transition-all " + ((!pathname?.includes('/blog-post')) || (scrollPosition != 0) ? "bg-secondary" : "bg-transparent")}>
+          <div className={"rounded-full flex flex-row justify-between items-center px-8 lg:px-[60px] py-2 md:py-4 duration-300 transition-all " + ((!toggle && !pathname?.includes('/blog-post')) || (!toggle && scrollPosition != 0) ? "bg-[#260056]" : "bg-transparent")}>
             <Link href="/" className="flex items-center justify-center z-[99]">
               <Image
                 src="/images/logo.svg"
@@ -115,44 +55,43 @@ const Header = () => {
                   </label>
               </div>
             </div>
-            
             <ul
-              className={`list-none absolute rounded-[27px] md:rounded-[36px] lg:relative gap-[30px] duration-300 -top-[calc(100vh+56px)] lg:h-auto z-[10] lg:mx-0 items-center left-0 md:-left-0 w-full lg:rounded-[38.5px] bg-secondary lg:top-0 lg:w-auto lg:pt-0 lg:flex ${
-                toggle // bg-[#270056ef]
-                  ? "mt-[calc(100vh+56px)] md:mt-[calc(100vh+56px)] pt-[60px] md:pt-[72px] pb-2"
+              className={`list-none absolute lg:relative gap-[30px] duration-300 -top-[calc(100vh+56px)] h-[100vh] lg:h-auto z-[10] lg:mx-0 items-center -left-3 md:-left-4 w-screen lg:rounded-[38.5px] bg-[#270056ef] lg:top-0 lg:w-auto lg:pt-0 lg:flex ${
+                toggle
+                  ? "mt-[calc(100vh)] md:mt-[calc(100vh)] pt-[128px] md:pt-[144px]"
                   : "" //translate-y-[0] lg:translate-y-0
               }`}
             >
               <li
-                className={`w-full lg:w-auto p-2 pl-16 border-b-[1px] border-white md:pl-18 lg:pl-0 lg:p-0 lg:border-0`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   acasă
                 </Link>
               </li>
               <li
-                className={`w-full lg:w-auto p-2 pl-16 border-b-[1px] border-white md:pl-18 lg:pl-0 lg:p-0 lg:border-0`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/despre" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   despre
                 </Link>
               </li>
               <li
-                className={`w-full lg:w-auto p-2 pl-16 border-b-[1px] border-white md:pl-18 lg:pl-0 lg:p-0 lg:border-0`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/Programe" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   programe
                 </Link>
               </li>
               <li
-                className={`w-full lg:w-auto p-2 pl-16 border-b-[1px] border-white md:pl-18 lg:pl-0 lg:p-0 lg:border-0`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/servicii" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   servicii
                 </Link>
               </li>
               <li
-                className={`w-full lg:w-auto p-2 pl-16 border-b-[1px] border-white md:pl-18 lg:pl-0 lg:p-0 lg:border-0`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0`}
               >
                 <Link href="/testimoniale" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   testimoniale
@@ -181,7 +120,7 @@ const Header = () => {
                 </Link>
               </li> */}
               <li
-                className={`w-full lg:w-auto p-2 pl-16 md:pl-18 lg:pl-0 lg:p-0 lg:border-0 lg:hover:scale-[1.05] lg:transition-all`}
+                className={`w-full lg:w-auto p-2 pl-12 md:pl-14 lg:pl-0 lg:p-0 lg:border-0 lg:hover:scale-[1.05] lg:transition-all`}
               >
                 <Link href="/contact" className="lg:font-semibold lg:bg-[#7000FF] lg:p-[14px] lg:px-8 lg:rounded-full lg:text-[#fff] font-semibold text-tertiary text-[16px]">
                   contactează-ne
@@ -238,4 +177,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default oldHeader

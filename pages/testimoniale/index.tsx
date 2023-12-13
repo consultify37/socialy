@@ -107,9 +107,9 @@ export default function Testimoniale() {
         
         <Logos />
       </section>
-      <section className="relative bg-[#260056] w-full pt-16 md:pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+      <section className="relative bg-[#260056] w-full pt-16 md:pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <span className="bg-[#260056] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
-        <h2 className="mb-12 md:mb-24 text-xl md:text-4xl font-bold text-white md:mxax-w-[80%] text-center md:pt-10 lg:pt-0">
+        <h2 className="mb-8 md:mb-12 px-4 md:px-0 text-xl md:text-4xl font-bold text-white md:mxax-w-[80%] text-center md:pt-10 lg:pt-0">
           Gânduri și experiențe ale clienților noștri: testimoniale de succes
         </h2>
         <OurClients />
@@ -123,7 +123,7 @@ export default function Testimoniale() {
             <h2 className="text-xl md:text-3xl font-bold text-white px-8 md:px-0 md:max-w-[80%] text-center pt-4 md:pt-20 lg:pt-0 mb-12 md:mb-24">
               Sau vizionați următoarele studii de caz!
             </h2>
-            <div className="w-full mx-auto gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2] items-center">
+            <div className="w-full mx-auto gap-[6rem] px-7 md:px-0 flex gap-y-20 justify-between flex-wrap z-[2] items-center">
               <div className="w-full flex-1 z-[2]">
                 <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
                   { testimonials[0].title }
@@ -143,7 +143,7 @@ export default function Testimoniale() {
                   allowFullScreen={true}
               ></iframe>
             </div>
-            <div className='w-full mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 justify-between items-center flex-col-reverse md:flex-row flex-wrap z-[2]'>
+            <div className='w-full px-7 md:px-0 mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 justify-between items-center flex-col-reverse md:flex-row flex-wrap z-[2]'>
               <div className='relative w-full md:w-auto'>
                 <iframe 
                     className="relative rounded-[28.5px] sm:h-full h-[280px] w-full  md:w-[450px] md:h-[400px] mx-auto z-[0]"
@@ -166,7 +166,7 @@ export default function Testimoniale() {
                 </p>
               </div>
             </div>
-            <div className="w-full mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 items-center justify-between flex-wrap z-[2]">
+            <div className="w-full px-7 md:px-0 mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 items-center justify-between flex-wrap z-[2]">
               <div className="w-full flex-1 z-[2]">
                 <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
                   { testimonials[2].title }
@@ -199,7 +199,7 @@ export default function Testimoniale() {
         {/* <Link href='/shop' className="bg-[#8717F8] mt-5 px-12 py-3 md:py-4 font-semibold text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
           Vezi toate produsele
         </Link> */}
-        <div className="flex w-full flex-col lg:flex-row mt-16 md:mt-48 justify-between items-center">
+        <div className="flex px-7 md:px-0 w-full flex-col lg:flex-row mt-16 md:mt-48 justify-between items-center">
           <div className='relative flex lg:hidden justify-end my-16 lg:mb-0 lg:ml-12'>
               <Image src='/images/testimoniale/Pag - testimoniale - structura idei afacere.png' alt='Why-Us' className='relative w-[450px] rounded-[35px] z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
               {/* <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' />  */}

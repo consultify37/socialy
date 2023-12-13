@@ -4,7 +4,7 @@ import InputField from '../../../components/admin/InputField'
 import SlideHomePageImages from '../../../components/admin/SlideHomePageImages'
 import Image from 'next/image'
 import { uploadFile } from '../../../utils/b2_storage/upload_file'
-import { addDoc, collection, deleteDoc, doc, getDocs } from 'firebase/firestore'
+import { addDoc, collection, deleteDoc, doc, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../../firebase'
 import ReactLoading from 'react-loading'
 import { deleteFile } from '../../../utils/b2_storage/delete_file'
@@ -21,7 +21,7 @@ const SlideHomepage = () => {
   const fetchSlides = async () => {
     setIsFetching(true)
 
-    const docsRef = collection(db, 'slides-homepage')
+    const docsRef = query(collection(db, 'slides-homepage'), where('site', '==', process.env.SITE))
     const docsSnap = await getDocs(docsRef)
 
     const data: any[] = docsSnap.docs.map(doc => (
@@ -70,7 +70,7 @@ const SlideHomepage = () => {
     try {
       const result = await uploadFile(newImage!)
       
-      const doc = await addDoc(collection(db, 'slides-homepage'), { link, file: result, image: `https://f005.backblazeb2.com/file/inspirely-consultify-socialy-creditfy/${result.fileName}` })
+      const doc = await addDoc(collection(db, 'slides-homepage'), { link, file: result, image: `https://f005.backblazeb2.com/file/inspirely-consultify-socialy-creditfy/${result.fileName}`, site: process.env.SITE })
 
       setSlides(slides => [{id: doc.id, link, image: newImage!, file: null}, ...slides])
       setLink('')

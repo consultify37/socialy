@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import AdminLayout from '../../../components/admin-nav/AdminLayout'
 import Link from 'next/link'
-import { collection, deleteDoc, doc, getDocs } from 'firebase/firestore'
+import { collection, deleteDoc, doc, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../../firebase'
 import ReactLoading from 'react-loading'
 import { Program } from '../../../types'
@@ -15,7 +15,7 @@ const ProgrameFonduri = () => {
   const fetchPrograme = async () => {
     setIsFetching(true)
 
-    const docsRef = collection(db, 'programe-fonduri')
+    const docsRef = query(collection(db, 'programe-fonduri'), where('site', '==', process.env.SITE))
     const docsSnap = await getDocs(docsRef)
 
     const data: Program[] = docsSnap.docs.map(doc => (

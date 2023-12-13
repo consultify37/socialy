@@ -120,9 +120,9 @@ const OurClients = ({hasTitle=false}) => {
                 }
                 </Carousel>
             </div>
-            <Link href='/testimoniale' className="bg-[#BA63FF] flex items-center font-semibold justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 md:py-4 mb-4 text-white rounded-[28.5px] transition-all hover:scale-[1.05]">
+            {hasTitle && <Link href='/testimoniale' className="bg-[#BA63FF] flex items-center font-semibold justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 md:py-4 mb-4 text-white rounded-[28.5px] transition-all hover:scale-[1.05]">
                 Vezi toate testimonialele
-            </Link>
+            </Link>}
         </section>
     )
 }

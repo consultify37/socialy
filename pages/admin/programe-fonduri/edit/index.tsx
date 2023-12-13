@@ -8,7 +8,7 @@ import FormTextArea from '../../../../components/admin/editProgram/FormTextArea'
 import Conditions from '../../../../components/admin/editProgram/Conditions'
 import AdminFaq from '../../../../components/admin/editProgram/AdminFaq'
 import { Condition, Faq } from '../../../../types'
-import { addDoc, collection, getDocs } from 'firebase/firestore'
+import { addDoc, collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../../../firebase'
 import { uploadFile } from '../../../../utils/b2_storage/upload_file'
 import { useRouter } from 'next/navigation'
@@ -67,6 +67,7 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
       }
 
       const newData = {
+        site: process.env.SITE,
         bulletPoints,
         categorie,
         title,
@@ -262,7 +263,7 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
 export default EditProgram
 
 export const getServerSideProps = async () => {
-  const docsRef = collection(db, 'categories')
+  const docsRef = query(collection(db, 'categories'), where('site', '==', process.env.SITE))
   const docsSnap = await getDocs(docsRef)
 
   const categories = docsSnap.docs.map(doc => ( doc.data().category ))

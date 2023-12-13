@@ -10,9 +10,6 @@ import 'react-international-phone/style.css'
 import ReCAPTCHA from "react-google-recaptcha"
 import PageHeader from "../../components/Header/PageHeader"
 import WhyUsItem1 from "../../components/Home/Why-Us/Item1"
-import WhyUsItem2 from "../../components/Home/Why-Us/Item2"
-import WhyUsItem3 from "../../components/Home/Why-Us/Item3"
-import WhyUsItem4 from "../../components/Home/Why-Us/Item4"
  
 export default function Contact() {
     const [nume, setNume] = useState('')
@@ -66,7 +63,7 @@ export default function Contact() {
                     alt="Yellow triangle"
                 />
             </PageHeader>
-            <div className="bg-[#F6EFFF] w-[100vw] h-[90vh] absolute top-0 left-0 z-[-1]"></div>
+            <div className="bg-[#F6EFFF] w-[100vw] h-[130vh] lg:h-[83vh] absolute top-0 left-0 z-[-1]"></div>
             <section className="w-full flex flex-col lg:flex-row items-start my-32 justify-between px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
                 <div className="flex flex-col w-full mr-12 bg-[#260056] rounded-3xl p-8">
                     <div className="flex flex-row mb-6">
@@ -267,7 +264,7 @@ export default function Contact() {
                     </div>
                 </form>
             </section>
-            <Rezultate />
+            <Rezultate contact={false} />
             <section id='why-us' className='mt-24 md:mt-48 w-full relative px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
                 <h2 className='text-[#260056] text-center font-bold md:text-base text-xl lg:text-2xl xl:text-4xl mb-12 lg:mb-32'>De ce să alegi Consultify?</h2>
                 <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-start gap-y-20'>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Carousel from "react-elastic-carousel"
-import FonduriComponent from './component';
+import FonduriComponent from './FonduriComponent';
 import Link from "next/link";
 
 export default function CarouselPrograme({ programe }){
@@ -14,17 +14,20 @@ export default function CarouselPrograme({ programe }){
                     <Image src='/images/arrow-right.svg' className="ml-2 w-[6px] md:w-[10px] h-auto" width={10} alt='arrow-right' height={10}/>
                 </span>
             </Link>
-            <div className="w-full relative">
-                <Carousel
-                    pagination={true}
-                    isRTL={false}
-                    disableArrowsOnEnd={false}
-                >
-                    { programe.map((program) => (
-                        <FonduriComponent program={program} key={program.id} />
-                    ))}
-                </Carousel>
-            </div>
+            <Carousel
+                pagination={true}
+                isRTL={false}
+                disableArrowsOnEnd={false}
+                className="relative w-full"
+            >
+                { programe.map((program) => (
+                    <FonduriComponent 
+                        program={program} 
+                        key={program.id} 
+                        carousel={true} 
+                    />
+                ))}
+            </Carousel>
         </div>
     )
 }

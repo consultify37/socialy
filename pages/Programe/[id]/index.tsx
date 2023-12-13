@@ -30,7 +30,6 @@ const Program = ({ program }: Props) => {
           width={1066}
           alt='Imagine fonduri'
           className='w-full h-auto rounded-3xl md:rounded-[38px]'
-          unoptimized={true}
         />
 
         <h1 className='text-primary text-[28px] md:text-[35px] font-extrabold pt-10 text-center'>

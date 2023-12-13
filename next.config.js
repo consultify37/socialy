@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  env: {
+    REVALIDATE: process.env.REVALIDATE,
+    SITE: process.env.SITE,
+  },
   swcMinify: true,
   i18n: {
     locales: ["ro"],

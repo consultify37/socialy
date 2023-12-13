@@ -119,24 +119,24 @@ export default function PaginaProgram() {
                 <h2 className='text-xl font-bold text-[#260056] z-[2] mb-6 lg:text-2xl xl:text-3xl'>Acest serviciu este pentru tine dacă vrei:</h2>
                 <ul className='list-none mt-4'>
                     <li className='flex'>
-                        <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] text-[15px] lg:text-base font-bold '>Accelerarea procesului de implementare cu resursele și know-how-ul nostru.</p>
+                        <Image src='/images/servicii/check.svg' className='mr-4 w-[24px] h-[24px] mt-1' width={28} height={28} alt='check' />
+                        <p className='text-[#260056] text-[15px] lg:text-base font-bold'>Accelerarea procesului de implementare cu resursele și know-how-ul nostru.</p>
                     </li>
                     <li className='flex mt-4'>
-                        <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] text-[15px] lg:text-base font-semibold'>Asigurarea conformității cu cerințele și termenele stricte ale fondurilor europene.</p>
+                        <Image src='/images/servicii/check.svg' className='mr-4 w-[24px] h-[24px] mt-1' width={28} height={28} alt='check' />
+                        <p className='text-[#260056] text-[15px] lg:text-base font-bold'>Asigurarea conformității cu cerințele și termenele stricte ale fondurilor europene.</p>
                     </li>
                     <li className='flex mt-4'>
-                        <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] text-[15px] lg:text-base font-semibold'>Reducerea stresului și a presiunii asupra echipei dumneavoastră.</p>
+                        <Image src='/images/servicii/check.svg' className='mr-4 w-[24px] h-[24px] mt-1' width={28} height={28} alt='check' />
+                        <p className='text-[#260056] text-[15px] lg:text-base font-bold'>Reducerea stresului și a presiunii asupra echipei dumneavoastră.</p>
                     </li>
                     <li className='flex mt-4'>
-                        <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] text-[15px] lg:text-base font-semibold'>Acces la rețeaua noastră extinsă de parteneri și contacte relevante.</p>
+                        <Image src='/images/servicii/check.svg' className='mr-4 w-[24px] h-[24px] mt-1' width={28} height={28} alt='check' />
+                        <p className='text-[#260056] text-[15px] lg:text-base font-bold'>Acces la rețeaua noastră extinsă de parteneri și contacte relevante.</p>
                     </li>
                     <li className='flex mt-4'>
-                        <Image src='/images/servicii/check.svg' className='mr-4' width={28} height={28} alt='check' />
-                        <p className='text-[#260056] text-[15px] lg:text-base font-semibold'>Suportul dedicat și consultanța pe tot parcursul implementării proiectului tău.</p>
+                        <Image src='/images/servicii/check.svg' className='mr-4 w-[24px] h-[24px] mt-1' width={28} height={28} alt='check' />
+                        <p className='text-[#260056] text-[15px] lg:text-base font-bold'>Suportul dedicat și consultanța pe tot parcursul implementării proiectului tău.</p>
                     </li>
                 </ul>
                 <div className='flex flex-row gap-2 md:gap-4 mt-6'>
@@ -156,7 +156,9 @@ export default function PaginaProgram() {
             </div>
         </section>
         <div className="h-4 md:h-8"></div>
-        <OurClients />
+        <div className="mt-16 md:mt-32 px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+            <OurClients hasTitle={true} />
+        </div>
         <DidYouKnow />
         <FAQAbout intrebari={intrebari} />
         <CTA

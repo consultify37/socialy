@@ -23,7 +23,7 @@ export default function TopBar() {
                         <Image src='/images/TopBar/mail.svg' width={10} height={10} alt="phone" className="w-[14px] md:w-[20px] mr-1 lg:ml-2 lg:mr-2"/>
                         contact@consultify.ro
                     </Link>
-                    <span className="hidden md:flex flex-row items-center text-white text-[12px] md:text-[16px] mr-2">
+                    <span className="hidden lg:flex flex-row items-center text-white text-[12px] md:text-[16px] mr-2">
                         <Image src='/images/TopBar/clock.svg' width={10} height={10} alt="phone" className="w-[14px] md:w-[20px] mr-1 lg:ml-2 lg:mr-2"/>
                         interval orar: 10:00 - 18:00
                     </span>
