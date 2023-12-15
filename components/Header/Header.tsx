@@ -6,7 +6,6 @@ import { useRouter } from "next/router"
 import { CartModal, LoginModal } from "../modals"
 import Cookies from "js-cookie"
 import { usePathname } from "next/navigation"
-import FixedLeft from "./FixedLeft"
 
 const Header = () => {
   const [toggle, setToggle] = useState<boolean>(false)

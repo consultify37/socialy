@@ -10,6 +10,8 @@ import 'react-international-phone/style.css'
 import ReCAPTCHA from "react-google-recaptcha"
 import PageHeader from "../../components/Header/PageHeader"
 import WhyUsItem1 from "../../components/Home/Why-Us/Item1"
+import axios from "axios"
+import ReactLoading from 'react-loading'
  
 export default function Contact() {
     const [nume, setNume] = useState('')
@@ -20,24 +22,62 @@ export default function Contact() {
     const [nevoie, setNevoie] = useState('')
     const [cui, setCui] = useState('')
     const [firma, setFirma] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
 
     const [isChecked, setIsChecked] = useState(false)
     const [captchaVerified, setCaptchaVerified] = useState(false)
 
-    const handleSubmit = (event) => {
-        setIsChecked(event.target.checked)
-    }
-
     const upload = async (e) => {
+        e.preventDefault()
+        setIsLoading(true)
+
         if (!isChecked) {
             toast.error('Acceptă termenii și condițiile mai întăi.')
-            e.preventDefault()
+            setIsLoading(false)
+            return
         }
 
         if (!captchaVerified) {
             toast.error('Verifică Captcha mai întăi.')
-            e.preventDefault()
+            setIsLoading(false)
+            return
         }
+
+        try {
+            const response = await axios.get('https://api.inspiredconsulting.ro/contact', {
+                params: {
+                    nume: nume,
+                    prenume: prenume,
+                    email: email,
+                    mesaj: mesaj,
+                    firma: firma,
+                    cui: cui,
+                    nevoie: nevoie,
+                    telefon: telefon,
+                    site: process.env.SITE
+                }
+            })
+            
+            if (response.status == 200) {
+                toast.success('Mulțumim! Un reprezentat Consultify te va contacta în curând. 🚀', { duration: 5000, style: { textAlign: 'center' } })
+                setCui("")
+                setEmail("")
+                setIsChecked(false)
+                setFirma("")
+                setMesaj("")
+                setNevoie("")
+                setNume('')
+                setPrenume('')
+                setTelefon('')
+            } else {
+                throw 'error'
+            }
+        } catch (e) {
+            setIsLoading(false)
+            toast.error('Ceva nu a mers bine. Încearcă din nou!')
+        }
+
+        setIsLoading(false)
     }
   
     return (
@@ -129,8 +169,6 @@ export default function Contact() {
                 </div>
                 <form 
                     className="mt-12 lg:mt-0 lg:ml-12 rounded-3xl shadow-box bg-[#fff] w-full max-w-[1000px] p-8 px-4 md:px-8 flex flex-col"
-                    method="POST"
-                    action="https://script.google.com/macros/s/AKfycbw2ppsLR7J95lZESrbXeDUDwFVV8oQ56J45I__eMWdVqWDbibt2ISPlbmhC-NDVUYYI1Q/exec"
                     onSubmit={upload}
                 >
                     <h2 className="text-xl font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună!</h2>
@@ -146,6 +184,7 @@ export default function Contact() {
                                 className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-[14px] outline-none" 
                                 placeholder="ex: Popescu"
                                 onChange={(e) => setNume(e.target.value)}
+                                value={nume}
                             />
                         </div>
                         <div className="flex flex-col w-full md:w-[47%]">
@@ -159,6 +198,7 @@ export default function Contact() {
                                 className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-[14px] outline-none" 
                                 placeholder="ex: Andrei"
                                 onChange={(e) => setPrenume(e.target.value)}
+                                value={prenume}
                             />
                         </div>
                     </div>
@@ -171,6 +211,7 @@ export default function Contact() {
                                 defaultCountry="ro"
                                 value={telefon}
                                 name="Telefon"
+                                required
                                 onChange={(phone) => setTelefon(phone)}
                                 className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-2 mb-6 outline-none"
                             />
@@ -186,6 +227,7 @@ export default function Contact() {
                                 className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-[14px] outline-none" 
                                 placeholder="ex: exemplu@email.com"
                                 onChange={(e) => setEmail(e.target.value)}
+                                value={email}
                             />
                         </div>
                     </div>
@@ -200,6 +242,7 @@ export default function Contact() {
                                 className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 p-[14px] outline-none" 
                                 placeholder="Nume firmă"
                                 onChange={(e) => setFirma(e.target.value)}
+                                value={firma}
                             />
                         </div>
                         <div className="flex flex-col w-full md:w-[47%] md:mr-2">
@@ -225,6 +268,7 @@ export default function Contact() {
                                 className="rounded-xl w-full border-[#8717F8] text-ms leading-6 border-2 h-[60px] px-[14px] p-2 outline-none" 
                                 name="categorie"
                                 onChange={(e) => setNevoie(e.target.value)}
+                                value={nevoie}
                             >
                                 <option value="Selectează aici" className="hidden">Selectează aici</option>
                                 <option value="Consultanță Fonduri Europene">Consultanță Fonduri Europene</option>
@@ -242,6 +286,7 @@ export default function Contact() {
                             required
                             name="Detalii"
                             onChange={(e) => setMesaj(e.target.value)}
+                            value={mesaj}
                         ></textarea>
                     </div>
                     <div className="flex items-center justify-center mb-6 self-center ml-1">
@@ -255,12 +300,17 @@ export default function Contact() {
                             sitekey="6LdWV_AoAAAAAMMdYLnmy_NUtbetbPGYWHOOhery"
                             onChange={(e) => setCaptchaVerified(!captchaVerified)}
                         />
-                        <button                      
-                            className='py-3 md:py-4 mt-4 md:mt-0 md:ml-4 bg-[#8717F8] h-fit text-white rounded-[28px] font-semibold px-14 text-center text-md md:text-[16px] hover:scale-[1.05] transition-all'
-                            type="submit"
-                        >
-                            Trimite!
-                        </button>
+                        { isLoading ? 
+                            <div className='w-full flex items-center justify-center px-16 mt-4 md:mt-0'>
+                                <ReactLoading type="spin" color="#8717F8" width={32} height={32} />
+                            </div> :
+                            <button                      
+                                className='py-3 md:py-4 mt-4 md:mt-0 md:ml-4 bg-[#8717F8] h-fit text-white rounded-[28px] font-semibold px-14 text-center text-md md:text-[16px] hover:scale-[1.05] transition-all'
+                                type="submit"
+                            >
+                                Trimite!
+                            </button>
+                        }
                     </div>
                 </form>
             </section>

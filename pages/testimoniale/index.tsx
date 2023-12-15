@@ -9,6 +9,7 @@ import toast from "react-hot-toast"
 import Logos from "../../components/Home/Logos"
 import PageHeader from "../../components/Header/PageHeader"
 import OurClients from "../../components/Home/OurClients/OurClients"
+import axios from "axios"
 
 const testimonials = [
   {
@@ -46,31 +47,35 @@ export default function Testimoniale() {
     }
   }, [scrollAmount])
   
-  const [newsletter, setNewsletter] = useState('Adresa ta de email')
-  // const [buttonNews, setButtonNews] = useState('Mă abonez')
+  const [email, setEmail] = useState('')
   
-  const upload = (e: { preventDefault: () => void }) => {
+  const upload = async (e: any) => {
     e.preventDefault()
-    Axios.get('https://api.inspiredconsulting.ro/newsletter', {
-      params: {
-        email: newsletter
-      },
-    })
-    .then(function (response) {
-      console.log(response.data)
-      if (response.data == 'Esti deja abonat la newsletter') {
-        toast.error('Esti deja abonat la newsletter')
-      } else {
-        toast.success("Te-ai abonat la newsletter cu succes")
-      }
-    })
-    .catch(function (error) {
-      console.log(error)
-    })
-    .finally(function () {
-      // always executed
-    })
+    
+    try {
+      const response = await axios.get('https://api.inspiredconsulting.ro/newsletter', {
+                params: {
+                    email: email,
+                    website: 'consultify'
+                }
+            })
+            console.log(response)
+            if (response.status == 200) {
+                //toast.success('Verifică-ți email-ul, documentul tocmai ce a fost trimis! 🚀', { duration: 5000, style: { textAlign: 'center' } })
+                setEmail('')
+            } else {
+                throw 'error'
+            }
+    } catch (e) {
+      //toast.error('Ceva nu a mers bine. Încearcă din nou!')
+    }
+
+    const link = document.createElement('a')
+    link.download = 'Idei de afaceri'
+    link.href = '/files/10 Idei de afaceri.pdf'
+    link.click()
   }
+
   return (
     <>
       <Head>
@@ -218,13 +223,14 @@ export default function Testimoniale() {
               <input
                 className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
                 type="email"
-                placeholder={newsletter}
+                placeholder="Adresa ta de email"
+                value={email}
                 required
-                onChange={(e) => setNewsletter(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <Link href='/files/10 Idei de afaceri.pdf' download={true} target="_blank" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 text-center cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
+              <button type='submit' className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 text-center cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
                 Vreau documentul!
-              </Link>
+              </button>
             </form>
           </div>
           <div className='relative hidden lg:flex justify-end mt-16 lg:mt-0 lg:ml-12'>

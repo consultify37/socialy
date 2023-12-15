@@ -2,37 +2,36 @@ import Image from "next/image"
 import Axios from "axios"
 import { useState } from "react"
 import toast from "react-hot-toast"
+import axios from "axios"
 
 interface NewsLetterProps {
-  headingText: string;
+  headingText: string
 }
 
 export default function NewsLetter({ headingText }: NewsLetterProps) {
-  const [newsletter, setNewsletter] = useState('Adresa ta de email');
-  const [buttonNews, setButtonNews] = useState('Mă abonez')
+  const [newsletter, setNewsletter] = useState('')
   
-  const upload = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    Axios.get('https://api.inspiredconsulting.ro/newsletter', {
-      params: {
-        email: newsletter
-      },
-    })
-    .then(function (response) {
-      console.log(response.data)
-      if (response.data == 'Esti deja abonat la newsletter') {
-        toast.error('Esti deja abonat la newsletter', { position: 'top-center' })
-      } else {
-        toast.success("Te-ai abonat la newsletter cu succes")
-      }
-    })
-    .catch(function (error) {
-      console.log(error);
-    })
-    .finally(function () {
-      // always executed
-    });
-  };
+  const upload = async (e: any) => {
+    e.preventDefault()
+    
+    try {
+      const response = await axios.get('https://api.inspiredconsulting.ro/newsletter', {
+                params: {
+                    email: newsletter,
+                    website: 'consultify'
+                }
+            })
+            
+            if (response.status == 200) {
+                toast.success('Mulțumim pentru că te-ai abonat la newsletter-ul nostru! 🚀', { duration: 5000, style: { textAlign: 'center' } })
+                setNewsletter('')
+            } else {
+                throw 'error'
+            }
+    } catch (e) {
+      toast.error('Ceva nu a mers bine. Încearcă din nou!')
+    }
+  }
   
   return (
     <section className="my-16 mt-40 md:my-32 md:mt-48 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
@@ -66,18 +65,17 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
             {headingText}
           </h2>
           <form 
-            //onSubmit={upload} 
-            action="https://script.google.com/macros/s/AKfycbz915BWLWbyKQytx8sbresnP_BW0UI0KH4kinvHI1BdaAjF9LYsY1G0EbHyhKGkXz4FQA/exec"
-            method="POST"
+            onSubmit={upload} 
             className="relative flex mt-10 flex-col lg:flex-row items-center"
           >
             <input
               className="py-3 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
               type="email"
               name="Email"
-              placeholder={newsletter}
+              placeholder='Adresa ta de email'
               required
               onChange={(e) => setNewsletter(e.target.value)}
+              value={newsletter}
             />
             <button type="submit" className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-44 border-4 cursor-pointer border-secondary bg-[#7000FF] py-4 px-10 text-sm rounded-full">
               Mă abonez
@@ -86,5 +84,5 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
         </div>
       </div>
     </section>
-  );
+  )
 }
