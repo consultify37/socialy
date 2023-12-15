@@ -56,7 +56,7 @@ export default function Testimoniale() {
       const response = await axios.get('https://api.inspiredconsulting.ro/newsletter', {
                 params: {
                     email: email,
-                    website: 'consultify'
+                    website: process.env.SITE
                 }
             })
             console.log(response)
