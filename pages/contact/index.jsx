@@ -84,7 +84,7 @@ export default function Contact() {
     return (
         <>
             <Head>
-                <title>Consultify | Contact</title>
+                <title>Socialy | Contact</title>
             </Head>
             <PageHeader
                 title="Suntem aici pentru tine!"
