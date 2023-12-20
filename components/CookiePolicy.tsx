@@ -52,7 +52,7 @@ const CookiePolicy = () => {
             className="p-4 w-full rounded-xl bg-primary mt-4 hover:scale-105 transition-all"
             onClick={handleAccept}
           >
-            <p className="text-base font-semibold text-white">Accept</p>
+            <p className="text-base font-semibold text-onPrimary">Accept</p>
           </button>
         </div> : null
       } 
