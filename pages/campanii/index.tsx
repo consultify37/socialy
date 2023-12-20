@@ -43,7 +43,7 @@ export default function Programe({categories, programe}: Props) {
     return (
         <>
             <Head>
-                <title>Consultify | Programe</title>
+                <title>Socialy | Campanii</title>
             </Head>
             <PageHeader 
                 title="Alege programul potrivit pentru tine:"
@@ -75,10 +75,10 @@ export default function Programe({categories, programe}: Props) {
                     {
                         maxPages > 0 &&
                             Array.from({length: maxPages}, (_, i) =>
-                                <p key={i} onClick={() => {window.scrollTo({top: 280, left: 0, behavior: "instant"}); setPage(i)}} className={`${i === page ? 'bg-[#260056] text-white' : 'text-[#260056]'} cursor-pointer h-8 w-8 rounded-full flex items-center justify-center`}>{i+1}</p>
+                                <p key={i} onClick={() => {window.scrollTo({top: 280, left: 0, behavior: "instant"}); setPage(i)}} className={`${i === page ? 'bg-secondary text-onSecondary' : 'text-secondary'} cursor-pointer h-8 w-8 rounded-full flex items-center justify-center`}>{i+1}</p>
                             )
                     }
-                    <RiArrowRightSLine size={24} onClick={handleNext} className={`${page === maxPages - 1 ? 'text-[#CDCDCD]' : 'text-[#260056]'} cursor-pointer`} />
+                    <RiArrowRightSLine size={24} onClick={handleNext} className={`${page === maxPages - 1 ? 'text-onSecondary' : 'text-secondary'} cursor-pointer`} />
                 </div>
             </section>
             <div className="-mt-24">

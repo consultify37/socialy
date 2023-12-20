@@ -14,7 +14,7 @@ const CookiePolicy = () => {
 </ul>
 <br/>
 <p>Această politică se completează cu politica MHC INSPERON S.R.L cu privire la protecția datelor personale &icirc;n general și cu Termenii și Condițiile site-ului pe care vă &icirc;ncurajăm să le citiți, acestea incluz&acirc;nd informații suplimentare utile, inclusiv cu privire la responsabilul MHC INSPERON S.R.L &nbsp;pentru protecția datelor personale, toate scopurile prelucrărilor de date de către MHC INSPERON S.R.L, drepturile dumneavoastră, precum și excepțiile și limitele acestora etc.</p><br/>
-<p>Protecția corespunzătoare a datelor cu caracter personal este un obiectiv important pentru MHC INSPERON S.R.L. Dorința noastră este să fim c&acirc;t mai clari și transparenți Pentru orice &icirc;ntrebare, vă rugăm să ne contactați la&nbsp;contact@consultify.ro&nbsp;</p><br/>
+<p>Protecția corespunzătoare a datelor cu caracter personal este un obiectiv important pentru MHC INSPERON S.R.L. Dorința noastră este să fim c&acirc;t mai clari și transparenți Pentru orice &icirc;ntrebare, vă rugăm să ne contactați la&nbsp;contact@socialy.ro&nbsp;</p><br/>
 <br/>
 <p className='mb-2'><strong>1. Ce sunt cookie-urile?</strong></p>
 <p>Cookie-ul este un fișier de mici dimensiuni, format din litere și numere, care va fi stocat pe computerul, terminalul mobil sau alte echipamente ale unui utilizator de pe care se accesează internetul. Cookie-ul este instalat prin solicitarea emisă de către terminalul utilizatorului către un server propriu sau către un server al unei terțe părți.</p><br/>

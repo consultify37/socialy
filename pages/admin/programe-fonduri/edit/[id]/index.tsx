@@ -265,7 +265,7 @@ const EditProgram = ({ categories, program }: Props) => {
             <ReactLoading type="spin" color="#8717F8" width={32} height={32} /> :
             <button 
               type='submit'
-              className="bg-primary cursor-pointer font-semibold flex items-center justify-center w-[80%] py-3 text-white rounded-lg hover:scale-[1.05] transition-all mt-8"
+              className="bg-primary cursor-pointer font-semibold flex items-center justify-center w-[80%] py-3 text-onPrimary rounded-lg hover:scale-[1.05] transition-all mt-8"
             >
             Salvează
           </button>

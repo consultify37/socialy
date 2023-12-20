@@ -39,7 +39,7 @@ const Partners = () => {
 
   return (
     <div className='pt-16 md:pt-32 -mx-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
-      <h1 className='text-primary font-bold pb-8 md:pb-12 text-2xl xl:text-4xl text-center'>Iată partenerii noștri:</h1>
+      <h1 className='text-secondary font-bold pb-8 md:pb-12 text-2xl xl:text-4xl text-center'>Iată partenerii noștri:</h1>
       <Carousel 
         itemsToShow={1}
         isRTL={false}

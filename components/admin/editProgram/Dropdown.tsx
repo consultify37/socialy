@@ -34,13 +34,13 @@ const Dropdown = ({ values, selectedValue, setSelectedValue }: Props) => {
             values.map((value, index) => (
               <div key={value+index} className='px-1'>
                 <div
-                  className='w-full rounded-xl bg-secondary hover:bg-[#8717F8] px-5 py-3 cursor-pointer group'
+                  className='w-full rounded-xl bg-secondary hover:bg-primary px-5 py-3 cursor-pointer group'
                   onClick={() => {
                     setToggle(false)
                     setSelectedValue(value)
                   }}
                 >
-                  <p className='text-white font-semibold'>{value}</p>
+                  <p className='text-onSecondary group-hover:text-onPrimary font-semibold'>{value}</p>
                 </div>
               </div>
             ))

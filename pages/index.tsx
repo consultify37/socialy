@@ -24,7 +24,7 @@ export default function Home({ slides, programe }: Props) {
     <>
       {/* pageSettings */}
       <Head>
-        <title>Consultify | Acasă</title>
+        <title>Socialy | Acasă</title>
       </Head>
       <HomeHeader slides={slides} />
       <TrustSRL />
@@ -33,7 +33,7 @@ export default function Home({ slides, programe }: Props) {
       <Rezultate />
       <Garantii />
       <div id="proces"></div>
-      <Proces />
+        <Proces />
       <div className="mt-16 md:mt-32 px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <OurClients hasTitle={true} />
       </div>

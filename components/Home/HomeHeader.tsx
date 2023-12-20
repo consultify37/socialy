@@ -38,21 +38,21 @@ const HomeHeader = ({ slides }: Props) => {
             <h1 className="text-white text-[27px] md:text-4xl xl:text-[44px] font-extrabold text-center">
               Finanțarea potrivită <br className="block md:hidden"/> pentru firma potrivită!
             </h1>
-            <Image
+            {/* <Image
               id="hero-video"
               src="/images/home-header/home-line.svg"
               alt="Hero like"
               width={500}
               height={500}
               className="absolute w-[625px] right-0 -bottom-6 lg:w-[380px] xl:w-[460px] 2xl:w-[460px] lg:-bottom-8 2xl:-bottom-10"
-              />
+            /> */}
           </div>
           <p className="text-white font-light text-center text-[14px] md:text-[18px] lg:max-w-[60%]">
             Consultify este partenerul tău de încredere în obținerea finanțărilor nerambursabile, oferind soluții personalizate pentru dezvoltarea afacerii tale.
           </p>
           <Link
             href='#proces'
-            className="relative px-10 py-4 bg-[#BA63FF] text-[#fff] rounded-[28.5px] mb-8 text-base font-semibold transition-all hover:scale-[1.05] z-[12]"
+            className="relative px-10 py-4 bg-primary text-onPrimary rounded-[28.5px] mb-8 text-base font-semibold transition-all hover:scale-[1.05] z-[12]"
             >
             Cum pot accesa fonduri?
           </Link>
@@ -64,49 +64,28 @@ const HomeHeader = ({ slides }: Props) => {
               alt="Hero video"
               width={120}
               height={120}
-              className="absolute z-[4] w-[100px] md:w-[160px] -top-10 -left-4 md:-top md:-top-10 xl:-left-4 xl:-top-14"
+              className="absolute z-[-1] w-[80px] md:w-[130px] -top-10 -left-4 md:-top-48 md:right-0 lg:-right-30 xl:-right-20 2xl:-right-48 md:left-auto"
               />
           </div>
           </div>
-        <span className="absolute block md:hidden -left-[4rem] -top-12 bg-[#260056] w-[127vw] h-[118%] -rotate-[5deg] z-[4] rounded-[0_0_165px_100px] overflow-hidden"/>
-        <span className="absolute block md:hidden -left-[4rem] -top-12 bg-[#260056] w-[127vw] h-[40%] z-[4] rounded-[0_0_165px_100px] overflow-hidden"/>
-        <Image
-          src="/images/circle-hero-right.svg"
-          alt="Hero blue circle"
-          width={200}
-          height={200}
-          className="block md:hidden absolute -right-52 -top-24 xl:top-0 z-[5] w-[321px]"
-          />
-        <Image
-          src="/images/triangle-hero.svg"
-          alt="Hero blue circle"
-          width={140}
-          height={140}
-          className="block md:hidden absolute w-[82px] -right-0 bottom-[180px] z-[11]"
-          />
-        <Image
-          src="/images/circle-hero-left.svg"
-          alt="Hero green circle"
-          width={200}
-          height={200}
-          className="block md:hidden absolute w-[176px] -left-20 -top-32 z-[100]"
-        />
+        <span className="absolute block md:hidden -left-[4rem] -top-12 bg-secondary w-[127vw] h-[118%] -rotate-[5deg] z-[4] rounded-[0_0_165px_100px] overflow-hidden"/>
+        <span className="absolute block md:hidden -left-[4rem] -top-12 bg-secondary w-[127vw] h-[40%] z-[4] rounded-[0_0_165px_100px] overflow-hidden"/>
       </section>
-      <span className="absolute hidden md:block top-0 bg-[#260056] w-[102vw] md:h-[400px] z-[4] overflow-hidden" />
-      <span className="absolute hidden md:block -left-4 top-0 bg-[#260056] w-[102vw] md:h-[600px] z-[4] -rotate-[5deg] rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] overflow-hidden">
+      <span className="absolute hidden md:block top-0 bg-secondary w-[102vw] md:h-[400px] z-[4] overflow-hidden" />
+      <span className="absolute md:-left-4 top-0 bg-secondary w-[102vw] h-[600px] z-[4] md:-rotate-[5deg] rounded-[0_0_164px_144px] xl:rounded-[0_0_200px_250px] overflow-hidden">
         <Image
           src="/images/circle-hero-right.svg"
           alt="Hero blue circle"
           width={200}
           height={200}
-          className="absolute -right-12 -top-4 xl:top-0 z-[5] w-[140px] xl:w-[378px]"
+          className="absolute right-0 -top-4 md:top-32 z-[5] w-[140px] md:w-[228px]"
           />
         <Image
           src="/images/triangle-hero.svg"
           alt="Hero blue circle"
           width={140}
           height={140}
-          className="absolute -right-8 w-24 xl:w-[140px] bottom-[1.5rem] z-[100] xl:right-[300px] xl:bottom-28"
+          className="absolute md:hidden xl:block right-4 w-16 md:w-[90px] bottom-32 z-[100] md:left-64 md:bottom-36 md:right-auto"
           />
         <Image
           src="/images/circle-hero-left.svg"

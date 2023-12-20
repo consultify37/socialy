@@ -4,7 +4,6 @@ import Link from "next/link"
 import NewsLetter from "../../components/global/newsletter"
 import Head from "next/head"
 import CTA from "../../components/CTA"
-import Axios from "axios"
 import toast from "react-hot-toast"
 import Logos from "../../components/Home/Logos"
 import PageHeader from "../../components/Header/PageHeader"
@@ -53,33 +52,33 @@ export default function Testimoniale() {
     e.preventDefault()
     
     try {
-      const response = await axios.get('https://api.inspiredconsulting.ro/newsletter', {
+      const response = await axios.get('https://api.inspiredconsulting.ro/email/trimite_idei_afaceri', {
                 params: {
-                    email: email,
+                    to: email,
                     website: process.env.SITE
                 }
             })
             console.log(response)
             if (response.status == 200) {
-                //toast.success('Verifică-ți email-ul, documentul tocmai ce a fost trimis! 🚀', { duration: 5000, style: { textAlign: 'center' } })
+                toast.success('Verifică-ți email-ul, documentul tocmai ce a fost trimis! 🚀', { duration: 5000, style: { textAlign: 'center' } })
                 setEmail('')
             } else {
                 throw 'error'
             }
     } catch (e) {
-      //toast.error('Ceva nu a mers bine. Încearcă din nou!')
+      toast.error('Ceva nu a mers bine. Încearcă din nou!')
     }
 
-    const link = document.createElement('a')
-    link.download = 'Idei de afaceri'
-    link.href = '/files/10 Idei de afaceri.pdf'
-    link.click()
+    // const link = document.createElement('a')
+    // link.download = 'Idei de afaceri'
+    // link.href = '/files/10 Idei de afaceri.pdf'
+    // link.click()
   }
 
   return (
     <>
       <Head>
-        <title>Consultify | Testimoniale</title>
+        <title>Socialy | Testimoniale</title>
       </Head>
       <PageHeader
         title="Experiențe de succes prin fonduri europene"
@@ -103,26 +102,26 @@ export default function Testimoniale() {
         id="feedback-firme"
         className="w-full flex flex-col items-center my-32 justify-center px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
       >
-        <h2 className="text-[#8717F8] font-bold text-[20px] md:text-xl lg:text-2xl xl:text-4xl text-center px-7">
-            Peste 850 de companii au accesat fonduri europene cu ajutorul nostru. 
+        <h2 className="text-secondary font-bold text-[20px] md:text-xl lg:text-2xl xl:text-4xl text-center px-7">
+          Peste 100 de firme s-au dezvoltat în online alături de Socialy
           </h2>
-          <h3 className="text-[#8717F8] text-[16px] md:text-lg lg:text-xl xl:text-2xl">
+          <h3 className="text-secondary text-[16px] md:text-lg lg:text-xl xl:text-2xl">
             Iată câteva dintre ele:
           </h3>
         
         <Logos />
       </section>
-      <section className="relative bg-[#260056] w-full pt-16 md:pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-        <span className="bg-[#260056] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
+      <section className="relative bg-secondary w-full pt-16 md:pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+        <span className="bg-secondary rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
         <h2 className="mb-8 md:mb-12 px-4 md:px-0 text-xl md:text-4xl font-bold text-white md:mxax-w-[80%] text-center md:pt-10 lg:pt-0">
           Gânduri și experiențe ale clienților noștri: testimoniale de succes
         </h2>
         <OurClients />
-        <section id='trust-us' className='bg-[#260056] mt-24 flex flex-col items-center w-full relative'>
+        <section id='trust-us' className='bg-secondary mt-24 flex flex-col items-center w-full relative'>
             <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-0 md:pt-20 lg:pt-0 mb-5">
               Încă nu te-am convins? Descarcă lista completă cu rezultate:
             </h2>
-            <Link href='/files/Rezultate Consultify.pdf' download={true} target="_blank" className="bg-[#8717F8] mb-16 mt-4 font-semibold px-12 py-3 text-white transition-all hover:scale-[1.05] rounded-[28.5px]">
+            <Link href='/files/Rezultate Consultify.pdf' download={true} target="_blank" className="bg-primary mb-16 mt-4 font-semibold px-12 py-3 text-onPrimary transition-all hover:scale-[1.05] rounded-[28.5px]">
               Descarcă lista aici!
             </Link>
             <h2 className="text-xl md:text-3xl font-bold text-white px-8 md:px-0 md:max-w-[80%] text-center pt-4 md:pt-20 lg:pt-0 mb-12 md:mb-24">
@@ -221,14 +220,14 @@ export default function Testimoniale() {
             </p>
             <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
               <input
-                className="py-4 text-[#fff] xl:px-6 px-4 lg:px-5 w-full bg-[#260056] placeholder:text-white border-2 border-[#7000FF] rounded-full"
+                className="py-4 text-onSecondary xl:px-6 px-4 lg:px-5 w-full bg-secondary placeholder:text-onSecondary border-2 border-primary rounded-full"
                 type="email"
                 placeholder="Adresa ta de email"
                 value={email}
                 required
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <button type='submit' className="text-[#fff] font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 text-center cursor-pointer border-[#260056] bg-[#7000FF] py-5 px-10 text-sm rounded-full">
+              <button type='submit' className="text-onPrimary font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 text-center cursor-pointer border-secondary bg-primary py-5 px-10 text-sm rounded-full">
                 Vreau documentul!
               </button>
             </form>

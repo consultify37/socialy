@@ -54,7 +54,7 @@ export default function Servicii() {
   return (
     <>
         <Head>
-            <title>Consultify | Servicii</title>
+            <title>Socialy | Servicii</title>
         </Head>
         <PageHeader
           title="Împreună pentru succesul tău: servicii și produse de calitate"

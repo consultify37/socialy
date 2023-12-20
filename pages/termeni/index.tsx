@@ -8,11 +8,11 @@ const Terms = () => {
 <li><strong>1. DEFINITII SI TERMENI</strong></li>
 </ul>
 <div className='h-1'></div>
-<p className='mt-4'>Prestator &ndash; S.C. MHC INSPERON S.R.L., cu sediul in Județ Bucuresti, Municipiul Bucuresti, &nbsp;Strada Lavandei, numarul 9, Bl.P28, &Icirc;nregistrată la Oficiul Registrul Comerțului sub nr. J40/6137/2020, av&acirc;nd CUI: RO42607998 &ndash; societatea care opereaza site-ul web consultify.ro;</p>
+<p className='mt-4'>Prestator &ndash; S.C. MHC INSPERON S.R.L., cu sediul in Județ Bucuresti, Municipiul Bucuresti, &nbsp;Strada Lavandei, numarul 9, Bl.P28, &Icirc;nregistrată la Oficiul Registrul Comerțului sub nr. J40/6137/2020, av&acirc;nd CUI: RO42607998 &ndash; societatea care opereaza site-ul web socialy.ro;</p>
 <p className='mt-4'>Cumparator / Client&nbsp;&ndash; poate fi orice persoana fizica care are varsta peste 18 ani, o persoana juridica sau orice entitate juridica care isi face un Cont in Site si efectueaza o Comanda.</p>
 <p className='mt-4'>Utilizator&nbsp;&ndash; orice persoana fizica care are varsta peste 18 ani sau persoana juridica inregistrata pe Site, care, prin finalizarea procesului de creare a Contului, si-a dat acordul cu privire la clauzele specifice site-ului din sectiunea Termeni si Conditii;</p>
 <p className='mt-4'>Cont&nbsp;&ndash; sectiunea din Site formata dintr-o adresa de e-mail si o parola care permite Cumparatorului transmiterea Comenzii si care contine informatii despre Client/Cumparator si istoricul Cumparatorului in Site (Comenzi, facturi fiscale, etc.). Utilizatorul este responsabil si se va asigura ca toate informatiile introduse la crearea Contului sunt corecte, complete si actualizate.</p>
-<p className='mt-4'>Site&nbsp;&ndash; site-ul de prezentare gazduit la adresa web consultify.ro si subdomeniile acestuia.</p>
+<p className='mt-4'>Site&nbsp;&ndash; site-ul de prezentare gazduit la adresa web socialy.ro si subdomeniile acestuia.</p>
 <p className='mt-4'>Comanda&nbsp;&ndash; un document electronic ce intervine ca forma de comunicare intre Prestator si Cumparator prin care Cumparatorul transmite Prestatorului, prin intermediul Site-ului intentia sa de a achizitiona Servicii de pe Site.</p>
 <p className='mt-4'>Servicii&nbsp;&ndash; orice serviciu listat pe Site, inclusiv serviciile mentionate in Comanda, care urmeaza a fi furnizate de catre Prestator, Cumparatorului/Clientului ca urmare a Contractului incheiat.</p>
 <p className='mt-4'>Contract&nbsp;&ndash; reprezinta contractul la distanta incheiat intre Prestator si Cumparator, fara prezenta fizica simultana a Prestatorului si a Cumparatorului.</p>
@@ -33,7 +33,7 @@ const Terms = () => {
 <p className='mt-4'>Raspuns&nbsp;&ndash; informatie scrisa care este transmisa Utilizatorului/Clientului/Cumparatorului care a adresat o Intrebare in Site, in pagina unui anumit Serviciu. Raspunsul reprezinta o explicatie oferita de un Utilizator/Client/Cumparator unui alt Utilizator/Client/Cumparator in cadrul unei discutii.</p>
 <p className='mt-4'>Document&nbsp;&ndash; prezentele Temene si Conditii.</p>
 <p className='mt-4'>Comunicari Comerciale&nbsp;&ndash; orice tip de mesaj trimis (cum ar fi: e-mail/SMS/telefonic/mobile push/webpush/etc.) continand informatii generale si tematice, informatii cu privire la Servicii similare sau complementare cu cele pe care le-ati achizitionat, informatii cu privire la oferte sau promotii precum si alte comunicari comerciale cum ar fi cercetari de piata si sondaje de opinie.</p>
-<p className='mt-4'>Tranzactie&nbsp;&ndash; incasarea sau rambursarea unei sume rezultata din vanzarea unui Serviciu de catre consultify.ro, Cumparatorului, prin utilizarea serviciilor procesatorului de carduri agreat de catre Prestator, indiferent de modalitatea de livrare.</p>
+<p className='mt-4'>Tranzactie&nbsp;&ndash; incasarea sau rambursarea unei sume rezultata din vanzarea unui Serviciu de catre socialy.ro, Cumparatorului, prin utilizarea serviciilor procesatorului de carduri agreat de catre Prestator, indiferent de modalitatea de livrare.</p>
 <p className='mt-4'>Specificatii&nbsp;&ndash; toate specificatiile si/sau descrierile Serviciilor asa cum sunt precizate in descrierea acestora.</p>
 <ul className='mt-4'>
     <li><strong>2. &nbsp;DOCUMENTE CONTRACTUALE</strong></li>
@@ -47,9 +47,9 @@ const Terms = () => {
 </ul>
 <div className='h-1'></div>
 <p className='mt-4'>3.1. Accesul in vederea efectuarii unei Comenzii ii este permis oricarui Utilizator/Cumparator.</p>
-<p className='mt-4'>Pentru motive justificate consultify.ro isi rezerva dreptul de a restrictiona accesul Utilizatorului/Cumparatorului in vederea efectuarii unei Comenzi si/sau la unele din modalitatile de plata acceptate, in cazul in care considera ca in baza conduitei sau a activitatii Utilizatorului/Cumparatorului pe Site, actiunile acestuia ar putea prejudicia in vreun fel consultify.ro. In oricare dintre aceste cazuri, Utilizatorul/Cumparatorul se poate adresa Departamentului de Relatii cu Clientii al vanzatorului, pentru a fi informat cu privire la motivele care au condus la aplicarea masurilor susmentionate.</p>
+<p className='mt-4'>Pentru motive justificate socialy.ro isi rezerva dreptul de a restrictiona accesul Utilizatorului/Cumparatorului in vederea efectuarii unei Comenzi si/sau la unele din modalitatile de plata acceptate, in cazul in care considera ca in baza conduitei sau a activitatii Utilizatorului/Cumparatorului pe Site, actiunile acestuia ar putea prejudicia in vreun fel socialy.ro. In oricare dintre aceste cazuri, Utilizatorul/Cumparatorul se poate adresa Departamentului de Relatii cu Clientii al vanzatorului, pentru a fi informat cu privire la motivele care au condus la aplicarea masurilor susmentionate.</p>
 <p className='mt-4'>3.2. Comunicarea cu Prestatorul se poate realiza prin interactiunea directa cu acesta sau prin adresele mentionate la sectiunea &ldquo;contact&rdquo; din Site.</p>
-<p className='mt-4'>3.3 In cazul unui volum de trafic neobisnuit de mare provenit din partea unei retele de internet, consultify.ro isi rezerva dreptul de a cere Utilizatorilor/Cumparatorilor introducerea manuala a codurilor de validare de tip captcha, in vedere protejarii informatiei din cadrul Site-ului.</p>
+<p className='mt-4'>3.3 In cazul unui volum de trafic neobisnuit de mare provenit din partea unei retele de internet, socialy.ro isi rezerva dreptul de a cere Utilizatorilor/Cumparatorilor introducerea manuala a codurilor de validare de tip captcha, in vedere protejarii informatiei din cadrul Site-ului.</p>
 <p className='mt-4'>3.4. Toate tarifele aferente Serviciilor prezentate pe Site sau in contracte sunt exprimate in lei (RON) si includ T.V.A.</p>
 <p className='mt-4'>3.5. In cazul platilor online, Prestatorul nu este/nu poate fi facut responsabil pentru niciun alt cost suplimentar suportat de catre Cumparator, incluzand dar nelimitandu-se la comisioane de conversie valutara aplicate de catre banca emitenta a cardului acestuia, in cazul in care moneda de emitere a acestuia difera de RON. Responsabilitatea pentru aceasta actiune o poarta numai Cumparatorul.</p>
 <p className='mt-4'>3.6. Toate informatiile folosite pentru descrierea Serviciilor disponibile pe Site (imagini statice / dinamice / prezentari multimedia / etc.) nu reprezinta o obligatie contractuala din partea Prestatorului, acestea fiind utilizate exclusiv cu titlu de prezentare.</p>
@@ -58,21 +58,21 @@ const Terms = () => {
 </ul>
 <div className='h-1'></div>
 <p className='mt-4'>4.1. Continutul, astfel cum este definit in preambul, incluzand dar nelimitandu-se la logo-uri, reprezentari stilizate, simboluri comerciale, imagini statice, imagini dinamice, text si/sau continut multimedia prezentate pe Site, sunt proprietatea exclusiva a MHC INSPERON S.R.L, acesteia fiindu-i rezervate toate drepturile obtinute in acest sens in mod direct sau indirect (prin licente de utilizare si/sau publicare).</p>
-<p className='mt-4'>4.2. Clientului/Cumparatorului/Utilizatorului nu ii este permisa copierea, distribuirea, publicarea, transferul catre terte parti, modificarea si/sau alterarea, utilizarea, legarea la, expunerea, includerea oricarui Continut in orice alt context decat cel original intentionat de consultify.ro, includerea oricarui Continut in afara Site-ului, indepartarea insemnelor care semnifica dreptul de autor al consultify.ro asupra Continutului precum si participarea la transferul, vanzarea, distributia unor materiale realizate prin reproducerea, modificarea sau afisarea Continutului, decat cu acordul scris expres al MHC INSPERON S.R.L.</p>
-<p className='mt-4'>4.3. Orice Continut la care Clientul/Cumparatorul/Utilizatorul are si/sau obtine acces prin orice mijloc, se afla sub incidenta Documentului, in cazul in care Continutul nu este insotit de un acord de utilizare specific si valid incheiat intre consultify.ro si acesta, si fara nicio garantie implicit sau expres formulata din partea consultify.ro cu referire la acel Continut.</p>
+<p className='mt-4'>4.2. Clientului/Cumparatorului/Utilizatorului nu ii este permisa copierea, distribuirea, publicarea, transferul catre terte parti, modificarea si/sau alterarea, utilizarea, legarea la, expunerea, includerea oricarui Continut in orice alt context decat cel original intentionat de socialy.ro, includerea oricarui Continut in afara Site-ului, indepartarea insemnelor care semnifica dreptul de autor al socialy.ro asupra Continutului precum si participarea la transferul, vanzarea, distributia unor materiale realizate prin reproducerea, modificarea sau afisarea Continutului, decat cu acordul scris expres al MHC INSPERON S.R.L.</p>
+<p className='mt-4'>4.3. Orice Continut la care Clientul/Cumparatorul/Utilizatorul are si/sau obtine acces prin orice mijloc, se afla sub incidenta Documentului, in cazul in care Continutul nu este insotit de un acord de utilizare specific si valid incheiat intre socialy.ro si acesta, si fara nicio garantie implicit sau expres formulata din partea socialy.ro cu referire la acel Continut.</p>
 <p className='mt-4'>4.4. Clientul/Cumparatorul/Utilizatorul poate copia, transfera si/sau utiliza Continut numai in scopuri personale sau non-comerciale, numai in cazul in care acestea nu intra in conflict cu prevederile Documentului.</p>
-<p className='mt-4'>4.5. Niciun Continut transmis catre Client, Utilizator sau Cumparator, prin orice mijloc de comunicare (electronic, telefonic, etc) sau dobandit de acesta prin accesare, vizitare si/sau vizualizare nu constituie o obligatie contractuala din partea consultify.ro si/sau al angajatului/prepusului consultify.ro care a mijlocit transferul de Continut, in cazul in care aceasta exista, fata de respectivul continut.</p>
+<p className='mt-4'>4.5. Niciun Continut transmis catre Client, Utilizator sau Cumparator, prin orice mijloc de comunicare (electronic, telefonic, etc) sau dobandit de acesta prin accesare, vizitare si/sau vizualizare nu constituie o obligatie contractuala din partea socialy.ro si/sau al angajatului/prepusului socialy.ro care a mijlocit transferul de Continut, in cazul in care aceasta exista, fata de respectivul continut.</p>
 <p className='mt-4'>4.6. Este interzisa orice utilizare a Continutului in alte scopuri decat cele permise expres prin prezentul Document sau de acordul de utilizare care il insoteste, in cazul in care acesta exista.</p>
 <ul className='mt-4'>
     <li><strong>5. COMANDA</strong></li>
 </ul>
 <div className='h-1'></div>
-<p className='mt-4'>5.1. Clientul/Cumparatorul poate efectua Comenzi pe Site, prin transmiterea unui mesaj din contul de client catre consultify.ro.</p>
+<p className='mt-4'>5.1. Clientul/Cumparatorul poate efectua Comenzi pe Site, prin transmiterea unui mesaj din contul de client catre socialy.ro.</p>
 <p className='mt-4'>5.2. Prin transmiterea Comenzii Cumparatorul consimte ca toate datele furnizate de acesta, necesare procesului de cumparare, sunt corecte, complete si adevarate la data plasarii Comenzii</p>
 <p className='mt-4'>5.3. Prin transmiterea Comenzii, Cumparatorul consimte ca Prestatorul poate sa il contacteze, prin orice mijloc disponibil / agreat de Prestator, in orice situatie in care este necesara contactarea Cumparatorului.</p>
 <p className='mt-4'>5.4. Prestatorul poate anula Comanda efectuata de catre Cumparator, in urma unei notificari prealabile adresate Cumparatorului, fara nicio obligatie ulterioara a vreunei parti fata de cealalta sau fara ca vreo parte sa poata sa pretinda celeilalte daune-interese in urmatoarele cazuri:</p>
 <p className='mt-4'>5.4.1. neacceptarea de catre banca emitenta a cardului Cumparatorului, a tranzactiei, in cazul platii online;</p>
-<p className='mt-4'>5.4.2. invalidarea tranzactiei de catre procesatorul de carduri agreat de consultify.ro, in cazul platii online;</p>
+<p className='mt-4'>5.4.2. invalidarea tranzactiei de catre procesatorul de carduri agreat de socialy.ro, in cazul platii online;</p>
 <p className='mt-4'>5.4.3. datele furnizate de catre Client/Cumparator, pe Site sunt incomplete si/sau incorecte;</p>
 <p className='mt-4'>5.5. In cazul incheierii contractului prin mijloace de comunicare la distanta, Cumparatorul persoana fizica are dreptul sa se retraga din Contract, respectiv sa renunțe la un Serviciu, &icirc;n termen de 14 zile calendaristice, fara invocarea niciunui motiv si fara a suporta alte costuri. &nbsp;Astfel, potrivit OUG: nr 34/2014, perioada de renunțare la un Serviciu expiră &icirc;n termen de 14 zile de la data incheierii contractului.</p>
 <p className='mt-4'>5.6. In cazul in care Cumparatorul persoana fizica decide sa se retraga din Contract, acesta va putea completa un formular sau va face o cerere de returnare departamentului de relatii cu clientii al S.C. MHC INSPERON S.R.L.</p>
@@ -86,7 +86,7 @@ const Terms = () => {
     <li><strong>6. CONFIDENTIALITATE</strong></li>
 </ul>
 <div className='h-1'></div>
-<p className='mt-4'>6.1. S.C. MHC INSPERON S.R.L va pastra confidentialitatea informatiilor de orice natura pe care le furnizati. Dezvaluirea informatiilor furnizate se va putea face doar in conditiile mentionate in prezentul Document si in documentul &ldquo;Politica de Confidențialitate&nbsp;cu privire la prelucrarea datelor cu caracter personal&rdquo; publicata pe site-ul consultify.ro.</p>
+<p className='mt-4'>6.1. S.C. MHC INSPERON S.R.L va pastra confidentialitatea informatiilor de orice natura pe care le furnizati. Dezvaluirea informatiilor furnizate se va putea face doar in conditiile mentionate in prezentul Document si in documentul &ldquo;Politica de Confidențialitate&nbsp;cu privire la prelucrarea datelor cu caracter personal&rdquo; publicata pe site-ul socialy.ro.</p>
 <p className='mt-4'>6.2. Nicio declaratie publica, promovare, comunicat de presa sau orice alt mod de dezvaluire catre terte parti nu va fi facuta de Cumparator/Client cu privire la Comanda/Contract fara consimtamantul prealabil scris al Prestatorului.</p>
 <p className='mt-4'>6.3. Prin transmiterea de informatii sau materiale prin intermediul acestui site, oferiti Prestatorului acces nerestrictionat si irevocabil la acestea, dreptul de a utiliza, reproduce, afisa, modifica, transmite si distribui aceste materiale sau informatii. Sunteti, de asemenea, de acord ca Prestatorul sa poata utiliza liber, in interes propriu, aceste informatii, idei, concepte, know-how-uri sau tehnici pe care ni le-ati trimis prin intermediul Site-ului. S.C. MHC INSPERON S.R.L nu va constitui subiect de obligatii referitoare la confidentialitatea informatiilor trimise, daca legislatia in vigoare nu prevede alte specificari in acest sens.</p>
 <ul className='mt-4'>
@@ -101,7 +101,7 @@ const Terms = () => {
     <li><strong>8. FACTURARE &ndash; PLATA&nbsp;</strong></li>
 </ul>
 <div className='h-1'></div>
-<p className='mt-4'>8.1. Preturile Bunurilor si Serviciilor afisate in cadrul site-ului www.consultify.ro includ T.V.A. conform legislatiei in vigoare.</p>
+<p className='mt-4'>8.1. Preturile Bunurilor si Serviciilor afisate in cadrul site-ului www.socialy.ro includ T.V.A. conform legislatiei in vigoare.</p>
 <p className='mt-4'>8.2. Pretul, modalitatea de plata si termenul de plata sunt convenite cu fiecare client in parte prin contractul scris incheiat cu acesta. Prestatorul va emite catre Cumparator o factura pentru Serviciile prestate, obligatia Cumparatorului fiind sa furnizeze toate informatiile necesare emiterii facturii conform cu legislatia in vigoare.</p>
 <p className='mt-4'>8.3. Pentru o corecta comunicare a facturii aferente Comenzii, Cumparatorului ii revin obligatiile de a-si actualiza ori de cate ori este cazul datele din Contul sau si de a accesa informatiile si documentele aferente fiecarei Comenzi, existente in Cont.</p>
 <p className='mt-4'>8.4. Prin trimiterea Comenzii, Cumparatorul isi exprima acordul sa primeasca facturile in format electronic prin adaugarea acestora de catre S.C. MHC INSPERON S.R.L in Contul sau prin intermediul postei electronice, la adresa de e-mail mentionata in Contul sau.</p>
@@ -122,7 +122,7 @@ const Terms = () => {
     <li><strong>11. PRELUCRAREA DATELOR CU CARACTER PERSONAL</strong></li>
 </ul>
 <div className='h-1'></div>
-<p className='mt-4'>11.1. Va rugam sa parcurgeti Politica de Confidentialitate cu privire la prelucrarea datelor cu caracter personal, care este prezentata pe site-ul consultify.ro si care face parte integranta din prezentul document.</p>
+<p className='mt-4'>11.1. Va rugam sa parcurgeti Politica de Confidentialitate cu privire la prelucrarea datelor cu caracter personal, care este prezentata pe site-ul socialy.ro si care face parte integranta din prezentul document.</p>
 <ul className='mt-4'>
     <li><strong>12. FOLOLSIREA COOKIE-URILOR</strong></li>
 </ul>
@@ -143,7 +143,7 @@ const Terms = () => {
     <li><strong>15. LIVRAREA SERVICIILOR &amp; TERMEN DE LIVRARE</strong></li>
 </ul>
 <div className='h-1'></div>
-<p className='mt-4'>Paginile din prezentul website prin care se poate face plata cu cardul prin procesatorul de plati NETOPIA MOBILPAY, sunt destinate si pot fi accesate exclusiv de clientii Consultify si au ca scop eficientizarea platilor contractuale. Livrarea serviciilor se face conform contractului de colaborare semnat, iar termenul de livrare difera in functie de contextul politico-econimic si depinde strict de deschiderea programelor de finantare. Perioada de livrare poate varia intre 1 zi si 12 luni calendaristice, in functie de complexitatea proiectului si avand in vedere posibilile intarzieri de lansare ale proiectelor de finantare.</p>
+<p className='mt-4'>Paginile din prezentul website prin care se poate face plata cu cardul prin procesatorul de plati NETOPIA MOBILPAY, sunt destinate si pot fi accesate exclusiv de clientii socialy si au ca scop eficientizarea platilor contractuale. Livrarea serviciilor se face conform contractului de colaborare semnat, iar termenul de livrare difera in functie de contextul politico-econimic si depinde strict de deschiderea programelor de finantare. Perioada de livrare poate varia intre 1 zi si 12 luni calendaristice, in functie de complexitatea proiectului si avand in vedere posibilile intarzieri de lansare ale proiectelor de finantare.</p>
 </div>
   )
 }

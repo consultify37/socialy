@@ -73,7 +73,7 @@ const Header = () => {
           role="main"
           className="fixed z-[999] top-14 w-[calc(100%-12px*2)] md:w-[calc(100%-16px*2)] xl:w-[calc(100%-110px*2)] 2xl:w-[calc(100%-216px*2)] mx-3 md:mx-4 xl:mx-[110px] 2xl:mx-[216px]"
         >
-          <div className={"rounded-full flex flex-row justify-between items-center px-8 lg:px-[60px] py-2 md:py-4 duration-300 transition-all " + ((!pathname?.includes('/blog-post')) || (scrollPosition != 0) ? "bg-secondary" : "bg-transparent")}>
+          <div className={"rounded-full flex flex-row justify-between items-center px-8 lg:px-[60px] py-2 md:py-2 duration-300 transition-all " + ((!pathname?.includes('/blog-post')) || (scrollPosition != 0) ? "bg-secondary" : "bg-transparent")}>
             <Link href="/" className="flex items-center justify-center z-[99]">
               <Image
                 src="/images/logo.svg"
@@ -139,8 +139,8 @@ const Header = () => {
               <li
                 className={`w-full lg:w-auto p-2 pl-16 border-b-[1px] border-white md:pl-18 lg:pl-0 lg:p-0 lg:border-0`}
               >
-                <Link href="/Programe" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
-                  programe
+                <Link href="/campanii" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
+                  campanii
                 </Link>
               </li>
               <li
@@ -182,7 +182,7 @@ const Header = () => {
               <li
                 className={`w-full lg:w-auto p-2 pl-16 md:pl-18 lg:pl-0 lg:p-0 lg:border-0 lg:hover:scale-[1.05] lg:transition-all`}
               >
-                <Link href="/contact" className="lg:font-semibold lg:bg-[#7000FF] lg:p-[14px] lg:px-8 lg:rounded-full lg:text-[#fff] font-semibold text-tertiary text-[16px]">
+                <Link href="/contact" className="lg:font-semibold lg:bg-primary lg:p-[14px] lg:px-8 lg:rounded-full lg:text-onPrimary font-semibold text-primary text-[16px]">
                   contactează-ne
                 </Link>
               </li>

@@ -49,7 +49,7 @@ const AdminFaq = ({ faqs, setFaqs }: Props) => {
         <button 
           type='button'
           onClick={handleAddFaq}
-          className="bg-primary cursor-pointer font-semibold flex items-center justify-center w-fit px-14 py-3 text-white rounded-lg hover:scale-[1.05] transition-all mt-8"
+          className="bg-primary cursor-pointer font-semibold flex items-center justify-center w-fit px-14 py-3 text-onPrimary rounded-lg hover:scale-[1.05] transition-all mt-8"
         >
           Adaugă
         </button>

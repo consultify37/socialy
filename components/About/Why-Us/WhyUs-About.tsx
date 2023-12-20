@@ -6,9 +6,9 @@ const WhyUsAbout = () => {
     return(
         <section id='why-us' className='mt-[12rem] w-full relative'>
             {/* Frames */}
-            <span className='bg-[#260056] rounded-[200px_250px_0px_0px] w-[115vw] md:w-[102vw] -rotate-2 absolute -left-5 -top-20 h-32' />
-            <div className="w-full flex relative flex-col justify-between items-center py-6 pb-12 md:py-12 bg-[#260056] px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-                <div className="w-full flex relative flex-col lg:flex-row justify-between items-start py-6 px-6 md:py-12 md:px-12 bg-[#F7EDFF] rounded-3xl">
+            <span className='bg-secondary rounded-[200px_250px_0px_0px] w-[115vw] md:w-[102vw] -rotate-2 absolute -left-5 -top-20 h-32' />
+            <div className="w-full flex relative flex-col justify-between items-center py-6 pb-12 md:py-12 bg-secondary px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
+                <div className="w-full flex relative flex-col lg:flex-row justify-between items-start py-6 px-6 md:py-12 md:px-12 bg-[#1D1D1D] rounded-3xl">
                     <Image src='/images/rezultate/triangle.svg' className="absolute md:left-[-2rem] left-[-1.5rem] top-[-3rem] md:top-[-2rem] w-[60px] md:w-[110px] h-[110px]" alt='triangle' width={146} height={146}/>
                     <Image src='/images/rezultate/square.svg' className="absolute right-[-2.75rem] bottom-[-2.75rem] w-[99px] h-[99px]" alt='triangle' width={146} height={146}/>
 
@@ -16,30 +16,30 @@ const WhyUsAbout = () => {
                     <Image src='/images/rezultate/hexagon.svg' className="hidden lg:block absolute left-[5%] bottom-[-39px] w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
 
                     <div className="flex items-start w-full flex-col md:mr-12">
-                        <h2 className="text-[#8717F8] text-2xl md:text-4xl font-semibold mb-4">Iată rezultatele noastre:</h2>
-                        <p className="text-sm mb-4 md:mb-10">Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să-și realizeze proiectele cu succes.</p>
-                        <Link className="py-3 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all" href="/contact">Contactează-ne!</Link>
+                        <h2 className="text-primary text-2xl md:text-4xl font-semibold mb-4">Iată rezultatele noastre:</h2>
+                        <p className="text-sm mb-4 md:mb-10 text-white">Cu ani de experiență în domeniul consultanței pentru fonduri europene, am ajutat numeroase companii să-și atingă obiectivele și să-și realizeze proiectele cu succes.</p>
+                        <Link className="py-3 bg-primary text-onPrimary rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all" href="/contact">Contactează-ne!</Link>
                     </div>
                     <div className="grid gap-5 w-full grid-cols-2 justify-between mt-6 lg:mt-0 lg:ml-12">
-                        <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
-                            <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">850+</h6>
-                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">clienți fericiți</span>
-                            <p className="text-xs text-[#260056]">Peste 850 de companii din diverse domenii au obținut finanțarea dorită prin intermediul nostru.</p>
+                        <div className="flex flex-col bg-[#303030] p-2 md:p-4 rounded-xl">
+                            <h6 className="text-primary text-lg md:text-3xl mb-1 font-bold">850+</h6>
+                            <span className="text-onSecondary font-semibold text-[14px] md:text-2xl mt-[-10px]">clienți fericiți</span>
+                            <p className="text-xs text-onSecondary">Peste 850 de companii din diverse domenii au obținut finanțarea dorită prin intermediul nostru.</p>
                         </div>
-                        <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
-                            <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">20+</h6>
-                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">programe diferite</span>
-                            <p className="text-xs text-[#260056]">Colaborând atât cu start-up-uri, cât și cu instituții publice, ne-am specializat în proiecte din domenii variate.</p>
+                        <div className="flex flex-col bg-[#303030] p-2 md:p-4 rounded-xl">
+                            <h6 className="text-primary text-lg md:text-3xl mb-1 font-bold">20+</h6>
+                            <span className="text-onSecondary font-semibold text-[14px] md:text-2xl mt-[-10px]">programe diferite</span>
+                            <p className="text-xs text-onSecondary">Colaborând atât cu start-up-uri, cât și cu instituții publice, ne-am specializat în proiecte din domenii variate.</p>
                         </div>
-                        <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
-                            <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">2</h6>
-                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">birouri în România</span>
-                            <p className="text-xs text-[#260056]">Siguranța și confortul clienților sunt prioritățile noastre, de aceea avem birouri deschise în mai multe orașe.</p>
+                        <div className="flex flex-col bg-[#303030] p-2 md:p-4 rounded-xl">
+                            <h6 className="text-primary text-lg md:text-3xl mb-1 font-bold">2</h6>
+                            <span className="text-onSecondary font-semibold text-[14px] md:text-2xl mt-[-10px]">birouri în România</span>
+                            <p className="text-xs text-onSecondary">Siguranța și confortul clienților sunt prioritățile noastre, de aceea avem birouri deschise în mai multe orașe.</p>
                         </div>
-                        <div className="flex flex-col bg-[#E3CDFF] p-2 md:p-4 rounded-xl">
-                            <h6 className="text-[#260056] text-lg md:text-3xl mb-1 font-bold">5+</h6>
-                            <span className="text-[#8717F8] font-semibold text-[14px] md:text-2xl mt-[-10px]">ani de experiență</span>
-                            <p className="text-xs text-[#260056]">Cu peste 5 ani de experiență, am ajutat oameni din diverse domenii să-și îndeplinească visurile.</p>
+                        <div className="flex flex-col bg-[#303030] p-2 md:p-4 rounded-xl">
+                            <h6 className="text-primary text-lg md:text-3xl mb-1 font-bold">5+</h6>
+                            <span className="text-onSecondary font-semibold text-[14px] md:text-2xl mt-[-10px]">ani de experiență</span>
+                            <p className="text-xs text-onSecondary">Cu peste 5 ani de experiență, am ajutat oameni din diverse domenii să-și îndeplinească visurile.</p>
                         </div>
                     </div>
                 </div>
@@ -53,12 +53,12 @@ const WhyUsAbout = () => {
                             title="Comunicare"
                         />
                         <WhyUsItem1 
-                            src="/images/flash.svg"
+                            src="/images/rocket.svg"
                             text="Echipă tânără, inovatoare și dinamică, aducând idei proaspete și abordări moderne."
                             title="Spirit tânăr"
                         />
                         <WhyUsItem1 
-                            src="/images/person.svg"
+                            src="/images/chess.svg"
                             text="Oferim o abordare individuală pentru a ne asigura că satisfacem nevoile și obiectivele fiecărui client."
                             title="Abordare individuală"
                         />
@@ -74,8 +74,9 @@ const WhyUsAbout = () => {
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>
-                <Link href='/testimoniale' className='py-3 md:py-4 bg-[#8717F8] text-[#fff] rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all mt-16'>Ce spun clienții noștri?</Link>
+                <Link href='/testimoniale' className='py-3 md:py-4 bg-primary text-onPrimary rounded-[28.5px] font-semibold px-12 hover:scale-[1.05] transition-all mt-16'>Ce spun clienții noștri?</Link>
             </div>
+            <Image src='/images/About/circle.svg' alt='triangle' width={164} height={164} className='z-[1] w-[300px] bottom-32 lg:w-[300px] xl:w-[340px] 2xl:w-[400px] absolute lg:bottom-64 xl:bottom-56 2xl:bottom-48 -right-48 lg:right-0' /> 
         </section>
     )
 }

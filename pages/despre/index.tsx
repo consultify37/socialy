@@ -1,13 +1,10 @@
 import { NextPage } from "next"
 import Head from "next/head"
-import Link from "next/link"
 import AboutHeader from "../../components/About/AboutHeader"
 import Partners from "../../components/About/Partners"
 import FAQAbout from "../../components/About/FAQ/FAQ"
 import OurStory from "../../components/About/OurStory/OurStory"
 import WhyUsAbout from "../../components/About/Why-Us/WhyUs-About"
-import News from "../../components/Home/News/News"
-import WhyUsCart from "../../components/Home/Why-Us/Cart"
 import CTA from "../../components/CTA"
 import NewsLetter from "../../components/global/newsletter"
 
@@ -17,7 +14,7 @@ const About: NextPage = () => {
         <>
             {/* PageSettings */}
             <Head>
-                <title>Consultify | Despre</title>
+                <title>Socialy | Despre</title>
             </Head>
             <AboutHeader /> 
             <OurStory />

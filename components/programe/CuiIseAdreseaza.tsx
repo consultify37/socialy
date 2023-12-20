@@ -9,7 +9,7 @@ type Props = {
 
 const CuiIseAdreseaza = ({ title, description }: Props) => {
   return (
-    <div className='flex flex-col md:flex-row justify-center md:justify-between items-center mt-12 md:mt-24 w-full'>
+    <div className='flex flex-col md:flex-row justify-center md:justify-between items-center mt-12 md:mt-32 w-full'>
       <Image 
         alt='Cui i se adreseaza'
         src='/images/PaginaProgram/Cui-adreseazaz.png'
@@ -19,9 +19,9 @@ const CuiIseAdreseaza = ({ title, description }: Props) => {
         unoptimized={true}
       />
       <div className='flex flex-col items-center'>
-        <p className='text-primary text-[18px] md:text-[32px] font-extrabold'>{ title }</p>
+        <p className='text-secondary text-[18px] md:text-[32px] font-extrabold'>{ title }</p>
         <div className='mt-4 md:mt-8'>
-          <FormatText text={description} className='text-[#00103C] text-[14px] md:text-[16px] text-justify'/>
+          <FormatText text={description} className='text-secondary text-[14px] md:text-[16px]'/>
         </div>
       </div>
     </div>
