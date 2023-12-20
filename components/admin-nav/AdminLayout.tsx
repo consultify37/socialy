@@ -46,7 +46,7 @@ const AdminLayout = ({ children }: Props) => {
   return (
     <>
       <Head>
-        <title>Consultify | Admin</title>
+        <title>Socialy | Admin</title>
       </Head>
       <div className='flex flex-row w-screen min-h-screen p-4'>
         <div className='bg-secondary fixed rounded-3xl w-1/5 min-w-[256px] max-w-80 mr-8 h-[calc(100vh-32px)] flex flex-col justify-between p-4'>
@@ -64,14 +64,14 @@ const AdminLayout = ({ children }: Props) => {
                   slide homepage
                 </p>
               </Link>
-              <Link href='/admin/categorii-programe'>
+              <Link href='/admin/categorii-campanii'>
                 <p className='text-lg font-bold text-onSecondary'>
-                  categorii programe
+                  categorii campanii
                 </p>
               </Link>
-              <Link href='/admin/programe-fonduri'>
+              <Link href='/admin/campanii'>
                 <p className='text-lg font-bold text-onSecondary'>
-                  programe fonduri
+                  campanii
                 </p>
               </Link>
             </div>

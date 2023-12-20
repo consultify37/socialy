@@ -55,7 +55,7 @@ export default function Contact() {
                     cui: cui,
                     nevoie: nevoie,
                     telefon: telefon,
-                    website: process.env.SITE
+                    website: 'socialy' //process.env.SITE
                 }
             })
             
@@ -303,7 +303,7 @@ export default function Contact() {
                         />
                         { isLoading ? 
                             <div className='w-full flex items-center justify-center px-16 mt-4 md:mt-0'>
-                                <ReactLoading type="spin" color="#8717F8" width={32} height={32} />
+                                <ReactLoading type="spin" color="#0CFF00" width={32} height={32} />
                             </div> :
                             <button                      
                                 className='py-3 md:py-4 mt-4 md:mt-0 md:ml-4 bg-primary h-fit text-onPrimary rounded-[28px] font-semibold px-14 text-center text-md md:text-[16px] hover:scale-[1.05] transition-all'
