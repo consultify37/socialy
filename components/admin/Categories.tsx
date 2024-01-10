@@ -14,7 +14,7 @@ const Categories = ({ categories, handleDelete, isFetching }: Props) => {
       {
         isFetching ?
         <div className='flex flex-col justify-center items-center mt-64 w-[242px] xl:w-[484px]'>
-          <ReactLoading type="spin" color="#8717F8" width={32} height={32} />
+          <ReactLoading type="spin" color="#0CFF00" width={32} height={32} />
         </div>  :
         <div className='flex flex-col w-full'>
           { categories.map((category, index) => (

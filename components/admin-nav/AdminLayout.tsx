@@ -79,7 +79,7 @@ const AdminLayout = ({ children }: Props) => {
 
           { isLoadingSignout ?
             <div className='w-full flex flex-col items-center justify-center'>
-              <ReactLoading type="spin" color="#8717F8" width={32} height={32} />
+              <ReactLoading type="spin" color="#0CFF00" width={32} height={32} />
             </div> :
             <button 
               className="bg-primary font-bold flex items-center justify-center w-full mx-auto px-12 py-3 text-onPrimary rounded-[28.5px] hover:scale-[1.05] transition-all"

@@ -82,7 +82,7 @@ const CategoriiPrograme = () => {
 
             { isLoading ?
               <div className='absolute top-[18px] right-6 flex items-center'>
-                <ReactLoading type="spin" color="#8717F8" width={22} height={22} />
+                <ReactLoading type="spin" color="#0CFF00" width={22} height={22} />
               </div> :
               <button 
                 className='absolute top-[18px] right-6 flex items-center cursor-pointer hover:scale-[1.05] transition-all'

@@ -55,7 +55,7 @@ export default function Testimoniale() {
       const response = await axios.get('https://api.inspiredconsulting.ro/email/trimite_idei_afaceri', {
                 params: {
                     to: email,
-                    website: 'socialy' //process.env.SITE
+                    website: 'Socialy' //process.env.SITE
                 }
             })
             console.log(response)
