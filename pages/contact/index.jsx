@@ -55,7 +55,7 @@ export default function Contact() {
                     cui: cui,
                     nevoie: nevoie,
                     telefon: telefon,
-                    website: 'Socialy' //process.env.SITE
+                    website: process.env.SITE
                 }
             })
             

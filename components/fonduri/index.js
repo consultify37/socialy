@@ -18,7 +18,7 @@ export default function CarouselPrograme({ programe }){
                 pagination={true}
                 isRTL={false}
                 disableArrowsOnEnd={false}
-                className="relative w-full"
+                className="relative w-full carousel-fonduri"
             >
                 { programe.map((program) => (
                     <FonduriComponent 

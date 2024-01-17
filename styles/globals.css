@@ -99,6 +99,14 @@ html.normal-scroll {
   @apply hover:scale-105 transition-all
 }
 
+@media screen and (max-width: 1024px) {
+  .carousel-fonduri .rec-dot { margin-top: 40px !important; }
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-fonduri .rec-dot { margin-top: 92px !important; }
+}
+
 .rec-arrow-right, .rec-arrow-right:hover, .rec-arrow-right:enabled{background-color: #0CFF00 !important; color: #fff !important; font-family: Averta-All, sans-serif !important;}
 .rec-arrow-left, .rec-arrow-left:hover, .rec-arrow-left:enabled {background-color: #0CFF00 !important; color: #fff !important; font-family: Averta-All, sans-serif !important;}
 .home-carousel .rec-arrow-right, .home-carousel .rec-arrow-right:hover, .home-carousel .rec-arrow-right:enabled {position: absolute; right: 36px; z-index: 20;}
@@ -334,7 +342,43 @@ html.normal-scroll {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(calc(-108px*50));
+  }
+}
+
+@keyframes slidemd {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-116px*48));
+  }
+}
+
+@keyframes slidelg {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-126px*47));
+  }
+}
+
+@keyframes slidexl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-134px*46));
+  }
+}
+
+@keyframes slide2xl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-150px*45));
   }
 }
 
@@ -370,10 +414,44 @@ html.normal-scroll {
   animation-play-state: paused;
 } */
 
-.logos-slide {
-  display: flex;
-  flex-direction: row;
-  animation: 45s slide infinite linear;
+@media screen and (max-width: 768px) {
+  .logos-slide {
+    display: flex;
+    flex-direction: row;
+    animation: 160s slide infinite linear;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .logos-slide {
+    display: flex;
+    flex-direction: row;
+    animation: 160s slidemd infinite linear;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .logos-slide {
+    display: flex;
+    flex-direction: row;
+    animation: 160s slidelg infinite linear;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1536px) {
+  .logos-slide {
+    display: flex;
+    flex-direction: row;
+    animation: 160s slidexl infinite linear;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .logos-slide {
+    display: flex;
+    flex-direction: row;
+    animation: 160s slide2xl infinite linear;
+  }
 }
 
 /* .logos-slide img {

@@ -18,7 +18,7 @@ export default function NewsLetter({ headingText }: NewsLetterProps) {
       const response = await axios.get('https://api.inspiredconsulting.ro/newsletter', {
                 params: {
                     email: newsletter,
-                    website: 'Socialy' //process.env.SITE
+                    website: process.env.SITE
                 }
             })
             
