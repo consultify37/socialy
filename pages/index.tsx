@@ -24,14 +24,13 @@ export default function Home({ slides, programe }: Props) {
     <>
       {/* pageSettings */}
       <Head>
-        <title>Socialy | Home1</title>
+        <title>Socialy | Acasă</title>
       </Head>
-      <TrustSRL />
+      <HomeHeader slides={slides} />
       <TrustSRL />
       <AboutHome />
       <CarouselPrograme programe={programe} />
       <Rezultate />
-      <div></div>
       <Garantii />
       <div id="proces"></div>
         <Proces />
