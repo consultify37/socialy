@@ -24,7 +24,7 @@ export default function Home({ slides, programe }: Props) {
     <>
       {/* pageSettings */}
       <Head>
-        <title>Socialy | Home</title>
+        <title>Socialy | Acasă</title>
       </Head>
       <HomeHeader slides={slides} />
       <TrustSRL />
