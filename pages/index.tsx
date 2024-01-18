@@ -26,7 +26,7 @@ export default function Home({ slides, programe }: Props) {
       <Head>
         <title>Socialy | Home1</title>
       </Head>
-      {/* <HomeHeader slides={slides} /> */}
+      <TrustSRL />
       <TrustSRL />
       <AboutHome />
       <CarouselPrograme programe={programe} />
