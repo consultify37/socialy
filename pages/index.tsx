@@ -31,6 +31,7 @@ export default function Home({ slides, programe }: Props) {
       <AboutHome />
       <CarouselPrograme programe={programe} />
       <Rezultate />
+      <div></div>
       <Garantii />
       <div id="proces"></div>
         <Proces />
