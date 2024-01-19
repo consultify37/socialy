@@ -25,7 +25,7 @@ const AdminLayout = ({ children }: Props) => {
         
         if ( !userDocData.roles ) {
           router.push('/admin/login')
-        } else if ( !userDocData.roles.includes("admin")) {
+        } else if ( !userDocData.roles.includes("admin") && !userDocData.roles.includes("socialy") ) {
           router.push('/admin/login')
         }
 
