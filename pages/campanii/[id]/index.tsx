@@ -91,7 +91,7 @@ const Program = ({ program, products, articles }: Props) => {
 export default Program
 
 export const getStaticPaths = async () => {
-  const programeRef = collection(db, 'programe-fonduri')
+  const programeRef = query(collection(db, 'programe-fonduri'), where('site', '==', process.env.SITE))
   const programeSnap = await getDocs(programeRef)
 
   const paths = programeSnap.docs.map((doc) => ({ params: { id: doc.id }}))
