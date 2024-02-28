@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import FormInput from './FormInput'
 import { Condition } from '../../../types'
 import toast from 'react-hot-toast'
+import FormTextArea from './FormTextArea'
 
 type Props = {
   conditions: Condition[]
@@ -35,15 +36,15 @@ const Conditions = ({ conditions, setConditions}: Props) => {
           placeholder='Titlu (max. 50 caractere)'
           value={newCondtition}
           setValue={setNewCondtition}
-          styleProps='w-[calc(50%-32px)] min-w-[220px] max-w-[480px] mr-8'
+          styleProps='w-[calc(50%-32px)] h-fit min-w-[220px] max-w-[480px] mr-8'
         />
 
-        <FormInput 
-          placeholder='Descriere (max. 100 caractere)'
+        <FormTextArea
           value={newDescription}
           setValue={setNewDescription}
-          styleProps='w-[calc(50%-32px)] min-w-[220px] max-w-[480px] mr-2'
-        />   
+          placeholder='Descriere'
+          styleProps='w-[calc(50%-32px)] min-w-[220px] max-w-[480px] h-48 resize-none'
+        />
 
          <div className='hover:scale-[1.05] transition-all p-4 cursor-pointer' onClick={handleAddCondition}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +58,7 @@ const Conditions = ({ conditions, setConditions}: Props) => {
           <div className='flex flex-row mt-8' key={item.condition+index}>
             <div className='flex flex-row w-[calc(50%-32px)] min-w-[220px] max-w-[480px] mr-8 pl-2'>
               <p className='text-secondary font-semibold mr-4'>{index+1}</p>
-              <p className='text-secondary font-semibold'>{item.condition}</p>
+              <p className='text-secondary font-semibold overflow-hidden'>{item.condition}</p>
             </div>
             <div className='flex flex-row w-[calc(50%-32px)] min-w-[220px] max-w-[480px] mr-6 pl-2'>
               <p className='text-secondary font-semibold'>{item.description}</p>

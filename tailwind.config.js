@@ -15,7 +15,8 @@ module.exports = {
         "onSecondary": "white",
         "tertiary": "#515151",
         "admin-background": "#F4F4F46B",
-        "admin-card": "#EAEAEA"
+        "admin-card": "#EAEAEA",
+        "price": "#0CFF00"
       },
     },
   },

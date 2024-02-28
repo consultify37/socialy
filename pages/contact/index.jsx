@@ -12,7 +12,7 @@ import PageHeader from "../../components/Header/PageHeader"
 import WhyUsItem1 from "../../components/Home/Why-Us/Item1"
 import ReactLoading from 'react-loading'
 import { facebook, instagram, tiktok } from "../../utils/constants"
-import { collection } from "firebase/firestore"
+import { addDoc, collection } from "firebase/firestore"
 import { db } from "../../firebase"
  
 export default function Contact() {
@@ -50,7 +50,7 @@ export default function Contact() {
 
             await addDoc(collectionRef, { nume, prenume, firma, cui, telefon, email, nevoie, mesaj, website: process.env.SITE } )
             
-            toast.success('Mulțumim! Un reprezentat Consultify te va contacta în curând. 🚀', { duration: 5000, style: { textAlign: 'center' } })
+            toast.success(`Mulțumim! Un reprezentat ${process.env.SITE} te va contacta în curând. 🚀`, { duration: 5000, style: { textAlign: 'center' } })
             setCui("")
             setEmail("")
             setIsChecked(false)
@@ -72,7 +72,7 @@ export default function Contact() {
     return (
         <>
             <Head>
-                <title>Socialy | Contact</title>
+                <title>{`${process.env.SITE} | Contact`}</title>
             </Head>
             <PageHeader
                 title="Suntem aici pentru tine!"

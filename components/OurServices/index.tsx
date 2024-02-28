@@ -32,7 +32,7 @@ export default function OurServices(){
                     </div>
                     <span className="sm:opacity-0 group-hover/card-1:opacity-100 transition-all duration-300 text-onPrimary bg-primary font-semibold text-xs lg:text-[16px] absolute bottom-0 right-0 py-2 px-4 lg:px-10 rounded-tl-2xl sm:rounded-tl-3xl rounded-br-2xl">Descoperă</span>
                 </Link>
-                {/* <Link 
+                <Link 
                     href='/shop'
                     className="group/card-2 flex relative flex-row bg-[#F4F4F4] p-6 pb-10   rounded-3xl mb-8 hover:shadow-2xl cursor-pointer"
                 >
@@ -54,8 +54,8 @@ export default function OurServices(){
                         </p>
                     </div>
                     <span className="sm:opacity-0 group-hover/card-2:opacity-100 transition-all duration-300 text-onPrimary bg-primary font-semibold text-xs lg:text-[16px] absolute bottom-0 right-0 py-2 px-4 lg:px-10 rounded-tl-2xl sm:rounded-tl-3xl rounded-br-2xl">Descoperă</span>
-                </Link> */}
-                <div className="group/card-4 relative flex flex-row bg-[#C3C3C3] p-6 pb-4  rounded-3xl mb-8">
+                </Link>
+                {/* <div className="group/card-4 relative flex flex-row bg-[#C3C3C3] p-6 pb-4  rounded-3xl mb-8">
                     <div className="w-[-webkit-fill-available] max-w-[fit-content] flex items-center rounded-xl bg-[#0CFF00] p-3 lg:p-4 h-[max-content] jutify-center mr-2">
                         <Image
                             src="/images/OurServices/registru.svg"
@@ -73,9 +73,9 @@ export default function OurServices(){
                             Descoperiți gama noastră variată de produse digitale și servicii, concepute pentru a sprijini creșterea și eficiența afacerii dumneavoastră. Obțineți contracte, pachete digitale și asistență de înaltă calitate, totul la un clic distanță.
                         </p>
                     </div>
-                    {/* group-hover/card-4:-translate-x-[106%] group-hover/card-4:scale-y-[5.53] group-hover/card-4:scale-x-[3.11] group-hover/card-4:-translate-y-[222%] group-hover/card-4:rounded-md group-hover/card-4:opacity-80 transition-all */}
+                    group-hover/card-4:-translate-x-[106%] group-hover/card-4:scale-y-[5.53] group-hover/card-4:scale-x-[3.11] group-hover/card-4:-translate-y-[222%] group-hover/card-4:rounded-md group-hover/card-4:opacity-80 transition-all
                     <span className="text-onPrimary bg-primary font-semibold text-xs lg:text-[16px] absolute bottom-0 right-0 py-2 px-4 lg:px-10 rounded-tl-2xl sm:rounded-tl-3xl rounded-br-2xl">Coming soon</span>
-                </div>
+                </div> */}
                 <Link 
                     href='/servicii/consultanta-marketing'
                     className="group/card-3 flex relative flex-row bg-[#F4F4F4] p-6 pb-10 rounded-3xl mb-8 hover:shadow-2xl cursor-pointer"

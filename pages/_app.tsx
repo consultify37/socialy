@@ -8,6 +8,9 @@ import { usePathname } from 'next/navigation'
 import CookiePolicy from '../components/CookiePolicy'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import { AuthContext } from '../context/AuthContext'
+import { CartContext } from '../context/CartContext'
+import { FavoritesContext } from '../context/FavoritesContext'
 
 function useNormalScrollRoutes() {
   const router = useRouter();
@@ -43,21 +46,27 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [router.events])
 
   return (
-    <div className="flex flex-col">
-      { !pathname?.includes('/admin') ?
-        <>
-          <TopBar />
-          <Header />
-        </> : null
-      }
-      <main className="flex-1 relative">
-        <Component {...pageProps} />
-        <Toaster />
-        <CookiePolicy />
-      </main>
-      { !pathname?.includes('/admin') ?
-        <Footer /> : null
-      }
-    </div>
+    <AuthContext>
+      <CartContext>
+        <FavoritesContext>
+          <div className="flex flex-col">
+            { !pathname?.includes('/admin') ?
+              <>
+                <TopBar />
+                <Header />
+              </> : null
+            }
+            <main className="flex-1 relative">
+              <Component {...pageProps} />
+              <Toaster />
+              <CookiePolicy />
+            </main>
+            { !pathname?.includes('/admin') ?
+              <Footer /> : null
+            }
+          </div>
+        </FavoritesContext>
+      </CartContext>
+    </AuthContext>
   );
 }

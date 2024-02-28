@@ -24,6 +24,7 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
   const [text2, setText2] = useState('')
   const [suma, setSuma] = useState('')
   const [descriere, setDescriere] = useState('')
+  const [descriere2, setDescriere2] = useState('')
   const [title2, setTitle2] = useState('')
   const [suma2, setSuma2] = useState('')
   const [title3, setTitle3] = useState('')
@@ -75,6 +76,7 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
         text2,
         suma, 
         descriere,
+        descriere2,
         title2,
         title3,
         suma2,
@@ -87,6 +89,7 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
       
       await addDoc(collection(db, 'programe-fonduri'), newData)
 
+      toast.success('Campanie adaugată cu succes.')
       router.push('/admin/campanii')
     } catch (e) {
       toast.error('Ceva nu a mers bine, încearcă din nou!')
@@ -145,7 +148,15 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
               required={true}
             />
 
-            <FormInput
+          <FormTextArea
+            value={descriere}
+            setValue={setDescriere}
+            placeholder='Descriere'
+            styleProps='w-[calc(50%-32px)] min-w-[220px] max-w-[480px] h-48 resize-none mt-8'
+            required={true}
+          />
+
+            {/* <FormInput
               value={text1}
               setValue={setText1}
               placeholder='Text 1'
@@ -167,7 +178,7 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
               placeholder='Suma de finanțare'
               styleProps='mt-8'
               required={true}
-            />
+            /> */}
           </div>
         </div>
 
@@ -188,18 +199,18 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
               setValue={setTitle2}
               required={true}
             />
-            <FormInput 
+            {/* <FormInput 
               placeholder='Suma de finanțare'
               value={suma2}
               setValue={setSuma2}
               styleProps='mt-8'
               required={true}
-            />
+            /> */}
           </div>
 
           <FormTextArea
-            value={descriere}
-            setValue={setDescriere}
+            value={descriere2}
+            setValue={setDescriere2}
             placeholder='Descriere'
             styleProps='w-[calc(50%-32px)] min-w-[220px] max-w-[480px] h-48 resize-none'
             required={true}
@@ -232,7 +243,7 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
           />
         </div>
 
-        <h1 className='text-[28px] text-secondary font-bold mt-8'>Condițiile de aplicare</h1>
+        <h1 className='text-[28px] text-secondary font-bold mt-8'>Ce facem pentru tine</h1>
         <Conditions 
           conditions={conditions}
           setConditions={setConditions}

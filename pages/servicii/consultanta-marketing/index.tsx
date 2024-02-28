@@ -1,19 +1,26 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import Rezultate from "../../../components/Rezultate";
 import FAQAbout from "../../../components/About/FAQ/FAQ";
 import NewsLetter from "../../../components/global/newsletter";
 import CTA from "../../../components/CTA";
-import OurClients from "../../../components/Home/OurClients/OurClients";
 import DidYouKnow from "../../../components/implementare/DidYouKnow";
-import { Faq2 } from "../../../types";
+import { Article, Faq2, Product } from "../../../types";
 import PageHeader from "../../../components/Header/PageHeader";
 import Implementare from "../../../components/OurServices/Implementare";
 import Logos from "../../../components/Home/Logos";
 import Proces from "../../../components/Proces";
 import Garantii from "../../../components/Garantii";
+import { collection, getDocs, limit, orderBy, query, where } from "firebase/firestore";
+import { db } from "../../../firebase";
+import { formatDate } from "../../../utils/formatDate";
+import FeaturedProducts from "../../../components/Home/Why-Us/FeaturedProducts";
+import News from "../../../components/Home/News/News";
+
+type Props = {
+    articles: Article[]
+    products: Product[]
+}
 
 const intrebari: Faq2[] = [
     {
@@ -33,11 +40,11 @@ const intrebari: Faq2[] = [
     }
 ]
 
-export default function PaginaProgram() {
+export default function PaginaProgram({ articles, products }: Props) {
   return(
     <>
         <Head>
-            <title>Socialy | Consultanță Marketing</title>
+            <title>{`${process.env.SITE} | Consultanță Marketing`}</title>
         </Head>
         <PageHeader
             title="De la concept la realitate: Implementarea proiectelor cu succes"
@@ -81,20 +88,35 @@ export default function PaginaProgram() {
             linkText="Completează formularul!"
             linkHref="/contact"
         />
-        {/* <div className="w-full mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-            <div className="flex justify-start items-start">
-                <h3 className="text-2xl lg:text-3xl text-[#8717F8] font-bold">
-                Consultify vine în ajutorul tău cu produse digitale pentru scalarea
-                afacerii tale
-                </h3>
-            </div>
-            <WhyUsCart />
-            <Link href='/shop' className="bg-[#8717F8] flex items-center justify-center w-[max-content] mx-auto justify-self-center px-12 py-3 text-white rounded-[28.5px]">
-                vezi toate produsele
-            </Link>
-        </div> */}
-        {/* <News /> */}
+        <FeaturedProducts 
+          products={products}
+        />
+        <News 
+          articles={articles}
+        />
         <NewsLetter headingText={'Abonează-te la newsletter pentru informații actualizate despre afaceri!'} />
     </>
   )
 }
+
+export const getStaticProps = async () => { 
+    const articlesSnap = await  getDocs(query(collection(db, 'articles'), where('active', '==', true), where('featured', '==', true), orderBy('createdAt', 'desc'), limit(8)))
+    var articles = articlesSnap.docs.map((doc) => {
+        const { lastUpdated, createdAt, ...data } = doc.data()
+        return ({ id: doc.id, formattedCreatedAt: formatDate(new Date(createdAt.seconds*1000)), ...data }) 
+    })
+  
+    const collectionRef = query(collection(db, 'products'), where('active', '==', true), where('featured', '==', true), orderBy('lastUpdated', 'desc'), limit(8))
+    const collectionSnap = await getDocs(collectionRef)
+  
+    const products: Product[] = collectionSnap.docs.map((doc) => {
+        const { lastUpdated, ...data } = doc.data()
+  
+        return ({ id: doc.id, ...data } as Product)
+    })
+  
+    return {
+        props: { articles, products },
+        revalidate: Number(process.env.REVALIDATE)
+    }
+  }

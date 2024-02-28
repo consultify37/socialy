@@ -31,6 +31,7 @@ const EditProgram = ({ categories, program }: Props) => {
   const [text2, setText2] = useState(program.text2 ? program.text2 : '')
   const [suma, setSuma] = useState(program.suma ? program.suma : '')
   const [descriere, setDescriere] = useState(program.descriere ? program.descriere :'')
+  const [descriere2, setDescriere2] = useState(program.descriere2 ? program.descriere2 : '')
   const [title2, setTitle2] = useState(program.title2 ? program.title2 : '')
   const [suma2, setSuma2] = useState(program.suma2 ? program.suma2 :'')
   const [title3, setTitle3] = useState(program.title3 ? program.title3 :'')
@@ -91,6 +92,7 @@ const EditProgram = ({ categories, program }: Props) => {
         text2,
         suma, 
         descriere,
+        descriere2,
         title2,
         title3,
         suma2,
@@ -103,6 +105,7 @@ const EditProgram = ({ categories, program }: Props) => {
       
       await updateDoc(doc(db, 'programe-fonduri', program.id), newData)
 
+      toast.success('Campanie actualizată cu succes.')
       router.push('/admin/campanii')
     } catch (e) {
       toast.error('Ceva nu a mers bine, încearcă din nou!')
@@ -161,7 +164,15 @@ const EditProgram = ({ categories, program }: Props) => {
               required={true}
             />
 
-            <FormInput
+          <FormTextArea
+            value={descriere}
+            setValue={setDescriere}
+            placeholder='Descriere'
+            styleProps='w-[calc(50%-32px)] min-w-[220px] max-w-[480px] h-48 resize-none mt-8'
+            required={true}
+          />
+
+            {/* <FormInput
               value={text1}
               setValue={setText1}
               placeholder='Text 1'
@@ -183,7 +194,7 @@ const EditProgram = ({ categories, program }: Props) => {
               placeholder='Suma de finanțare'
               styleProps='mt-8'
               required={true}
-            />
+            /> */}
           </div>
         </div>
 
@@ -204,18 +215,18 @@ const EditProgram = ({ categories, program }: Props) => {
               setValue={setTitle2}
               required={true}
             />
-            <FormInput 
+            {/* <FormInput 
               placeholder='Suma de finanțare'
               value={suma2}
               setValue={setSuma2}
               styleProps='mt-8'
               required={true}
-            />
+            /> */}
           </div>
 
           <FormTextArea
-            value={descriere}
-            setValue={setDescriere}
+            value={descriere2}
+            setValue={setDescriere2}
             placeholder='Descriere'
             styleProps='w-[calc(50%-32px)] min-w-[220px] max-w-[480px] h-48 resize-none'
             required={true}
@@ -248,7 +259,7 @@ const EditProgram = ({ categories, program }: Props) => {
           />
         </div>
 
-        <h1 className='text-[28px] text-secondary font-bold mt-8'>Condițiile de aplicare</h1>
+        <h1 className='text-[28px] text-secondary font-bold mt-8'>Ce facem pentru tine</h1>
         <Conditions 
           conditions={conditions}
           setConditions={setConditions}

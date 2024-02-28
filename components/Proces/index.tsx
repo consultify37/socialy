@@ -1,48 +1,54 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React, { useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
 
-export interface ProcesData {
-    id: number;
+export type ProcesData = {
+    id: number
     title: string,
     text: string,
     titluText: string,
 }
 
-export default function Proces(){
-    const Proces: ProcesData[] = [
-        {
-            id: 1, title: 'Analizarea societății', 
-            text: 'Primul pas în colaborarea noastră constă într-o analiză atentă a firmei dumneavoastră și identificarea programului activ care se potrivește cel mai bine cu obiectivele și nevoile afacerii dumneavoastră. Avem o echipă dedicată de specialiști cu experiență în identificarea celor mai bune programe de finanțare și înțelegerea tuturor cerințelor și criteriilor de eligibilitate. Cu noi la bord, sunteți sigur că veți fi încadrat în programul potrivit, care va maximiza șansele de a obține finanțarea dorită.',
-            titluText: "Analizarea societății și încadrarea în programul cel mai potrivit",
-        },
-        {
-            id: 2, title: 'Pregătirea documentației',
-            text: 'În pasul 2 al procesului nostru, ne concentrăm pe obținerea tuturor informațiilor necesare pentru a începe redactarea proiectului. În cadrul acestei etape, solicităm clienților noștri să ne ofere toate documentele necesare pentru a putea continua. Avem o echipă de specialiști care se ocupă de analiza atentă a informațiilor furnizate, astfel încât să ne asigurăm că proiectul este construit în conformitate cu cerințele specifice ale programului selectat. În plus, colaborăm îndeaproape cu clienții noștri pe tot parcursul procesului de redactare, pentru a ne asigura că soluțiile propuse corespund nevoilor și cerințelor lor specifice.',
-            titluText: 'Pregătirea documentației necesare pentru proiect',
-        },
-        {
-            id: 3, title: 'Depunerea proiectului', 
-            text: 'Depunerea proiectului este momentul crucial în obținerea finanțării dorite. După ce am finalizat analiza și scrierea proiectului, acesta este depus cu mare atenție la instituția responsabilă. În acest punct, noi preluăm întreaga responsabilitate și ne asigurăm că proiectul depus respectă toate criteriile și normele impuse de instituție. După depunere, urmează momentul așteptării verificării proiectului, moment în care noi monitorizăm cu atenție toate etapele procesului pentru a ne asigura că acesta are loc în cele mai bune condiții.',
-            titluText: 'Depunerea proiectului și verificarea lui',
-        },
-        {
-            id: 4, title: 'Aprobarea proiectului', 
-            text: 'Pasul 4 în procesul nostru de a ajuta clienții să obțină finanțarea necesară este primirea deciziei de aprobare a proiectului depus, un pas crucial pentru succesul afacerii dumneavoastră. În acest moment, intrăm în acțiune și demarăm procedurile de achiziție, astfel încât clientul să beneficieze de cele mai bune oferte. De asemenea, începem și perioada de implementare a proiectului, iar echipa noastră dedicată va monitoriza cu atenție fiecare etapă a acestui proces pentru a asigura succesul final.',
-            titluText: 'Aprobarea proiectului și începerea perioadei de implementare',
-        },
-        {
-            id: 5, title: 'Perioada de monitorizare', 
-            text: 'După ce am finalizat cu succes implementarea proiectului, începem perioada de monitorizare. Suntem mereu alături de tine pentru a-ți oferi consultanță și a răspunde la întrebări pe toată durata monitorizării. Este o perioadă de grație în care savurăm succesul, dar și de a verifica dacă firma este eligibilă pentru alte programe de finanțare. Suntem mândri de parteneriatele noastre și suntem pregătiți să ajutăm și alte companii să-și atingă obiectivele lor de afaceri prin proiecte finanțate cu succes.',
-            titluText: 'Perioada de monitorizare și finalizarea obligațiilor',
-        },
-    ]
-    const [procesActive, setProcesActive] = useState(false);
-    const [selectedProces, setSelectedProces] = useState(Proces[0]);
+const defaultData: ProcesData[] = [
+    {
+        id: 1, title: 'Analizarea societății', 
+        text: 'Primul pas în colaborarea noastră constă într-o analiză atentă a firmei dumneavoastră și identificarea programului activ care se potrivește cel mai bine cu obiectivele și nevoile afacerii dumneavoastră. Avem o echipă dedicată de specialiști cu experiență în identificarea celor mai bune programe de finanțare și înțelegerea tuturor cerințelor și criteriilor de eligibilitate. Cu noi la bord, sunteți sigur că veți fi încadrat în programul potrivit, care va maximiza șansele de a obține finanțarea dorită.',
+        titluText: "Analizarea societății și încadrarea în programul cel mai potrivit",
+    },
+    {
+        id: 2, title: 'Pregătirea documentației',
+        text: 'În pasul 2 al procesului nostru, ne concentrăm pe obținerea tuturor informațiilor necesare pentru a începe redactarea proiectului. În cadrul acestei etape, solicităm clienților noștri să ne ofere toate documentele necesare pentru a putea continua. Avem o echipă de specialiști care se ocupă de analiza atentă a informațiilor furnizate, astfel încât să ne asigurăm că proiectul este construit în conformitate cu cerințele specifice ale programului selectat. În plus, colaborăm îndeaproape cu clienții noștri pe tot parcursul procesului de redactare, pentru a ne asigura că soluțiile propuse corespund nevoilor și cerințelor lor specifice.',
+        titluText: 'Pregătirea documentației necesare pentru proiect',
+    },
+    {
+        id: 3, title: 'Depunerea proiectului', 
+        text: 'Depunerea proiectului este momentul crucial în obținerea finanțării dorite. După ce am finalizat analiza și scrierea proiectului, acesta este depus cu mare atenție la instituția responsabilă. În acest punct, noi preluăm întreaga responsabilitate și ne asigurăm că proiectul depus respectă toate criteriile și normele impuse de instituție. După depunere, urmează momentul așteptării verificării proiectului, moment în care noi monitorizăm cu atenție toate etapele procesului pentru a ne asigura că acesta are loc în cele mai bune condiții.',
+        titluText: 'Depunerea proiectului și verificarea lui',
+    },
+    {
+        id: 4, title: 'Aprobarea proiectului', 
+        text: 'Pasul 4 în procesul nostru de a ajuta clienții să obțină finanțarea necesară este primirea deciziei de aprobare a proiectului depus, un pas crucial pentru succesul afacerii dumneavoastră. În acest moment, intrăm în acțiune și demarăm procedurile de achiziție, astfel încât clientul să beneficieze de cele mai bune oferte. De asemenea, începem și perioada de implementare a proiectului, iar echipa noastră dedicată va monitoriza cu atenție fiecare etapă a acestui proces pentru a asigura succesul final.',
+        titluText: 'Aprobarea proiectului și începerea perioadei de implementare',
+    },
+    {
+        id: 5, title: 'Perioada de monitorizare', 
+        text: 'După ce am finalizat cu succes implementarea proiectului, începem perioada de monitorizare. Suntem mereu alături de tine pentru a-ți oferi consultanță și a răspunde la întrebări pe toată durata monitorizării. Este o perioadă de grație în care savurăm succesul, dar și de a verifica dacă firma este eligibilă pentru alte programe de finanțare. Suntem mândri de parteneriatele noastre și suntem pregătiți să ajutăm și alte companii să-și atingă obiectivele lor de afaceri prin proiecte finanțate cu succes.',
+        titluText: 'Perioada de monitorizare și finalizarea obligațiilor',
+    },
+]
+
+type Props = {
+    data?: ProcesData[]
+    title?: string
+}
+
+export default function Proces({ data=defaultData, title }: Props){
+    const [procesActive, setProcesActive] = useState(false)
+    const [selectedProces, setSelectedProces] = useState(data[0])
 
     const handleClick = (proces: ProcesData) => {
-        setProcesActive(true);
-        setSelectedProces(proces);
+        setProcesActive(true)
+        setSelectedProces(proces)
     }
     return(
         <section className="relative w-full mt-16 md:mt-32 py-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
@@ -51,10 +57,10 @@ export default function Proces(){
 
             <Image src='/images/proces/circle-proces.svg' className="hidden md:block absolute right-[-80px] top-0 w-[300px] h-[300px]" alt='triangle' width={250} height={250}/>
             <Image src='/images/proces/hexagon.svg' className="hidden md:block absolute bottom-[5%] -left-12 w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
-            <h2 className="text-[#fff] text-xl lg:text-2xl xl:text-3xl text-center font-bold mb-20 md:mb-28">Ghidul nostru pentru accesarea fondurilor: <br /> Pas cu pas cu Socialy</h2>
+            <h2 className="text-[#fff] text-xl lg:text-2xl xl:text-3xl text-center font-bold mb-20 md:mb-28">{ title ? title : <span>Ghidul nostru pentru accesarea fondurilor: <br /> Pas cu pas cu Socialy</span> }</h2>
             <div className="w-full flex relative flex-col md:flex-row justify-between items-start">
                 <div className="flex items-center w-full flex-col md:mr-8">
-                    {Proces.map(proces => (
+                    {data.map(proces => (
                         <div className="justify-start w-full" key={proces.id}>
                             <button
                                 onClick={() => handleClick(proces)}
