@@ -69,7 +69,7 @@ const Login = () => {
                 type='submit' 
                 className='py-4 bg-primary flex items-center justify-center rounded-full w-full transition-all hover:scale-[1.05]'
               > 
-                <p className='text-[#fff] font-semibold'>Intră în cont</p>
+                <p className='text-onPrimary font-semibold'>Intră în cont</p>
               </button>
             }
           </div>
