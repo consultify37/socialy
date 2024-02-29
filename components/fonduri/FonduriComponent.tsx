@@ -37,6 +37,9 @@ export default function FonduriComponent({ program, index=0, carousel=false }: P
                     {program.text1}
                 </h5>
                 <div className="lg:max-w-[280px] xl:max-w-[340px] 2xl:max-w-[400px]">
+                    <p className={'text-white text-[20px] lg:text-[34px] font-extrabold lg:font-bold ' + (index % 2 === 0 ? 'text-right' : '')}>
+                        { program.title2 }
+                    </p>
                     <p className={'text-white text-xs lg:text-base ' + (index % 2 === 0 ? 'text-right' : '')}>
                         { program.descriere }
                     </p>
