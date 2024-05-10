@@ -116,7 +116,7 @@ export default function Testimoniale({ articles, products }: Props) {
         </h2>
         <OurClients />
         <section id='trust-us' className='bg-secondary mt-24 flex flex-col items-center w-full relative'>
-            <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-0 md:pt-20 lg:pt-0 mb-5">
+            <h2 className="text-xl md:text-3xl font-bold text-white max-w-[80%] text-center pt-0 md:pt-20 lg:pt-0 mb-5">
               Încă nu te-am convins? Vezi lista completă cu rezultate:
             </h2>
             <Link href='https://www.canva.com/design/DAFwMTGz5pM/zVfz3DRpAjzmSdjqz_Cqzw/view?utm_content=DAFwMTGz5pM&utm_campaign=designshare&utm_medium=link&utm_source=editor' target="_blank" className="bg-primary mb-16 mt-4 font-semibold px-12 py-3 text-onPrimary transition-all hover:scale-[1.05] rounded-[28.5px]">
@@ -125,8 +125,8 @@ export default function Testimoniale({ articles, products }: Props) {
             <h2 className="text-xl md:text-3xl font-bold text-white px-8 md:px-0 md:max-w-[80%] text-center pt-4 md:pt-20 lg:pt-0 mb-12 md:mb-24">
               Sau vizionați următoarele studii de caz!
             </h2>
-            <div className="w-full mx-auto gap-[6rem] px-7 md:px-0 flex gap-y-20 justify-between flex-wrap z-[2] items-center">
-              <div className="w-full flex-1 z-[2]">
+            <div className="w-full mx-auto gap-[6rem] px-7 md:px-0 flex gap-y-12 justify-between flex-wrap z-[2] items-center">
+              <div className="w-full flex-1 z-[2] md:min-w-[400px]">
                 <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
                   { testimonials[0].title }
                 </h2>
@@ -145,7 +145,7 @@ export default function Testimoniale({ articles, products }: Props) {
                   allowFullScreen={true}
               ></iframe>
             </div>
-            <div className='w-full px-7 md:px-0 mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 justify-between items-center flex-col-reverse md:flex-row flex-wrap z-[2]'>
+            <div className='w-full px-7 md:px-0 mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-12 justify-between items-center flex-col-reverse lg:flex-row z-[2]'>
               <div className='relative w-full md:w-auto'>
                 <iframe 
                     className="relative rounded-[28.5px] sm:h-full h-[280px] w-full  md:w-[450px] md:h-[400px] mx-auto z-[0]"
@@ -156,7 +156,7 @@ export default function Testimoniale({ articles, products }: Props) {
                 ></iframe>
                   {/* <Image src='/images/patrat.svg' className='absolute left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[100px] lg:w-[150px]' width={150} height={150} alt='Polygon img' /> */}
               </div>
-              <div className='w-full md:w-[48%]'>
+              <div className='w-full md:min-w-[400px]'>
                 <h2 className='text-xl font-bold text-white z-[2] xl:text-[24px]'>
                   { testimonials[1].title }
                 </h2>
@@ -168,8 +168,8 @@ export default function Testimoniale({ articles, products }: Props) {
                 </p>
               </div>
             </div>
-            <div className="w-full px-7 md:px-0 mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-20 items-center justify-between flex-wrap z-[2]">
-              <div className="w-full flex-1 z-[2]">
+            <div className="w-full px-7 md:px-0 mt-16 md:mt-40 mx-auto gap-[6rem] flex gap-y-12 items-center justify-between flex-wrap z-[2]">
+              <div className="w-full flex-1 z-[2] md:min-w-[400px]">
                 <h2 className="text-xl font-bold text-white z-[2] xl:text-[24px]">
                   { testimonials[2].title }
                 </h2>
@@ -191,7 +191,7 @@ export default function Testimoniale({ articles, products }: Props) {
         </section>
         <div className="flex px-7 md:px-0 w-full flex-col lg:flex-row mt-16 md:mt-48 justify-between items-center">
           <div className='relative flex lg:hidden justify-end my-16 lg:mb-0 lg:ml-12'>
-              <Image src='/images/testimoniale/Pag - testimoniale - structura idei afacere.png' alt='Why-Us' className='relative w-[450px] rounded-[35px] z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+              <Image src='/images/testimoniale/poza 1 formular.jpg' alt='Why-Us' className='relative object-cover h-[280px] w-[450px] rounded-[35px] z-[2]' width={800} height={533} unoptimized={true} />
               {/* <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' />  */}
               <Image src='/images/proces/hexagon.svg' className="absolute -right-[50px] -bottom-[50px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>
               <Image src='/images/circle-litle.svg' className="absolute -left-[40px] -top-[40px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>
@@ -219,7 +219,7 @@ export default function Testimoniale({ articles, products }: Props) {
             </form>
           </div>
           <div className='relative hidden lg:flex justify-end mt-16 lg:mt-0 lg:ml-12'>
-            <Image src='/images/testimoniale/poza 1 formular.jpg' alt='Why-Us' unoptimized={true} className='relative object-cover h-[280px] sm:h-full w-full md:w-[450px] md:h-[400px] rounded-[35px] z-[2]' width={800} height={533} />
+            <Image src='/images/testimoniale/poza 1 formular.jpg' alt='Why-Us' unoptimized={true} className='relative object-cover object-left h-[280px] sm:h-full w-full md:w-[450px] md:h-[400px] rounded-[35px] z-[2]' width={800} height={533} />
             {/* <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' />  */}
             <Image src='/images/proces/hexagon.svg' className="absolute -right-[50px] -bottom-[50px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>
             <Image src='/images/circle-litle.svg' className="absolute -left-[40px] -top-[40px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>
