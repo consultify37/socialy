@@ -50,18 +50,22 @@ const EditProgram = ({ categories, program }: Props) => {
     e.preventDefault()
 
     if ( imaginePrincipala == null ) {
-      'Alege o imagine principală. Apoi încearcă din nou.'
+      toast.error('Alege o imagine principală. Apoi încearcă din nou.')
+      setIsLoading(false)
+      return
     }
 
     if ( backgroundImage == null ) {
-      'Alege o imagine de fundal. Apoi încearcă din nou.'
+      toast.error('Alege o imagine de fundal. Apoi încearcă din nou.')
+      setIsLoading(false)
+      return
     }
 
     try {
       var newImaginePrincipala
       var newBackgroundImage
 
-      if ( typeof imaginePrincipala != 'string' && imaginePrincipala != oldImaginePrincipala )  {
+      if ( typeof imaginePrincipala != 'string' )  {
         try {
           newImaginePrincipala = await uploadFile(imaginePrincipala!)
           oldImaginePrincipala?.file && await deleteFile(oldImaginePrincipala?.file)
@@ -72,7 +76,7 @@ const EditProgram = ({ categories, program }: Props) => {
         newImaginePrincipala = oldImaginePrincipala?.file
       }
 
-      if ( typeof backgroundImage != 'string' && backgroundImage != oldBackgroundImage )  {
+      if ( typeof backgroundImage != 'string' )  {
         try {
           newBackgroundImage = await uploadFile(backgroundImage!)
           oldBackgroundImage?.file && await deleteFile(oldBackgroundImage?.file)

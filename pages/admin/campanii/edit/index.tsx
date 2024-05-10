@@ -40,11 +40,15 @@ const EditProgram = ({ categories }: { categories: string[] }) => {
     e.preventDefault()
 
     if ( imaginePrincipala == null ) {
-      'Alege o imagine principală. Apoi încearcă din nou.'
+      toast.error('Alege o imagine principală. Apoi încearcă din nou.')
+      setIsLoading(false)
+      return
     }
 
     if ( backgroundImage == null ) {
-      'Alege o imagine de fundal. Apoi încearcă din nou.'
+      toast.error('Alege o imagine de fundal. Apoi încearcă din nou.')
+      setIsLoading(false)
+      return
     }
 
     try {
