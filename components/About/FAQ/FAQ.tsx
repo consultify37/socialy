@@ -10,25 +10,28 @@ export interface FAQInterface {
 
 const IntrebariStandard: FAQInterface[] = [
     {
-        id: 1, intrebari: 'Cum funcționează procesul de accesare a fondurilor europene?', raspuns: 'Procesul de accesare a fondurilor europene implică identificarea programelor de finanțare relevante, elaborarea și depunerea unui proiect în conformitate cu cerințele specifice, evaluarea și selecția acestuia de către autoritățile competente, și gestionarea finanțării și raportarea în timpul implementării proiectului.',
+        id: 1, intrebari: 'Ce tipuri de servicii de marketing oferiți?', raspuns: 'Oferim o gamă completă de servicii de marketing, inclusiv strategii de branding, publicitate online, gestionarea campaniilor pe rețelele sociale, creare de conținut, webdesign și multe altele.',
     },
     {
-        id: 2, intrebari: 'Ce tipuri de proiecte sunt eligibile pentru finanțare europeană?', raspuns: 'Domeniile eligibile pentru finanțare europeană sunt diverse și acoperă inovarea, dezvoltarea regională, protecția mediului, cercetarea și dezvoltarea tehnologică, antreprenoriatul, educația, cultura, agricultura și multe altele. Fiecare program de finanțare are cerințe specifice și criterii de eligibilitate.',
+        id: 2, intrebari: 'La ce rezultate ma pot aștepta de la colaborarea cu agenția voastră?', raspuns: 'Colaborarea cu noi îți va aduce rezultate tangibile în creșterea vizibilității, generarea de lead-uri calificate, creșterea traficului pe site-ul tău și, în final, sporirea vânzărilor și a profitabilității afacerii tale. Ne măsurăm succesul în funcție de rezultatele pe care le obții și suntem dedicați obținerii performanței pe termen lung.',
     },
     {
-        id: 3, intrebari: 'Care sunt criteriile de eligibilitate și termenele limită pentru aplicarea la fondurile europene?', raspuns: 'Criteriile de eligibilitate și termenele limită variază în funcție de programul de finanțare. Acestea pot include aspecte legate de beneficiar, proiect, buget, plan de implementare, impact social sau economic, durată proiect etc. Respectarea cerințelor și depunerea în timp util sunt esențiale.',
+        id: 3, intrebari: 'Cum veți comunica cu mine pe parcursul proiectului ?', raspuns: 'Criteriile de eligibilitate și termenele limită variază în funcție de programul de finanțare. Acestea pot include aspecte legate de beneficiar, proiect, buget, plan de implementare, impact social sau economic, durată proiect etc. Respectarea cerințelor și depunerea în timp util sunt esențiale.',
     },
     {
-        id: 4, intrebari: 'Care sunt avantajele de a lucra cu o firmă de consultanță în fonduri europene?', raspuns: 'Avantajele de a lucra cu o firmă de consultanță în fonduri europene includ acces la expertiză și experiență specializată, reducerea riscurilor și erorilor, economisirea timpului și resurselor, îmbunătățirea șanselor de succes și optimizarea rezultatelor proiectelor.',
+        id: 4, intrebari: 'Care sunt avantajele de a lucra cu o firmă de consultanță în fonduri europene?', raspuns: 'Folosim diverse mijloace de comunicare, inclusiv e-mail,mesaje pe Whats App, apeluri telefonice pentru a te ține mereu la curent.',
     },
     {
-        id: 5, intrebari: 'Ce experiență și expertiză are firma dvs. în accesarea fondurilor europene?', raspuns: 'Firma noastră are o vastă experiență în accesarea fondurilor europene, cu un portofoliu divers de proiecte de succes în diferite sectoare. Echipa noastră de experți are cunoștințe solide în privința programelor de finanțare și poate oferi asistență completă în elaborarea și implementarea proiectelor.',
+        id: 5, intrebari: 'Cum veți ține cont de bugetul meu de marketing și cum veți maximiza eficiența acestuia?', raspuns: 'Înțelegem importanța eficienței și a respectării bugetului. Vom dezvolta strategii de marketing care să fie aliniate cu bugetul disponibil și să maximizeze rezultatele obținute.',
     },
     {
-        id: 6, intrebari: 'Care sunt costurile implicate în consultanța în fonduri europene?', raspuns: 'Costurile consultanței în fonduri europene variază în funcție de complexitatea proiectului și serviciile solicitate. Vom discuta în detaliu nevoile dvs. și vă vom prezenta o ofertă personalizată, transparentă și competitivă, în conformitate cu cerințele proiectului dvs.',
+        id: 6, intrebari: 'Ce canale și platforme de marketing veți utiliza pentru a ajunge la audiența țintă?', raspuns: 'Vom identifica canalele și platformele de marketing potrivite pentru a ajunge la audiența țintă. De la rețelele sociale și motoarele de căutare, până la publicitatea offline și evenimente de marketing, vom folosi mixul adecvat pentru a-ți promova afacerea și a atrage atenția potențialilor clienți.',
     },
     {
-        id: 7, intrebari: 'Cum pot stabili o întâlnire sau obține mai multe informații?', raspuns: 'Pentru a stabili o întâlnire sau obține mai multe informații despre serviciile noastre de consultanță în fonduri europene, vă rugăm să ne contactați prin intermediul formularului de contact de pe site-ul nostru, la adresa de email sau la numărul de telefon afișat. Vom fi încântați să răspundem la întrebările dvs. și să vă oferim suportul necesar!',
+        id: 7, intrebari: 'Cum veți adapta strategiile de marketing la schimbările și tendințele din industrie?', raspuns: 'Suntem mereu conectați la schimbările și tendințele din industria de marketing. Vom monitoriza în permanență evoluțiile și vom adapta strategiile noastre în consecință.',
+    },
+    {
+        id: 8, intrebari: 'De ce ar trebui să aleg agenția voastră de marketing în locul concurenților?', raspuns: 'Alegerea noastră ca partener de marketing îți aduce beneficii semnificative. Ne distingem prin abordarea noastră personalizată, expertiza noastră în domeniu, rezultatele tangibile pe care le obținem și relațiile solide pe care le construim cu clienții noștri. ',
     },
 ]
 

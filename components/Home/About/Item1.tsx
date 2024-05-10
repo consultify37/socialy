@@ -6,13 +6,13 @@ const Item1About = () => {
     <div className="w-full mx-auto px-7 md:px-[40px] xl:px-[140px] 2xl:px-[276px] gap-[6rem] flex gap-y-20 justify-between flex-wrap z-[2]">
       <div className="w-full flex-1 z-[2] gap-5 font-light">
         <h2 className="text-xl font-bold text-primary z-[2] md:text-xl lg:text-2xl xl:text-4xl">
-          Despre Consultify
+          Despre Socialy
         </h2>
         <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2] mb-8">
-          Ai nevoie de finanțare prin fonduri europene pentru proiectul tău? Consultify te poate ajuta! Suntem specializați în accesarea fondurilor europene pentru diverse proiecte, de la turism și tehnologie la agricultură durabilă și dezvoltare rurală.
+          Bine ați venit la Socialy, specializată în ads pe social media, web-design, branding, conținut organic și video marketing. Suntem printre cei mai buni în domeniu, oferind soluții personalizate și eficiente.
         </p>
         <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2]">
-          La Consultify, ne concentrăm pe nevoile tale specifice. Echipa noastră de experți îți oferă cele mai bune soluții de finanțare personalizate, indiferent de domeniul în care activezi. Accesarea fondurilor europene poate fi complicată, dar Consultify simplifică și eficientizează acest proces pentru tine!
+          Noi credem într-o abordare orientată către rezultate, concentrându-ne pe nevoile și obiectivele specifice ale fiecărui client. Colaborăm strâns cu dvs., înțelegând viziunea și valorile afacerii pentru a dezvolta strategii de marketing eficiente și creative care să atragă și să angajeze publicul țintă.
         </p>
         <div className="flex gap-4 mt-6 z-[2]">
           <Link
@@ -30,7 +30,7 @@ const Item1About = () => {
         </div>
       </div>
       <Image
-        src="/images/home-about-1.png"
+        src="/images/home-about-1.jpg"
         alt="About home 1"
         className="relative rounded-[28.5px] w-full md:w-[450px] mx-auto z-[4]"
         width={400}

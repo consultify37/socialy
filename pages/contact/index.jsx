@@ -122,7 +122,7 @@ export default function Contact() {
                         </div>
                         <div className="flex flex-col justify-center">
                             <h5 className="text-xl text-white font-bold">Telefon:</h5>
-                            <span className="text-lg md:text-xl text-white font-bold hover:text-primary transition-all"><Link href='tel:0727 153 317'>0727 153 317</Link></span>
+                            <span className="text-lg md:text-xl text-white font-bold hover:text-primary transition-all"><Link href='tel:0771 059 932'> 0771 059 932</Link></span>
                         </div>
                     </div>
                     <h6 className="text-xl text-white mb-4 font-bold text-center">Sau ne poți găsi și aici:</h6>
@@ -311,26 +311,26 @@ export default function Contact() {
                     <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-y-8'>
                     <WhyUsItem1 
                             src="/images/questions-comment.svg"
-                            text="Comunicare excelentă! Răspuns rapid și soluții eficiente pentru succesul proiectelor tale."
-                            title="Comunicare"
+                            text="Expertiză în domeniul marketingului, oferind soluții strategice pentru succesul afacerii tale."
+                            title="Expertiză"
                             textColor="secondary"
                         />
                         <WhyUsItem1 
-                            src="/images/flash.svg"
-                            text="Echipă tânără, inovatoare și dinamică, aducând idei proaspete și abordări moderne."
-                            title="Spirit tânăr"
+                            src="/images/rocket.svg"
+                            text="O echipă creativă și inovatoare, capabilă să găsească soluții neconvenționale și să creeze campanii memorabile și atrăgătoare."
+                            title="Creativitate"
                             textColor="secondary"
                         />
                         <WhyUsItem1 
-                            src="/images/person.svg"
-                            text="Oferim o abordare individuală pentru a ne asigura că satisfacem nevoile și obiectivele fiecărui client."
-                            title="Abordare individuală"
+                            src="/images/chess.svg"
+                            text="Suntem flexibili și adaptabili, putând aborda schimbările de situație pentru a oferi soluții eficiente."
+                            title="Flexibilitate"
                             textColor="secondary"
                         />
                         <WhyUsItem1 
                             src="/images/chart.svg"
-                            text="Profesionalismul nostru este evidențiat de abordarea noastră meticuloasă și atenția la detalii în fiecare proiect."
-                            title="Profesionalism"
+                            text="Promovăm o comunicare deschisă și transparentă cu clienții noștri, oferind informații și rapoarte clare despre performanța campaniilor și proiectelor."
+                            title="Transparență"
                             textColor="secondary"
                         />
                     </div>
@@ -341,11 +341,11 @@ export default function Contact() {
                     </div>
                 </div>
                 <Link href='#' className="bg-primary mt-12 flex font-semibold items-center justify-center w-[max-content] mx-auto justify-self-center px-16 py-3 md:py-4 text-onPrimary rounded-[28.5px] hover:scale-[1.05] transition-all">
-                    Vreau să completez!
+                    Vreau sa completez!
                 </Link>
             </section>
             <div className="h-12 md:h-8"></div>
-            <NewsLetter headingText={'Fii la curent cu cele mai recente informații despre fonduri europene!'} />
+            <NewsLetter headingText={'Fii la curent cu cele mai recente strategii de digital marketing!'} />
         </>
     )
 }

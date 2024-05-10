@@ -11,29 +11,29 @@ export type ProcesData = {
 
 const defaultData: ProcesData[] = [
     {
-        id: 1, title: 'Analizarea societății', 
-        text: 'Primul pas în colaborarea noastră constă într-o analiză atentă a firmei dumneavoastră și identificarea programului activ care se potrivește cel mai bine cu obiectivele și nevoile afacerii dumneavoastră. Avem o echipă dedicată de specialiști cu experiență în identificarea celor mai bune programe de finanțare și înțelegerea tuturor cerințelor și criteriilor de eligibilitate. Cu noi la bord, sunteți sigur că veți fi încadrat în programul potrivit, care va maximiza șansele de a obține finanțarea dorită.',
-        titluText: "Analizarea societății și încadrarea în programul cel mai potrivit",
+        id: 1, title: 'Evaluarea nevoilor tale', 
+        text: 'Primul pas în colaborarea noastră constă într-o evaluare atentă a nevoilor și obiectivelor afacerii tale. Echipa noastră de specialiști în marketing va analiza situația ta actuală, publicul țintă și obiectivele de creștere. Pe baza acestor informații, vom identifica strategia de marketing potrivită, care va maximiza impactul și rezultatele pozitive pentru afacerea ta.',
+        titluText: "Evaluarea nevoilor tale și identificarea strategiei potrivite",
     },
     {
-        id: 2, title: 'Pregătirea documentației',
-        text: 'În pasul 2 al procesului nostru, ne concentrăm pe obținerea tuturor informațiilor necesare pentru a începe redactarea proiectului. În cadrul acestei etape, solicităm clienților noștri să ne ofere toate documentele necesare pentru a putea continua. Avem o echipă de specialiști care se ocupă de analiza atentă a informațiilor furnizate, astfel încât să ne asigurăm că proiectul este construit în conformitate cu cerințele specifice ale programului selectat. În plus, colaborăm îndeaproape cu clienții noștri pe tot parcursul procesului de redactare, pentru a ne asigura că soluțiile propuse corespund nevoilor și cerințelor lor specifice.',
-        titluText: 'Pregătirea documentației necesare pentru proiect',
+        id: 2, title: 'Crearea planului ',
+        text: 'În pasul doi al procesului, vom dezvolta un plan de acțiune personalizat, adaptat nevoilor și obiectivelor tale. Acest plan va include strategii de promovare, canale de marketing, campanii publicitare și alte tactici relevante. Echipa noastră de specialiști va lucra îndeaproape cu tine pentru a asigura că planul de acțiune este eficient și aliniat cu viziunea ta de afacere.',
+        titluText: 'Crearea planului de acțiune personalizat',
     },
     {
-        id: 3, title: 'Depunerea proiectului', 
-        text: 'Depunerea proiectului este momentul crucial în obținerea finanțării dorite. După ce am finalizat analiza și scrierea proiectului, acesta este depus cu mare atenție la instituția responsabilă. În acest punct, noi preluăm întreaga responsabilitate și ne asigurăm că proiectul depus respectă toate criteriile și normele impuse de instituție. După depunere, urmează momentul așteptării verificării proiectului, moment în care noi monitorizăm cu atenție toate etapele procesului pentru a ne asigura că acesta are loc în cele mai bune condiții.',
-        titluText: 'Depunerea proiectului și verificarea lui',
+        id: 3, title: 'Implementarea și monitorizarea', 
+        text: 'Pasul trei implică implementarea planului de acțiune convenit. Echipa noastră de experți va coordona toate, inclusiv crearea și lansarea campaniilor, gestionarea canalelor de marketing și monitorizarea performanțelor. Vom urmări îndeaproape rezultatele și vom face ajustări pe parcurs pentru a asigura maximizarea impactului și obținerea rezultatelor dorite.',
+        titluText: 'Implementarea și monitorizarea strategiei de marketing',
     },
     {
-        id: 4, title: 'Aprobarea proiectului', 
-        text: 'Pasul 4 în procesul nostru de a ajuta clienții să obțină finanțarea necesară este primirea deciziei de aprobare a proiectului depus, un pas crucial pentru succesul afacerii dumneavoastră. În acest moment, intrăm în acțiune și demarăm procedurile de achiziție, astfel încât clientul să beneficieze de cele mai bune oferte. De asemenea, începem și perioada de implementare a proiectului, iar echipa noastră dedicată va monitoriza cu atenție fiecare etapă a acestui proces pentru a asigura succesul final.',
-        titluText: 'Aprobarea proiectului și începerea perioadei de implementare',
+        id: 4, title: 'Analiza și optimizarea', 
+        text: 'Pasul 4 constă în analiza rezultatelor obținute și optimizarea continuă a strategiei de marketing. Echipa noastră va monitoriza și evalua performanța campaniilor, identificând punctele tari și slabe și ajustând tacticiile pentru a obține rezultate superioare. Vom asigura că afacerea ta beneficiază de cele mai bune practici și de cele mai eficiente strategii de marketing.',
+        titluText: 'Analiza și optimizarea continuă a strategiei de marketing',
     },
     {
-        id: 5, title: 'Perioada de monitorizare', 
-        text: 'După ce am finalizat cu succes implementarea proiectului, începem perioada de monitorizare. Suntem mereu alături de tine pentru a-ți oferi consultanță și a răspunde la întrebări pe toată durata monitorizării. Este o perioadă de grație în care savurăm succesul, dar și de a verifica dacă firma este eligibilă pentru alte programe de finanțare. Suntem mândri de parteneriatele noastre și suntem pregătiți să ajutăm și alte companii să-și atingă obiectivele lor de afaceri prin proiecte finanțate cu succes.',
-        titluText: 'Perioada de monitorizare și finalizarea obligațiilor',
+        id: 5, title: 'Creștere continuă', 
+        text: 'Pasul final în procesul nostru este de a oferi suport și asistență pe termen lung pentru creșterea afacerii tale. Vom fi alături de tine pentru a răspunde la întrebări, pentru a face ajustări și pentru a identifica noi oportunități de creștere într-un mediu în continuă schimbare. Suntem dedicați succesului afacerii tale și suntem pregătiți să fim partenerul tău în atingerea obiectivelor de marketing.',
+        titluText: 'Creștere continuă și susținere pe termen lung',
     },
 ]
 
@@ -57,7 +57,7 @@ export default function Proces({ data=defaultData, title }: Props){
 
             <Image src='/images/proces/circle-proces.svg' className="hidden md:block absolute right-[-80px] top-0 w-[300px] h-[300px]" alt='triangle' width={250} height={250}/>
             <Image src='/images/proces/hexagon.svg' className="hidden md:block absolute bottom-[5%] -left-12 w-[200px] h-[200px]" alt='triangle' width={250} height={250}/>
-            <h2 className="text-[#fff] text-xl lg:text-2xl xl:text-3xl text-center font-bold mb-20 md:mb-28">{ title ? title : <span>Ghidul nostru pentru accesarea fondurilor: <br /> Pas cu pas cu Socialy</span> }</h2>
+            <h2 className="text-primary text-xl lg:text-2xl xl:text-3xl text-center font-bold mb-20 md:mb-28">{ title ? title : <span>Cum dăm startul succesului tău în mediul online?</span> }</h2>
             <div className="w-full flex relative flex-col md:flex-row justify-between items-start">
                 <div className="flex items-center w-full flex-col md:mr-8">
                     {data.map(proces => (

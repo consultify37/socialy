@@ -35,13 +35,13 @@ const About = ({ articles, products }: Props) => {
                 linkText="Completează formularul!"
                 linkHref="/contact"
             />
-            <FeaturedProducts 
+            {/* <FeaturedProducts 
                 products={products}
             />
             <News 
                 articles={articles}
-            />
-            <NewsLetter headingText={'Abonează-te la newsletter pentru informații actualizate despre afaceri!'} />
+            /> */}
+            <NewsLetter headingText={'Fii în pas cu trendurile! Abonează-te la Newsletter și află cele mai recente tendințe din lumea marketingului'} />
         </>
     )
 }

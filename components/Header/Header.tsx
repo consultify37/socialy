@@ -86,7 +86,7 @@ const Header = () => {
               />
             </Link>
             <div className="flex flex-row items-center xl:hidden z-[99]">
-              <Link
+              {/* <Link
                 href='/shop/cart'
                 className="p-[14px] lg:p-[16px] rounded-full bg-primary hover:scale-105 transition-all -mr-2 lg:-mr-0"
               >
@@ -104,7 +104,7 @@ const Header = () => {
                     </div>
                   }
                 </div>
-              </Link>
+              </Link> */}
               <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" className="hidden peer" checked={toggle} onChange={() => setToggle(!toggle) }></input>
               <div 
                 className="relative flex items-center xl:hidden max-h-10"
@@ -159,7 +159,7 @@ const Header = () => {
                   testimoniale
                 </Link>
               </li>
-              <li
+              {/* <li
                 className={`w-full xl:w-auto p-2 pl-16 border-b-[1px] border-white xl:pl-18 xl:pl-0 xl:p-0 xl:border-0`}
               >
                 <Link href="/blog" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
@@ -179,15 +179,29 @@ const Header = () => {
                 <Link href="/contact" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   contact
                 </Link>
-              </li>
-              <li
+              </li> */}
+              {/* <li
                 className={`xl:hidden w-full xl:w-auto p-2 pl-16`}
               >
                 <Link href={ currentUser ? '/cont' : '/login' } className="font-semibold text-primary text-[16px] transition-all">
                   { currentUser ? 'cont' : 'login' }
                 </Link>
+              </li> */}
+              <li
+                className={`xl:hidden w-full xl:w-auto p-2 pl-16`}
+              >
+                <Link href='/contact' className="font-semibold text-primary text-[16px] transition-all">
+                  contactează-ne
+                </Link>
               </li>
               <li
+                className='relative hidden xl:block hover:scale-105 transition-all'
+              >
+                <Link href='/contact' className="py-[14px] px-8  bg-primary rounded-full text-onPrimary font-semibold">
+                  contactează-ne
+                </Link>
+              </li>
+              {/* <li
                 className='relative hidden xl:block'
               >
                 <Link href={ currentUser ? '/cont' : '/login' } className="py-[14px] pl-8 pr-16 bg-primary rounded-full text-onPrimary font-semibold hover:scale-105 transition-all">
@@ -210,7 +224,7 @@ const Header = () => {
                       </div>
                     }
                 </Link>
-              </li>
+              </li> */}
               {/* <li
                 className={`${
                   toggle
@@ -225,39 +239,10 @@ const Header = () => {
                   login
                 </div>
               </li> */}
-              {/* <li className="ml-4 hidden cursor-pointer xl:flex">
-                {loggedIn ? (
-                  <Link
-                    href="/cont"
-                    className="font-semibold bg-[#7000FF] p-[10px] px-8 pr-9 rounded-full text-[#fff] relative transition-all hover:scale-[1.05]"
-                  >
-                    Cont
-                  </Link>
-                ) : (
-                  <div
-                    onClick={handleLoginModalOpening}
-                    className="font-semibold bg-[#7000FF] p-[10px] px-8 pr-9 rounded-full text-[#fff] relative transition-all hover:scale-[1.05]"
-                  >
-                    login
-                  </div>
-                )}
-                <span
-                  onClick={handleCartOpening}
-                  className="text-[#fff] p-[9px] bg-[#7000FF] absolute -right-5 rounded-full border-[4px] top-[-3px] border-[#260056] transition-all hover:scale-[1.05]"
-                >
-                  <AiOutlineShoppingCart size={24} />
-                </span>
-              </li> */}
             </ul>
           </div>
         </nav>
       </header>
-      {showLoginModal ? (
-        <LoginModal handleModalClosingClick={handleLoginModalClosing} />
-      ) : null}
-      {showCart ? (
-        <CartModal handleModalClosingClick={handleCartClosing} />
-      ) : null}
     </>
   )
 }

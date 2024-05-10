@@ -6,14 +6,14 @@ const Item1Story = () => {
     <article className="flex flex-wrap gap-y-10 gap-x-[6rem] mt-10 md:mt-32 justify-between items-center">
       <div className="flex-1">
         <h2 className="text-secondary font-bold text-xl mb-6 md:text-xl lg:text-2xl xl:text-3xl">
-          Ne diferențiem prin:
+          Descoperă cine suntem:
         </h2>
         <p className="text-secondary font-normal text-[14px] md:text-base">
-          Abilitatea noastră de a fi un partener de încredere pentru clienții noștri, ajutându-i să obțină finanțarea necesară pentru a-și atinge obiective. La Consultify, lucrăm strâns cu clienții noștri, oferindu-le soluții personalizate pentru fiecare proiect.
+          La Socialy, suntem interesati de succesul afacerii tale și suntem aici să îți fim partener în atingerea obiectivelor tale de marketing. Lucrăm strâns cu clienții noștri, oferindu-le soluții personalizate și inovatoare pentru fiecare proiect.
         </p>
         <br />
         <p className="text-secondary font-normal text-[14px] md:text-base">
-          Echipa noastră tânără și dinamică este dedicată clienților și lucrează individual cu fiecare dintre ei pentru a înțelege și aborda nevoile specifice. De la evaluarea inițială până la prezentarea finală a proiectului, suntem mereu alături de clienții noștri, asigurându-ne că obțin finanțarea necesară. Cu o rată de succes ridicată și o abordare personalizată, Consultify este partenerul ideal în accesarea fondurilor europene.
+          Avem o rată ridicată de succes în obținerea rezultatelor pozitive pentru clienții noștri, iar portofoliul nostru diversificat demonstrează capacitatea noastră de a răspunde provocărilor din diferite industrii. Indiferent dacă ai nevoie de strategii de promovare online, gestionarea campaniilor publicitare sau dezvoltarea prezenței tale pe rețelele sociale, noi suntem aici să te ghidăm și să te susținem pe parcursul întregului proces.
         </p>
         <div className="flex gap-4 mt-4">
           <Link
@@ -31,11 +31,12 @@ const Item1Story = () => {
         </div>
       </div>
       <Image
-        src="/images/About/Pag - despre noi - structura despre noi.png"
+        src="/images/About/poza 1.jpg"
         alt="Our Story 2"
+        unoptimized={true}
         className="w-full md:max-w-[450px] md:h-[400px] object-cover rounded-[35px]"
-        width={300}
-        height={300}
+        width={1024}
+        height={1024}
       />
     </article>
   );

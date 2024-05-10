@@ -2,28 +2,36 @@ import React from "react"
 import Link from "next/link"
 import Image from "next/image"
 
-const cards = [
+const defaultCards = [
     {
-        titleBack: 'Descoperă garanția de formă!',
-        titleFront: 'Garanția de formă',
-        description: 'Garanția noastră de formă vă oferă siguranța că documentația necesară va fi completată corespunzător și în conformitate cu cerințele instituțiilor finanțatoare.'
+        titleBack: 'Experiență',
+        titleFront: 'Experiență',
+        description: 'Socialy dispune de o echipă de specialiști în marketing social cu o vastă experiență în domeniu, mereu pregătită să aducă idei noi și să transforme viziunile clienților în realitate pe platformele de social media.'
     },
     {
-        titleBack: 'Descoperă garanția de succes!',
-        titleFront: 'Garanția de succes',
-        description: 'Cu garanția noastră de succes, sunteți asigurat că proiectul dumneavoastră este gestionat de experți care își asumă responsabilitatea de a oferi cele mai bune soluții.'
+        titleBack: 'Abordare Personalizată',
+        titleFront: 'Abordare Personalizată',
+        description: 'La Socialy, ne concentrăm pe nevoile și obiectivele fiecărui client. Înțelegem că nu există o soluție care să se potrivească tuturor și de aceea lucrăm strâns cu clienții noștri pentru a dezvolta strategii personalizate care să se alinieze cu viziunea și bugetul lor.'
     },
     {
-        titleBack: 'Descoperă garanția de eligibilitate!',
-        titleFront: 'Garanția de eligibilitate',
-        description: 'Garanția noastră de eligibilitate vă oferă siguranța că îndepliniți criteriile necesare pentru a accesa finanțări europene și naționale.'
+        titleBack: 'Rezultate Măsurabile și Transparente',
+        titleFront: 'Rezultate Măsurabile și Transparente',
+        description: 'Ne angajăm să oferim rezultate tangibile și măsurabile. Folosim instrumente avansate de analiză și monitorizare pentru a urmări performanța campaniilor noastre și pentru a furniza rapoarte periodice clienților noștri. '
     },
 ]
 
-export default function Garantii(){
+type Props = {
+    cards?: {
+        titleBack: string;
+        titleFront: string;
+        description: string;
+    }[]
+}
+
+export default function Garantii({cards=defaultCards}: Props){
     return(
         <section className="w-full flex flex-col items-center mt-16 md:mt-32 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
-            <h2 className="text-xl lg:text-3xl text-secondary self-start lg:self-center text-center font-bold mb-12">Iată ce garanții îți oferim la Socialy:</h2>
+            <h2 className="text-xl lg:text-3xl text-secondary self-start lg:self-center text-center font-bold mb-12">De ce să ne alegi pe noi? </h2>
             <div className="relative flex flex-col items-center w-full pb-20 lg:pb-16">
                 <div className="absolute bg-[#EBEBEB] w-full h-calc lg:h-[400px] left-0 bottom-0 rounded-2xl"></div>
                 <Image src='/images/Garantii/polygon.svg' className="w-[100px] lg:w-[166px] absolute -right-2 lg:-right-12 -bottom-12" width={200} height={200} alt="polygon"/>

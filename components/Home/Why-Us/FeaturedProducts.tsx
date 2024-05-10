@@ -38,7 +38,7 @@ const FeaturedProducts = ({ products, dark=false }: Props) => {
           className="text-[15px] lg:text-[32px] mr-2 sm:max-w-[65%] lg:mr-32 xl:max-w-[65%] text-secondary font-bold pl-7 md:pl-[80px] xl:pl-[140px] 2xl:pl-[276px]"
           style={{color: dark ? 'white' : 'black' }}
         >
-          Inspirely vine în ajutorul tău cu produse digitale pentru scalarea afacerii tale
+          Optimizează-ți afacerea cu serviciile și produsele digitale oferite de Socialy și Inspirely!
         </h2>
         <div className="flex flex-row pr-7 md:pr-[80px] xl:pr-[140px] 2xl:pr-[276px]">
           <span

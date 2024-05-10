@@ -59,6 +59,9 @@ const Footer = () => {
                         <li>
                             <Link href='/politica-cookie' className='font-semibold text-[#6A6A6A] text-[16px]'>Politica Cookies</Link>
                         </li>
+                        <li>
+                            <Link target="_blank" href='/files/Politica de confidentialitate.pdf' className='font-semibold text-[#6A6A6A] text-[16px]'>Politica de  Confidențialitate</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className='flex flex-col gap-1 lg:max-w-[20%]'>
@@ -68,7 +71,7 @@ const Footer = () => {
                             <p className='font-semibold text-[#6A6A6A] text-[16px]'>Adresa: Strada Crișul Alb, Numărul 6, Sector 4, București.</p>
                         </li>
                         <li>
-                            <Link href='tel:+40727153317' className='font-semibold text-[#6A6A6A] text-[16px]'>Număr de telefon: (0727) 153 317</Link>
+                            <Link href='tel:0771 059 932' className='font-semibold text-[#6A6A6A] text-[16px]'>Număr de telefon: 0771 059 932</Link>
                         </li>
                         <li>
                             <Link href={`mailto:${email}`} className='font-semibold text-[#6A6A6A] text-[16px]'>Email: {email}</Link>

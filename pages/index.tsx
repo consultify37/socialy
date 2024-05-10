@@ -43,17 +43,17 @@ export default function Home({ slides, programe, articles, products }: Props) {
         <OurClients hasTitle={true} />
       </div>
       <CTA
-        title="Acțiunea ta contează - Începe-ți <purple>proiectul<purple> de succes acum!"
+        title="Alege succesul - Demarează-ți campania de <purple>marketing<purple> cu noi acum!"
         linkText="Completează formularul!"
         linkHref="/contact"
       />
-      <FeaturedProducts 
+      {/* <FeaturedProducts 
         products={products}
       />
       <News 
         articles={articles}
-      />
-      <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
+      /> */}
+      <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi strategii de marketing și nu numai!'} />
     </>
   )
 }

@@ -22,7 +22,7 @@ type Props = {
   products: Product[]
 }
 
-const Program = ({ program, products, articles }: Props) => {
+const Campanie = ({ program, products, articles }: Props) => {
   return (
     <>
       <Head>
@@ -48,9 +48,9 @@ const Program = ({ program, products, articles }: Props) => {
             className="w-full flex flex-col items-center mt-10 md:mt-24 justify-center -mx-2 md:mx-12"
           >
             <h2 className="text-secondary font-bold text-[20px] md:text-xl lg:text-2xl xl:text-4xl text-center px-7">
-              Peste 100 de firme s-au dezvoltat în online alături de Socialy
+              Peste 150 de firme s-au dezvoltat în mediul online cu ajutorul nostru.
             </h2>
-            <h3 className="text-secondary text-[16px] md:text-lg lg:text-xl xl:text-2xl">
+            <h3 className="text-secondary text-[16px] md:text-lg lg:text-xl xl:text-2xl pt-4">
               Iată câteva dintre ele:
             </h3>
             
@@ -73,22 +73,22 @@ const Program = ({ program, products, articles }: Props) => {
         <Faq faqs={program.faqs} />
       </section>
       <CTA
-        title="Contactează-ne și hai să vedem împreună cum poate crește <purple>afacerea ta<purple>"
+        title="Alege succesul - Demarează-ți campania de <purple>marketing<purple> cu noi acum!"
         linkText="Completează formularul!"
         linkHref="/contact"
       />
-      <FeaturedProducts 
+      {/* <FeaturedProducts 
         products={products}
       />
       <News 
         articles={articles}
-      />
+      /> */}
       <NewsLetter headingText={'Fii la curent cu cele mai recente informații despre fonduri europene!'} />
     </>
   )
 }
 
-export default Program
+export default Campanie
 
 export const getStaticPaths = async () => {
   const programeRef = query(collection(db, 'programe-fonduri'), where('site', '==', process.env.SITE))

@@ -68,7 +68,7 @@ export default function Servicii({ articles, products }: Props) {
             <title>{`${process.env.SITE} | Servicii`}</title>
         </Head>
         <PageHeader
-          title="Împreună pentru succesul tău: servicii și produse de calitate"
+          title="Cum te putem ajuta în drumul tău spre succes?"
         >
           <Image
               src="/images/star.svg"
@@ -88,17 +88,18 @@ export default function Servicii({ articles, products }: Props) {
         <OurServices />
         <Proces />
         <Garantii />
+        <div className="mt-12 md:mt-24 text-white">p</div>
         <CTA
-          title="Acțiunea ta contează - Începe-ți <purple>proiectul<purple> de succes acum!"
+          title="Contactează-ne și hai să-ți ducem afacerea la <purple>nivelul<purple> următor!"
           linkText="Completează formularul!"
           linkHref="/contact"
         />
-        <FeaturedProducts 
+        {/* <FeaturedProducts 
           products={products}
         />
         <News 
           articles={articles}
-        />
+        /> */}
         <NewsLetter headingText='Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!' />
     </>
   );

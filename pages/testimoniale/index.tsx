@@ -17,21 +17,21 @@ import News from "../../components/Home/News/News"
 
 const testimonials = [
   {
-    title: 'Ștefan - Pasiunea pentru muzică și drumul către îndeplinirea visului antreprenorial',
-    text1: 'Ștefan, în vârstă de 25 de ani, și-a deschis o școală privată de muzică prin programul Start-Up Nation Diaspora. Având o pasiune pentru vioară și dorința de a combina muzica cu pedagogia și antreprenoriatul, Stefan a visat să aibă propria sa școală de muzică. A ales firma Consultify ca partener de consultanță, datorită profesionalismului și serviciilor personalizate.',
-    text2: 'După o perioadă petrecută în Londra pentru a strânge bani, Stefan s-a întors în România și a început să exploreze modalități de a-și finanța afacerea. Pentru a vedea povestea completă, vă invităm să vizionați clipul urmator:',
+    title: 'Răzvan - Platformă de cursuri online - De la idee la succes! ',
+    text1: 'Răzvan, fondatorul unei platforme de cursuri online, a căutat sprijin pentru a-și promova platforma și pentru a atrage un număr mai mare de potențiali cursanți interesați. Obiectivul său era să crească vizibilitatea platformei pe social media și să atragă un public activ și interesat.',
+    text2: 'Prin colaborarea cu Socialy, Răzvan a obținut rezultate remarcabile în promovarea platformei sale de cursuri online pe social media. Platforma sa a cunoscut o creștere semnificativă a numărului de urmăritori și a interacțiunilor pe canalele de socializare. Puteți urmări mai departe clipul pentru întreaga poveste:',
     ytUrl: 'https://www.youtube.com/embed/QJ6cWRy9q1U?si=h_SW0WEYk_YDvwzK' 
   },
   {
-    title: 'Alexandra, tânăra antreprenoare care a obținut 40.000 de euro pentru afacerea sa prin programul Femeia Antreprenor',
-    text1: 'Alexandra, în vârstă de 22 de ani, marketer digital, a obținut o finanțare în valoare de 40.000 de euro pentru afacerea sa prin programul Femeia Antreprenor. Pasionată de marketingul digital, Alexandra și-a dorit să transforme pasiunea sa într-o afacere, dar avea nevoie de fonduri pentru a-și deschide o locație nouă, a achiziționa echipamente și a angaja personal. Aflând despre finanțările nerambursabile, Alexandra a decis să încerce și ea norocul.',
-    text2: 'După căutări și discuții cu diverse firme de consultanță, Alexandra a ales să colaboreze cu Consultify. Consultantul cu care a discutat i-a oferit încredere și a realizat o simulare de punctaj, confirmându-i că are șanse mari să obțină finanțarea. Pentru a afla întreaga poveste, vă invităm să urmăriți videoclipul:',
+    title: 'Robert - Web Designer - Creșterea portofoliului de clienți mulțumiți!',
+    text1: 'Robert, un talentat web designer, dorea să înceapă să ofere servicii de creare a site-urilor web. Pentru a-și atinge obiectivele, Robert a colaborat cu echipa Socialy pentru a dezvolta și implementa o strategie de marketing online eficientă, concentrată pe promovarea serviciilor sale.',
+    text2: 'Aceste campanii au inclus publicitate plătită pe diverse platforme online, cum ar fi Instagram Ads și Facebook Ads, pentru a atrage potențiali clienți interesați. Socialy l-a ajutat ca în câteva luni să ajungă la nivelul "zero to hero" activitatea lui schimbându-se radical odată cu parteneriatul început. Puteți vedea mai departe în clip experiența trăită:',
     ytUrl: 'https://www.youtube.com/embed/0-qT2e_s6TE?si=ngdL14zCZtbIM9PO'
   },
   {
-    title: 'O tânără studentă la Facultatea de Medicină obține o finanțare semnificativă pentru cabinetul medical al familiei',
-    text1: 'Iulia, în vârstă de 21 de ani, studentă în anul 2 la Medicină, a avut ocazia să obțină o finanțare nerambursabilă în valoare de 60.150 euro prin intermediul programului PNRR C12 - Dotare și renovare cabinete medici de familie. Fiind pasionată de domeniul medical și urmând exemplul ambilor săi părinți, care sunt medici, Iulia și familia ei au dorit să își dezvolte cabinetul medical și să ofere servicii de calitate comunității locale.',
-    text2: 'Totul a început atunci când Iulia a văzut un videoclip pe internet în care se discuta despre posibilitatea obținerii de fonduri europene pentru domeniul medical. Având un cabinet mic care necesită renovare și echipamente noi, dar fără resurse financiare suficiente pentru a realiza aceste investiții, Iulia a căutat mai multe informații despre programul PNRR și despre cum poate accesa aceste finanțări. Pentru a descoperi povestea completă, vă încurajăm să vizionați videoclipul:',
+    title: 'Mario - Antreprenor - Colaborare de succes, atât pentru el, cât și pentru clienții lui!',
+    text1: 'Mario, în vârstă de 23 de ani, deține o agenție de producție foto-video, realizând și el la rândul său campanii de marketing pe TikTok. A început colaborarea cu Socialy pentru promovarea serviciului său inițial pe Meta Ads.',
+    text2: 'În urma colaborării personale, s-a decis să înceapă un parteneriat cu Socialy, ce-l ajută în crearea unor pachete complete pentru clienții săi, astfel fiind mulțumit din toate punctele de vedere. Pentru a vedea povestea completă, vă invităm să vizionați clipul următor:',
     ytUrl: 'https://www.youtube.com/embed/BGXhV4tjNFw?si=Equ5uXayThElHXrK'
   }
 ]
@@ -79,7 +79,7 @@ export default function Testimoniale({ articles, products }: Props) {
         <title>Socialy | Testimoniale</title>
       </Head>
       <PageHeader
-        title="Experiențe de succes prin fonduri europene"
+        title="Cunoaște poveștile de succes ale clienților noștri!"
       >
         <Image
           src="/images/Star 1.svg"
@@ -101,9 +101,9 @@ export default function Testimoniale({ articles, products }: Props) {
         className="w-full flex flex-col items-center my-32 justify-center px-4 md:px-[80px] xl:px-[140px] 2xl:px-[276px]"
       >
         <h2 className="text-secondary font-bold text-[20px] md:text-xl lg:text-2xl xl:text-4xl text-center px-7">
-          Peste 100 de firme s-au dezvoltat în online alături de Socialy
+          Peste 150 de firme s-au dezvoltat în mediul online cu ajutorul nostru. Iată câteva dintre ele:
           </h2>
-          <h3 className="text-secondary text-[16px] md:text-lg lg:text-xl xl:text-2xl">
+          <h3 className="text-secondary text-[16px] md:text-lg lg:text-xl xl:text-2xl mt-4">
             Iată câteva dintre ele:
           </h3>
         
@@ -112,15 +112,15 @@ export default function Testimoniale({ articles, products }: Props) {
       <section className="relative bg-secondary w-full pt-16 md:pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <span className="bg-secondary rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
         <h2 className="mb-8 md:mb-12 px-4 md:px-0 text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center md:pt-11 lg:pt-1 pt-1">
-          Gânduri și experiențe ale clienților noștri: testimoniale de succes
+          Cunoaște succesele clienților noștri!
         </h2>
         <OurClients />
         <section id='trust-us' className='bg-secondary mt-24 flex flex-col items-center w-full relative'>
             <h2 className="text-xl md:text-3xl font-bold text-white md:max-w-[80%] text-center pt-0 md:pt-20 lg:pt-0 mb-5">
-              Încă nu te-am convins? Descarcă lista completă cu rezultate:
+              Încă nu te-am convins? Vezi lista completă cu rezultate:
             </h2>
-            <Link href='/files/Rezultate Consultify.pdf' download={true} target="_blank" className="bg-primary mb-16 mt-4 font-semibold px-12 py-3 text-onPrimary transition-all hover:scale-[1.05] rounded-[28.5px]">
-              Descarcă lista aici!
+            <Link href='https://www.canva.com/design/DAFwMTGz5pM/zVfz3DRpAjzmSdjqz_Cqzw/view?utm_content=DAFwMTGz5pM&utm_campaign=designshare&utm_medium=link&utm_source=editor' target="_blank" className="bg-primary mb-16 mt-4 font-semibold px-12 py-3 text-onPrimary transition-all hover:scale-[1.05] rounded-[28.5px]">
+              Vezi lista aici!
             </Link>
             <h2 className="text-xl md:text-3xl font-bold text-white px-8 md:px-0 md:max-w-[80%] text-center pt-4 md:pt-20 lg:pt-0 mb-12 md:mb-24">
               Sau vizionați următoarele studii de caz!
@@ -219,7 +219,7 @@ export default function Testimoniale({ articles, products }: Props) {
             </form>
           </div>
           <div className='relative hidden lg:flex justify-end mt-16 lg:mt-0 lg:ml-12'>
-            <Image src='/images/testimoniale/Pag - testimoniale - structura idei afacere.png' alt='Why-Us' className='relative w-[450px] rounded-[35px] z-[2]' width={350} height={400} placeholder='blur' blurDataURL='/images/home-about-1.png' />
+            <Image src='/images/testimoniale/poza 1 formular.jpg' alt='Why-Us' unoptimized={true} className='relative object-cover h-[280px] sm:h-full w-full md:w-[450px] md:h-[400px] rounded-[35px] z-[2]' width={800} height={533} />
             {/* <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' />  */}
             <Image src='/images/proces/hexagon.svg' className="absolute -right-[50px] -bottom-[50px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>
             <Image src='/images/circle-litle.svg' className="absolute -left-[40px] -top-[40px] w-[160px] h-[160px]" alt='triangle' width={250} height={250}/>
@@ -228,16 +228,16 @@ export default function Testimoniale({ articles, products }: Props) {
         </div>
       </section>
       <CTA
-        title="Transformă-ți ideile în <purple>realitate<purple> prin fonduri europene!"
+        title="Alege succesul - Demarează-ți campania de <purple>marketing<purple> cu noi acum!"
         linkText="Completează formularul!"
         linkHref="/contact"
       />
-      <FeaturedProducts 
+      {/* <FeaturedProducts 
         products={products}
       />
       <News
         articles={articles}
-      />
+      /> */}
       <NewsLetter headingText='Abonează-te și află secretele succesului în obținerea finanțăriilor europene!' />
     </>
   )

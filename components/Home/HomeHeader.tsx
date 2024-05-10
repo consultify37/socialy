@@ -48,7 +48,7 @@ const HomeHeader = ({ slides }: Props) => {
             /> */}
           </div>
           <p className="text-white font-light text-center text-[14px] md:text-[18px] lg:max-w-[60%]">
-            Ne ocupăm de tot ce înseamnă marketing și generare de leaduri noi, pentru a putea susține evoluția continuă a afacerii tale.
+            Alături de Socialy poți obține rezultate remarcabile cu strategii de marketing personalizate și inovatoare, pentru a sprijini evoluția continuă a afacerii tale.
           </p>
           <Link
             href='#proces'

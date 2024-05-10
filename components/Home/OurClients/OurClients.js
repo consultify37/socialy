@@ -1,6 +1,8 @@
-import Image from "next/image";
-import Carousel from 'react-elastic-carousel';
-import Link from "next/link";
+import Image from "next/image"
+import Carousel from 'react-elastic-carousel'
+import Link from "next/link"
+import ReactPlayer from 'react-player'
+
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
 ];
@@ -9,66 +11,59 @@ const OurClients = ({hasTitle=false}) => {
     const Testimonials = [
         {
             id: 1,
-            title: "Colaborarea cu Consultify - Un pas sigur către succes în Programul Start Up Nation",
-            subTitle: 'Baloi Andrei – Fabricarea pieselor pentru roboți',
-            description: "Colaborarea cu Consultify în cadrul programului Start-Up Nation a fost un pas important pentru afacerea mea. Echipa lor m-a sprijinit în fiecare etapă, de la verificarea eligibilității societății mele până la achizițiile necesare. Comunicarea clară și transparentă a fost un aspect de apreciat, iar ei au răspuns prompt la întrebările și nevoile mele.",
-            descriptionTwo: "În urma aprobării proiectului, am beneficiat de ghidajul lor în identificarea și achiziționarea echipamentelor adecvate. Acum, aștept cu entuziasm începerea perioadei de monitorizare.",
-            image: "/images/testimoniale/Recenzia 1.png",
-            static: "/images/testimoniale/static.png"
+            title: "Succes în colaborarea cu Socialy: Creșterea vizibilității și generarea de lead-uri",
+            subTitle: 'Popescu Ion - Broker de credite',
+            description: "Am avut o colaborare de succes cu Socialy în care m-au ajutat să-mi cresc vizibilitatea și să atrag mai mulți clienți în domeniul meu. Echipa lor a înțeles nevoile mele și a creat strategii de marketing personalizate, care chiar au generat rezultate.",
+            descriptionTwo: "Am fost impresionat de experiența și abordarea lor în domeniu. Recomand cu încredere Socialy tuturor celor care au nevoie de marketing.",
+            video: '/images/testimoniale/1. Popescu Ion - broker credite.mp4'
         },
         {
             id: 2,
-            title: "Ne-am deschis propria pensiune prin programul P.N.D.R. 6.4 cu ajutorul echipei Consultify",
-            subTitle: 'Familia Branduși – Turism',
-            description: "Cu ajutorul Consultify, am reușit să ne îndeplinim visul de a deschide o pensiune prin intermediul programului P.N.D.R. 6.4. Echipa lor ne-a ghidat și a oferit asistență în fiecare etapă a procesului, începând de la evaluarea eligibilității și redactarea proiectului, până la obținerea finanțării și implementarea sa.",
-            descriptionTwo: "Comunicarea transparentă și suportul constant au fost de neprețuit.",
-            image: "/images/testimoniale/Recenzia 2.png",
-            static: "/images/testimoniale/static.png"
+            title: "Creșterea afacerii datorită Socialy: Strategii eficiente pentru industria construcțiilor",
+            subTitle: 'Tănase Adrian - Firmă de construcții',
+            description: "Cu sprijinul celor de la Socialy, am reușit să-mi dezvolt afacerea în construcții. Echipa lor a creat și implementat strategii de marketing eficiente, care ne-au adus mai mulți clienți și proiecte noi.",
+            descriptionTwo: "Colaborarea cu ei a fost plină de profesionalism și angajament, iar rezultatele obținute au depășit așteptările noastre. Sincer, pe lângă clienții noi aduși, au reușit cumva să-mi găsească și angajați când eram într-un impas. Recomand cu încredere!",
+            video: '/images/testimoniale/2. Tanase Adrian - constructii.mp4'
         },
         {
             id: 3,
-            title: "O colaborare de succes cu Consultify: Obținerea finanțării de 40.000 Euro pentru carmangeria noastră",
-            subTitle: 'Chitoiu Ioan – Carmangerie locală',
-            description: "Cu ajutorul echipei Consultify, am reușit să accesăm o finanțare de 40.000 de euro pentru carmangeria noastră. Echipa lor ne-a sprijinit de la verificarea eligibilității și scrierea proiectului, până la depunerea acestuia și construirea planului de achiziții. ",
-            descriptionTwo: "De asemenea, ne-au ajutat să răspundem clarificărilor primite de la finanțator și să începem perioada de implementare. Colaborarea a fost remarcabilă, iar profesionalismul și implicarea lor ne-au asigurat șanse considerabile de reușită în acest proiect. Suntem recunoscători pentru ajutorul lor și recomandăm cu încredere serviciile Consultify.",
-            image: "/images/testimoniale/Recenzia 3.png",
-            static: "/images/testimoniale/static.png"
+            title: "Partenerul nostru de încredere pentru promovarea restaurantului",
+            subTitle: 'Diaconu Ana - Proprietar de restaurant',
+            description: "Cu sprijinul Socialy, am reușit să ne promovăm pensiunea și să atragem un număr mai mare de clienți. Echipa lor a creat reclame personalizate, adaptate industriei și preferințelor noastre.",
+            descriptionTwo: "Am fost impresionați de creativitatea lor în conceperea campaniilor publicitare și de abordarea lor. Colaborarea cu ei a adus rezultate vizibile în creșterea vânzărilor și a vizibilității brandului nostru. Recomand cu încredere serviciile lor pentru orice proprietar de restaurant.",
+            image: "/images/testimoniale/3. Diaconu Ana - Propietar de Restaurant.jpg",
         },
         {
             id: 4,
-            title: "Sprijin decisiv pentru agricultori: Cum am obținut finanțarea dorită cu ajutorul Consultify",
-            subTitle: 'Dinu Marcel - Agricultor',
-            description: 'Cu sprijinul Consultify, am avut succes în obținerea finanțării necesare pentru achiziționarea de materii prime și echipamente prin intermediul programului "Microgranturi și Granturi în Domeniul Agroalimentar". Echipa lor ne-a fost alături în fiecare pas al procesului, de la evaluarea eligibilității și elaborarea proiectului, până la depunerea acestuia.  ',
-            descriptionTwo: "Comunicarea fluentă și expertiza lor ne-au ajutat în demersurile noastre, iar profesionalismul de care au dat dovadă ne-a inspirat încredere. Recomand cu încredere Consultify!",
-            image: "/images/testimoniale/Recenzia 4.gif",
-            static: "/images/testimoniale/Recenzia 4.png",
+            title: "Strategii inovatoare de marketing imobiliar cu Socialy",
+            subTitle: 'Broască Marcel - Dezvoltator imobiliar',
+            description: "Cu sprijinul echipei Socialy, am reușit să promovăm și să ne dezvoltăm proiectele imobiliare cu succes. Echipa lor a creat strategii de marketing inovatoare, care au atras atenția potențialilor cumpărători și ne-au ajutat să vindem rapid și eficient. ",
+            descriptionTwo: "Am apreciat implicarea și abordarea lor  în funcție de nevoile fiecărui proiect. La următorul proiect tot cu ei o să colaborez!",
+            video: '/images/testimoniale/4. Broasca Marcel - Dezvoltator Imobiliar.mp4'
         },
         {
             id: 5,
-            title: "Dezvoltând cabinetul medical cu ajutorul Consultify: Succes în programul PNRR C12",
-            subTitle: 'Mihailescu Diana – Medic de familie',
-            description: 'Am aplicat în programul PNRR C12 și am avut norocul de a colabora cu Consultify pentru echiparea și renovarea cabinetului meu. Încă de la început, echipa lor mi-a oferit sprijin în verificarea eligibilității și înțelegerea procesului de finanțare.',
-            descriptionTwo: "Au fost alături de mine în etapa de planificare bugetară, asigurându-se că includem toate echipamentele necesare pentru desfășurarea activității medicale. După obținerea finanțării, au continuat să fie disponibili pentru întrebări și îndrumare suplimentară. Nu pot decât să le mulțumesc pentru profesionalismul și devotamentul lor!",
-            image: "/images/testimoniale/Recenzia 5.gif",
-            static: "/images/testimoniale/Recenzia 5.png",
+            title: "Strategia potrivita in cladirea succesului: Mulțumit de colaborarea noastră cu Socialy",
+            subTitle: 'Gino Mihai - Constructii civile ',
+            description: "Am ales să colaborez cu Socialy pentru promovarea serviciilor noastre de constructii și am fost foarte mulțumit de rezultate. Echipa lor a creat strategii de marketing eficiente, care ne-au adus mai mulți clienți decât putem face față, ținând cont că avem calendarul plin cu o lună în avans.",
+            descriptionTwo: "Am apreciat munca făcută și o să colaborez cu ei de acum înainte mult timp.",
+            video: '/images/testimoniale/5. Gino Mihai - constructii civile.mp4'
         },
         {
             id: 6,
-            title: "Deschiderea cu succes a propriei brutării cu sprijinul Consultify",
-            subTitle: 'Maria Prodan – Afacere în domeniul panificației',
-            description: 'Cu sprijinul Consultify, am reușit să deschidem cu succes propria brutărie. Echipa lor ne-a oferit întreaga asistență în fiecare etapă a procesului, de la verificarea eligibilității și elaborarea proiectului, până la depunerea acestuia și gestionarea achizițiilor necesare.',
-            descriptionTwo: "Comunicarea fluentă și abordarea lor profesionistă au fost cheia succesului proiectului nostru. Suntem foarte recunoscători pentru sprijinul lor.",
-            image: "/images/testimoniale/Recenzia 6.png",
-            static: "/images/testimoniale/static.png"
+            title: "Transformând visele în realitate: O colaborare de succes cu Socialy ",
+            subTitle: 'Maria Popescu – Administrator Salon de Înfrumusețare',
+            description: "Cu sprijinul echipei Socialy, am reușit să transformăm complet imaginea și reputația salonului nostru de coafură. Ei au creat strategii de marketing personalizate și inovatoare, care ne-au ajutat să ne conectăm cu publicul țintă și să atragem mai mulți clienți decât am visat vreodată.",
+            descriptionTwo: "Prin intermediul campaniilor lor creative și promovării eficiente pe rețelele sociale, am devenit cunoscuți ca fiind un salon de referință în industria coafurii. Echipa lor a fost mereu disponibilă și promptă în răspunsuri, oferindu-ne ghidajul necesar pe tot parcursul colaborării. Recomand cu încredere serviciile lor!",
+            image: "/images/testimoniale/6.Maria Popescu - salon infrumusetare.jpg",
         },
         {
             id: 7,
-            title: "Transformarea fermelor prin Consultify: Povestea fermierului care a obținut finanțarea dorită",
-            subTitle: 'Niculae Andrei – Fermă',
-            description: 'Cu sprijinul Consultify, am reușit să obțin finanțarea necesară pentru dezvoltarea afacerii. Colaborarea cu echipa lor a fost esențială în fiecare etapă a procesului. Încă de la început, mi-au verificat eligibilitatea  și am construit împreună un plan bugetar detaliat.',
-            descriptionTwo: "Au fost ghidul meu de încredere în toți pașii necesari pentru depunerea proiectului și mi-au oferit suport constant și răspunsuri prompte la orice întrebare sau îngrijorare pe parcursul procesului. Îi recomand cu încredere!",
-            image: "/images/testimoniale/Recenzia 7.png",
-            static: "/images/testimoniale/static.png"
+            title: "Zâmbetul pe fețelele tuturor: Cum ne-a ajutat Socialy să promovăm cu succes serviciile noastre",
+            subTitle: 'Andrei Ionescu – Medic Stomatolog',
+            description: "Colaborarea cu Socialy a avut un impact semnificativ asupra cabinetului meu stomatologic. Echipa lor a înțeles cu adevărat nevoile mele și a creat strategii personalizate care ne-au promovat serviciile într-un mod eficient.",
+            descriptionTwo: "Prin intermediul campaniilor lor bine direcționate și a promovării pe platformele digitale, am reușit să ajungem la un număr mai mare de pacienți și să ne dezvoltăm baza de clienți. Suntem recunoscători pentru parteneriatul nostru și recomand cu încredere serviciile lor!",
+            video: '/images/testimoniale/7. Andrei Ionescu - Medic stomatolog.mp4'
         },
     ]
 
@@ -76,7 +71,7 @@ const OurClients = ({hasTitle=false}) => {
         <section id='our-clients' className='w-full flex items-center justify-center flex-col gap-5 z-10'>
             {  hasTitle && 
                 <p className="text-secondary text-xl md:text-3xl text-center font-bold px-7 md:px-0 mb-5">
-                    Gândurile și experiențele clienților noștri - testimoniale de succes
+                    Recomandări primite - Povești ale clienților noștri mulțumiți
                 </p>
             }
             <div className='flex w-full justify-between items-center gap-5'>
@@ -90,28 +85,30 @@ const OurClients = ({hasTitle=false}) => {
                 >
                 {
                     Testimonials.map((testimonial, index) =>
-                        <div key={testimonial.id + index} className="min-h-[880px] sm:min-h-[840px] md:min-h-[800px] lg:min-h-[500px] xl:min-h-[460px] 2xl:min-h-[440px] bg-[#202020] rounded-[16px] p-12 px-8 lg:px-12 lg:py-8 mx-4 mb-4 flex flex-col lg:flex-row lg:justify-start items-center justify-between">
-                            <div className="flex flex-col lg:w-full lg:mr-8">
+                        <div key={testimonial.id + index} className="min-h-[840px] sm:min-h-[880px] md:min-h-[800px] lg:min-h-[500px] xl:min-h-[460px] 2xl:min-h-[440px] bg-[#202020] rounded-[16px] p-12 pb-0 lg:pb-8 px-8 lg:px-12 lg:py-8 mx-4 mb-4 flex flex-col lg:flex-row lg:justify-start items-center justify-start">
+                            <div className="flex flex-col lg:w-2/3 lg:mr-24">
                                 <h1 className="text-[16px] xl:text-[23px] text-onSecondary font-bold">{testimonial.title}</h1>
                                 <p className="text-[14px] xl:text-[15px] text-primary font-semibold mt-4">{testimonial.subTitle}</p>
                                 <p className="text-[14px] xl:text-[15px] text-onSecondary mt-4">{testimonial.description}</p>
                                 <p className="text-[14px] xl:text-[15px] text-onSecondary mt-4">{testimonial.descriptionTwo}</p>
                             </div>
-                            <div className="relative mt-4">
-                                <Image 
-                                    className="absolute inset-0 rounded-[24px] z-10"
-                                    width={512}
-                                    height={512}
-                                    src={testimonial.image}
-                                    alt={testimonial.title}
-                                />
-                                { testimonial.static &&
+                            <div className="relative h-full flex flex-col justify-center items-center rounded-[24px] lg:h-auto lg:block lg:w-1/3">
+                                { testimonial.image ? 
                                     <Image 
                                         className="rounded-[24px] z-20"
                                         width={512}
                                         height={512}
-                                        src={testimonial.static}
+                                        src={testimonial.image}
                                         alt={testimonial.title}
+                                    /> :
+                                    <ReactPlayer 
+                                        controls={true}
+                                        url={testimonial.video}
+                                        wrapper={({children}) => (
+                                            <div className="rounded-[24px] w-[208px] h-[calc(208px/1080*1920)] overflow-hidden">
+                                                { children }
+                                            </div>
+                                        )}
                                     />
                                 }
                             </div>
@@ -127,4 +124,4 @@ const OurClients = ({hasTitle=false}) => {
     )
 }
 
-export default OurClients;
+export default OurClients

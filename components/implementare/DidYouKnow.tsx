@@ -11,10 +11,10 @@ const DidYouKnow = () => {
               Știai că?
             </h2>
             <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2] mb-8">
-              Știai că implementarea proiectelor pe fonduri europene prin intermediul consultanților noștri te poate propulsa către succesul dorit? Cu o echipă de experți dedicați și o abordare strategică, garantăm rezultate remarcabile.
+              Știai că, potrivit unui studiu realizat de Stanford University, 75% dintre utilizatorii de internet judecă credibilitatea unei afaceri pe baza designului site-ului său web? Este esențial ca aspectul și funcționalitatea unui site web să ofere o primă impresie pozitivă și profesională, influențând încrederea și deciziile clienților potențiali. 
             </p>
             <p className="text-white font-base max-w-[600px] text-[16px] mt-5 z-[2]">
-              De la planificarea detaliată și coordonarea achizițiilor, până la monitorizarea progresului, consultanții noștri transformă viziunea ta în realitate. Statisticile vorbesc de la sine: peste 97% dintre proiectele implementate de consultanții noștri sunt finalizate cu succes și nu întâmpină probleme în perioada de monitorizare, comparativ cu doar 65% în cazul implementării făcute de aplicanți. Alege parteneriatul cu noi pentru a maximiza șansele de succes și a-ți atinge obiectivele în implementarea proiectului tău.
+              Site-urile web reprezintă cartea de vizită digitală a unei afaceri în era digitală, fiind mai mult decât simple prezențe online. Ele servesc ca o poartă de acces către lumea online, fiind un mijloc esențial de comunicare și interacțiune cu publicul țintă. Prin intermediul unui website bine construit și gestionat, o afacere poate să-și promoveze produsele și serviciile, să-și construiască brandul și să-și extindă prezența pe piață. Un site web oferă nu doar informații despre afacere, ci și un mediu interactiv unde clienții pot interacționa, să contacteze și să achiziționeze produse sau servicii. Este un instrument esențial în arsenalul de marketing digital al unei afaceri, oferind oportunități unice de a ajunge la o audiență vastă și de a-și promova mesajul într-un mod eficient și memorabil.
             </p>
           </div>
           <div className='relative h-fit md:w-fit'>
@@ -26,9 +26,10 @@ const DidYouKnow = () => {
             </svg>
 
             <Image
-              src="/images/implementare/implementare 2.png"
+              src="/images/implementare/poza 2.jpg"
               alt="About home 1"
-              className="relative rounded-[28.5px] w-full md:w-[450px] mx-auto z-[4]"
+              className="relative rounded-[28.5px] object-cover object-left w-full h-[320px] md:h-[450px] md:w-[450px] mx-auto z-[4]"
+              unoptimized={true}
               width={400}
               height={400}
             />
@@ -45,13 +46,14 @@ const DidYouKnow = () => {
           />
           <div className="w-full flex-1 z-[2] gap-5 font-light">
             <h2 className="text-xl font-bold text-white z-[2] md:text-xl lg:text-2xl xl:text-3xl">
-              Serviciul perfect pentru antreprenori care vor să-și implementeze proiectul cu succes
+              Opțiunea perfectă pentru afacerile care vor să se extindă în mediul online! 
             </h2>
             
             <p className="text-white font-base text-[15px] md:text-[16px] mt-5 z-[2] mb-8">
-              Implementarea proiectelor prin noi se adresează întreprinderilor și organizațiilor care doresc rezultate de succes. Cu expertiza vastă și abordarea profesionistă, oferim suport și consultanță pe tot parcursul procesului. Indiferent de mărimea și complexitatea proiectului, ne asigurăm că implementarea este eficientă, conform cerințelor și obiectivelor.            </p>
+              Crearea unui site web prin noi se adresează întreprinderilor și organizațiilor care doresc rezultate. Cu expertiza vastă și abordarea profesionistă în funcție de nevoile clientului, oferim suport și consultanță pe tot parcursul procesului. Indiferent de mărimea și complexitatea site-ului, ne asigurăm că produsul final este conform cerințelor și obiectivelor dvs.
+            </p>
             <p className="text-white font-base text-[15px] md:text-[16px] mt-5 z-[2]">
-              Alegând colaborarea cu noi, beneficiați de expertiză specializată și soluții personalizate pentru succesul proiectului dvs. pe fonduri europene.
+              Alegând colaborarea cu noi, beneficiați de realizarea în cel mai profesional mod a site-ului mult dorit!
             </p>
             <Link
               href="/contact"
