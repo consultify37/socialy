@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Carousel from 'react-elastic-carousel'
 import Link from "next/link"
-import ReactPlayer from 'react-player'
+import dynamic from 'next/dynamic'
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false })
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -11,27 +12,27 @@ const OurClients = ({hasTitle=false}) => {
     const Testimonials = [
         {
             id: 1,
-            title: "Succes în colaborarea cu Socialy: Creșterea vizibilității și generarea de lead-uri",
+            title: "O campanie de succes pentru o agenție de brokeraj în credite",
             subTitle: 'Popescu Ion - Broker de credite',
             description: "Am avut o colaborare de succes cu Socialy în care m-au ajutat să-mi cresc vizibilitatea și să atrag mai mulți clienți în domeniul meu. Echipa lor a înțeles nevoile mele și a creat strategii de marketing personalizate, care chiar au generat rezultate.",
-            descriptionTwo: "Am fost impresionat de experiența și abordarea lor în domeniu. Recomand cu încredere Socialy tuturor celor care au nevoie de marketing.",
-            video: '/images/testimoniale/1. Popescu Ion - broker credite.mp4'
+            descriptionTwo: "Cu doar 2730 lei, am obținut 9716 lead-uri pentru afacerea mea, datorită campaniei eficiente realizate de agenția de marketing. Recomand cu încredere!",
+            video: '/images/testimoniale/Recenzie 1.mp4'
         },
         {
             id: 2,
             title: "Creșterea afacerii datorită Socialy: Strategii eficiente pentru industria construcțiilor",
             subTitle: 'Tănase Adrian - Firmă de construcții',
-            description: "Cu sprijinul celor de la Socialy, am reușit să-mi dezvolt afacerea în construcții. Echipa lor a creat și implementat strategii de marketing eficiente, care ne-au adus mai mulți clienți și proiecte noi.",
-            descriptionTwo: "Colaborarea cu ei a fost plină de profesionalism și angajament, iar rezultatele obținute au depășit așteptările noastre. Sincer, pe lângă clienții noi aduși, au reușit cumva să-mi găsească și angajați când eram într-un impas. Recomand cu încredere!",
-            video: '/images/testimoniale/2. Tanase Adrian - constructii.mp4'
+            description: "Datorită campaniei de marketing realizate de echipa voastră, am reușit să generăm peste 4200 de lead-uri pentru afacerea noastră, investind doar 1000 lei. Profesionalismul și strategia bine gândită au adus rezultate impresionante. Mulțumim pentru suport și colaborare!",
+            descriptionTwo: "",
+            image: '/images/testimoniale/Recenzie 2.jpg'
         },
         {
             id: 3,
-            title: "Partenerul nostru de încredere pentru promovarea restaurantului",
-            subTitle: 'Diaconu Ana - Proprietar de restaurant',
-            description: "Cu sprijinul Socialy, am reușit să ne promovăm pensiunea și să atragem un număr mai mare de clienți. Echipa lor a creat reclame personalizate, adaptate industriei și preferințelor noastre.",
-            descriptionTwo: "Am fost impresionați de creativitatea lor în conceperea campaniilor publicitare și de abordarea lor. Colaborarea cu ei a adus rezultate vizibile în creșterea vânzărilor și a vizibilității brandului nostru. Recomand cu încredere serviciile lor pentru orice proprietar de restaurant.",
-            image: "/images/testimoniale/3. Diaconu Ana - Propietar de Restaurant.jpg",
+            title: "Socialy: Partenerul nostru de încredere pentru promovarea pensiunii",
+            subTitle: 'Diaconu Ana - Proprietar de pensiune',
+            description: "Cu sprijinul Socialy, am reușit să ne promovăm pensiunea și să atragem un număr mai mare de clienți. Echipa lor a creat reclame personalizate, adaptate industriei și preferințelor noastre. Am fost impresionați de creativitatea lor în conceperea campaniilor publicitare și de abordarea lor. Colaborarea cu ei a adus rezultate vizibile în creșterea vânzărilor și a vizibilității brandului nostru. Recomand cu încredere serviciile lor pentru orice proprietar de pensiune.",
+            descriptionTwo: "",
+            video: "/images/testimoniale/Recenzie 3.mp4",
         },
         {
             id: 4,
@@ -39,31 +40,31 @@ const OurClients = ({hasTitle=false}) => {
             subTitle: 'Broască Marcel - Dezvoltator imobiliar',
             description: "Cu sprijinul echipei Socialy, am reușit să promovăm și să ne dezvoltăm proiectele imobiliare cu succes. Echipa lor a creat strategii de marketing inovatoare, care au atras atenția potențialilor cumpărători și ne-au ajutat să vindem rapid și eficient. ",
             descriptionTwo: "Am apreciat implicarea și abordarea lor  în funcție de nevoile fiecărui proiect. La următorul proiect tot cu ei o să colaborez!",
-            video: '/images/testimoniale/4. Broasca Marcel - Dezvoltator Imobiliar.mp4'
+            video: '/images/testimoniale/Recenzie 4.mp4'
         },
         {
             id: 5,
-            title: "Strategia potrivita in cladirea succesului: Mulțumit de colaborarea noastră cu Socialy",
-            subTitle: 'Gino Mihai - Constructii civile ',
-            description: "Am ales să colaborez cu Socialy pentru promovarea serviciilor noastre de constructii și am fost foarte mulțumit de rezultate. Echipa lor a creat strategii de marketing eficiente, care ne-au adus mai mulți clienți decât putem face față, ținând cont că avem calendarul plin cu o lună în avans.",
+            title: "Campanie Super Eficientă pentru CNC Iași",
+            subTitle: 'Vieriu Ciprian – Administrator firmă',
+            description: "Campania de marketing a fost un real succes, am văzut o creștere mare a interesului și a cererilor pentru serviciile noastre. Profesionalismul și dedicarea voastră au fost remarcabile. Mulțumim pentru tot sprijinul și ajutorul oferit!",
             descriptionTwo: "Am apreciat munca făcută și o să colaborez cu ei de acum înainte mult timp.",
-            video: '/images/testimoniale/5. Gino Mihai - constructii civile.mp4'
+            video: '/images/testimoniale/Recenzie 5.mp4'
         },
         {
             id: 6,
-            title: "Transformând visele în realitate: O colaborare de succes cu Socialy ",
-            subTitle: 'Maria Popescu – Administrator Salon de Înfrumusețare',
-            description: "Cu sprijinul echipei Socialy, am reușit să transformăm complet imaginea și reputația salonului nostru de coafură. Ei au creat strategii de marketing personalizate și inovatoare, care ne-au ajutat să ne conectăm cu publicul țintă și să atragem mai mulți clienți decât am visat vreodată.",
-            descriptionTwo: "Prin intermediul campaniilor lor creative și promovării eficiente pe rețelele sociale, am devenit cunoscuți ca fiind un salon de referință în industria coafurii. Echipa lor a fost mereu disponibilă și promptă în răspunsuri, oferindu-ne ghidajul necesar pe tot parcursul colaborării. Recomand cu încredere serviciile lor!",
-            image: "/images/testimoniale/6.Maria Popescu - salon infrumusetare.jpg",
+            title: "Am fost super încântată de producția video, iar rezultatele au fost pe măsură.",
+            subTitle: 'Miliche Ionela – CEO Tâmplărie PVC Olt',
+            description: "Sunt extrem de mulțumită de colaborarea cu Socialy! Clipurile video primite au fost de o calitate excepțională, capturând perfect esența și profesionalismul afacerii noastre. Rezultatele campaniei au fost pe măsură, generând un interes crescut și numeroase proiecte noi. Mulțumesc echipei pentru dedicare și pentru un serviciu de top!",
+            descriptionTwo: "",
+            video: "/images/testimoniale/Recenzie 6.mp4",
         },
         {
             id: 7,
-            title: "Zâmbetul pe fețelele tuturor: Cum ne-a ajutat Socialy să promovăm cu succes serviciile noastre",
-            subTitle: 'Andrei Ionescu – Medic Stomatolog',
-            description: "Colaborarea cu Socialy a avut un impact semnificativ asupra cabinetului meu stomatologic. Echipa lor a înțeles cu adevărat nevoile mele și a creat strategii personalizate care ne-au promovat serviciile într-un mod eficient.",
-            descriptionTwo: "Prin intermediul campaniilor lor bine direcționate și a promovării pe platformele digitale, am reușit să ajungem la un număr mai mare de pacienți și să ne dezvoltăm baza de clienți. Suntem recunoscători pentru parteneriatul nostru și recomand cu încredere serviciile lor!",
-            video: '/images/testimoniale/7. Andrei Ionescu - Medic stomatolog.mp4'
+            title: "Transformând visele în realitate: O campanie de succes cu Socialy",
+            subTitle: 'Ramona Georgescu – Administrator Salon de Înfrumusețare',
+            description: "Colaborarea cu echipa voastră a fost fantastică! Datorită reclamei realizate de voi, am reușit să obținem 130 de programări din doar 25 de lei cheltuiți. Clipurile video au fost excelente și au captat perfect atmosfera și serviciile oferite de salonul nostru. Rezultatele au fost cu adevărat impresionante. Mulțumim pentru profesionalism și pentru rezultatele de excepție!",
+            descriptionTwo: "",
+            video: '/images/testimoniale/Recenzie 7.mp4'
         },
     ]
 
@@ -95,7 +96,7 @@ const OurClients = ({hasTitle=false}) => {
                             <div className="relative h-full flex flex-col justify-center items-center rounded-[24px] lg:h-auto lg:block lg:w-1/3">
                                 { testimonial.image ? 
                                     <Image 
-                                        className="rounded-[24px] z-20"
+                                        className="rounded-[24px] w-[208px] h-[calc(208px/1080*1920)] z-20"
                                         width={512}
                                         height={512}
                                         src={testimonial.image}

@@ -5,7 +5,7 @@ const Item2About = () => {
     return(
         <div className='w-full mt-16 mx-auto px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] flex gap-y-20 gap-5 justify-between flex-col-reverse md:flex-row z-[2]'>
             <div className='relative w-full md:w-auto'>
-                <Image src='/images/home-about-2.jpg' alt='About home 2' className='rounded-[28.5px] w-full md:w-[450px] mx-auto lg:mx-0' object-fit='cover' placeholder='blur' width={400} height={400} blurDataURL='/images/home-about-1.png' />
+                <Image src='/images/home-about-2.jpg' alt='About home 2' className='rounded-[28.5px] w-full md:w-[450px] mx-auto lg:mx-0' object-fit='cover' width={400} height={400} />
                 <Image src='/images/patrat.svg' className='absolute left-[-1.25rem] lg:left-[-4.25rem] bottom-[-2rem] rotate-2 w-[100px] lg:w-[150px]' width={150} height={150} alt='Polygon img' />
             </div>
             <div className='w-full md:w-[48%] font-light'>

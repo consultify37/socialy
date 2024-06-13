@@ -260,8 +260,8 @@ export default function Contact() {
                                 value={nevoie}
                             >
                                 <option value="Selectează aici" className="hidden">Selectează aici</option>
-                                <option value="Consultanță Fonduri Europene">Consultanță Fonduri Europene</option>
-                                <option value="Implementare proiect">Implementare proiect</option>
+                                <option value="Consultanță Fonduri Europene">Campanii markeying</option>
+                                <option value="Implementare proiect">Webdesign</option>
                                 <option value="Colaborări & Angajări">Colaborări & Angajări</option>
                             </select>
                         </div>
@@ -305,7 +305,7 @@ export default function Contact() {
             </section>
             <Rezultate contact={false} />
             <section id='why-us' className='mt-24 md:mt-48 w-full relative px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
-                <h2 className='text-secondary text-center font-bold md:text-base text-xl lg:text-2xl xl:text-4xl mb-12 lg:mb-32'>De ce să alegi Consultify?</h2>
+                <h2 className='text-secondary text-center font-bold md:text-base text-xl lg:text-2xl xl:text-4xl mb-12 lg:mb-32'>De ce să alegi Socialy?</h2>
                 <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-start gap-y-20'>
                     {/* Left-Side */}
                     <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-y-8'>
@@ -336,7 +336,7 @@ export default function Contact() {
                     </div>
                     {/* Right-Side */}
                     <div className='relative mx-auto lg:mx-0'>
-                        <Image src='/images/contact/pag - contact - structura calitati.png' alt='Why-Us' className='relative rounded-[35px] z-[2] w-[400px]' width={350} height={400} placeholder='blur' blurDataURL='/images/About/Pag - despre noi - structura misiunea noastra.png' />
+                        <Image src='/images/contact/contact.png' alt='Why-Us' className='relative rounded-[35px] object-cover object-left z-[2] h-[360px] mt-4 w-[400px]' unoptimized={true} width={350} height={400}/>
                         <Image src='/images/About/triangle.svg' alt='triangle' width={164} height={164} className='z-[1] absolute -top-12 -left-16' /> 
                     </div>
                 </div>

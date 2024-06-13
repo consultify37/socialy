@@ -38,7 +38,7 @@ const Implementare = () => {
                 </ul>
                 <div className='flex flex-row gap-2 md:gap-4 mt-6'>
                 <Link
-                    href="#" 
+                    href="/shop" 
                     className="bg-primary py-3 text-onPrimary flex justify-center items-center font-semibold rounded-[28.5px] px-8 sm:px-12 hover:scale-[1.05] transition-all"
                 >
                     Shop

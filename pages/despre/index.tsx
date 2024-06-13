@@ -31,7 +31,7 @@ const About = ({ articles, products }: Props) => {
             {/* <Partners /> */}
             <FAQAbout />
             <CTA
-                title="Aplică acum și transformă-ți <purple>proiectele<purple> în realitate cu Consultify!"
+                title="Descoperă puterea <purple>marketingului<purple> și crește-ți afacerea!"
                 linkText="Completează formularul!"
                 linkHref="/contact"
             />
@@ -41,7 +41,7 @@ const About = ({ articles, products }: Props) => {
             <News 
                 articles={articles}
             /> */}
-            <NewsLetter headingText={'Fii în pas cu trendurile! Abonează-te la Newsletter și află cele mai recente tendințe din lumea marketingului'} />
+            <NewsLetter headingText={'Fii în pas cu trendurile! Abonează-te la newsletter și află cele mai recente tendințe din lumea marketingului!'} />
         </>
     )
 }

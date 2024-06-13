@@ -37,8 +37,7 @@ export default function Home({ slides, programe, articles, products }: Props) {
       <CarouselPrograme programe={programe} />
       <Rezultate />
       <Garantii />
-      <div id="proces"></div>
-        <Proces />
+      <Proces />
       <div className="mt-16 md:mt-32 px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <OurClients hasTitle={true} />
       </div>
@@ -49,10 +48,10 @@ export default function Home({ slides, programe, articles, products }: Props) {
       />
       {/* <FeaturedProducts 
         products={products}
-      />
+      /> */}
       <News 
         articles={articles}
-      /> */}
+      />
       <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi strategii de marketing și nu numai!'} />
     </>
   )
@@ -73,7 +72,7 @@ export const getStaticProps = async () => {
     { id: doc.id, ...doc.data() }
   ))
 
-  const articlesSnap = await  getDocs(query(collection(db, 'articles'), where('active', '==', true), where('featured', '==', true), orderBy('createdAt', 'desc'), limit(8)))
+  const articlesSnap = await getDocs(query(collection(db, 'articles'), where('active', '==', true), where('featured', '==', true), orderBy('createdAt', 'desc'), limit(8)))
   var articles = articlesSnap.docs.map((doc) => {
       const { lastUpdated, createdAt, ...data } = doc.data()
       return ({ id: doc.id, formattedCreatedAt: formatDate(new Date(createdAt.seconds*1000)), ...data }) 

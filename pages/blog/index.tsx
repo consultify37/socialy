@@ -119,10 +119,10 @@ export default function Testimoniale({ articles, categories, products }: Props) 
                 <RiArrowRightSLine size={24} onClick={() => setPage(maxPages-1)} className={`${page === maxPages - 1 ? 'text-[#CDCDCD]' : 'text-[#260056]'} cursor-pointer`} />
             </div>
         </section>
-      <FeaturedProducts 
+      {/* <FeaturedProducts 
         products={products}
-      />
-      <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
+      /> */}
+      <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi strategii de marketing și nu numai!'} />
     </>
   )
 }

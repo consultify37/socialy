@@ -49,15 +49,15 @@ const proces = [
     {
         id: 3, title: 'Construcție și Dezvoltare', 
         text: 'Pasul trei implică implementarea planului de acțiune convenit. După ce suntem de acord cu design-ul, echipa noastră de dezvoltare va începe să transforme conceptele într-un site funcțional. Veți fi la curent cu progresul pe tot parcursul acestui proces.',
-        titluText: 'Testarea și feedback-urile finale',
+        titluText: 'Startul în crearea website-ului',
     },
     {
-        id: 4, title: 'Lansarea finala', 
+        id: 4, title: 'Testare și Finalizare', 
         text: 'După ce site-ul este construit, va fi supus unor teste riguroase din partea echipei Socialy pentru a ne asigura că funcționează corect pe toate dispozitivele și că oferă o experiență fluidă pentru utilizatori. Orice ajustări necesare vor fi făcute în această etapă.',
         titluText: 'Testarea și feedback-urile finale',
     },
     {
-        id: 5, title: 'Creștere continuă', 
+        id: 5, title: 'Lansarea finală', 
         text: 'Pasul final este aici: odată ce am obținut un website care vă reprezintă în întregime și suntem cu toții mulțumiți de rezultat, vom facea lansare oficială. Dar pentru noi, acest moment marchează doar începutul unei colaborări continue și fructuoase. Relația noastră nu se încheie odată cu lansarea; dimpotrivă, ne angajăm să vă sprijinim și să vă ghidăm în fiecare pas pe măsură ce vă dezvoltați prezența in online. ',
         titluText: 'Lansarea in mediul online',
     },
@@ -94,6 +94,7 @@ export default function PaginaProgram({ articles, products }: Props) {
         </Head>
         <PageHeader
             title="Iată de ce ai nevoie de un website pentru afacerea ta!"
+            highlighted="website"
         >
             <Image
                 src="/images/proces/hexagon.svg"
@@ -133,7 +134,7 @@ export default function PaginaProgram({ articles, products }: Props) {
         />
         <FAQAbout intrebari={intrebari} />
         <CTA
-            title="Completeaza formularul si hai sa dam startul aventurii tale in mediul online impreuna cu Socialy!"
+            title="Atrage mai mulți clienți cu un <purple>site web<purple> bine proiectat!"
             linkText="Completează formularul!"
             linkHref="/contact"
         />

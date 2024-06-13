@@ -100,7 +100,7 @@ export default function Servicii({ articles, products }: Props) {
         <News 
           articles={articles}
         /> */}
-        <NewsLetter headingText='Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!' />
+        <NewsLetter headingText='Alătură-te comunității noastre și fii la curent cu cele mai noi strategii de marketing și nu numai!' />
     </>
   );
 }

@@ -20,19 +20,19 @@ const testimonials = [
     title: 'Răzvan - Platformă de cursuri online - De la idee la succes! ',
     text1: 'Răzvan, fondatorul unei platforme de cursuri online, a căutat sprijin pentru a-și promova platforma și pentru a atrage un număr mai mare de potențiali cursanți interesați. Obiectivul său era să crească vizibilitatea platformei pe social media și să atragă un public activ și interesat.',
     text2: 'Prin colaborarea cu Socialy, Răzvan a obținut rezultate remarcabile în promovarea platformei sale de cursuri online pe social media. Platforma sa a cunoscut o creștere semnificativă a numărului de urmăritori și a interacțiunilor pe canalele de socializare. Puteți urmări mai departe clipul pentru întreaga poveste:',
-    ytUrl: 'https://www.youtube.com/embed/QJ6cWRy9q1U?si=h_SW0WEYk_YDvwzK' 
+    ytUrl: 'https://www.youtube.com/embed/REOe7_886cE' 
   },
   {
     title: 'Robert - Web Designer - Creșterea portofoliului de clienți mulțumiți!',
     text1: 'Robert, un talentat web designer, dorea să înceapă să ofere servicii de creare a site-urilor web. Pentru a-și atinge obiectivele, Robert a colaborat cu echipa Socialy pentru a dezvolta și implementa o strategie de marketing online eficientă, concentrată pe promovarea serviciilor sale.',
     text2: 'Aceste campanii au inclus publicitate plătită pe diverse platforme online, cum ar fi Instagram Ads și Facebook Ads, pentru a atrage potențiali clienți interesați. Socialy l-a ajutat ca în câteva luni să ajungă la nivelul "zero to hero" activitatea lui schimbându-se radical odată cu parteneriatul început. Puteți vedea mai departe în clip experiența trăită:',
-    ytUrl: 'https://www.youtube.com/embed/0-qT2e_s6TE?si=ngdL14zCZtbIM9PO'
+    ytUrl: 'https://www.youtube.com/embed/vNWfHR_2cgk'
   },
   {
     title: 'Mario - Antreprenor - Colaborare de succes, atât pentru el, cât și pentru clienții lui!',
     text1: 'Mario, în vârstă de 23 de ani, deține o agenție de producție foto-video, realizând și el la rândul său campanii de marketing pe TikTok. A început colaborarea cu Socialy pentru promovarea serviciului său inițial pe Meta Ads.',
     text2: 'În urma colaborării personale, s-a decis să înceapă un parteneriat cu Socialy, ce-l ajută în crearea unor pachete complete pentru clienții săi, astfel fiind mulțumit din toate punctele de vedere. Pentru a vedea povestea completă, vă invităm să vizionați clipul următor:',
-    ytUrl: 'https://www.youtube.com/embed/BGXhV4tjNFw?si=Equ5uXayThElHXrK'
+    ytUrl: 'https://www.youtube.com/embed/Y-1PZLiBBUQ'
   }
 ]
 
@@ -79,7 +79,7 @@ export default function Testimoniale({ articles, products }: Props) {
         <title>Socialy | Testimoniale</title>
       </Head>
       <PageHeader
-        title="Cunoaște poveștile de succes ale clienților noștri!"
+        title="Uite poveștile de succes ale clienților noștri!"
       >
         <Image
           src="/images/Star 1.svg"
@@ -111,13 +111,13 @@ export default function Testimoniale({ articles, products }: Props) {
       </section>
       <section className="relative bg-secondary w-full pt-16 md:pt-32 mt-16 md:mt-32 pb-24 flex flex-col items-center justify-center overflow-visible px-0 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <span className="bg-secondary rounded-[200px_250px_0px_0px] w-[115vw] md:w-[103vw] -rotate-[2deg] absolute -left-5 -top-16 h-32" />
-        <h2 className="mb-8 md:mb-12 px-4 md:px-0 text-xl md:text-4xl font-bold text-white md:max-w-[80%] text-center md:pt-11 lg:pt-1 pt-1">
-          Cunoaște succesele clienților noștri!
+        <h2 className="mb-8 md:mb-12 px-4 md:px-0 text-xl md:text-4xl font-bold text-white md:max-w-[90%] text-center md:pt-11 lg:pt-1 pt-1">
+          Am ajutat clienți din toată România să își dezvolte afacerea în mediul online prin intermediul strategiilor noastre!
         </h2>
         <OurClients />
         <section id='trust-us' className='bg-secondary mt-24 flex flex-col items-center w-full relative'>
             <h2 className="text-xl md:text-3xl font-bold text-white max-w-[80%] text-center pt-0 md:pt-20 lg:pt-0 mb-5">
-              Încă nu te-am convins? Vezi lista completă cu rezultate:
+              Încă nu te-am convins? Vezi lista cu rezultatele clienților noștri
             </h2>
             <Link href='https://www.canva.com/design/DAFwMTGz5pM/zVfz3DRpAjzmSdjqz_Cqzw/view?utm_content=DAFwMTGz5pM&utm_campaign=designshare&utm_medium=link&utm_source=editor' target="_blank" className="bg-primary mb-16 mt-4 font-semibold px-12 py-3 text-onPrimary transition-all hover:scale-[1.05] rounded-[28.5px]">
               Vezi lista aici!
@@ -199,10 +199,10 @@ export default function Testimoniale({ articles, products }: Props) {
           </div>
           <div className="flex flex-col w-full lg:mr-12 lg:max-w-[600px]">
             <h4 className="text-white text-2xl lg:text-4xl font-bold mb-2">
-              Ești în pană de idei de afaceri?
+              Vrei să înveți să faci campanii de generare lead-uri pe TikTok?
             </h4>
             <p className="text-white text-[15px] md:text-xl">
-              Inspiră-te din cele 10 idei de afaceri pregătite de noi cu care poți atrage o finanțare europeană. Introdu adresa ta de email și primește prezentarea gratuit!
+              Introdu adresa ta de email și descarcă acum ghidul nostru complet pentru a învăța cum să creezi campanii eficiente de generare de lead-uri pe TikTok. Fii cu un pas înaintea concurenței și transformă-ți strategia de marketing digital!
             </p>
             <form onSubmit={upload} className="relative flex mt-10 flex-col lg:flex-row items-center">
               <input
@@ -214,7 +214,7 @@ export default function Testimoniale({ articles, products }: Props) {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type='submit' className="text-onPrimary font-bold lg:absolute w-full mt-3 lg:mt-0 lg:right-0 z-30 transition-all hover:scale-[1.05] lg:w-56 border-4 text-center cursor-pointer border-secondary bg-primary py-5 px-10 text-sm rounded-full">
-                Vreau documentul!
+                Vreau ghidul!
               </button>
             </form>
           </div>
@@ -238,7 +238,7 @@ export default function Testimoniale({ articles, products }: Props) {
       <News
         articles={articles}
       /> */}
-      <NewsLetter headingText='Abonează-te și află secretele succesului în obținerea finanțăriilor europene!' />
+      <NewsLetter headingText='Alătură-te comunității noastre și fii la curent cu cele mai noi strategii de marketing și nu numai!' />
     </>
   )
 }

@@ -11,11 +11,12 @@ const Terms = () => {
         
         <h3 className='font-bold'>1. Cine suntem noi?</h3>
         <p>Mai jos găsești și datele noastre de identificare:</p>
+        <p>Denumire: MHC GLOBAL STAR S.R.L</p>
         <p>Sediul social: Str. Lavandei, Nr.9, PARTER, Bloc P28, sc.3, ap. 33, Sector 6, Bucuresti</p>
-        <p>Număr registrul comerțului: J40/6137/2020</p>
-        <p>Cod unic identificare: RO42607998</p>
-        <p>E-mail: contact@consultify.ro</p>
-        <p>Pe lângă denumirea oficială de mai sus, ne mai găsești sub numele „Consultify” – în tot acest document vom face referire la noi sub denumirea de ”Compania” sau ”Consultify”. Suntem o companie care oferă produse și servicii din sfera consultanței în accesarea de fonduri europene, prin intermediul site-ului www.consultify.ro și subdomeniile acestuia sau site-urile afiliate (denumite în continuare în mod colectiv ”site”) și/sau al altor instrumente, precum și toate profilele/paginile de media asociate acestui brand, incluzând, dar fără a se limita la Facebook, Instagram, YouTube, etc.</p>
+        <p>Număr registrul comerțului: J40/17076/2021</p>
+        <p>Cod unic identificare: RO45005660</p>
+        <p>E-mail: contact@socialy.ro</p>
+        <p>Pe lângă denumirea oficială de mai sus, ne mai găsești sub numele „Socialy” – în tot acest document vom face referire la noi sub denumirea de ”Compania” sau ”Socialy”. Suntem o companie care oferă produse și servicii din sfera marketing și promovare, prin intermediul site-ului www.socialy.ro și subdomeniile acestuia sau site-urile afiliate (denumite în continuare în mod colectiv ”site”) și/sau al altor instrumente, precum și toate profilele/paginile de media asociate acestui brand, incluzând, dar fără a se limita la Facebook, Instagram, YouTube, etc.</p>
         <p>Accesarea Platformei implică acceptarea necondiționată a Termenilor și condițiilor pe care le vom detalia mai jos. În cazul în care nu vei accepta acești Termeni, nu vom putea încheia un contract cu tine, adică nu vom putea să îți livrăm produsele sau să îți prestăm serviciile pe care ni le soliciți, inclusiv să răspundem la eventuale solicitări pe care le-ai putea avea.</p>
         
         <h3 className='font-bold'>2. Cine ești tu?</h3>
@@ -89,7 +90,7 @@ const Terms = () => {
             <li>Condițiile aplicabile Comenzii îți vor fi comunicate înainte de finalizarea Comenzii. Dacă este cazul, te vom informa cu privire la modalitățile de livrare disponibile și vei putea alege una dintre aceste modalități anterior finalizării Comenzii.</li>
             <li>Ne rezervăm dreptul de a întârzia sau de a anula orice livrare a produselor sau prestare a serviciilor comandate dacă aceasta nu poate fi onorată din motive independente de voința noastră, care includ dar nu sunt limitate la: evenimente de forța majoră, războaie, acte de terorism, proteste, răscoale, tulburări civile, incendii, explozii, inundații, epidemii, pandemii, greve etc.</li>
             <li>Te rugăm să ai în vedere că ești singurul răspunzător pentru informațiile și documentele transmise.</li>
-            <li>Consultify nu va fi răspunzător pentru niciun fel de prejudiciu, direct sau indirect, provenit ca urmare a faptului că nu ne-ai comunicat toate datele, că nu le-ai furnizat la timp sau că documentele transmise sunt eronate sau incomplete.</li>
+            <li>Socialy nu va fi răspunzător pentru niciun fel de prejudiciu, direct sau indirect, provenit ca urmare a faptului că nu ne-ai comunicat toate datele, că nu le-ai furnizat la timp sau că documentele transmise sunt eronate sau incomplete.</li>
             <li>Îți reamintim că produsele/serviciile noastre sunt destinate uzului personal al Clientului, nu și pentru alte persoane decât cele indicate prin comandă, produsele/serviciile fiind limitate doar pentru uzul Clientului.</li>
         </ul>
 
@@ -105,13 +106,13 @@ const Terms = () => {
 
         <h3 className='font-bold'>VII. Proprietate Intelectuală</h3>
         <ul className='list-decimal flex flex-col gap-2 ml-4'>
-            <li>Denumirile comerciale, mărcile, drepturile de autor şi orice alte drepturi de proprietate intelectuală înregistrate sau în curs de înregistrare referitoare la produse sau servicii deținute sau utilizate de Consultify sunt și vor rămâne proprietatea exclusivă a acestuia sau după caz, a licenţiatorilor acestuia. Clientul nu va avea niciun drept și nicio pretenţie cu privire la acestea.</li>
+            <li>Denumirile comerciale, mărcile, drepturile de autor şi orice alte drepturi de proprietate intelectuală înregistrate sau în curs de înregistrare referitoare la produse sau servicii deținute sau utilizate de Socialy sunt și vor rămâne proprietatea exclusivă a acestuia sau după caz, a licenţiatorilor acestuia. Clientul nu va avea niciun drept și nicio pretenţie cu privire la acestea.</li>
             <li>Utilizatorul/Clientul se obligă să nu folosească în activitatea sa niciun semn sau denumire similară sau identică cu mărcile, denumirile comerciale ale produselor/serviciilor companiei, fie ca parte dintr-o denumire fie în orice alt mod.</li>
             <li>Toate informațiile disponibile pe Platformă (inclusiv, dar fără a se limita la, imagini statice sau dinamice, text, logo-uri, simboluri, reprezentări comerciale, video-uri etc.) care pot fi vizualizate sau accesate în orice mod prin utilizarea unui echipament electronic, conținutul e-mailurilor trimise Utilizatorului/Clientului de către Vânzător, orice informație comunicată Utilizatorului/Clientului (inclusiv, dar fără a se limita la, date referitoare la companie, activitatea acesteia etc.) prin orice mijloc de către un reprezentant al companiei sunt și rămân proprietatea exclusivă a companiei, acesteia fiindu-i rezervate toate drepturile de a obține în acest sens în mod direct sau indirect (cum ar fi prin licențe de utilizare și/sau publicare, exclusive/neexclusive, limitate/nelimitate în timp etc.). Utilizatorul/Clientul poate copia, transfera și/sau utiliza astfel de date numai în scopuri personale sau în afara unei activități desfășurate cu titlu profesional și numai în cazul în care nu intră în conflict cu acești termeni și condiții.</li>
             <li>Este interzis în mod expres orice alt mod de a utiliza conținutul disponibil pe site/platformă în alte scopuri decât cele permise prin prezentul contract sau în condițiile de utilizare care îl însoțesc, dacă acestea există.</li>
         </ul>
 
-        <h3 className='font-bold'>VIII. Răspunderea Consultify</h3>
+        <h3 className='font-bold'>VIII. Răspunderea Socialy</h3>
         <ul className='list-decimal flex flex-col gap-2 ml-4'>
             <li>Nu suntem răspunzători pentru acuratețea informațiilor pe care ni le transmiți, tu fiind singurul responsabil pentru orice fel de date sau documente pe care ni le furnizezi. Vom depune toate eforturile pentru a identifica la momentul potrivit toate documentele și informațiile de care avem nevoie pentru a livra produsele sau serviciile cerute, însă nu putem fi responsabili pentru informațiile și documentele pe care ni le comunici. De asemenea, Clientul este singurul răspunzător pentru conținutul documentelor pe care ni le trasmite în vederea prestării serviciilor, inclusiv în ceea ce privește eventuale încălcări ale drepturilor terților.</li>
             <li>Nu răspundem pentru niciun prejudiciu cauzat de orice disfuncționalități tehnice ale Platformei (e.g., imposibilitatea accesării oricărui link de pe platformă).</li>

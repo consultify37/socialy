@@ -6,7 +6,7 @@ const defaultCards = [
     {
         titleBack: 'Experiență',
         titleFront: 'Experiență',
-        description: 'Socialy dispune de o echipă de specialiști în marketing social cu o vastă experiență în domeniu, mereu pregătită să aducă idei noi și să transforme viziunile clienților în realitate pe platformele de social media.'
+        description: 'Socialy dispune de o echipă de specialiști în marketing cu o vastă experiență în domeniu, mereu pregătită să aducă idei noi și să transforme viziunile clienților în realitate pe platformele de social media.'
     },
     {
         titleBack: 'Abordare Personalizată',
@@ -37,7 +37,7 @@ export default function Garantii({cards=defaultCards}: Props){
                 <Image src='/images/Garantii/polygon.svg' className="w-[100px] lg:w-[166px] absolute -right-2 lg:-right-12 -bottom-12" width={200} height={200} alt="polygon"/>
                 <Image src='/images/Garantii/semicircle.svg' className="w-[200px] lg:w-[120px] absolute -left-0 bottom-0" width={200} height={200} alt="polygon"/>
                 <div className="flex flex-col lg:flex-row items-center justify-between mb-12 px-12 w-full">
-                    { cards.map(card => (
+                    { cards.map((card, index) => (
                         <div className="box mb-10 lg:mb-0" key={card.titleFront}>
                             <div className="card">
                                 <div className="front flex flex-col justify-center px-6 bg-secondary border-8 border-primary">
@@ -48,7 +48,10 @@ export default function Garantii({cards=defaultCards}: Props){
                                     <div className="w-full bg-secondary rounded-t-[2rem] px-1 py-4">
                                         <p className="text-[22px] font-bold text-onSecondary text-center">{card.titleFront}</p>
                                     </div>
-                                    <div className="flex flex-col h-full items-center justify-between px-6 p-8">
+                                    <div 
+                                        className="flex flex-col h-full items-center justify-between px-6"
+                                        style={{padding: index == 2 ? '22px' : '32px'}}
+                                    >
                                         <p className="text-[14px] text-o">{card.description}</p>
                                         <Link
                                             href='/contact'

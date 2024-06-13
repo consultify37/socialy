@@ -33,7 +33,7 @@ const FeaturedArticleComponent = ({ duration, formattedCreatedAt, id, title, ima
           <p className="text-[20px] lg:text-[22px] font-semibold text-secondary mx-2 pt-[3px]">·</p>
           <p className="text-[14px] lg:text-base font-semibold text-secondary pt-[3px]">{formattedCreatedAt}</p>
         </div>
-        <h2 className="text-[20px] lg:text-[26px] font-semibold text-secondary mt-4 lg:-mt-4 ml-1">{title}</h2>
+        <h2 className="text-[20px] lg:text-[26px] font-semibold text-secondary mt-4 lg:mt-0 ml-1">{title}</h2>
         <Link href={`/blog/${id}`} className='w-full lg:w-fit px-16 py-3 lg:py-4 bg-primary rounded-full flex items-center justify-center mt-4 hover:scale-105 transition-all'>
           <p className='text-onPrimary text-[14px] lg:text-base font-semibold'>Citește tot articolul</p>
         </Link>

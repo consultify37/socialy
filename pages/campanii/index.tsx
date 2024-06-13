@@ -51,7 +51,7 @@ export default function Programe({categories, programe, articles, products}: Pro
                 <title>Socialy | Campanii</title>
             </Head>
             <PageHeader 
-                title="Alege serviciul potrivit nevoilor tale:"
+                title="Alege campania potrivită nevoilor tale:"
             >
                 <Image src='/images/circle-hero-left.svg' width={150} height={150} className='absolute -left-4 -top-28 lg:-top-56 lg:left-0 lg:w-[250px]' alt='Circle hero green' />
                 <Image src='/images/proces/hexagon.svg' width={100} height={100} className='absolute bottom-[96px] lg:-bottom-20 right-0 lg:right-16 w-[120px] lg:w-[150px] z-10' alt='Yellow triangle' />
@@ -99,7 +99,7 @@ export default function Programe({categories, programe, articles, products}: Pro
             <News
                 articles={articles}
             /> */}
-            <NewsLetter headingText={'Abonează-te și află secretele succesului în obținerea finanțăriilor europene!'} />
+            <NewsLetter headingText={'Abonează-te și fii la curent cu cele mai noi strategii de marketing alături de comunitatea noastră!'} />
         </>
     );
 }

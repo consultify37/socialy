@@ -13,7 +13,7 @@ const WhyUsAbout = () => {
                     <Rezultate background="bg-[#1D1D1D]" contact={false} />
                 </div>
                 
-                <h2 className='text-white font-bold text-center w-full mt-12 md:mt-24 text-xl lg:text-2xl xl:text-3xl mb-8 lg:mb-16 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>De ce să alegi Consultify?</h2>
+                <h2 className='text-white font-bold text-center w-full mt-12 md:mt-24 text-xl lg:text-2xl xl:text-3xl mb-8 lg:mb-16 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>De ce să alegi Socialy?</h2>
                 <div className='relative flex flex-wrap w-full lg:mt-10 justify-center items-center md:justify-between md:items-center gap-y-20 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]'>
                     {/* Left-Side */}
                     <div className='mx-auto lg:mx-0 w-full z-[2] lg:w-[49%] grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-y-8'>

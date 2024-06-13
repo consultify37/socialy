@@ -129,8 +129,9 @@ const BlogPost = ({ article, articles }: Props) => {
                     Nullam efficitur fermentum tristique. Maecenas sed odio eu nisl semper sollicitudin nec vitae nibh. Duis rhoncus mauris sit amet risus malesuada tristique. Integer consectetur ante elit, vitae venenatis felis ullamcorper ut. Sed eget ipsum urna. Etiam tincidunt accumsan tortor et aliquam. Suspendisse vitae tempus ligula. Pellentesque vitae pulvinar ipsum, nec sodales est. Etiam eu eros faucibus, rutrum elit eu, suscipit enim. Quisque tincidunt felis sapien, et rutrum risus maximus vitae. Curabitur dictum pulvinar gravida.
                 </p> */}
             </section>
+            <p className="hidden text-blue-500"></p>
             <News articles={articles}/>
-            <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
+            <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi strategii de marketing și nu numai!'} />
         </>
     )
 }

@@ -51,7 +51,7 @@ const HomeHeader = ({ slides }: Props) => {
             Alături de Socialy poți obține rezultate remarcabile cu strategii de marketing personalizate și inovatoare, pentru a sprijini evoluția continuă a afacerii tale.
           </p>
           <Link
-            href='#proces'
+            href='/campanii'
             className="relative px-10 py-4 bg-primary text-onPrimary rounded-[28.5px] mb-8 text-base font-semibold transition-all hover:scale-[1.05] z-[12]"
             >
             Ce îți putem oferi?

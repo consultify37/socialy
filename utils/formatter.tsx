@@ -74,7 +74,7 @@ export const formatter = (node: any, index: number) => {
 								<Link 
 									href={node.attribs.href} 
 									target="_blank" 
-									className="text-[14px] md:text-[16px] text-primary underline hover:scale-105 transition-all"
+									className="text-[14px] md:text-[16px] text-blue-500 underline hover:scale-105 transition-all"
 								>
 									{ node.children[0].data }
 								</Link>

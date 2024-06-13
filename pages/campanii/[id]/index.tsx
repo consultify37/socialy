@@ -83,7 +83,7 @@ const Campanie = ({ program, products, articles }: Props) => {
       <News 
         articles={articles}
       /> */}
-      <NewsLetter headingText={'Fii la curent cu cele mai recente informații despre fonduri europene!'} />
+      <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi strategii de marketing și nu numai!'} />
     </>
   )
 }

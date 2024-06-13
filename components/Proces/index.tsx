@@ -16,9 +16,9 @@ const defaultData: ProcesData[] = [
         titluText: "Evaluarea nevoilor tale și identificarea strategiei potrivite",
     },
     {
-        id: 2, title: 'Crearea planului ',
-        text: 'În pasul doi al procesului, vom dezvolta un plan de acțiune personalizat, adaptat nevoilor și obiectivelor tale. Acest plan va include strategii de promovare, canale de marketing, campanii publicitare și alte tactici relevante. Echipa noastră de specialiști va lucra îndeaproape cu tine pentru a asigura că planul de acțiune este eficient și aliniat cu viziunea ta de afacere.',
-        titluText: 'Crearea planului de acțiune personalizat',
+        id: 2, title: 'Crearea planului',
+        text: 'În pasul doi al procesului, vom dezvolta un plan de acțiune adaptat nevoilor și obiectivelor tale. Acest plan va include strategii de promovare, canale de marketing, campanii publicitare și alte tactici relevante. Echipa noastră va lucra îndeaproape cu tine pentru a se asigura că planul de acțiune este eficient și aliniat cu viziunea ta în afacere.',
+        titluText: 'Crearea planului de acțiune',
     },
     {
         id: 3, title: 'Implementarea și monitorizarea', 
@@ -27,7 +27,7 @@ const defaultData: ProcesData[] = [
     },
     {
         id: 4, title: 'Analiza și optimizarea', 
-        text: 'Pasul 4 constă în analiza rezultatelor obținute și optimizarea continuă a strategiei de marketing. Echipa noastră va monitoriza și evalua performanța campaniilor, identificând punctele tari și slabe și ajustând tacticiile pentru a obține rezultate superioare. Vom asigura că afacerea ta beneficiază de cele mai bune practici și de cele mai eficiente strategii de marketing.',
+        text: 'Pasul 4 constă în analiza rezultatelor obținute și optimizarea continuă a strategiei de marketing. Echipa noastră va monitoriza și evalua performanța campaniilor, identificând punctele tari și slabe și ajustând tacticiile pentru a obține rezultate superioare. Ne vom asigura că afacerea ta beneficiază de cele mai bune practici și de cele mai eficiente strategii de marketing.',
         titluText: 'Analiza și optimizarea continuă a strategiei de marketing',
     },
     {
