@@ -230,7 +230,7 @@ const OrderDetails = () => {
               >
                 <p className='text-onPrimary font-semibold text-[14px]'>Plasează comanda</p>
               </button> :
-              <ReactLoading type="spin" color="#0F52FF" width={32} height={32} className='mt-6 self-center' />
+              <ReactLoading type="spin" color="#0CFF00" width={32} height={32} className='mt-6 self-center' />
             }
           </form>
 
