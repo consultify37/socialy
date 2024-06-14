@@ -322,10 +322,10 @@ este modificat.</p>
         <p>Politica și practicile noastre de protejare a datelor se focusează pe procesarea, schimbul
 și stocarea corespunzătoare și legală a informațiilor cu caracter personal și totodată pe
 asigurarea confidențialității, integrității și disponibilității.</p>
-        <p>Website-ul nostru este în conformitate cu Regulamentul General de Protecție a Datelor
-(“GDPR”), (Regulament (EU) 2016/679). </p>
-        <p>Website-ul nostru este în conformitate cu Regulamentul General de Protecție a Datelor
-(“GDPR”), (Regulament (EU) 2016/679). </p>
+        <p>Pentru orice întrebări suplimentare cu privire la modul în care datele cu caracter
+personal sunt prelucrate, vă rugăm să vă adresați la: Telefon 0771059932 sau la adresa
+de e-mail: contact@socialy.ro.</p>
+        <p></p>
       </div>
     </>
   )
