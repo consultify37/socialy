@@ -140,10 +140,10 @@ export default function PaginaProgram({ articles, products }: Props) {
         />
         {/* <FeaturedProducts 
           products={products}
-        />
+        /> */}
         <News 
           articles={articles}
-        /> */}
+        />
         <NewsLetter headingText={'Abonează-te la newsletter si descopera cele mai noi strategii de marketing!'} />
     </>
   )

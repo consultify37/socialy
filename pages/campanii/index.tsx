@@ -95,10 +95,10 @@ export default function Programe({categories, programe, articles, products}: Pro
             </div>
             {/* <FeaturedProducts 
                 products={products}
-            />
+            /> */}
             <News
                 articles={articles}
-            /> */}
+            />
             <NewsLetter headingText={'Abonează-te și fii la curent cu cele mai noi strategii de marketing alături de comunitatea noastră!'} />
         </>
     );
