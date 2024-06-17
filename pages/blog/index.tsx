@@ -96,8 +96,8 @@ export default function Testimoniale({ articles, categories, products }: Props) 
                                   </div>
                                   <h3 className='text-secondary font-bold text-base pt-2'>{item.title}</h3>
                                   <p className="text-secondary pt-2">{item.description}</p>
-                                  <div className='flex items-center px-[2px] pt-2 mt-auto'>
-                                      <p className='text-[#828282] text-sm mr-12'>{item.formattedCreatedAt}</p>
+                                  <div className='flex items-center justify-between px-[2px] pt-2 mt-auto'>
+                                      <p className='text-[#828282] text-sm'>{item.formattedCreatedAt}</p>
                                       <p className="text-primary font-bold text-sm underline hover:scale-105 transition-all">Citește mai mult</p>
                                   </div>
                                 </div>
