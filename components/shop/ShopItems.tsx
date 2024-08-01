@@ -7,7 +7,7 @@ type Props = {
   categories: ProductCategory[]
 }
 
-const ShopItems = ({ products, categories }: Props) => {
+const  ShopItems = ({ products, categories }: Props) => {
   return (
     <div className=''>
       { categories.map((category) => (

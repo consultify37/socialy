@@ -183,7 +183,7 @@ const Header = () => {
               {/* <li
                 className={`xl:hidden w-full xl:w-auto p-2 pl-16`}
               >
-                <Link href={ currentUser ? '/cont' : '/login' } className="font-semibold text-primary text-[16px] transition-all">
+                <Link href={ currentUser ? '/cont/comenzi' : '/login' } className="font-semibold text-primary text-[16px] transition-all">
                   { currentUser ? 'cont' : 'login' }
                 </Link>
               </li> */}

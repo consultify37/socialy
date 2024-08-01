@@ -5,6 +5,7 @@ import { db } from '../../../../firebase'
 import Head from 'next/head'
 import CategoryHeader from '../../../../components/shop/CategoryHeader'
 import ProductList from '../../../../components/shop/ProductList'
+import NewsLetter from '../../../../components/global/newsletter'
 
 type Props = {
   category: ProductCategory
@@ -15,7 +16,7 @@ const CategoryPage = ({ category, products }: Props) => {
   return (
     <>
       <Head>
-				<title>{`Consultify | ${category.category}`}</title>
+				<title>{`Socialy | ${category.category}`}</title>
 			</Head>
 
       <div className='pt-[140px] lg:pt-40 px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px] min-h-screen'>
@@ -26,6 +27,10 @@ const CategoryPage = ({ category, products }: Props) => {
         <ProductList 
           products={products}
         />
+
+        <div className='-mx-7 md:-mx-[80px] xl:-mx-[140px] 2xl:-mx-[276px]'>
+          <NewsLetter headingText='Abonează-te la newsletter! Rămâi la curent cu cele mai bune oferte!' />
+        </div>
       </div>
     </>
   )
@@ -53,7 +58,7 @@ export const getServerSideProps = async (context: any) => {
 	const products: Product[] = collectionSnap.docs.map((doc) => {
 		const { lastUpdated, ...data } = doc.data()
 
-		return ({ id: doc.id, ...data } as Product)
+		return ({ id: doc.id, lastUpdated: lastUpdated.seconds, ...data } as Product)
 	})
 
   return { props: { category, products }}

@@ -90,6 +90,8 @@ export type Product = {
   description2: string
   description3: string
   category: string
+  lastUpdated: number
+  sells_number: number | undefined
   image: { 
     file: { fileName: string, fileId: string } 
     image: string 

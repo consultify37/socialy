@@ -35,13 +35,14 @@ const Cart = ({ products: featuredProducts }: Props) => {
       </div>
       <FeaturedProducts 
         products={featuredProducts}
+        title={cart && cart.length != 0 ? '' : 'Crește eficiența și productivitatea cu serviciile și produsele digitale oferite de Socialy și Inspirely!'}
       />
 
       <div className="px-7 md:px-[80px] xl:px-[140px] 2xl:px-[276px]">
         <CartInfo />
       </div>
 
-      <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi oportunități de finanțare!'} />
+      <NewsLetter headingText={ cart && cart.length != 0 ? 'Abonează-te la newsletter! Rămâi la curent cu cele mai bune oferte!' : 'Abonează-te la newsletter! Rămâi la curent cu cele mai bune oferte!'} />
     </>
   )
 }

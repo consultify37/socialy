@@ -27,6 +27,7 @@ export default function Contact() {
     const [isLoading, setIsLoading] = useState(false)
 
     const [isChecked, setIsChecked] = useState(false)
+    const [newsletter, setNewsletter] = useState(true)
     const [captchaVerified, setCaptchaVerified] = useState(false)
 
     const upload = async (e) => {
@@ -48,9 +49,9 @@ export default function Contact() {
         try {
             const collectionRef = collection(db, 'contactForms')
 
-            await addDoc(collectionRef, { nume, prenume, firma, cui, telefon, email, nevoie, mesaj, website: process.env.SITE } )
+            await addDoc(collectionRef, { nume, newsletter, firma, cui, telefon, email, nevoie, mesaj, website: process.env.SITE } )
             
-            toast.success(`Mulțumim! Un reprezentat ${process.env.SITE} te va contacta în curând. 🚀`, { duration: 5000, style: { textAlign: 'center' } })
+            toast.success(`Mulțumim! Un reprezentant ${process.env.SITE} te va contacta în curând. 🚀`, { duration: 5000, style: { textAlign: 'center' } })
             setCui("")
             setEmail("")
             setIsChecked(false)
@@ -161,36 +162,20 @@ export default function Contact() {
                     onSubmit={upload}
                 >
                     <h2 className="text-xl font-bold mb-10 md:text-2xl text-center">Hai să lucrăm împreună!</h2>
-                    <div className="flex w-full flex-col items-center md:flex-row justify-between mb-6">
-                        <div className="flex flex-col w-full md:w-[47%] md:mr-2 mb-6 md:mb-0">
+                    <div className="flex flex-col w-full mb-6">
                             <span className="text-md mb-2 font-semibold">
-                                Nume*
+                                Nume și prenume*
                             </span>
                             <input
                                 required 
                                 type="text"
                                 name="Nume"
                                 className="rounded-xl w-full border-primary text-ms leading-6 border-2 p-[14px] outline-none" 
-                                placeholder="ex: Popescu"
+                                placeholder="ex: Popescu Andrei"
                                 onChange={(e) => setNume(e.target.value)}
                                 value={nume}
                             />
                         </div>
-                        <div className="flex flex-col w-full md:w-[47%]">
-                            <span className="text-md mb-2 font-semibold">
-                                Prenume*
-                            </span>
-                            <input
-                                required 
-                                type="text"
-                                name="Prenume"
-                                className="rounded-xl w-full border-primary text-ms leading-6 border-2 p-[14px] outline-none" 
-                                placeholder="ex: Andrei"
-                                onChange={(e) => setPrenume(e.target.value)}
-                                value={prenume}
-                            />
-                        </div>
-                    </div>
                     <div className="flex w-full flex-col items-center justify-between mb-6">
                         <div className="flex flex-col w-full md:mr-2">
                             <span className="text-md mb-2 font-semibold">
@@ -278,11 +263,17 @@ export default function Contact() {
                             value={mesaj}
                         ></textarea>
                     </div>
-                    <div className="flex items-center justify-center mb-6 self-center ml-1">
+                    <div className="flex items-center self-start justify-center mb-6 ml-1">
                         <input 
                             checked={isChecked} onChange={(e) => setIsChecked(!isChecked) }
-                            id="link-checkbox" type="checkbox" className="w-4 cursor-pointer h-4 text-secondary rounded border-[2px] bg-[#F2F4FF] border-primary outline-none" />
-                        <label htmlFor="link-checkbox" className="ml-2 text-md font-bold text-secondary">Accept <Link href="/termeni" target="_blank" className="text-secondary underline">Termenii și Condițiile.</Link></label>
+                            id="link-checkbox" type="checkbox" className="w-4 min-w-[16px] cursor-pointer h-4 text-secondary rounded border-[2px] bg-[#F2F4FF] border-secondary outline-none" />
+                        <label htmlFor="link-checkbox" className="ml-2 text-md font-bold text-[#260056]">Accept <Link href="/termeni" target="_blank" className="text-secondary underline">Termenii și Condițiile.</Link></label>
+                    </div>
+                    <div className="flex self-start justify-center mb-6 ml-1">
+                        <input 
+                            checked={newsletter} onChange={(e) => setNewsletter(!newsletter) }
+                            id="checkbox-newsletter" type="checkbox" className="w-4 min-w-[16px] cursor-pointer h-4 text-secondary rounded border-[2px] bg-[#F2F4FF] border-secondary outline-none" />
+                        <label htmlFor="checkbox-newsletter" className="ml-2 -mt-[3px] text-md font-bold text-secondary">Aboneaza-te la newsletter-ul nostru pentru a primi cele mai bune oferte!</label>
                     </div>
                     <div className="flex flex-col md:flex-row justify-center w-full items-center">
                         <ReCAPTCHA

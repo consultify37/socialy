@@ -20,7 +20,7 @@ const OrderRow = ({ order }: Props) => {
           href={`/cont/comenzi/${order.id}`}
           className='text-[14px] font-semibold text-blue-600 underline underline-offset-1 self-center'
         >
-          vezi produse
+          vezi detalii comandă
         </Link>
       </td>
     </tr>

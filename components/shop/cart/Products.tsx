@@ -12,6 +12,8 @@ import toast from 'react-hot-toast'
 import { validateEmail } from '../../../utils/validateEmail'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import VoucherForm from './Voucher'
+import { calculateCouponValue } from '../../../utils/calculateCouponValue'
 
 type Props = {
   products: Product[]
@@ -20,7 +22,7 @@ type Props = {
 const Products = ({ products }: Props) => {
   const router = useRouter()
   const { currentUser } = useAuthContext()
-  const { handleRemoveProduct } = useCartContext()
+  const { handleRemoveProduct, coupon, setCoupon } = useCartContext()
   const [isLoading, setIsLoading] = useState(false)
   const [showInput, setShowInput] = useState(false)
   const [email, setEmail] = useState(currentUser?.email ? currentUser.email : '')
@@ -31,7 +33,7 @@ const Products = ({ products }: Props) => {
 
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className='flex flex-col lg:w-[70%]'>
+      <div className='flex flex-col lg:w-[67%]'>
         <div className='bg-admin-card w-full rounded-[10px] flex flex-row p-4 mt-8'>
           <Image 
             src='/images/Shop/cart/comment-info.svg'
@@ -66,7 +68,7 @@ const Products = ({ products }: Props) => {
                         {product.oldPrice} lei
                       </p>
                     }
-                    <p className='text-[18px] lg:text-[20px] font-bold text-price' >{ product.price }</p>
+                    <p className='text-[18px] lg:text-[20px] font-bold text-price' >{ product.price } lei</p>
                   </div>
 
                   <div className='flex flex-row items-center mt-6 lg:mt-4'>
@@ -91,7 +93,7 @@ const Products = ({ products }: Props) => {
                     {product.oldPrice} lei
                   </p>
                 }
-                <p className='text-[18px] lg:text-[20px] font-bold text-price' >{ product.price }</p>
+                <p className='text-[18px] lg:text-[20px] font-bold text-price' >{ product.price } lei</p>
               </div>
             </div>
           )) }
@@ -103,46 +105,58 @@ const Products = ({ products }: Props) => {
         </div>
       </div>
 
-      <div className='rounded-[10px] border-2 border-[#F2F4FF] p-4 py-6 mt-8 h-fit lg:ml-8 lg:w-[30%]'>
-        <p className='text-secondary font-bold text-[18px]'>Sumar comandă</p>
-        <div className='flex flex-row justify-between items-center mt-6'>
-          <p className='font-semibold text-secondary'>Subtotal:</p>
-          <p className='font-semibold text-secondary'>{ calculateCartTotal(products) } lei</p>
-        </div>
-        <div className='flex flex-row justify-between items-center mt-2'>
-          <p className='font-semibold text-secondary'>Cost livrare:</p>
-          <p className='font-semibold text-[#04D200]'>Gratuită</p>
-        </div>
-
-        <div className='border-t border-[#DAE0FF] mt-6 flex flex-col items-center'>
-          <div className='flex flex-row justify-between items-center mt-6 w-full'>
-            <p className='font-semibold text-secondary'>Total final:</p>
+      <div className='lg:w-[33%] lg:ml-8'>
+      <div className='rounded-[10px] border-2 border-[#F2F4FF] p-4 py-6 h-fit'>
+          <p className='text-secondary font-bold text-[18px]'>Sumar comandă</p>
+          <div className='flex flex-row justify-between items-center mt-6'>
+            <p className='font-semibold text-secondary'>Subtotal:</p>
             <p className='font-semibold text-secondary'>{ calculateCartTotal(products) } lei</p>
           </div>
-          
-          { showInput &&
-            <>
-              <p className='font-semibold text-secondary self-start mt-4 mb-2'>Introdu adresa ta de email</p>
-              <input 
-                className='text-[14px] p-2 rounded-xl border-2 border-primary outline-none w-full '
-                placeholder='email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value) }
-                type='email'
-              />
-            </>
+
+          { coupon && 
+            <div className='flex flex-row justify-between items-center mt-2'>
+              <p className='font-semibold text-secondary'>{ coupon.name } | { coupon.code }</p>
+              <p className='font-semibold text-secondary'>- { calculateCouponValue(calculateCartTotal(products), coupon).coupon} lei</p>
+            </div>
           }
 
-          { !isLoading ?
-            <Link
-              href='/shop/detali-comanda'
-              className='py-3 lg:py-4 w-full bg-primary flex items-center justify-center rounded-full hover:scale-105 transition-all mt-6'
-            >
-              <p className='text-onPrimary font-semibold text-[14px]'>Plasează comanda</p>
-            </Link> :
-            <ReactLoading type="spin" color="#0CFF00" width={32} height={32} className='mt-6' />
-          }
+          <div className='flex flex-row justify-between items-center mt-2'>
+            <p className='font-semibold text-secondary'>Cost livrare:</p>
+            <p className='font-semibold text-price'>Gratuită</p>
+          </div>
+
+          <div className='border-t border-[#DAE0FF] mt-6 flex flex-col items-center'>
+            <div className='flex flex-row justify-between items-center mt-6 w-full'>
+              <p className='font-semibold text-secondary'>Total final:</p>
+              <p className='font-semibold text-secondary'>{ coupon ? calculateCouponValue(calculateCartTotal(products), coupon).total : calculateCartTotal(products) } lei</p>
+            </div>
+            
+            { showInput &&
+              <>
+                <p className='font-semibold text-secondary self-start mt-4 mb-2'>Introdu adresa ta de email</p>
+                <input 
+                  className='text-[14px] p-2 rounded-xl border-2 border-primary outline-none w-full '
+                  placeholder='email'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value) }
+                  type='email'
+                />
+              </>
+            }
+
+            { !isLoading ?
+              <Link
+                href='/shop/detali-comanda'
+                className='py-3 lg:py-4 w-full bg-primary flex items-center justify-center rounded-full hover:scale-105 transition-all mt-6'
+              >
+                <p className='text-onPrimary font-semibold text-[14px]'>Plasează comanda</p>
+              </Link> :
+              <ReactLoading type="spin" color="#0CFF00" width={32} height={32} className='mt-6' />
+            }
+          </div>
         </div>
+
+        <VoucherForm />
       </div>
     </div>
   )

@@ -4,6 +4,7 @@ import { collection, getDocs, orderBy, query, where } from "firebase/firestore"
 import { db } from "../../firebase"
 import { Product, ProductCategory } from "../../types"
 import ShopItems from "../../components/shop/ShopItems"
+import NewsLetter from "../../components/global/newsletter"
 
 type Props = {
 	products: Product[]
@@ -14,13 +15,14 @@ const Shop = ({ categories, products }: Props) => {
 	return(
 		<>
 			<Head>
-				<title>Consultify | Shop</title>
+				<title>Socialy | Shop</title>
 			</Head>
 			<ShopHeader />
 			<ShopItems 
 				categories={categories}
 				products={products}
 			/>
+			<NewsLetter headingText="Abonează-te la newsletter-ul nostru pentru noutăți și oferte exclusive!"/>
 		</>
 	)
 }

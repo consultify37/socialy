@@ -19,7 +19,7 @@ const RegisterForm = () => {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [termsAccepted, setTermsAccepted] = useState(false)
-  const [subscribe, setSubscribed] = useState(false)
+  const [subscribe, setSubscribed] = useState(true)
   const [isLoading, setIsLoading] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const [isVisible2, setIsVisible2] = useState(false)
@@ -47,7 +47,7 @@ const RegisterForm = () => {
 
       subscribe && await addDoc(collection(db, 'newsletter'), { website: process.env.SITE, email })
 
-      router.replace('/cont')
+      router.replace('/cont/comenzi')
     } catch (e: any) {
       if ( e.message ) {
         e.code == 'auth/email-already-in-use' ? toast.error('Email deja folosit.') : toast.error(e.message)
@@ -138,16 +138,16 @@ const RegisterForm = () => {
         </div>
       </div>
 
-      <p className='text-[14px] font-semibold text-[#B9B9B9] mt-6'>Toate câmpurile sunt obligatorii</p>
+      <p className='text-[14px] font-semibold text-[#B9B9B9] mt-6'>Toate câmpurile sunt obligatorii!</p>
       <div
         className='flex flex-row items-center cursor-pointer w-fit mt-2'
         onClick={() => setTermsAccepted(!termsAccepted) }
       >
         <div 
           className='w-[14px] h-[14px] border-secondary border-[1.5px] rounded-[4px] mr-2'
-          style={{ background: termsAccepted ? '#8717F8' : 'transparent' }}
+          style={{ background: termsAccepted ? 'black' : 'transparent' }}
         ></div>
-        <p className='text-secondary font-semibold text-[14px] pt-[2px]'>Sunt de acord cu <Link href='/termeni' target='_blank' className='text-blue-600 underline-offset-1 underline'>termenii și condițiile</Link></p>
+        <p className='text-secondary font-semibold text-[14px] pt-[2px]'>Sunt de acord cu <Link href='/termeni' target='_blank' className='text-blue-600 underline-offset-1 underline'>termenii și condițiile.</Link></p>
       </div>
 
       <div
@@ -156,9 +156,9 @@ const RegisterForm = () => {
       >
         <div 
           className='w-[14px] min-w-[14px] h-[14px] border-secondary border-[1.5px] rounded-[4px] mr-2'
-          style={{ background: subscribe ? '#0CFF00' : 'transparent' }}
+          style={{ background: subscribe ? 'black' : 'transparent' }}
         ></div>
-        <p className='text-secondary font-semibold text-[14px] -mt-[3px]'>Aboneaza-te la newsletter-ul nostru pentru a primi cele mai bune oferte!</p>
+        <p className='text-secondary font-semibold text-[14px] -mt-[3px]'>Abonează-te la newsletter-ul nostru pentru a primi cele mai bune oferte!</p>
       </div>
 
       { isLoading ? 

@@ -21,10 +21,10 @@ const ProductCTA = ({ product }: Props) => {
         className='w-full h-[250px] lg:h-[270px] xl:h-[300px] 2xl:h-[320px] object-contain self-center '
       />
 
-      <div className='flex flex-col w-full lg:mr-8'>
-        <h1 className='text-[20px] lg:text-[32px] font-bold text-onSecondary mt-6 lg:mt-0'>{product.name}</h1>
-        <div className='flex flex-row items-center mt-2 lg:mt-4 mb-6 lg:mb-8'>
-          <p className='text-[20px] lg:text-[32px] font-bold text-primary mr-4' >{ product.price }</p>
+      <div className='flex flex-col w-full lg:mr-8 '>
+        <h1 className='text-[24px] lg:text-[32px] font-bold text-onSecondary mt-6 lg:mt-0 text-center self-center'>{product.name}</h1>
+        <div className='flex flex-row items-center mt-2 lg:mt-4 mb-6 lg:mb- self-center'>
+          <p className='text-[24px] lg:text-[32px] font-bold text-primary mr-4' >{ product.price } lei</p>
           { product.onSale &&
             <p className="text-[#7C9EF8] text-[14px] font-base opacity-90 line-through font-semibold">
               {product.oldPrice} lei
