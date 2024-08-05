@@ -17,6 +17,10 @@ const OrdersTable = () => {
   const fetchOrders = async () => {
     setIsLoading(true)
 
+    if (!currentUser) {
+      return
+    }
+
     try {
       const docsRef = query(collection(db, 'orders'), where('customer_email', '==', currentUser?.email), orderBy('createdAt', 'desc'))
       const docsSnap = await getDocs(docsRef)
@@ -29,6 +33,7 @@ const OrdersTable = () => {
       
       setOrders(orders)
     } catch (e) {
+      console.log(e)
       toast.error('Ceva nu a mers bine. Reîmprospătează pagina.')
     }
 

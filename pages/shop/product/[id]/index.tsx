@@ -65,7 +65,7 @@ const ProductPage = ({ product, featuredProducts }: Props) => {
               </p>
             }
           </div>
-          <div className='flex flex-row items-center mt-4'>
+          <div className='flex flex-row items-center gap-4 mt-4'>
             <Button 
               onClick={() => handleAddProduct(product) }
             />
