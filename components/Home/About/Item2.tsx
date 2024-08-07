@@ -28,7 +28,7 @@ const Item2About = () => {
                     </li>
                 </ul>
                 <div className='flex gap-6 mt-6'>
-                    <Link href='/shop' className='py-3 bg-primary font-semibold text-onPrimary flex items-center rounded-[28.5px] px-12 transition-all hover:scale-[1.05]'>Shop</Link>
+                    <Link href='#' className='py-3 bg-primary font-semibold text-onPrimary flex items-center rounded-[28.5px] px-12 transition-all hover:scale-[1.05]'>Shop</Link>
                     <Link href='/servicii' className='py-3 bg-transparent font-semibold text-primary flex items-center rounded-[28.5px] border-2 border-primary px-12 transition-all hover:scale-[1.05]'>Servicii</Link>
                 </div>
             </div>
