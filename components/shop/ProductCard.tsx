@@ -24,7 +24,7 @@ const ProductCard = ({ cardRef, product, hasMargin, className }: Props) => {
       ref={cardRef ? cardRef : null}
       key={product.id}
       href={`/shop/product/${product.id}`}
-      className={`p-2 pb-4 bg-admin-card rounded-[16px] shadow-lg h-full flex flex-col gap-6 snap-center ${ className ? className : ''}`}
+      className={`p-2 pb-4 bg-admin-card rounded-[16px] h-full shadow-lg flex flex-col gap-6 snap-center ${ className ? className : ''}`}
       style={{marginRight: hasMargin ? 24 : 0}}
     >
       <div className="relative h-[250px]">
@@ -56,7 +56,7 @@ const ProductCard = ({ cardRef, product, hasMargin, className }: Props) => {
 
         <button
           onClick={addToCart}
-          className="w-11 h-11 min-w-[44px] flex items-center self-end justify-center rounded-full bg-primary hover:scale-105 transition-all"
+          className="w-11 h-11 min-w-[44px] flex items-center justify-center rounded-full bg-primary hover:scale-105 transition-all self-end"
         >
             <Image 
               src='/images/cart.svg'
