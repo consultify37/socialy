@@ -12,6 +12,8 @@ import { AuthContext } from '../context/AuthContext'
 import { CartContext } from '../context/CartContext'
 import { FavoritesContext } from '../context/FavoritesContext'
 import Cookies from 'js-cookie'
+import { Analytics } from "@vercel/analytics/react"
+
 
 function useNormalScrollRoutes() {
   const router = useRouter();
@@ -77,6 +79,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <div className="flex flex-col">
             { !pathname?.includes('/admin') ?
               <>
+                <Analytics />
                 <TopBar />
                 <Header />
               </> : null
