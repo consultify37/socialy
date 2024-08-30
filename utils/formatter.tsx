@@ -89,6 +89,10 @@ export const formatter = (node: any, index: number) => {
 							{ node.type === 'text' &&
 								node.data
 							}
+							{
+								node.type === 'tag' && node.name == 'span' &&
+								node.children[0].data 
+							}
 						</span>
 				))}
 			</p>
@@ -117,6 +121,10 @@ export const formatter = (node: any, index: number) => {
 									}
 									{ node.type === 'text' &&
 										node.data
+									}
+									{
+										node.type === 'tag' && node.name == 'span' &&
+										node.children[0].data 
 									}
 								</span>
 						))}
