@@ -162,7 +162,7 @@ const Header = () => {
               <li
                 className={`w-full xl:w-auto p-2 pl-16 border-b-[1px] border-white xl:pl-18 xl:pl-0 xl:p-0 xl:border-0`}
               >
-                <Link href="/blog" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
+                <Link href="https://consultify.ro/blog" className="font-semibold text-white text-[16px] hover:text-primary transition-all">
                   blog
                 </Link>
               </li>

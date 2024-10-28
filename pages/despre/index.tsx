@@ -38,9 +38,9 @@ const About = ({ articles, products }: Props) => {
             {/* <FeaturedProducts 
                 products={products}
             /> */}
-            <News 
+            {/* <News 
                 articles={articles}
-            />
+            /> */}
             <NewsLetter headingText={'Fii în pas cu trendurile! Abonează-te la newsletter și află cele mai recente tendințe din lumea marketingului!'} />
         </>
     )

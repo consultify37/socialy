@@ -80,9 +80,9 @@ const Campanie = ({ program, products, articles }: Props) => {
       {/* <FeaturedProducts 
         products={products}
       /> */}
-      <News 
+      {/* <News 
         articles={articles}
-      />
+      /> */}
       <NewsLetter headingText={'Alătură-te comunității noastre și fii la curent cu cele mai noi strategii de marketing și nu numai!'} />
     </>
   )
